@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
 import { getDirectusClient, Ilip } from '../../lib/directus'
 
@@ -51,7 +52,14 @@ type IlipSinglePageProps = {
 }
 
 export default function IlipPage({ content }: IlipSinglePageProps) {
-  console.log(content)
+  const router = useRouter()
+
+  // If the page is not yet generated, this will be displayed
+  // initially until getStaticProps() finishes running
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
+
   return (
     <div className="current-article">
       <div dangerouslySetInnerHTML={{ __html: content.content }}></div>
