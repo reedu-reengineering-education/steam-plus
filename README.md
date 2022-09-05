@@ -1,8 +1,8 @@
 <div align="center">
-  <h3 align="center">re:edu App</h3>
+  <h3 align="center">Steam+ App</h3>
 
   <p align="center">
-     🚀 Template for re:edu map based applications
+    :checkered_flag: Displays the results and outcomes of the Steam+ project
     <br />
   </p>
 </div>
@@ -11,19 +11,16 @@
 
 ## About The Project
 
-The PVP App is a web based system to visualize the distribution process of teaching students.
+The PVP App is a web based system to visualize the results of the Steam+ projects:
 
-Features:
-
-- 🗺 Map based distribution visualization
-- 📊 Additional chart visualizations
-- 🏎 Fast
+- STEAM+ Innovation Lab Implementation Path
+- STEAM+ Menu for Policy Inspiration
 
 ### Built With
 
 - [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Prisma](https://www.prisma.io/)
+- [Directus](https://www.directus.io/)
 - [TailwindCSS](https://tailwindcss.com/)
 
 <!-- GETTING STARTED -->
@@ -40,7 +37,7 @@ You will need to have Node.js and Yarn installed.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/reedu-reengineering-education/next-map-starter.git
+   git clone https://github.com/reedu-reengineering-education/steam-plus.git
    ```
 2. Install NPM packages
    ```sh
@@ -51,27 +48,10 @@ You will need to have Node.js and Yarn installed.
    cp .env.example .env
    ```
 4. Enter the environmental variables in `.env`
-5. Spin up the local testing database
-   ```sh
-   docker-compose up -d
-   ```
-6. Run the App
+5. Run the App
    ```sh
    yarn dev
    ```
-
-## Inspecting the database
-
-To inspect the database you can use adminer which is shipped in the docker-compose file.
-
-1. Make sure you created the `.env` file
-2. Run the docker-compose file
-   ```sh
-   docker-compose up -d
-   ```
-3. Open adminer in the browser:
-   http://localhost:8080/?pgsql=postgis&username=postgres&db=starter&ns=public
-4. Enter the database password and inspect the database
 
 <!-- CONTRIBUTING -->
 
@@ -88,28 +68,10 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## GitHub Actions
-
-With GitHub Actions, we automatically build Docker images and push them to the GitHub package registry.
-
-Docker images will be built on:
-
-- Pull Requests to `main`
-- Pushes to `main`
-- Releasing new versions under a `v*.*.*` tag
-
-## Storybook
-
-To check out the UI Components in our Storybook run
-
-```
-yarn storybook
-```
-
 <!-- CONTACT -->
 
 ## Contact
 
 re:edu GmbH - [@reedu_de](https://twitter.com/reedu_de) - kontakt@reedu.de
 
-Project Link: [https://github.com/reedu-reengineering-education/next-map-starter](https://github.com/reedu-reengineering-education/next-map-starter)
+Project Link: [https://github.com/reedu-reengineering-education/steam-plus](https://github.com/reedu-reengineering-education/steam-plus)
