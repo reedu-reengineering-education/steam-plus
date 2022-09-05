@@ -4,7 +4,6 @@ import { Spacer } from '@/components/Elements/Spacer'
 import { Spinner } from '@/components/Elements/Spinner'
 import Modal from '@/components/Modal'
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import { useState } from 'react'
 
 const Home: NextPage = () => {
@@ -13,14 +12,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <div className="mx-auto md:max-w-3xl">
-        <div className="relative mx-auto h-32 w-32">
-          <Image
-            src={require('@/assets/logos/pvp-logo.png')}
-            alt="Logo"
-            layout="fill"
-          />
-        </div>
-        <Spacer />
         <h2 className="p-2 text-center text-2xl">Steam+</h2>
         <Button>Hello World</Button>
         <Spacer />
