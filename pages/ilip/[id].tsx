@@ -20,7 +20,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
           params: { id: entry.id.toString() },
         }
       }),
-      fallback: false,
+      fallback: true,
     }
   } else {
     return {
