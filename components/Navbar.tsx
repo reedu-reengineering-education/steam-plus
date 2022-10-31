@@ -1,5 +1,5 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { ArrowCircleLeftIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -9,6 +9,11 @@ const navigation = [
   { name: 'ILIP', href: '/ilip' },
   { name: 'MPI', href: '/mpi' },
   { name: 'Glossary', href: '/glossary' },
+  {
+    name: 'Back to STEAM+',
+    href: 'https://www.steamtalent.eu/',
+    icon: <ArrowCircleLeftIcon />,
+  },
 ]
 
 const Navbar = () => {
@@ -18,8 +23,8 @@ const Navbar = () => {
     <Disclosure as="nav" className="shadow">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 w-full items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded p-2 hover:bg-ocean-green-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -51,9 +56,9 @@ const Navbar = () => {
                     </a>
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex h-full space-x-4">
-                    {navigation.map(item => (
+                <div className="hidden w-full sm:ml-6 sm:block">
+                  <div className="flex h-full">
+                    {navigation.map((item, i, { length }) => (
                       <Link key={item.name} href={item.href}>
                         <a
                           className={clsx(
@@ -61,6 +66,7 @@ const Navbar = () => {
                               ? 'bg-ocean-green text-white'
                               : 'text-ocean-green hover:bg-ocean-green-200 hover:text-white',
                             'my-auto h-fit rounded px-3 py-2 text-sm font-medium',
+                            i + 1 === length ? 'ml-auto' : 'ml-4',
                           )}
                           aria-current={
                             router.pathname.includes(item.href)
@@ -68,7 +74,14 @@ const Navbar = () => {
                               : undefined
                           }
                         >
-                          {item.name}
+                          <div className="flex">
+                            <span>{item.name}</span>
+                            {item.icon && (
+                              <div className="ml-2">
+                                <ArrowCircleLeftIcon className="h-5 w-5" />
+                              </div>
+                            )}
+                          </div>
                         </a>
                       </Link>
                     ))}
