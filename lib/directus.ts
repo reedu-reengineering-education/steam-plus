@@ -4,7 +4,7 @@ const directusUrl = process.env.DIRECTUS_URL || 'http://localhost:8055'
 
 // Define types for Dircetus collections
 export type Ilip = {
-  id: ID
+  slug: string
   content: string
 }
 

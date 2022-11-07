@@ -1,3 +1,5 @@
+import PostBody from '@/components/Post/Body'
+import markdownToHtml from '@/lib/markdownToHtml'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
@@ -5,12 +7,13 @@ import { getDirectusClient, Ilip } from '../../lib/directus'
 
 interface IParams extends ParsedUrlQuery {
   id: string
+  slug: string
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const directus = await getDirectusClient()
   const { data } = await directus.items('ilip').readByQuery({
-    fields: 'id',
+    fields: 'slug',
     limit: -1,
   })
 
@@ -18,7 +21,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return {
       paths: data.map(entry => {
         return {
-          params: { id: entry.id.toString() },
+          params: {
+            slug: entry.slug.toString(),
+          },
         }
       }),
       fallback: true,
@@ -32,17 +37,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
-  const { id } = context.params! as IParams
+  const { slug } = context.params! as IParams
 
   const directus = await getDirectusClient()
 
-  const content = await directus.items('ilip').readOne(id, {
+  const content = await directus.items('ilip').readOne(slug, {
     fields: ['*', 'author.first_name', 'author.last_name'],
   })
+  const markdown = await markdownToHtml(content.content || '')
 
   return {
     props: {
-      content,
+      markdown,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
@@ -53,9 +59,10 @@ export const getStaticProps: GetStaticProps = async context => {
 
 type IlipSinglePageProps = {
   content: Ilip
+  markdown: string
 }
 
-export default function IlipPage({ content }: IlipSinglePageProps) {
+export default function IlipPage({ markdown }: IlipSinglePageProps) {
   const router = useRouter()
 
   // If the page is not yet generated, this will be displayed
@@ -66,7 +73,7 @@ export default function IlipPage({ content }: IlipSinglePageProps) {
 
   return (
     <div className="current-article">
-      <div dangerouslySetInnerHTML={{ __html: content.content }}></div>
+      <PostBody content={markdown} />
     </div>
   )
 }

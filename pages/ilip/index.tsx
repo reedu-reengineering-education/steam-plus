@@ -18,7 +18,6 @@ type IlipPageProps = {
 }
 
 const Ilip = ({ data }: IlipPageProps) => {
-  console.log(data)
   return (
     <div>
       <Spacer />
@@ -32,8 +31,8 @@ const Ilip = ({ data }: IlipPageProps) => {
             console.log(entry)
             return (
               <li key={index}>
-                <Link href={`ilip/${entry.id}`}>
-                  <a>{entry.id}</a>
+                <Link href={`ilip/${entry.slug}`}>
+                  <a>{entry.slug}</a>
                 </Link>
               </li>
             )
