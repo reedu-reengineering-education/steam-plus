@@ -13,11 +13,18 @@ type Mpi = {
   content: string
 }
 
+export type Glossary = {
+  id: ID
+  term: string
+  description: string
+}
+
 // Map your collections to its respective types. The SDK will
 // infer its types based on usage later.
 type DirectusCollection = {
   ilip: Ilip
   mpi: Mpi
+  glossary: Glossary
 }
 
 const directus = new Directus<DirectusCollection>(directusUrl)
