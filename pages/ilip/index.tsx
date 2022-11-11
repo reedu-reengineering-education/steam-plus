@@ -1,5 +1,5 @@
-import { Circle } from '@/components/Elements/Circle'
 import { Spacer } from '@/components/Elements/Spacer'
+import { TubeMap } from '@/components/TubeMap'
 import { getDirectusClient, Ilip } from '@/lib/directus'
 import Link from 'next/link'
 
@@ -20,8 +20,8 @@ type IlipPageProps = {
 
 const Ilip = ({ data }: IlipPageProps) => {
   return (
-    <div className="flex">
-      <div className="w-1/3">
+    <div className="flex flex-col md:flex-row">
+      <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">
           Innovation Lab Implementation Path
         </h1>
@@ -29,7 +29,6 @@ const Ilip = ({ data }: IlipPageProps) => {
         <ul>
           {data.length > 0 &&
             data.map((entry, index) => {
-              console.log(entry)
               return (
                 <li key={index}>
                   <Link href={`ilip/${entry.slug}`}>
@@ -40,8 +39,8 @@ const Ilip = ({ data }: IlipPageProps) => {
             })}
         </ul>
       </div>
-      <div className="w-2/3 border-2 ">
-        <Circle></Circle>
+      <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
+        <TubeMap></TubeMap>
       </div>
     </div>
   )

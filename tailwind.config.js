@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        sans: ['Roboto', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'ocean-green': {
@@ -23,6 +23,18 @@ module.exports = {
           700: '#224B3A',
           800: '#10241C',
           900: '#000000',
+        },
+        'steam-green': {
+          DEFAULT: '#398B28',
+          50: '#DDEDE6',
+          100: '#1D681D',
+        },
+        'steam-green-text': {
+          DEFAULT: '#4C9277',
+          50: '#1D681D',
+        },
+        'steam-white': {
+          DEFAULT: '#F6F5F5',
         },
       },
     },
