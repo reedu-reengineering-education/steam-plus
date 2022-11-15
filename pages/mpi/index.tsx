@@ -75,7 +75,7 @@ const Mpi = ({ data }: MpiPageProps) => {
             <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/starters`}>
-                  <div>
+                  <div className="cursor-pointer hover:underline">
                     <Image
                       src={require('@/assets/logos/starters.svg')}
                       alt="Starters Icon"
@@ -102,7 +102,7 @@ const Mpi = ({ data }: MpiPageProps) => {
             <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/main`}>
-                  <div>
+                  <div className="cursor-pointer hover:underline">
                     <Image
                       src={require('@/assets/logos/main-meals.svg')}
                       alt="Main meals Icon"
@@ -130,7 +130,7 @@ const Mpi = ({ data }: MpiPageProps) => {
             <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/desserts`}>
-                  <div>
+                  <div className="cursor-pointer hover:underline">
                     <Image
                       src={require('@/assets/logos/desserts.svg')}
                       alt="Desserts Icon"
@@ -159,7 +159,7 @@ const Mpi = ({ data }: MpiPageProps) => {
               <div className="flex flex-row p-2 text-center">
                 <div className="flex flex-col">
                   <Link href={`mpi/beverages`}>
-                    <div>
+                    <div className="cursor-pointer hover:underline">
                       <Image
                         src={require('@/assets/logos/beverages.svg')}
                         alt="Beverages Icon"
@@ -168,6 +168,8 @@ const Mpi = ({ data }: MpiPageProps) => {
                     </div>
                   </Link>
                   <hr className="my-4 h-px border-0 bg-steam-green-100" />
+                </div>
+                <div>
                   <ul className="p-2 text-left text-sm font-light">
                     {data
                       .filter(entry => entry.category === 'beverage')
@@ -189,7 +191,7 @@ const Mpi = ({ data }: MpiPageProps) => {
               <div className="flex flex-row p-2 text-center">
                 <div className="flex flex-col">
                   <Link href={`mpi/takeaway`}>
-                    <div>
+                    <div className="cursor-pointer hover:underline">
                       <Image
                         src={require('@/assets/logos/beverages.svg')}
                         alt="Beverages Icon"
@@ -200,6 +202,8 @@ const Mpi = ({ data }: MpiPageProps) => {
                     </div>
                   </Link>
                   <hr className="my-4 h-px border-0 bg-steam-green-100" />
+                </div>
+                <div>
                   <ul className="p-2 text-left text-sm font-light">
                     {data
                       .filter(entry => entry.category === 'takeaway')

@@ -18,5 +18,22 @@
 }
 
 .markdown a {
-  @apply underline hover:underline-offset-1;
+  @apply underline hover:underline-offset-1 hover:text-steam-green;
+}
+
+.markdown ul {
+  @apply list-inside list-disc;
+}
+
+.markdown table {
+  @apply border-2 border-steam-green;
+}
+
+.markdown tbody > tr td {
+  @apply p-2 border-2 border-steam-green;
+}
+
+/* Hide table head */
+.markdown thead {
+  @apply hidden;
 }
