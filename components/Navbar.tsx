@@ -1,5 +1,9 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { ArrowCircleLeftIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import {
+  ArrowLeftIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -12,7 +16,7 @@ const navigation = [
   {
     name: 'Back to STEAM+',
     href: 'https://www.steamtalent.eu/',
-    icon: <ArrowCircleLeftIcon />,
+    icon: <ArrowLeftIcon />,
   },
 ]
 
@@ -30,12 +34,12 @@ const Navbar = () => {
                 <Disclosure.Button className="inline-flex items-center justify-center rounded p-2 hover:bg-ocean-green-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon
+                    <XMarkIcon
                       className="block h-6 w-6 text-ocean-green hover:text-white"
                       aria-hidden="true"
                     />
                   ) : (
-                    <MenuIcon
+                    <Bars3Icon
                       className="block h-6 w-6 text-ocean-green hover:text-white"
                       aria-hidden="true"
                     />
@@ -78,7 +82,7 @@ const Navbar = () => {
                             <span>{item.name}</span>
                             {item.icon && (
                               <div className="ml-2">
-                                <ArrowCircleLeftIcon className="h-5 w-5" />
+                                <ArrowLeftIcon className="h-5 w-5" />
                               </div>
                             )}
                           </div>

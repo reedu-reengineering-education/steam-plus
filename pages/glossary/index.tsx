@@ -1,4 +1,5 @@
 import { Spacer } from '@/components/Elements/Spacer'
+import SlideOver from '@/components/SlideOver'
 import { getDirectusClient, Glossary } from '@/lib/directus'
 import { useState } from 'react'
 
@@ -37,10 +38,18 @@ type GlossaryPageProps = {
 }
 
 const Glossary = ({ dict }: GlossaryPageProps) => {
+  console.log(dict)
   const [searchTerm, setSearchTerm] = useState<string>()
+  const [open, setOpen] = useState<boolean>(false)
+  const [selectedGlossaryEntry, setSelectedGlossaryEntry] = useState<Glossary>()
+
+  const openSlideOver = (glossary: Glossary) => {
+    setSelectedGlossaryEntry(glossary)
+    setOpen(!open)
+  }
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3 ">
         <h1 className="text-2xl">Glossary</h1>
         <Spacer></Spacer>
@@ -53,7 +62,7 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
           dolores cumque amet saepe!
         </span>
       </div>
-      <div className="flex w-full flex-col rounded-md border-2 border-ocean-green-500 bg-ocean-green-100 p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex w-full flex-col rounded-md border-2 border-ocean-green-500 bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
         <h1 className="text-center text-2xl font-bold uppercase text-ocean-green-500">
           Glossary
         </h1>
@@ -81,7 +90,14 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
                 </h1>
                 <ul>
                   {value.map((glossary, index) => {
-                    return <li key={glossary.id}>{glossary.term}</li>
+                    return (
+                      <li
+                        key={glossary.id}
+                        onClick={() => openSlideOver(glossary)}
+                      >
+                        {glossary.term}
+                      </li>
+                    )
                   })}
                 </ul>
               </div>
@@ -89,6 +105,11 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
           })}
         </div>
       </div>
+      <SlideOver
+        open={open}
+        setOpen={setOpen}
+        content={selectedGlossaryEntry}
+      />
     </div>
   )
 }

@@ -71,8 +71,8 @@ const Mpi = ({ data }: MpiPageProps) => {
             <h6>Served based on local experiences</h6>
             <hr className="my-2 mx-auto h-1 bg-steam-green" />
           </div>
-          <div className="grid grid-flow-col grid-cols-3 grid-rows-3 gap-4 pt-8">
-            <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
+          <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-3">
+            <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/starters`}>
                   <div className="cursor-pointer hover:underline">
@@ -99,7 +99,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 </ul>
               </div>
             </div>
-            <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
+            <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/main`}>
                   <div className="cursor-pointer hover:underline">
@@ -127,7 +127,7 @@ const Mpi = ({ data }: MpiPageProps) => {
               </div>
               <div className="p-2 text-center"></div>
             </div>
-            <div className="row-span-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
+            <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/desserts`}>
                   <div className="cursor-pointer hover:underline">
@@ -155,9 +155,9 @@ const Mpi = ({ data }: MpiPageProps) => {
               </div>
               <div className="p-2 text-center"></div>
             </div>
-            <div className="col-span-1 col-start-1 row-start-3 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
-              <div className="flex flex-row p-2 text-center">
-                <div className="flex flex-col">
+            <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-1 lg:row-start-3">
+              <div className="flex flex-col p-2 text-center lg:flex-row">
+                <div className="flex flex-col p-2 text-center">
                   <Link href={`mpi/beverages`}>
                     <div className="cursor-pointer hover:underline">
                       <Image
@@ -187,9 +187,9 @@ const Mpi = ({ data }: MpiPageProps) => {
               </div>
               <div className="p-2 text-center"></div>
             </div>
-            <div className="col-span-2 col-start-2 row-start-3 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg">
-              <div className="flex flex-row p-2 text-center">
-                <div className="flex flex-col">
+            <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-2 lg:col-start-2 lg:row-start-3">
+              <div className="flex flex-col p-2 text-center lg:flex-row">
+                <div className="flex flex-col p-2 text-center">
                   <Link href={`mpi/takeaway`}>
                     <div className="cursor-pointer hover:underline">
                       <Image
