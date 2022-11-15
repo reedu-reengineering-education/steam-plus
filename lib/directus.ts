@@ -8,9 +8,12 @@ export type Ilip = {
   content: string
 }
 
-type Mpi = {
+export type Mpi = {
   id: ID
-  content: string
+  category: string
+  title: string
+  slug: string
+  markdown: string
 }
 
 export type Glossary = {
