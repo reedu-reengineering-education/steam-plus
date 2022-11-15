@@ -28,6 +28,10 @@ const MpiBeverages = ({ data }: MpiStarterPageProps) => {
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">Beverages</h1>
         <Spacer />
+        <p className="pt-4 text-base font-light">
+          You are not alone! Here you can find inspiring possibilities to
+          network and connect - Enjoy your drink in good company…
+        </p>
       </div>
       <div className="flex w-full flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
         <div className="flex flex-col p-2 text-center">

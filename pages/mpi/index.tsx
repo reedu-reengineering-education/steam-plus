@@ -89,7 +89,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     .filter(entry => entry.category === 'starter')
                     .map(starter => {
                       return (
-                        <li className="m-2" key={starter.id}>
+                        <li className="m-2 hover:underline" key={starter.id}>
                           <Link href={`mpi/starters/${starter.slug}`}>
                             <a>{starter.title}</a>
                           </Link>
@@ -116,7 +116,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     .filter(entry => entry.category === 'main')
                     .map(starter => {
                       return (
-                        <li className="m-2" key={starter.id}>
+                        <li className="m-2 hover:underline" key={starter.id}>
                           <Link href={`mpi/main/${starter.slug}`}>
                             <a>{starter.title}</a>
                           </Link>
@@ -144,7 +144,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     .filter(entry => entry.category === 'dessert')
                     .map(starter => {
                       return (
-                        <li className="m-2" key={starter.id}>
+                        <li className="m-2 hover:underline" key={starter.id}>
                           <Link href={`mpi/desserts/${starter.slug}`}>
                             <a>{starter.title}</a>
                           </Link>
@@ -175,7 +175,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                       .filter(entry => entry.category === 'beverage')
                       .map(starter => {
                         return (
-                          <li className="m-2" key={starter.id}>
+                          <li className="m-2 hover:underline" key={starter.id}>
                             <Link href={`mpi/beverages/${starter.slug}`}>
                               <a>{starter.title}</a>
                             </Link>
@@ -209,7 +209,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                       .filter(entry => entry.category === 'takeaway')
                       .map(starter => {
                         return (
-                          <li className="m-2" key={starter.id}>
+                          <li className="m-2 hover:underline" key={starter.id}>
                             <Link href={`mpi/takeaway/${starter.slug}`}>
                               <a>{starter.title}</a>
                             </Link>

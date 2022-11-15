@@ -28,6 +28,11 @@ const MpiDesserts = ({ data }: MpiStarterPageProps) => {
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">Desserts</h1>
         <Spacer />
+        <p className="pt-4 text-base font-light">
+          Tempted to initiate your own program of transdisciplinary education?
+          Put the cherry on the cake and learn about the practicalities of
+          implementation in our dessert section.
+        </p>
       </div>
       <div className="flex w-full flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
         <div className="flex flex-col p-2 text-center">
