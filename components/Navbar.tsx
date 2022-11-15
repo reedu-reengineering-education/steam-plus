@@ -1,6 +1,6 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import {
-  ArrowLeftIcon,
+  ArrowLeftCircleIcon,
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -16,7 +16,7 @@ const navigation = [
   {
     name: 'Back to STEAM+',
     href: 'https://www.steamtalent.eu/',
-    icon: <ArrowLeftIcon />,
+    icon: <ArrowLeftCircleIcon />,
   },
 ]
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                             <span>{item.name}</span>
                             {item.icon && (
                               <div className="ml-2">
-                                <ArrowLeftIcon className="h-5 w-5" />
+                                <ArrowLeftCircleIcon className="h-5 w-5" />
                               </div>
                             )}
                           </div>
