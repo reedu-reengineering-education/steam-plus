@@ -1,7 +1,7 @@
 import { Spacer } from '@/components/Elements/Spacer'
 import SlideOver from '@/components/SlideOver'
 import { getDirectusClient, Glossary } from '@/lib/directus'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface Dictionary<T> {
   [Key: string]: T
@@ -38,9 +38,10 @@ type GlossaryPageProps = {
 }
 
 const Glossary = ({ dict }: GlossaryPageProps) => {
-  console.log(dict)
-  const [searchTerm, setSearchTerm] = useState<string>()
+  const [searchTerm, setSearchTerm] = useState<string>('')
   const [open, setOpen] = useState<boolean>(false)
+  const [glossaryDictionary, setGlossaryDictionary] =
+    useState<Dictionary<Glossary[]>>(dict)
   const [selectedGlossaryEntry, setSelectedGlossaryEntry] = useState<Glossary>()
 
   const openSlideOver = (glossary: Glossary) => {
@@ -48,20 +49,45 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
     setOpen(!open)
   }
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const directus = await getDirectusClient()
+      const { data } = await directus.items('glossary').readByQuery({
+        filter: {
+          term: {
+            _contains: searchTerm,
+          },
+        },
+      })
+
+      const dict: Dictionary<Glossary[]> = {}
+
+      for (const entry of data as Glossary[]) {
+        if (entry != undefined) {
+          const firstChar = entry.term.charAt(0).toLocaleLowerCase()
+          if (dict[`${firstChar}`]) {
+            dict[firstChar] = [...dict[firstChar], entry]
+          } else {
+            dict[firstChar] = [entry]
+          }
+        }
+      }
+
+      setGlossaryDictionary(dict)
+    }
+
+    if (searchTerm !== '') {
+      fetchData()
+    } else {
+      setGlossaryDictionary(dict)
+    }
+
+    return () => {}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm])
+
   return (
     <div className="flex flex-col gap-12 md:flex-row">
-      <div className="w-full lg:w-1/3 ">
-        <h1 className="text-2xl">Glossary</h1>
-        <Spacer></Spacer>
-        <h3 className="text-sm">What´s a glossary?</h3>
-        <Spacer></Spacer>
-        <span className="text-md">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam
-          blanditiis doloribus dolor inventore expedita, veniam ipsa
-          voluptatibus molestiae sed doloremque eos natus libero at consequatur
-          dolores cumque amet saepe!
-        </span>
-      </div>
       <div className="flex w-full flex-col rounded-md border-2 border-ocean-green-500 bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
         <h1 className="text-center text-2xl font-bold uppercase text-ocean-green-500">
           Glossary
@@ -74,12 +100,13 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
               name=""
               id=""
               value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
               placeholder="Search glossary"
             />
           </div>
         </div>
         <div className="flex flex-wrap justify-start gap-10 p-4">
-          {Object.entries(dict).map(([key, value], index) => {
+          {Object.entries(glossaryDictionary).map(([key, value], index) => {
             return (
               <div key={index} className="m-2 w-1/5">
                 <h1
@@ -92,6 +119,7 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
                   {value.map((glossary, index) => {
                     return (
                       <li
+                        className="cursor-pointer hover:underline"
                         key={glossary.id}
                         onClick={() => openSlideOver(glossary)}
                       >

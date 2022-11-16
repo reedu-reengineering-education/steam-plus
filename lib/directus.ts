@@ -1,6 +1,7 @@
 import { Directus, ID } from '@directus/sdk'
 
-const directusUrl = process.env.DIRECTUS_URL || 'http://localhost:8055'
+const directusUrl =
+  process.env.NEXT_PUBLIC_DIRECTUS_URL || 'http://localhost:8055'
 
 // Define types for Dircetus collections
 export type Ilip = {
