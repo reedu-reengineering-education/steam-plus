@@ -1,3 +1,4 @@
+import { Spacer } from './Elements/Spacer'
 import Navbar from './Navbar'
 
 export type LayoutProps = {
@@ -8,7 +9,10 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto p-4">{children}</main>
+      <main className="container mx-auto p-4">
+        <Spacer />
+        {children}
+      </main>
     </>
   )
 }
