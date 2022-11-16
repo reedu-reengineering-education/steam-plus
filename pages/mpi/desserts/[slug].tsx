@@ -14,7 +14,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const directus = await getDirectusClient()
   const { data } = await directus.items('mpi').readByQuery({
     filter: {
-      category: 'desserts',
+      category: 'dessert',
     },
     fields: 'slug',
     limit: -1,
