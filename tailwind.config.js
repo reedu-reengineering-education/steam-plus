@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
+      height: {
+        192: '48rem',
+      },
       colors: {
         'ocean-green': {
           DEFAULT: '#459875',

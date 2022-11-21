@@ -28,48 +28,41 @@ type TubeMapProps = {
 
 export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
-  const [data, setData] = useState(transformData(ilipMapData))
-  const [lineWidth, setLineWidth] = useState<number>(1.8714285714285717)
+  const [data] = useState(transformData(ilipMapData))
 
   useEffect(() => {
-    const _data = transformData(ilipMapData)
-
     // Just initialize if height and width are set
     if (height === 0 || width === 0) {
       return
     }
 
     const minX =
-      d3.min(_data.raw, (line: Line) => {
+      d3.min(data.raw, (line: Line) => {
         return d3.min(line.nodes, node => {
           return node.coords[0]
         })
       }) - 1
-    // console.log('minX: ', minX)
 
     const maxX =
-      d3.max(_data.raw, function (line: Line) {
+      d3.max(data.raw, function (line: Line) {
         return d3.max(line.nodes, function (node) {
           return node.coords[0]
         })
       }) + 1
-    // console.log('maxX: ', maxX)
 
     const minY =
-      d3.min(_data.raw, function (line: Line) {
+      d3.min(data.raw, function (line: Line) {
         return d3.min(line.nodes, function (node) {
           return node.coords[1]
         })
       }) - 1
-    // console.log('minY: ', minY)
 
     const maxY =
-      d3.max(_data.raw, function (line: Line) {
+      d3.max(data.raw, function (line: Line) {
         return d3.max(line.nodes, function (node) {
           return node.coords[1]
         })
       }) + 1
-    // console.log('maxY: ', maxY)
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
     const actualAspectRatio =
@@ -99,22 +92,23 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     )
 
     console.log('Line width: ', lineWidthMultiplier * unitLength)
-    setLineWidth(lineWidthMultiplier * unitLength)
+    const lineWidth = lineWidthMultiplier * unitLength
 
     const svg = d3
       .select(ref.current)
       .append('svg')
       .style('width', '100%')
-      .style('height', '700px')
+      .style('height', `${height}px`)
 
     const gMap = svg.append('g')
 
     init()
-    drawLines()
+    drawLines(lineWidth)
     // drawLineLabels()
-    drawStations()
-    drawLongStations()
-    drawLabels()
+    drawStations(lineWidth)
+    drawLongStations(lineWidth)
+    drawLabels(lineWidth)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [height, width])
 
   useEffect(() => {
@@ -134,12 +128,12 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     console.log('Init container and set datum')
     d3.select(ref.current)
       .select('g')
-      .attr('transform', 'translate(' + 700 / 2 + ',' + 700 / 2 + ')')
+      .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
       .datum(ilipMapData)
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.7, 10])
+      .scaleExtent([0.6, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -147,8 +141,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 1.2
-    const initialTranslate = [-(width / 5), -(height / 4)]
+    const initialScale = 0.6
+    const initialTranslate = [-(width / 3), -(height / 4)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
     zoomBehavior.translateTo(
@@ -158,7 +152,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     )
   }
 
-  function trainStop() {
+  function trainStop(lineWidth: number) {
     console.log('TrainStop: ', lineWidth)
     return d3
       .arc()
@@ -481,15 +475,15 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     // })
   }
 
-  function textPos(data) {
-    return itemPos(data, 'labelPos')
+  function textPos(data, lineWidth: number) {
+    return itemPos(data, lineWidth, 'labelPos')
   }
 
   function lineLabelPos(data) {
     return itemPos(data, 'lineLabelPos')
   }
 
-  function itemPos(data, item) {
+  function itemPos(data, lineWidth: number, item) {
     var pos
     var textAnchor
     var alignmentBaseline
@@ -552,7 +546,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     }
   }
 
-  function drawLabels() {
+  function drawLabels(lineWidth: number) {
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -578,17 +572,17 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       })
       .attr('dy', 0)
       .attr('x', function (d) {
-        return xScale(d.x + d.labelShiftX) + textPos(d).pos[0]
+        return xScale(d.x + d.labelShiftX) + textPos(d, lineWidth).pos[0]
       })
       .attr('y', function (d) {
-        return yScale(d.y + d.labelShiftY) - textPos(d).pos[1]
+        return yScale(d.y + d.labelShiftY) - textPos(d, lineWidth).pos[1]
       })
       .attr('text-anchor', function (d) {
         return textPos(d).textAnchor
       })
       .attr('transform', function (d) {
-        var _x = xScale(d.x + d.labelShiftX) + textPos(d).pos[0]
-        var _y = yScale(d.y + d.labelShiftY) - textPos(d).pos[1]
+        var _x = xScale(d.x + d.labelShiftX) + textPos(d, lineWidth).pos[0]
+        var _y = yScale(d.y + d.labelShiftY) - textPos(d, lineWidth).pos[1]
         return 'rotate(' + d.labelAngle + ',' + _x + ',' + _y + ')'
       })
       // .attr('class', function(d) {
@@ -610,7 +604,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     // })
   }
 
-  const drawLines = () => {
+  const drawLines = (lineWidth: number) => {
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -646,7 +640,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .classed('line', true)
   }
 
-  const drawStations = () => {
+  const drawStations = (lineWidth: number) => {
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -690,7 +684,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .style('cursor', 'pointer')
   }
 
-  const drawLongStations = () => {
+  const drawLongStations = (lineWidth: number) => {
     console.log('Draw  long stations', data.stations.longStations())
     d3.select(ref.current)
       .select('svg')

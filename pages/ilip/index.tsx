@@ -53,7 +53,7 @@ const Ilip = ({ data }: IlipPageProps) => {
         <Tabs onChange={tabChanged} />
       </div>
       <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
-        <div ref={ref} className="h-full w-full">
+        <div ref={ref} className="h-192 min-h-full w-full">
           <TubeMap height={height} width={width} selectedLine={selectedLine} />
         </div>
       </div>
