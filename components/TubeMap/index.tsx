@@ -20,7 +20,11 @@ const yScale = d3.scaleLinear()
 const lineWidthMultiplier = 0.7
 const lineWidthTickRatio = 1
 
-export const TubeMap = () => {
+type TubeMapProps = {
+  selectedLine?: string
+}
+
+export const TubeMap = ({ selectedLine }: TubeMapProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [data, setData] = useState(transformData(ilipMapData))
   const [lineWidth, setLineWidth] = useState<number>(2.722)
@@ -100,6 +104,12 @@ export const TubeMap = () => {
     drawLongStations()
     drawLabels()
   }, [])
+
+  // useEffect(() => {
+  //   console.info('Update selected and highlighted line')
+
+  //   return () => {}
+  // }, [selectedLine])
 
   function zoomed(event) {
     d3.select(ref.current)

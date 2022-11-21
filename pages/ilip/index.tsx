@@ -1,7 +1,9 @@
 import { Spacer } from '@/components/Elements/Spacer'
+import Tabs from '@/components/Tabs'
 import { TubeMap } from '@/components/TubeMap'
 import { getDirectusClient, Ilip } from '@/lib/directus'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export async function getServerSideProps() {
   const directus = await getDirectusClient()
@@ -19,6 +21,7 @@ type IlipPageProps = {
 }
 
 const Ilip = ({ data }: IlipPageProps) => {
+  const [selectedLine, setSelectedLine] = useState<string>('')
   return (
     <div className="flex flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
@@ -26,7 +29,12 @@ const Ilip = ({ data }: IlipPageProps) => {
           Innovation Lab Implementation Path
         </h1>
         <Spacer />
-        <ul>
+        <p className="pt-4 text-base font-light">
+          Add some description here how to use the ILIP map.
+        </p>
+        <Spacer />
+        <Tabs></Tabs>
+        {/* <ul>
           {data.length > 0 &&
             data.map((entry, index) => {
               return (
@@ -37,10 +45,10 @@ const Ilip = ({ data }: IlipPageProps) => {
                 </li>
               )
             })}
-        </ul>
+        </ul> */}
       </div>
       <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
-        <TubeMap></TubeMap>
+        <TubeMap />
       </div>
     </div>
   )
