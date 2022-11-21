@@ -153,13 +153,31 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   function trainStop(lineWidth: number) {
-    console.log('TrainStop: ', lineWidth)
     return d3
       .arc()
       .innerRadius(0)
       .outerRadius(1.37 * lineWidth)
       .startAngle(0)
       .endAngle(2 * Math.PI)
+  }
+
+  function toggleHighlight(d: Station, lineWidth) {
+    const station = d3.selectAll('.station.'.concat(classFromName(d.name)))
+    const label = d3.selectAll('.label.'.concat(classFromName(d.name)))
+
+    if (station.attr('highlighted') === 'true') {
+      station
+        .attr('highlighted', 'false')
+        .attr(
+          'fill',
+          station.attr('current') === 'true' ? 'yellow' : d.stationFillColor,
+        )
+        .attr('stroke-width', lineWidth / 4)
+      label.attr('highlighted', 'false').style('text-decoration', 'none')
+    } else {
+      station.attr('highlighted', 'true').attr('stroke-width', lineWidth / 2)
+      label.attr('highlighted', 'false').style('text-decoration', 'underline')
+    }
   }
 
   function line(
@@ -546,6 +564,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     }
   }
 
+  function classFromName(currentName: string) {
+    return currentName.replace(/[()0-9 ]/g, '').toLowerCase()
+  }
+
   function drawLabels(lineWidth: number) {
     d3.select(ref.current)
       .select('svg')
@@ -585,10 +607,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         var _y = yScale(d.y + d.labelShiftY) - textPos(d, lineWidth).pos[1]
         return 'rotate(' + d.labelAngle + ',' + _x + ',' + _y + ')'
       })
-      // .attr('class', function(d) {
-      //   var boldLabel = d.labelBold ? "bold-label" : ""
-      //   return 'label ' + boldLabel + ' ' + classFromName(d.name)
-      // })
+      .attr('class', function (d) {
+        var boldLabel = d.labelBold ? 'bold-label' : ''
+        return 'label ' + boldLabel + ' ' + classFromName(d.name)
+      })
       .style('display', function (d) {
         return d.hide !== true ? 'block' : 'none'
       })
@@ -681,11 +703,19 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .attr('stroke', function (d) {
         return d.stationStrokeColor
       })
+      .on('mouseover', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
+      .on('mouseout', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
+      .attr('class', function (d) {
+        return 'station ' + classFromName(d.name)
+      })
       .style('cursor', 'pointer')
   }
 
   const drawLongStations = (lineWidth: number) => {
-    console.log('Draw  long stations', data.stations.longStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -744,18 +774,18 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       // .on("click", function (d) {
       //   listeners.call("click", this, d);
       // })
-      // .on("mouseover", function (d) {
-      //   toggleHighlight(d, lineWidth);
-      // })
-      // .on("mouseout", function (d) {
-      //   toggleHighlight(d, lineWidth);
-      // })
+      .on('mouseover', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
+      .on('mouseout', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
       .attr('stroke', function (d) {
         return d.stationStrokeColor
       })
-      // .attr("class", function (d) {
-      //   return "station " + classFromName(d.name);
-      // })
+      .attr('class', function (d) {
+        return 'station ' + classFromName(d.name)
+      })
       .style('cursor', 'pointer')
   }
 
