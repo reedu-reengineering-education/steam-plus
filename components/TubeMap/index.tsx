@@ -105,11 +105,11 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
     drawLabels()
   }, [])
 
-  // useEffect(() => {
-  //   console.info('Update selected and highlighted line')
+  useEffect(() => {
+    console.info('Update selected and highlighted line: ', selectedLine)
 
-  //   return () => {}
-  // }, [selectedLine])
+    return () => {}
+  }, [selectedLine])
 
   function zoomed(event) {
     d3.select(ref.current)

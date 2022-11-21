@@ -4,7 +4,13 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
-const lines = {
+export const lines = {
+  All: [
+    {
+      id: 1,
+      title: 'Add some description here',
+    },
+  ],
   Teacher: [
     {
       id: 1,
@@ -31,10 +37,14 @@ const lines = {
   ],
 }
 
-export default function Tabs() {
+type TabsProps = {
+  onChange: (index: number) => void
+}
+
+export default function Tabs({ onChange }: TabsProps) {
   return (
     <div className="w-full max-w-md px-2 py-16 sm:px-0">
-      <Tab.Group>
+      <Tab.Group onChange={onChange}>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
           {Object.keys(lines).map(category => (
             <Tab
@@ -59,7 +69,7 @@ export default function Tabs() {
               key={idx}
               className={classNames(
                 'rounded-xl bg-white p-3',
-                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                'ring-white ring-opacity-60',
               )}
             >
               <ul>
