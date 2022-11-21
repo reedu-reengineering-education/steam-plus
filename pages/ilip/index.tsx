@@ -29,7 +29,7 @@ const Ilip = ({ data }: IlipPageProps) => {
   }
 
   return (
-    <div className="flex flex-col gap-12 md:flex-row">
+    <div className="flex w-full flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">
           Innovation Lab Implementation Path

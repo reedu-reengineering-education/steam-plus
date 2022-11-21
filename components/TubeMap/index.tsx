@@ -27,7 +27,7 @@ type TubeMapProps = {
 export const TubeMap = ({ selectedLine }: TubeMapProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [data, setData] = useState(transformData(ilipMapData))
-  const [lineWidth, setLineWidth] = useState<number>(2.722)
+  const [lineWidth, setLineWidth] = useState<number>(3.333333333333334)
 
   useEffect(() => {
     const _data = transformData(ilipMapData)
@@ -66,7 +66,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
     const actualAspectRatio =
-      (1200 - margin.left - margin.right) / (1200 - margin.top - margin.bottom)
+      (1296 - margin.left - margin.right) / (700 - margin.top - margin.bottom)
 
     const ratioRatio = actualAspectRatio / desiredAspectRatio
     let maxXRange
@@ -74,11 +74,11 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     // Note that we flip the sense of the y-axis here
     if (desiredAspectRatio > actualAspectRatio) {
-      maxXRange = 1200 - margin.left - margin.right
-      maxYRange = (1200 - margin.top - margin.bottom) * ratioRatio
+      maxXRange = 1296 - margin.left - margin.right
+      maxYRange = (700 - margin.top - margin.bottom) * ratioRatio
     } else {
-      maxXRange = (1200 - margin.left - margin.right) / ratioRatio
-      maxYRange = 1200 - margin.top - margin.bottom
+      maxXRange = (1296 - margin.left - margin.right) / ratioRatio
+      maxYRange = 700 - margin.top - margin.bottom
     }
 
     xScale.domain([minX, maxX]).range([margin.left, margin.left + maxXRange])
@@ -131,7 +131,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.5, 10])
+      .scaleExtent([0.6, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -139,7 +139,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.5
+    const initialScale = 0.7
     const initialTranslate = [-350, -150]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
@@ -653,14 +653,22 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
       .attr('data-link', function (d) {
         return d.link
       })
+      .on('click', function (d) {
+        const newWindow = window.open(
+          d.target.__data__.link,
+          '_blank',
+          'noopener,noreferrer',
+        )
+        if (newWindow) newWindow.opener = null
+      })
       .append('path')
       .attr('d', trainStop(lineWidth))
       .attr('transform', function (d) {
         return (
           'translate(' +
-          xScale(d.x + d.shiftX * 2) +
+          xScale(d.x + d.shiftX * lineWidthMultiplier) +
           ',' +
-          yScale(d.y + d.shiftY * 2) +
+          yScale(d.y + d.shiftY * lineWidthMultiplier) +
           ')'
         )
       })

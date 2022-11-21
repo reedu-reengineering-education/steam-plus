@@ -59,7 +59,7 @@
       "id": 3894910680,
       "name": "Innovation lab red",
       "label": "Innovation lab",
-      "link": "https://steam-plus.vercel.app/ilip/innovation-lab-red",
+      "link": "/ilip/innovation-lab-red",
       "position": {
         "lat": 52.5742433,
         "lon": 13.348511
