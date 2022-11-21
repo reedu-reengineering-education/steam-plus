@@ -51,7 +51,7 @@ export const lines = {
       text: 'Welcome on the ‘student-line’.',
     },
     {
-      id: 1,
+      id: 2,
       text: 'There are several stops which will give you inspiration to continue. If you are familiar to the content of these stops, please just stay on board to the next station. If you want to figure out what this is all about, please hop off at this station and explore the station to learn whether you want to continue your journey.',
     },
   ],

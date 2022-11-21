@@ -22,15 +22,22 @@ const lineWidthTickRatio = 1
 
 type TubeMapProps = {
   selectedLine?: string
+  height: number
+  width: number
 }
 
-export const TubeMap = ({ selectedLine }: TubeMapProps) => {
+export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [data, setData] = useState(transformData(ilipMapData))
-  const [lineWidth, setLineWidth] = useState<number>(3.333333333333334)
+  const [lineWidth, setLineWidth] = useState<number>(1.8714285714285717)
 
   useEffect(() => {
     const _data = transformData(ilipMapData)
+
+    // Just initialize if height and width are set
+    if (height === 0 || width === 0) {
+      return
+    }
 
     const minX =
       d3.min(_data.raw, (line: Line) => {
@@ -66,7 +73,8 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
     const actualAspectRatio =
-      (1296 - margin.left - margin.right) / (700 - margin.top - margin.bottom)
+      (width - margin.left - margin.right) /
+      (height - margin.top - margin.bottom)
 
     const ratioRatio = actualAspectRatio / desiredAspectRatio
     let maxXRange
@@ -74,11 +82,11 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     // Note that we flip the sense of the y-axis here
     if (desiredAspectRatio > actualAspectRatio) {
-      maxXRange = 1296 - margin.left - margin.right
-      maxYRange = (700 - margin.top - margin.bottom) * ratioRatio
+      maxXRange = width - margin.left - margin.right
+      maxYRange = (height - margin.top - margin.bottom) * ratioRatio
     } else {
-      maxXRange = (1296 - margin.left - margin.right) / ratioRatio
-      maxYRange = 700 - margin.top - margin.bottom
+      maxXRange = (width - margin.left - margin.right) / ratioRatio
+      maxYRange = height - margin.top - margin.bottom
     }
 
     xScale.domain([minX, maxX]).range([margin.left, margin.left + maxXRange])
@@ -107,7 +115,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
     drawStations()
     drawLongStations()
     drawLabels()
-  }, [])
+  }, [height, width])
 
   useEffect(() => {
     console.info('Update selected and highlighted line: ', selectedLine)

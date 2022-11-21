@@ -3,7 +3,7 @@ import Tabs, { lines } from '@/components/Tabs'
 import { TubeMap } from '@/components/TubeMap'
 import { getDirectusClient, Ilip } from '@/lib/directus'
 import Link from 'next/link'
-import { useState } from 'react'
+import { RefObject, useEffect, useRef, useState } from 'react'
 
 export async function getServerSideProps() {
   const directus = await getDirectusClient()
@@ -21,7 +21,18 @@ type IlipPageProps = {
 }
 
 const Ilip = ({ data }: IlipPageProps) => {
+  const ref: RefObject<HTMLDivElement> = useRef(null)
+  const [height, setHeight] = useState(0)
+  const [width, setWidth] = useState(0)
+
   const [selectedLine, setSelectedLine] = useState<string>()
+
+  useEffect(() => {
+    if (ref.current != null) {
+      setHeight(ref.current.offsetHeight)
+      setWidth(ref.current.offsetWidth)
+    }
+  }, [])
 
   const tabChanged = (index: number) => {
     console.log('Tab changed to: ', index)
@@ -40,21 +51,11 @@ const Ilip = ({ data }: IlipPageProps) => {
         </p>
         <Spacer />
         <Tabs onChange={tabChanged} />
-        {/* <ul>
-          {data.length > 0 &&
-            data.map((entry, index) => {
-              return (
-                <li key={index}>
-                  <Link href={`ilip/${entry.slug}`}>
-                    <a>{entry.slug}</a>
-                  </Link>
-                </li>
-              )
-            })}
-        </ul> */}
       </div>
       <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
-        <TubeMap selectedLine={selectedLine} />
+        <div ref={ref} className="h-full w-full">
+          <TubeMap height={height} width={width} selectedLine={selectedLine} />
+        </div>
       </div>
     </div>
   )
