@@ -58,7 +58,7 @@ export const TubeMap = () => {
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
     const actualAspectRatio =
-      (700 - margin.left - margin.right) / (700 - margin.top - margin.bottom)
+      (1200 - margin.left - margin.right) / (1200 - margin.top - margin.bottom)
 
     const ratioRatio = actualAspectRatio / desiredAspectRatio
     let maxXRange
@@ -66,11 +66,11 @@ export const TubeMap = () => {
 
     // Note that we flip the sense of the y-axis here
     if (desiredAspectRatio > actualAspectRatio) {
-      maxXRange = 700 - margin.left - margin.right
-      maxYRange = (700 - margin.top - margin.bottom) * ratioRatio
+      maxXRange = 1200 - margin.left - margin.right
+      maxYRange = (1200 - margin.top - margin.bottom) * ratioRatio
     } else {
-      maxXRange = (700 - margin.left - margin.right) / ratioRatio
-      maxYRange = 700 - margin.top - margin.bottom
+      maxXRange = (1200 - margin.left - margin.right) / ratioRatio
+      maxYRange = 1200 - margin.top - margin.bottom
     }
 
     xScale.domain([minX, maxX]).range([margin.left, margin.left + maxXRange])
@@ -88,7 +88,7 @@ export const TubeMap = () => {
     const svg = d3
       .select(ref.current)
       .append('svg')
-      .style('width', '700px')
+      .style('width', '100%')
       .style('height', '700px')
 
     const gMap = svg.append('g')
