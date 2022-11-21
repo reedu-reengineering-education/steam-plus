@@ -139,7 +139,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.6, 10])
+      .scaleExtent([0.7, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -147,8 +147,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.7
-    const initialTranslate = [-350, -150]
+    const initialScale = 1.2
+    const initialTranslate = [-(width / 5), -(height / 4)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
     zoomBehavior.translateTo(
