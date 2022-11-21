@@ -32,32 +32,36 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
   useEffect(() => {
     const _data = transformData(ilipMapData)
 
-    const minX = d3.min(_data.raw, (line: Line) => {
-      return d3.min(line.nodes, node => {
-        return node.coords[0]
-      })
-    })
+    const minX =
+      d3.min(_data.raw, (line: Line) => {
+        return d3.min(line.nodes, node => {
+          return node.coords[0]
+        })
+      }) - 1
     console.log('minX: ', minX)
 
-    const maxX = d3.max(_data.raw, function (line: Line) {
-      return d3.max(line.nodes, function (node) {
-        return node.coords[0]
-      })
-    })
+    const maxX =
+      d3.max(_data.raw, function (line: Line) {
+        return d3.max(line.nodes, function (node) {
+          return node.coords[0]
+        })
+      }) + 1
     console.log('maxX: ', maxX)
 
-    const minY = d3.min(_data.raw, function (line: Line) {
-      return d3.min(line.nodes, function (node) {
-        return node.coords[1]
-      })
-    })
+    const minY =
+      d3.min(_data.raw, function (line: Line) {
+        return d3.min(line.nodes, function (node) {
+          return node.coords[1]
+        })
+      }) - 1
     console.log('minY: ', minY)
 
-    const maxY = d3.max(_data.raw, function (line: Line) {
-      return d3.max(line.nodes, function (node) {
-        return node.coords[1]
-      })
-    })
+    const maxY =
+      d3.max(_data.raw, function (line: Line) {
+        return d3.max(line.nodes, function (node) {
+          return node.coords[1]
+        })
+      }) + 1
     console.log('maxY: ', maxY)
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
@@ -99,10 +103,10 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     init()
     drawLines()
-    drawLineLabels()
+    // drawLineLabels()
     drawStations()
     drawLongStations()
-    drawLabels()
+    // drawLabels()
   }, [])
 
   useEffect(() => {
@@ -127,7 +131,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.7, 10])
+      .scaleExtent([0.5, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -135,7 +139,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.7
+    const initialScale = 0.5
     const initialTranslate = [-350, -150]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
@@ -635,10 +639,10 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
   }
 
   const drawStations = () => {
-    console.log('Draw stations', data.stations.normalStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
+      .append('g')
       .selectAll('path')
       .data(data.stations.normalStations())
       .enter()
