@@ -979,24 +979,24 @@
           "labelShiftCoords": [0, -2]
         },
         {
-          "coords": [50, -70],
+          "coords": [49, -70],
           "name": "Strengthen STEM with STEAM gold",
           "labelPos": "E"
         },
         {
-          "coords": [40, -80],
+          "coords": [39, -80],
           "name": "A transdiciplinary approach gold",
           "labelPos": "NE",
           "labelBold": false,
           "labelShiftCoords": [1, -1]
         },
         {
-          "coords": [30, -90],
+          "coords": [29, -90],
           "name": "Future-oriented eductaion gold",
           "labelPos": "E"
         },
         {
-          "coords": [20, -100],
+          "coords": [19, -100],
           "name": "Why board gold",
           "labelPos": "E",
           "labelBold":true,
@@ -1375,7 +1375,8 @@
           "coords": [180, 10],
           "name": "Why board red",
           "labelPos": "NE",
-          "labelBold": true
+          "labelBold": true,
+          "stationSymbol":"single"
         },
         {
           "coords": [180, 0],
@@ -1399,7 +1400,8 @@
           "coords": [160, -50],
           "name": "Innovation lab red",
           "labelPos": "E",
-          "labelShiftCoords": [1, 0]
+          "labelShiftCoords": [1, 0],
+          "stationSymbol": "single"
         },
         {
           "coords": [152, -50],

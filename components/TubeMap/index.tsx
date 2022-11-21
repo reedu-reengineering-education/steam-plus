@@ -38,7 +38,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
           return node.coords[0]
         })
       }) - 1
-    console.log('minX: ', minX)
+    // console.log('minX: ', minX)
 
     const maxX =
       d3.max(_data.raw, function (line: Line) {
@@ -46,7 +46,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
           return node.coords[0]
         })
       }) + 1
-    console.log('maxX: ', maxX)
+    // console.log('maxX: ', maxX)
 
     const minY =
       d3.min(_data.raw, function (line: Line) {
@@ -54,7 +54,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
           return node.coords[1]
         })
       }) - 1
-    console.log('minY: ', minY)
+    // console.log('minY: ', minY)
 
     const maxY =
       d3.max(_data.raw, function (line: Line) {
@@ -62,7 +62,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
           return node.coords[1]
         })
       }) + 1
-    console.log('maxY: ', maxY)
+    // console.log('maxY: ', maxY)
 
     const desiredAspectRatio = (maxX - minX) / (maxY - minY)
     const actualAspectRatio =
@@ -106,7 +106,7 @@ export const TubeMap = ({ selectedLine }: TubeMapProps) => {
     // drawLineLabels()
     drawStations()
     drawLongStations()
-    // drawLabels()
+    drawLabels()
   }, [])
 
   useEffect(() => {
