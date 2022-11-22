@@ -244,6 +244,37 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .endAngle(2 * Math.PI)
   }
 
+  // Render line breaks for svg text
+  function wrap(text, baseline) {
+    text.each(function () {
+      var text = d3.select(this)
+      var lines = text.text().split(/\n/)
+
+      var y = text.attr('y')
+      var x = text.attr('x')
+      var dy = parseFloat(text.attr('dy'))
+
+      text
+        .text(null)
+        .append('tspan')
+        .attr('x', x)
+        .attr('y', y)
+        .attr('dy', dy + 'em')
+        .attr('dominant-baseline', baseline)
+        .text(lines[0])
+
+      for (var lineNum = 1; lineNum < lines.length; lineNum++) {
+        text
+          .append('tspan')
+          .attr('x', x)
+          .attr('y', y)
+          .attr('dy', lineNum * 1.1 + dy + 'em')
+          .attr('dominant-baseline', baseline)
+          .text(lines[lineNum])
+      }
+    })
+  }
+
   function toggleHighlight(d: Station, lineWidth) {
     const station = d3.selectAll('.station.'.concat(classFromName(d.name)))
     const label = d3.selectAll('.label.'.concat(classFromName(d.name)))
@@ -720,9 +751,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         if (newWindow) newWindow.opener = null
       })
       .style('cursor', 'pointer')
-    // .call(wrap, function(d) {
-    //   return textPos(d).alignmentBaseline;
-    // })
+      .call(wrap, function (d) {
+        return textPos(d).alignmentBaseline
+      })
   }
 
   const drawLines = (lineWidth: number) => {

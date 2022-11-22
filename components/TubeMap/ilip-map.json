@@ -68,7 +68,7 @@
     "Strengthen STEM with STEAM red": {
       "id": 29190897,
       "name": "Strengthen STEM with STEAM red",
-      "label": "Strengthen STEM with STEAM",
+      "label": "Strengthen STEM\nwith STEAM",
       "position": {
         "lat": 52.5754161,
         "lon": 13.3384251
@@ -77,7 +77,7 @@
     "A transdiciplinary approach red": {
       "id": 5219721338,
       "name": "A transdiciplinary approach red",
-      "label": "A transdisciplinary approach",
+      "label": "A transdisciplinary\napproach",
       "position": {
         "lat": 52.5786231,
         "lon": 13.3335031
@@ -204,7 +204,7 @@
     "Strengthen STEM with STEAM gold": {
       "id": 5134716875,
       "name": "Strengthen STEM with STEAM gold",
-      "label": "Strengthen STEM with STEAM",
+      "label": "Strengthen STEM\nwith STEAM",
       "position": {
         "lat": 52.4961755,
         "lon": 13.3431855
@@ -303,7 +303,7 @@
     "A transdiciplinary approach gold": {
       "id": 29833469,
       "name": "A transdiciplinary approach gold",
-      "label": "A transdiciplinary approach",
+      "label": "A transdiciplinary\napproach",
       "position": {
         "lat": 52.4885755,
         "lon": 13.3405436
@@ -546,7 +546,7 @@
     "Embedding the Lab blue": {
       "id": 29123762,
       "name": "Embedding the Lab blue",
-      "label": "Embedding the Lab",
+      "label": "Embedding\nthe Lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
