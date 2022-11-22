@@ -818,8 +818,6 @@
           "coords": [40, -6],
           "name": "Fertile ground purple",
           "stationAngle": 45,
-          "stationFillColor": "#A020F0",
-          "stationStrokeColor": "#A020F0",
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": true,
@@ -829,8 +827,6 @@
           "coords": [50, -16],
           "name": "Within HEI network purple",
           "stationAngle": 45,
-          "stationFillColor": "#A020F0",
-          "stationStrokeColor": "#A020F0",
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": true,
@@ -840,8 +836,6 @@
           "coords": [60, -26],
           "name": "External inspiration purple",
           "stationAngle": 45,
-          "stationFillColor": "#A020F0",
-          "stationStrokeColor": "#A020F0",
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": true,
@@ -851,8 +845,6 @@
           "coords": [70, -36],
           "name": "External network purple",
           "stationAngle": 45,
-          "stationFillColor": "#A020F0",
-          "stationStrokeColor": "#A020F0",
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": true,
@@ -869,12 +861,7 @@
         {
           "coords": [0, -40],
           "name": "Why board green",
-          "labelPos": "W",
-          "labelBold": true,
-          "labelAngle": 0,
-          "lineLabel": true,
-          "lineLabelPath": "labels/U4.svg",
-          "lineLabelPos": "S"
+          "labelPos": "W"
         },
         {
           "coords": [0, -30],
@@ -1075,9 +1062,7 @@
           "labelPos": "S",
           "labelShiftCoords": [1.5, -9],
           "labelBold": true,
-          "stationSymbol": "grand",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "grand"
         },
         {
           "coords": [100, -46],
@@ -1085,9 +1070,7 @@
           "labelPos": "S",
           "labelAngle": -45,
           "labelShiftCoords": [-2, -8.5],
-          "stationSymbol": "triple",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "triple"
         },
         {
           "coords": [110, -46],
@@ -1095,9 +1078,7 @@
           "labelPos": "S",
           "labelShiftCoords": [-3, -9.5],
           "labelAngle": -45,
-          "stationSymbol": "triple",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "triple"
         },
         {
           "coords": [120, -46],
@@ -1106,9 +1087,7 @@
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
           "labelAngle": -45,
-          "stationSymbol": "triple",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "triple"
         },
         {
           "coords": [130, -46],
@@ -1117,9 +1096,7 @@
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
           "labelAngle": -45,
-          "stationSymbol": "triple",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "triple"
         },
         {
           "coords": [140, -46],
@@ -1127,9 +1104,7 @@
           "labelPos": "S",
           "labelShiftCoords": [-2, -7.5],
           "labelAngle": -45,
-          "stationSymbol": "triple",
-          "stationFillColor": "#993301",
-          "stationStrokeColor": "#993301"
+          "stationSymbol": "triple"
         }
       ]
     },
