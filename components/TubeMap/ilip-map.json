@@ -1068,7 +1068,7 @@
           "coords": [100, -46],
           "name": "Format brown",
           "labelPos": "S",
-          "labelAngle": -45,
+          "labelAngle": 0,
           "labelShiftCoords": [-2, -8.5],
           "stationSymbol": "triple"
         },
@@ -1077,7 +1077,7 @@
           "name": "A challenge brown",
           "labelPos": "S",
           "labelShiftCoords": [-3, -9.5],
-          "labelAngle": -45,
+          "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
@@ -1086,7 +1086,7 @@
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
-          "labelAngle": -45,
+          "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
@@ -1095,7 +1095,7 @@
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
-          "labelAngle": -45,
+          "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
@@ -1103,7 +1103,7 @@
           "name": "Good practices brown",
           "labelPos": "S",
           "labelShiftCoords": [-2, -7.5],
-          "labelAngle": -45,
+          "labelAngle": 0,
           "stationSymbol": "triple"
         }
       ]
@@ -1161,7 +1161,7 @@
         {
           "coords": [120, -25],
           "name": "Become a teacher blue",
-          "labelPos": "S",
+          "labelPos": "W",
           "labelShiftCoords": [3, -0.5]
         },
         {
@@ -1223,8 +1223,8 @@
         {
           "coords": [20, 0],
           "name": "Innovation lab black",
-          "labelPos": "NE",
-          "labelAngle":-45
+          "labelPos": "W",
+          "labelAngle": 0
         },
         {
           "coords": [30, 0]
