@@ -258,7 +258,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         .attr('stroke-width', lineWidth / 4)
       label.attr('highlighted', 'false').style('text-decoration', 'none')
     } else {
-      station.attr('highlighted', 'true').attr('stroke-width', lineWidth / 2)
+      station
+        .attr('highlighted', 'true')
+        .attr('stroke-width', lineWidth / 2)
+        .attr('fill', '#000000')
       label.attr('highlighted', 'false').style('text-decoration', 'underline')
     }
   }
