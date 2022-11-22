@@ -1009,7 +1009,7 @@
       ]
     },
     {
-      "name": "POLICY MAKER CO-CREATOR",
+      "name": "POLICY",
       "label": "POLICY MAKER CO-CREATOR",
       "color": "#D4AF37",
       "dashed": true,
@@ -1454,7 +1454,7 @@
       ]
     },
     {
-      "name": "STUDENT CO-CREATOR",
+      "name": "STUDENT",
       "label": "STUDENT CO-CREATOR",
       "color": "#FF0000",
       "dashed": true,

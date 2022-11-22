@@ -117,10 +117,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
 
     if (selectedLine && selectedLine !== '') {
       // Filter stations
-      const line = data.lines.lines.filter(
-        line => line.name === selectedLine.toUpperCase(),
+      const lines = data.lines.lines.filter(line =>
+        line.name.startsWith(selectedLine.toUpperCase()),
       )
-      console.log('Selected line: ', line)
+      console.log('Selected line: ', lines)
 
       // Reset all lines and stations to default
       // if user selects All
@@ -157,15 +157,17 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           d3.select(this).attr('d', trainStop(lineWidth))
         })
 
-        // Highlight stations of selected Line
-        line[0].nodes.forEach(node => {
-          if (node.name) {
-            const highlightedTrainStop = trainStop(lineWidth, true)
-            d3.select(`.station.${classFromName(node.name)}`).attr(
-              'd',
-              highlightedTrainStop,
-            )
-          }
+        // Highlight stations of selected lines
+        lines.forEach(line => {
+          line.nodes.forEach(node => {
+            if (node.name) {
+              const highlightedTrainStop = trainStop(lineWidth, true)
+              d3.select(`.station.${classFromName(node.name)}`).attr(
+                'd',
+                highlightedTrainStop,
+              )
+            }
+          })
         })
       }
     }
