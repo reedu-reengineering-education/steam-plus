@@ -1362,6 +1362,9 @@
           "name": "Embedding the Lab black",
           "labelPos": "N",
           "stationSymbol": false
+        },
+        {
+          "coords": [90, -50]
         }
       ]
     },
@@ -1574,10 +1577,13 @@
           "stationSymbol": false
         },
         {
-          "coords": [90, -2],
+          "coords": [92, -2],
           "name": "Embedding the Lab red dash",
           "labelPos": "N",
           "stationSymbol": false
+        },
+        {
+          "coords": [92, -50]
         }
       ]
     }
