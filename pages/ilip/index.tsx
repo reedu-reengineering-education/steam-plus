@@ -43,11 +43,11 @@ const Ilip = ({ data }: IlipPageProps) => {
     <div className="flex w-full flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">
-          Innovation Lab Implementation Path
+          TRAnsdiciplinary Innovation Lab (TRAIL)
         </h1>
         <Spacer />
         <p className="pt-4 text-base font-light">
-          Add some description here how to use the ILIP map.
+          Add some description here how to use the TRAIL map.
         </p>
         <Spacer />
         <Tabs onChange={tabChanged} />

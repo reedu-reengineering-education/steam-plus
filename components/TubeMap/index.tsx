@@ -3,7 +3,7 @@
 import React, { RefObject, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ilipMapData from './ilip-map.json'
-import extractStations from './station'
+import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
 function transformData(data: any) {
@@ -29,6 +29,7 @@ type TubeMapProps = {
 export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [data] = useState(transformData(ilipMapData))
+  const [lineWidth, setLineWidth] = useState<number>(0)
 
   useEffect(() => {
     // Just initialize if height and width are set
@@ -91,8 +92,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         : yScale(1) - yScale(0),
     )
 
-    console.log('Line width: ', lineWidthMultiplier * unitLength)
     const lineWidth = lineWidthMultiplier * unitLength
+    setLineWidth(lineWidth)
 
     const svg = d3
       .select(ref.current)
@@ -114,6 +115,61 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   useEffect(() => {
     console.info('Update selected and highlighted line: ', selectedLine)
 
+    if (selectedLine && selectedLine !== '') {
+      // Filter stations
+      const line = data.lines.lines.filter(
+        line => line.name === selectedLine.toUpperCase(),
+      )
+      console.log('Selected line: ', line)
+
+      // Reset all lines and stations to default
+      // if user selects All
+      if (selectedLine.toLocaleLowerCase() === 'all') {
+        d3.selectAll('.line').each(function (this, d: Line) {
+          if (!d.hidden) {
+            d3.select(this).attr('highlighted', 'false').attr('stroke', d.color)
+          }
+        })
+        d3.selectAll('.station').each(function (this, d: Station) {
+          const stop = trainStop(lineWidth, false)
+          d3.select(this).attr('d', stop)
+        })
+      } else {
+        // Highlight selected line or better fade out not selected lines
+        d3.selectAll('.line').each(function (this, d: Line) {
+          if (d.name.toLowerCase() !== selectedLine.toLocaleLowerCase()) {
+            d3.select(this)
+              .attr('highlighted', 'true')
+              .attr('stroke', '#F6F5F5')
+          } else {
+            if (!d.hidden) {
+              d3.select(this)
+                .attr('highlighted', 'false')
+                .attr('stroke', d.color)
+            }
+          }
+        })
+
+        // TODO: Highlight or fade out stations and labels of non selected lines
+
+        // Reset all stations to default size
+        d3.selectAll('.station').each(function (this, d: Station) {
+          d3.select(this).attr('d', trainStop(lineWidth))
+        })
+
+        // Highlight stations of selected Line
+        line[0].nodes.forEach(node => {
+          if (node.name) {
+            const highlightedTrainStop = trainStop(lineWidth, true)
+            d3.select(`.station.${classFromName(node.name)}`).attr(
+              'd',
+              highlightedTrainStop,
+            )
+          }
+        })
+      }
+    }
+
     return () => {}
   }, [selectedLine])
 
@@ -125,7 +181,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   const init = () => {
-    console.log('Init container and set datum')
     d3.select(ref.current)
       .select('g')
       .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
@@ -152,7 +207,16 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     )
   }
 
-  function trainStop(lineWidth: number) {
+  function trainStop(lineWidth: number, highlighted) {
+    if (highlighted) {
+      return d3
+        .arc()
+        .innerRadius(0)
+        .outerRadius(1.37 * 1.67 * lineWidth)
+        .startAngle(0)
+        .endAngle(2 * Math.PI)
+    }
+
     return d3
       .arc()
       .innerRadius(0)
@@ -187,7 +251,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     lineWidth: number,
     lineWidthTickRatio: number,
   ) {
-    console.log('Draw line path')
     var path = ''
 
     var lineNodes = data.nodes
@@ -659,7 +722,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         var dashed_values = d.dashed ? spaces + lineWidth : (0, 0)
         return dashed_values
       })
-      .classed('line', true)
+      // .classed('line', true)
+      .attr('class', function (d) {
+        return `line ${d.name.toLowerCase()}`
+      })
   }
 
   const drawStations = (lineWidth: number) => {

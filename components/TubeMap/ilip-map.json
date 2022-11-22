@@ -861,7 +861,7 @@
       ]
     },
     {
-      "name": "EDUCATIONAL BOARD",
+      "name": "EDUCATIONAL",
       "label": "EDUCATIONAL BOARD",
       "color": "#00FF00",
       "shiftCoords": [0, 0],
@@ -954,7 +954,7 @@
       ]
     },
     {
-      "name": "POLICY CENTER",
+      "name": "POLICY",
       "label": "POLICY CENTER",
       "color": "#D4AF37",
       "shiftCoords": [0, 0],
@@ -1197,7 +1197,7 @@
       ]
     },
     {
-      "name": "TEACHERS LOUNGE",
+      "name": "TEACHER",
       "label": "TEACHERS LOUNGE",
       "color": "#000000",
       "shiftCoords": [0, 0],
