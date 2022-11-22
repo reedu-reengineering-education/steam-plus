@@ -134,7 +134,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         })
         d3.selectAll('.station').each(function (this, d: Station) {
           const stop = trainStop(lineWidth, false)
-          d3.select(this).attr('d', stop)
+          d3.select(this).attr('d', stop).attr('stroke', '#000000')
         })
         d3.selectAll('.label').each(function (this, d: Station) {
           d3.select(this).attr('fill', '#000000')
@@ -155,18 +155,23 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           }
         })
 
-        // TODO: Highlight or fade out stations and labels of non selected lines
+        // Reset all stations to default size
+        d3.selectAll('.station').each(function (this, d: Station) {
+          if (stations.findIndex(station => station.name === d.name) === -1) {
+            d3.select(this).attr('stroke', '#F6F5F5')
+          } else {
+            d3.select(this).attr('stroke', '#000000')
+          }
+          d3.select(this).attr('d', trainStop(lineWidth))
+        })
+
+        // Highlight or fade out labels of non selected lines
         d3.selectAll('.label').each(function (this, d: Station) {
           if (stations.findIndex(station => station.name === d.name) === -1) {
             d3.select(this).attr('fill', '#F6F5F5')
           } else {
             d3.select(this).attr('fill', '#000000')
           }
-        })
-
-        // Reset all stations to default size
-        d3.selectAll('.station').each(function (this, d: Station) {
-          d3.select(this).attr('d', trainStop(lineWidth))
         })
 
         // Highlight stations of selected lines
