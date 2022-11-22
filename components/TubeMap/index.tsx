@@ -105,7 +105,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
 
     init()
     drawLines(lineWidth)
-    // drawLineLabels()
+    drawLineLabels(lineWidth)
     drawStations(lineWidth)
     drawLongStations(lineWidth)
     drawLabels(lineWidth)
@@ -549,20 +549,19 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     return path
   }
 
-  const drawLineLabels = () => {
+  const drawLineLabels = (lineWidth: number) => {
+    console.log(data.stations.labeledStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
-      .selectAll('image')
+      .append('g')
+      .selectAll('path')
       .data(data.stations.labeledStations())
       .enter()
       .append('g')
+      .append('rect')
       .attr('id', function (d) {
         return d.name
-      })
-      .append('image')
-      .attr('xlink:href', function (d) {
-        return d.lineLabelPath
       })
       .attr('width', lineWidth * 5.2)
       .attr('height', lineWidth * 5.2)
@@ -703,6 +702,21 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .classed('highlighted', function (d) {
         return d.visited
       })
+      .on('mouseover', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
+      .on('mouseout', function (_, d) {
+        toggleHighlight(d, lineWidth)
+      })
+      .on('click', function (this, d) {
+        const newWindow = window.open(
+          d.target.__data__.link,
+          '_blank',
+          'noopener,noreferrer',
+        )
+        if (newWindow) newWindow.opener = null
+      })
+      .style('cursor', 'pointer')
     // .call(wrap, function(d) {
     //   return textPos(d).alignmentBaseline;
     // })

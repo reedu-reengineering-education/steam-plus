@@ -871,7 +871,10 @@
           "name": "Why board green",
           "labelPos": "W",
           "labelBold": true,
-          "labelAngle": 0
+          "labelAngle": 0,
+          "lineLabel": true,
+          "lineLabelPath": "labels/U4.svg",
+          "lineLabelPos": "S"
         },
         {
           "coords": [0, -30],
@@ -1456,6 +1459,7 @@
     {
       "name": "STUDENT",
       "label": "STUDENT CO-CREATOR",
+      "lineLabel": true,
       "color": "#FF0000",
       "dashed": true,
       "shiftCoords": [0, 0],
