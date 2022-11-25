@@ -81,8 +81,16 @@ class Stations {
   }
   labeledStations() {
     const doubles = this.toArray()
+    console.log('labeledStations - toArray: ', doubles)
 
     return doubles.filter(function (station) {
+      return station.lineLabel === false
+    })
+  }
+  lineLabelStations() {
+    const tmpStations = this.toArray()
+
+    return tmpStations.filter(function (station) {
       return station.lineLabel === true
     })
   }

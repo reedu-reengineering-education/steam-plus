@@ -1,9 +1,9 @@
 {
   "stations": {
-    "Learning brown": {
+    "Learning main": {
       "id": null,
       "link": "google.com",
-      "name": "Learning brown",
+      "name": "Learning main",
       "label": "Learning",
       "position": {
         "lat": 52.5170,
@@ -28,9 +28,9 @@
         "lon": 13.3889
       }
     },
-    "Good practices brown": {
+    "Good practices main": {
       "id": null,
-      "name": "Good practices brown",
+      "name": "Good practices main",
       "label": "Good\npractices",
       "position": {
         "lat": 52.517403,
@@ -102,45 +102,45 @@
         "lon": 13.3347115
       }
     },
-    "External network purple": {
+    "External network main purple": {
       "id": 3901824902,
-      "name": "External network purple",
+      "name": "External network main purple",
       "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network gold": {
+    "External network main gold": {
       "id": 3901824902,
-      "name": "External network gold",
+      "name": "External network main gold",
       "label": "",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network green": {
+    "External network main green": {
       "id": 3901824902,
-      "name": "External network green",
+      "name": "External network main green",
       "label": "",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network red": {
+    "External network main red": {
       "id": 3901824902,
-      "name": "External network red",
+      "name": "External network main red",
       "label": "",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network black": {
+    "External network main black": {
       "id": 3901824902,
-      "name": "External network black",
+      "name": "External network main black",
       "label": "",
       "position": {
         "lat": 52.4995972,
@@ -156,45 +156,45 @@
         "lon": 13.3537297
       }
     },
-    "External inspiration purple": {
+    "External inspiration main purple": {
       "id": 3957757604,
-      "name": "External inspiration purple",
+      "name": "External inspiration main purple",
       "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration green": {
+    "External inspiration main green": {
       "id": 3957757604,
-      "name": "External inspiration green",
+      "name": "External inspiration main green",
       "label": "",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration red": {
+    "External inspiration main red": {
       "id": 3957757604,
-      "name": "External inspiration red",
+      "name": "External inspiration main red",
       "label": "",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration black": {
+    "External inspiration main black": {
       "id": 3957757604,
-      "name": "External inspiration black",
+      "name": "External inspiration main black",
       "label": "",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration gold": {
+    "External inspiration main gold": {
       "id": 3957757604,
-      "name": "External inspiration gold",
+      "name": "External inspiration main gold",
       "label": "",
       "position": {
         "lat": 52.5017976,
@@ -210,90 +210,90 @@
         "lon": 13.3431855
       }
     },
-    "Within HEI network purple": {
+    "Within HEI network main purple": {
       "id": 29046970,
-      "name": "Within HEI network purple",
+      "name": "Within HEI network main purple",
       "label": "Within\nHEI network",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network black": {
+    "Within HEI network main black": {
       "id": 29046970,
-      "name": "Within HEI network black",
+      "name": "Within HEI network main black",
       "label": "",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network gold": {
+    "Within HEI network main gold": {
       "id": 29046970,
-      "name": "Within HEI network gold",
+      "name": "Within HEI network main gold",
       "label": "",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network red": {
+    "Within HEI network main red": {
       "id": 29046970,
-      "name": "Within HEI network red",
+      "name": "Within HEI network main red",
       "label": "",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Fertile ground purple": {
+    "Fertile ground main purple": {
       "id": 3957757603,
-      "name": "Fertile ground purple",
+      "name": "Fertile ground main purple",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
       }
     },
-    "Within HEI network green": {
+    "Within HEI network main green": {
       "id": 29046970,
-      "name": "Within HEI network green",
+      "name": "Within HEI network main green",
       "label": "",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Fertile ground green": {
+    "Fertile ground main green": {
       "id": 3957757603,
-      "name": "Fertile ground green",
+      "name": "Fertile ground main green",
       "label": "",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
       }
     },
-    "Fertile ground red": {
+    "Fertile ground main red": {
       "id": 3957757603,
-      "name": "Fertile ground red",
+      "name": "Fertile ground main red",
       "label": "",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
       }
     },
-    "Fertile ground gold": {
+    "Fertile ground main gold": {
       "id": 3957757603,
-      "name": "Fertile ground gold",
+      "name": "Fertile ground main gold",
       "label": "",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
       }
     },
-    "Fertile ground black": {
+    "Fertile ground main black": {
       "id": 3957757603,
-      "name": "Fertile ground black",
+      "name": "Fertile ground main black",
       "label": "",
       "position": {
         "lat": 52.5028118,
@@ -381,9 +381,45 @@
         "lon": 13.1997742
       }
     },
-    "A challenge brown": {
+    "Line label black": {
+      "id": 4989868818,
+      "name": "Line label black",
+      "label": "The Teacher`s\nLounge",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label green": {
+      "id": 4989868818,
+      "name": "Line label green",
+      "label": "Educational\nboard",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label gold": {
+      "id": 4989868818,
+      "name": "Line label gold",
+      "label": "Policy center",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label red": {
+      "id": 4989868818,
+      "name": "Line label red",
+      "label": "Student area",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "A challenge main": {
       "id": 3862767512,
-      "name": "A challenge brown",
+      "name": "A challenge main",
       "label": "A challenge",
       "position": {
         "lat": 52.5166047,
@@ -408,9 +444,9 @@
         "lon": 13.3809897
       }
     },
-    "Format brown": {
+    "Format main": {
       "id": 4213705914,
-      "name": "Format brown",
+      "name": "Format main",
       "label": "Format",
       "position": {
         "lat": 52.5201123,
@@ -435,9 +471,9 @@
         "lon": 13.3729545
       }
     },
-    "Grand Station brown": {
+    "Grand Station main": {
       "id": 3856100108,
-      "name": "Grand Station brown",
+      "name": "Grand Station main",
       "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
@@ -525,45 +561,45 @@
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab green": {
+    "Embedding the Lab main green": {
       "id": 29123762,
-      "name": "Embedding the Lab green",
+      "name": "Embedding the Lab main green",
       "label": "",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab red dash": {
+    "Embedding the Lab main red dash": {
       "id": 29123762,
-      "name": "Embedding the Lab red dash",
+      "name": "Embedding the Lab main red dash",
       "label": "",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab blue": {
+    "Embedding the Lab main": {
       "id": 29123762,
-      "name": "Embedding the Lab blue",
+      "name": "Embedding the Lab main",
       "label": "Embedding\nthe Lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab black": {
+    "Embedding the Lab main black": {
       "id": 29123762,
-      "name": "Embedding the Lab black",
+      "name": "Embedding the Lab main black",
       "label": "",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Leanrning Systematically blue": {
+    "Leanrning Systematically main": {
       "id": 29123762,
-      "name": "Leanrning Systematically blue",
+      "name": "Leanrning Systematically main",
       "label": "Leanrning\nSystematically",
       "position": {
         "lat": 52.511837,
@@ -588,9 +624,9 @@
         "lon": 13.3105328
       }
     },
-    "Assess Quality blue": {
+    "Assess Quality main": {
       "id": 29123762,
-      "name": "Assess Quality blue",
+      "name": "Assess Quality main",
       "label": "Assess Quality",
       "position": {
         "lat": 52.511837,
@@ -615,9 +651,9 @@
         "lon": 13.3105328
       }
     },
-    "Results blue": {
+    "Results main": {
       "id": 29123762,
-      "name": "Results blue",
+      "name": "Results main",
       "label": "Results",
       "position": {
         "lat": 52.511837,
@@ -651,9 +687,9 @@
         "lon": 13.3105328
       }
     },
-    "Teacher Role blue": {
+    "Teacher Role main": {
       "id": 29123762,
-      "name": "Teacher Role blue",
+      "name": "Teacher Role main",
       "label": "Teacher\nRole",
       "position": {
         "lat": 52.511837,
@@ -687,9 +723,9 @@
         "lon": 13.3105328
       }
     },
-    "Student role blue": {
+    "Student role main": {
       "id": 29123762,
-      "name": "Student role blue",
+      "name": "Student role main",
       "label": "Student\nrole",
       "position": {
         "lat": 52.511837,
@@ -723,9 +759,9 @@
         "lon": 13.3105328
       }
     },
-    "Recruitment blue": {
+    "Recruitment main": {
       "id": 29123763,
-      "name": "Recruitment blue",
+      "name": "Recruitment main",
       "label": "Recruitment",
       "position": {
         "lat": 52.511837,
@@ -759,9 +795,9 @@
         "lon": 13.3105328
       }
     },
-    "Iterative process brown": {
+    "Iterative process main": {
       "id": 29123764,
-      "name": "Iterative process brown",
+      "name": "Iterative process main",
       "label": "Iterative\nprocess",
       "position": {
         "lat": 52.511837,
@@ -786,9 +822,9 @@
         "lon": 13.3105328
       }
     },
-    "Become a teacher blue": {
+    "Become a teacher main": {
       "id": 29123762,
-      "name": "Become a teacher blue",
+      "name": "Become a teacher main",
       "label": "Become\na teacher",
       "position": {
         "lat": 52.511837,
@@ -816,7 +852,7 @@
       "nodes": [
         {
           "coords": [40, -6],
-          "name": "Fertile ground purple",
+          "name": "Fertile ground main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -825,7 +861,7 @@
         },
         {
           "coords": [50, -16],
-          "name": "Within HEI network purple",
+          "name": "Within HEI network main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -834,7 +870,7 @@
         },
         {
           "coords": [60, -26],
-          "name": "External inspiration purple",
+          "name": "External inspiration main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -843,7 +879,7 @@
         },
         {
           "coords": [70, -36],
-          "name": "External network purple",
+          "name": "External network main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -855,9 +891,21 @@
     {
       "name": "EDUCATIONAL",
       "label": "EDUCATIONAL BOARD",
-      "color": "#00FF00",
+      "color": "#2D803E",
       "shiftCoords": [0, 0],
       "nodes": [
+        {
+          "coords": [0, -50],
+          "name": "Line label green",
+          "labelPos": "W",
+          "labelBold": true,
+          "labelAngle":0,
+          "lineLabel": true,
+          "stationFillColor": "#2D803E",
+          "lineLabelPos": "W",
+          "lineLabelShiftX": -2.2,
+          "stationSymbol": false
+        },
         {
           "coords": [0, -40],
           "name": "Why board green",
@@ -891,7 +939,7 @@
         },
         {
           "coords": [40, -12],
-          "name": "Fertile ground green",
+          "name": "Fertile ground main green",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -901,7 +949,7 @@
         },
         {
           "coords": [50, -22],
-          "name": "Within HEI network green",
+          "name": "Within HEI network main green",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -909,7 +957,7 @@
         },
         {
           "coords": [60, -32],
-          "name": "External inspiration green",
+          "name": "External inspiration main green",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -917,7 +965,7 @@
         },
         {
           "coords": [70, -42],
-          "name": "External network green",
+          "name": "External network main green",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -937,7 +985,7 @@
         },
         {
           "coords": [90, 0],
-          "name": "Embedding the Lab green",
+          "name": "Embedding the Lab main green",
           "labelPos": "N",
           "stationSymbol": false
         }
@@ -946,7 +994,7 @@
     {
       "name": "POLICY",
       "label": "POLICY CENTER",
-      "color": "#D4AF37",
+      "color": "#D6B133",
       "shiftCoords": [0, 0],
       "nodes": [
         {
@@ -991,10 +1039,18 @@
           "labelPos": "E",
           "labelBold":true,
           "lineLabel": false,
-          "lineLabelPath": "labels/U4.svg",
-          "lineLabelPos": "S",
-          "lineLabelShiftX": -2.2,
-          "sBahn": true
+          "lineLabelPos": "S"
+        },
+        {
+          "coords": [19, -110],
+          "name": "Line label gold",
+          "stationSymbol": false,
+          "lineLabel": true,
+          "stationFillColor": "#D6B133",
+          "labelPos": "S",
+          "labelBold": true,
+          "labelAngle":0,
+          "lineLabelPos": "W"
         }
       ]
     },
@@ -1019,25 +1075,25 @@
         },
         {
           "coords": [35.25, -10.5],
-          "name": "Fertile ground gold",
+          "name": "Fertile ground main gold",
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [45.25, -20.5],
-          "name": "Within HEI network gold",
+          "name": "Within HEI network main gold",
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [55.25, -30.5],
-          "name": "External inspiration gold",
+          "name": "External inspiration main gold",
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [65.25, -40.5],
-          "name": "External network gold",
+          "name": "External network main gold",
           "labelPos": "SW",
           "stationSymbol": false
         },
@@ -1058,7 +1114,7 @@
       "nodes": [
         {
           "coords": [89, -46],
-          "name": "Grand Station brown",
+          "name": "Grand Station main",
           "labelPos": "S",
           "labelShiftCoords": [1.5, -9],
           "labelBold": true,
@@ -1066,7 +1122,7 @@
         },
         {
           "coords": [100, -46],
-          "name": "Format brown",
+          "name": "Format main",
           "labelPos": "S",
           "labelAngle": 0,
           "labelShiftCoords": [-2, -8.5],
@@ -1074,7 +1130,7 @@
         },
         {
           "coords": [110, -46],
-          "name": "A challenge brown",
+          "name": "A challenge main",
           "labelPos": "S",
           "labelShiftCoords": [-3, -9.5],
           "labelAngle": 0,
@@ -1082,7 +1138,7 @@
         },
         {
           "coords": [120, -46],
-          "name": "Learning brown",
+          "name": "Learning main",
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
@@ -1091,7 +1147,7 @@
         },
         {
           "coords": [130, -46],
-          "name": "Iterative process brown",
+          "name": "Iterative process main",
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-2, -8.5],
@@ -1100,7 +1156,7 @@
         },
         {
           "coords": [140, -46],
-          "name": "Good practices brown",
+          "name": "Good practices main",
           "labelPos": "S",
           "labelShiftCoords": [-2, -7.5],
           "labelAngle": 0,
@@ -1117,26 +1173,26 @@
       "nodes": [
         {
           "coords": [89, 2],
-          "name": "Embedding the Lab blue",
+          "name": "Embedding the Lab main",
           "labelPos": "N",
           "labelShiftCoords": [0, 0],
           "stationSymbol": "triple"
         },
         {
           "coords": [115, 2],
-          "name": "Leanrning Systematically blue",
+          "name": "Leanrning Systematically main",
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
           "coords": [135, 2],
-          "name": "Assess Quality blue",
+          "name": "Assess Quality main",
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
           "coords": [151.5, 2],
-          "name": "Results blue",
+          "name": "Results main",
           "labelBold": false,
           "labelPos": "N",
           "stationSymbol": "triple",
@@ -1144,7 +1200,7 @@
         },
         {
           "coords": [154, -15],
-          "name": "Teacher Role blue",
+          "name": "Teacher Role main",
           "stationAngle": 90,
           "labelPos": "W",
           "labelShiftCoords": [-8, 0],
@@ -1152,7 +1208,7 @@
         },
         {
           "coords": [154, -35],
-          "name": "Student role blue",
+          "name": "Student role main",
           "stationAngle": 90,
           "labelPos": "W",
           "labelShiftCoords": [-8, 0],
@@ -1160,13 +1216,13 @@
         },
         {
           "coords": [120, -25],
-          "name": "Become a teacher blue",
+          "name": "Become a teacher main",
           "labelPos": "W",
           "labelShiftCoords": [3, -0.5]
         },
         {
           "coords": [147, -47.5],
-          "name": "Recruitment blue",
+          "name": "Recruitment main",
           "labelPos": "S",
           "labelShiftCoords": [7, -5],
           "stationSymbol": "triple",
@@ -1177,21 +1233,25 @@
     {
       "name": "TEACHER",
       "label": "TEACHERS LOUNGE",
-      "color": "#000000",
+      "color": "#2F2F8F",
       "shiftCoords": [0, 0],
       "nodes": [
+        {
+          "coords": [0, 55],
+          "name": "Line label black",
+          "labelPos": "N",
+          "labelBold": true,
+          "labelAngle":0,
+          "lineLabel": true,
+          "stationSymbol": false,
+          "stationFillColor": "#2F2F8F",
+          "lineLabelPos": "W"
+        },
         {
           "coords": [0, 45],
           "name": "Why board black",
           "labelPos": "W",
-          "labelBold": true,
-          "labelAngle":0,
-          "lineLabel": false,
-          "lineLabelPath": "labels/U7.svg",
-          "lineLabelPos": "N",
-          "lineLabelShiftX": -2,
-          "lineLabelShiftY": 3,
-          "sBahn": true
+          "lineLabel": false
         },
         {
           "coords": [0, 35],
@@ -1234,26 +1294,26 @@
         },
         {
           "coords": [40, -10],
-          "name": "Fertile ground black",
+          "name": "Fertile ground main black",
           "labelPos": "SW",
           "labelBold": false,
           "stationSymbol": false
         },
         {
           "coords": [50, -20],
-          "name": "Within HEI network black",
+          "name": "Within HEI network main black",
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [60, -30],
-          "name": "External inspiration black",
+          "name": "External inspiration main black",
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [70, -40],
-          "name": "External network black",
+          "name": "External network main black",
           "labelPos": "SW",
           "stationSymbol": false
         },
@@ -1337,7 +1397,7 @@
         },
         {
           "coords": [90, 0],
-          "name": "Embedding the Lab black",
+          "name": "Embedding the Lab main black",
           "labelPos": "N",
           "stationSymbol": false
         },
@@ -1349,9 +1409,21 @@
     {
       "name": "STUDENT",
       "label": "STUDENT",
-      "color": "#FF0000",
+      "color": "#C42A31",
       "shiftCoords": [0, 0],
       "nodes": [
+        {
+          "coords": [180, 20],
+          "name": "Line label red",
+          "labelPos": "W",
+          "labelBold": true,
+          "labelAngle":0,
+          "lineLabel": true,
+          "stationFillColor": "#C42A31",
+          "lineLabelPos": "W",
+          "lineLabelShiftX": -2.2,
+          "stationSymbol": false
+        },
         {
           "coords": [180, 10],
           "name": "Why board red",
@@ -1450,13 +1522,13 @@
         },
         {
           "coords": [40, -8],
-          "name": "Fertile ground red",
+          "name": "Fertile ground main red",
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [50, -18],
-          "name": "Within HEI network red",
+          "name": "Within HEI network main red",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -1464,7 +1536,7 @@
         },
         {
           "coords": [60, -28],
-          "name": "External inspiration red",
+          "name": "External inspiration main red",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -1472,7 +1544,7 @@
         },
         {
           "coords": [70, -38],
-          "name": "External network red",
+          "name": "External network main red",
           "labelPos": "SW",
           "labelBold": true,
           "labelAngle": -45,
@@ -1557,7 +1629,7 @@
         },
         {
           "coords": [92, -2],
-          "name": "Embedding the Lab red dash",
+          "name": "Embedding the Lab main red dash",
           "labelPos": "N",
           "stationSymbol": false
         },

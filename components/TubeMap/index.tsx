@@ -158,6 +158,20 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         // Reset all stations to default size
         d3.selectAll('.station').each(function (this, d: Station) {
           if (stations.findIndex(station => station.name === d.name) === -1) {
+            if (d.name.includes('main')) {
+              const [name] = d.name.split('main')
+
+              if (
+                stations.findIndex(station =>
+                  station.name.startsWith(name + 'main'),
+                )
+              ) {
+                return
+              }
+
+              console.log(d.name, d.name.split('main'))
+            }
+
             d3.select(this).attr('stroke', '#F6F5F5')
           } else {
             d3.select(this).attr('stroke', '#000000')
@@ -168,6 +182,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         // Highlight or fade out labels of non selected lines
         d3.selectAll('.label').each(function (this, d: Station) {
           if (stations.findIndex(station => station.name === d.name) === -1) {
+            if (d.name.includes('main')) {
+              return
+            }
+
             d3.select(this).attr('fill', '#F6F5F5')
           } else {
             d3.select(this).attr('fill', '#000000')
@@ -584,27 +602,65 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   const drawLineLabels = (lineWidth: number) => {
-    console.log(data.stations.labeledStations())
+    console.log('Draw Line Labels: ', data.stations.lineLabelStations())
+
+    var unitLength = Math.abs(
+      xScale(1) - xScale(0) !== 0
+        ? xScale(1) - xScale(0)
+        : yScale(1) - yScale(0),
+    )
+
     d3.select(ref.current)
       .select('svg')
       .select('g')
       .append('g')
       .selectAll('path')
-      .data(data.stations.labeledStations())
+      .data(data.stations.lineLabelStations())
       .enter()
-      .append('g')
       .append('rect')
       .attr('id', function (d) {
         return d.name
       })
+      .attr('rx', lineWidth)
+      .attr('ry', lineWidth)
+      .attr('transform', function (d) {
+        const x = xScale(d.x - lineWidth / unitLength) + 1
+        const y = yScale(d.y + lineWidth / unitLength) + (d.y < 0 ? 1 : -1)
+        return 'translate(' + x + ',' + y + ')'
+      })
       .attr('width', lineWidth * 5.2)
       .attr('height', lineWidth * 5.2)
-      .attr('dy', 0)
+      .attr('fill', function (d) {
+        return d.stationFillColor
+      })
+    // .append('text')
+    // .classed('label', true)
+    // .text(function (d) {
+    //   return d.label
+    // })
+    // .attr('dy', 0)
+    // .attr('fill', function (d) {
+    //   return 'black'
+    // })
+    // .attr('x', function (d) {
+    //   return xScale(d.x + d.lineLabelShiftX) + textPos(d, lineWidth).pos[0]
+    // })
+    // .attr('y', function (d) {
+    //   return yScale(d.y + d.lineLabelShiftY) - textPos(d, lineWidth).pos[1]
+    // })
+    // .attr('transform', function (d) {
+    //   var _x = xScale(d.x + d.labelShiftX) + lineLabelPos(d, lineWidth).pos[0]
+    //   var _y = yScale(d.y + d.labelShiftY) - lineLabelPos(d, lineWidth).pos[1]
+    //   return 'rotate(' + d.labelAngle + ',' + _x + ',' + _y + ')'
+    // })
     // .attr('x', function(d) {
     //   return xScale(d.x + d.lineLabelShiftX) + lineLabelPos(d).pos[0];
     // })
     // .attr('y', function(d) {
     //   return yScale(d.y + d.lineLabelShiftY) - lineLabelPos(d).pos[1];
+    // })
+    // .call(wrap, function (d) {
+    //   return textPos(d).alignmentBaseline
     // })
   }
 
@@ -612,8 +668,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     return itemPos(data, lineWidth, 'labelPos')
   }
 
-  function lineLabelPos(data) {
-    return itemPos(data, 'lineLabelPos')
+  function lineLabelPos(data, lineWidth) {
+    return itemPos(data, lineWidth, 'lineLabelPos')
   }
 
   function itemPos(data, lineWidth: number, item) {
@@ -684,12 +740,13 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   function drawLabels(lineWidth: number) {
+    console.log('Draw Lables: ', data.stations.labeledStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
       .append('g')
       .selectAll('text')
-      .data(data.stations.toArray())
+      .data(data.stations.labeledStations())
       .enter()
       .append('g')
       .attr('id', function (d) {
