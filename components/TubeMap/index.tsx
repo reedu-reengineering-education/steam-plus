@@ -145,7 +145,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           if (d.name.toLowerCase() !== selectedLine.toLocaleLowerCase()) {
             d3.select(this)
               .attr('highlighted', 'true')
-              .attr('stroke', '#F6F5F5')
+              .attr('stroke', '#C2C5CC')
           } else {
             if (!d.hidden) {
               d3.select(this)
@@ -172,7 +172,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
               console.log(d.name, d.name.split('main'))
             }
 
-            d3.select(this).attr('stroke', '#F6F5F5')
+            d3.select(this).attr('stroke', '#C2C5CC')
           } else {
             d3.select(this).attr('stroke', '#000000')
           }
@@ -186,7 +186,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
               return
             }
 
-            d3.select(this).attr('fill', '#F6F5F5')
+            d3.select(this).attr('fill', '#C2C5CC')
           } else {
             d3.select(this).attr('fill', '#000000')
           }
