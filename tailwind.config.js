@@ -39,6 +39,20 @@ module.exports = {
         'steam-white': {
           DEFAULT: '#F6F5F5',
         },
+        train: {
+          teacher: {
+            DEFAULT: '#2F2F8F',
+          },
+          student: {
+            DEFAULT: '#C42A31',
+          },
+          educational: {
+            DEFAULT: '#2D803E',
+          },
+          policy: {
+            DEFAULT: '#D6B133',
+          },
+        },
       },
     },
   },
