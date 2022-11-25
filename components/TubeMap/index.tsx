@@ -139,6 +139,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         d3.selectAll('.label').each(function (this, d: Station) {
           d3.select(this).attr('fill', '#000000')
         })
+        d3.selectAll('.linelabel').each(function (this, d: Station) {
+          d3.select(this).attr('fill', d.stationFillColor)
+        })
       } else {
         // Highlight selected line or better fade out not selected lines
         d3.selectAll('.line').each(function (this, d: Line) {
@@ -189,6 +192,16 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
             d3.select(this).attr('fill', '#C2C5CC')
           } else {
             d3.select(this).attr('fill', '#000000')
+          }
+        })
+
+        // Highlight or fade out line labels of non selected line labels
+        d3.selectAll('.linelabel').each(function (this, d: Station) {
+          d3.select(this).attr('fill', '#C2C5CC')
+          if (stations.findIndex(station => station.name === d.name) === -1) {
+            d3.select(this).attr('fill', '#C2C5CC')
+          } else {
+            d3.select(this).attr('fill', d.stationFillColor)
           }
         })
 
@@ -620,6 +633,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .append('rect')
       .attr('id', function (d) {
         return d.name
+      })
+      .attr('class', function (d) {
+        return 'linelabel ' + classFromName(d.name)
       })
       .attr('rx', lineWidth)
       .attr('ry', lineWidth)
