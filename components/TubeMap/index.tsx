@@ -313,37 +313,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     })
   }
 
-  function textBBox(text, baseline) {
-    const lines = text.split(/\n/)
-
-    const textElement = d3.text()
-    const y = textElement.attr('y')
-    const x = textElement.attr('x')
-    const dy = parseFloat(textElement.attr('dy'))
-
-    textElement
-      .text(null)
-      .append('tspan')
-      .attr('x', x)
-      .attr('y', y)
-      .attr('dy', dy + 'em')
-      .attr('dominant-baseline', baseline)
-      .text(lines[0])
-
-    for (var lineNum = 1; lineNum < lines.length; lineNum++) {
-      text
-        .append('tspan')
-        .attr('x', x)
-        .attr('y', y)
-        .attr('dy', lineNum * 1.1 + dy + 'em')
-        .attr('dominant-baseline', baseline)
-        .text(lines[lineNum])
-    }
-
-    // console.log("Textsize: ", lines, text.node().getBBox())
-    return textElement.node().getBBox()
-  }
-
   function toggleHighlight(d: Station, lineWidth) {
     const station = d3.selectAll('.station.'.concat(classFromName(d.name)))
     const label = d3.selectAll('.label.'.concat(classFromName(d.name)))
@@ -661,6 +630,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         : yScale(1) - yScale(0),
     )
 
+    // First draw line label text
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -670,23 +640,25 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .data(data.stations.lineLabelStations())
       .enter()
       .append('text')
-      .classed('label', true)
       .text(function (d) {
         return d.label.toUpperCase()
+      })
+      .attr('class', function (d) {
+        return 'label ' + classFromName(d.name)
+      })
+      .style('font-size', 4 * lineWidth + 'px')
+      .style('font-weight', function (d) {
+        return d.labelBold ? '700' : '400'
       })
       .attr('dy', 0)
       .attr('x', function (d) {
         return (
-          xScale(d.x + d.lineLabelShiftX) +
-          lineLabelPos(d, lineWidth).pos[0] +
-          10
+          xScale(d.x + d.lineLabelShiftX) + lineLabelPos(d, lineWidth).pos[0]
         )
       })
       .attr('y', function (d) {
         return (
-          yScale(d.y + d.lineLabelShiftY) -
-          lineLabelPos(d, lineWidth).pos[1] +
-          10
+          yScale(d.y - d.lineLabelShiftY) - lineLabelPos(d, lineWidth).pos[1]
         )
       })
       .attr('fill', 'white')
@@ -694,6 +666,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         return textPos(d).alignmentBaseline
       })
 
+    // Draw rectangle containing the line label text
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -717,9 +690,19 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         return 'translate(' + x + ',' + y + ')'
       })
       .attr('width', function (this, d) {
-        return 130.55555725097656
+        const textRect = d3
+          .select('.label.' + classFromName(d.name))
+          .node()
+          .getBBox()
+        return textRect.width * 1.15
       })
-      .attr('height', 34.266666412353516 * 1.15)
+      .attr('height', function (this, d) {
+        const textRect = d3
+          .select('.label.' + classFromName(d.name))
+          .node()
+          .getBBox()
+        return textRect.height * 1.5
+      })
       .attr('fill', function (d) {
         return d.stationFillColor
       })
