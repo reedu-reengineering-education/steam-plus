@@ -85,9 +85,6 @@ export default function Tabs({ onChange }: TabsProps) {
                   line === 'Student'
                     ? 'bg-train-student ring-train-student-500 hover:bg-train-student-400'
                     : '',
-                  // selected
-                  //   ? 'text-white'
-                  //   : 'text-blue-10 text-white',
                 )
               }
             >

@@ -597,27 +597,27 @@
         "lon": 13.3105328
       }
     },
-    "Leanrning Systematically main": {
+    "Learning Systematically main": {
       "id": 29123762,
-      "name": "Leanrning Systematically main",
-      "label": "Leanrning\nSystematically",
+      "name": "Learning Systematically main",
+      "label": "Learning\nSystematically",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Leanrning Systematically black": {
+    "Learning Systematically black": {
       "id": 29123762,
-      "name": "Leanrning Systematically black",
+      "name": "Learning Systematically black",
       "label": "",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Leanrning Systematically red dash": {
+    "Learning Systematically red dash": {
       "id": 29123762,
-      "name": "Leanrning Systematically red dash",
+      "name": "Learning Systematically red dash",
       "label": "",
       "position": {
         "lat": 52.511837,
@@ -627,7 +627,7 @@
     "Assess Quality main": {
       "id": 29123762,
       "name": "Assess Quality main",
-      "label": "Assess Quality",
+      "label": "Assess\nQuality",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -909,30 +909,32 @@
         {
           "coords": [0, -40],
           "name": "Why board green",
-          "labelPos": "W"
+          "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [0, -30],
           "name": "Future oriented education green",
-          "labelPos": "W"
+          "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [0, -15],
           "name": "A transdisciplinary approach green",
           "labelPos": "W",
-          "labelShiftCoords": [0, 0.5]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [5, -10],
           "name": "Strengthen STEM with STEAM green",
           "labelPos": "W",
-          "labelShiftCoords": [0, 0.5]
+          "labelShiftCoords": [-1.5, 1]
         },
         {
           "coords": [10, -5],
           "name": "Innovation lab green",
           "labelPos": "W",
-          "labelShiftCoords": [0, 0.5]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [32, -5]
@@ -1014,30 +1016,33 @@
           "name": "Innovation lab gold",
           "labelPos": "E",
           "stationSymbol": "single",
-          "labelShiftCoords": [0, -2]
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [49, -70],
           "name": "Strengthen STEM with STEAM gold",
-          "labelPos": "E"
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [39, -80],
           "name": "A transdiciplinary approach gold",
           "labelPos": "NE",
           "labelBold": false,
-          "labelShiftCoords": [1, -1]
+          "labelShiftCoords": [1.5, -2]
         },
         {
           "coords": [29, -90],
           "name": "Future-oriented eductaion gold",
-          "labelPos": "E"
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [19, -100],
           "name": "Why board gold",
           "labelPos": "E",
-          "labelBold":true,
+          "labelShiftCoords": [1.5, 0],
+          "labelBold":false,
           "lineLabel": false,
           "lineLabelPos": "S"
         },
@@ -1141,7 +1146,6 @@
           "name": "Learning main",
           "labelBold": false,
           "labelPos": "S",
-          "labelShiftCoords": [-2, -8.5],
           "labelAngle": 0,
           "stationSymbol": "triple"
         },
@@ -1175,18 +1179,20 @@
           "coords": [89, 2],
           "name": "Embedding the Lab main",
           "labelPos": "N",
-          "labelShiftCoords": [0, 0],
+          "labelShiftCoords": [0, 1],
           "stationSymbol": "triple"
         },
         {
           "coords": [115, 2],
-          "name": "Leanrning Systematically main",
+          "name": "Learning Systematically main",
+          "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
           "coords": [135, 2],
           "name": "Assess Quality main",
+          "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
@@ -1217,8 +1223,8 @@
         {
           "coords": [120, -25],
           "name": "Become a teacher main",
-          "labelPos": "W",
-          "labelShiftCoords": [3, -0.5]
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [147, -47.5],
@@ -1251,18 +1257,21 @@
           "coords": [0, 45],
           "name": "Why board black",
           "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0],
           "lineLabel": false
         },
         {
           "coords": [0, 35],
           "name": "Contribute to a sustainability-oriented new generation",
           "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle":0
         },
         {
           "coords": [0, 25],
           "name": "A transdiciplinary approach black",
           "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle":0
         },
         {
@@ -1275,6 +1284,7 @@
           "coords": [10, 10],
           "name": "Strengthen STEM with STEAM black",
           "labelPos": "W",
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle":0
         },
         {
@@ -1283,6 +1293,7 @@
         {
           "coords": [20, 0],
           "name": "Innovation lab black",
+          "labelShiftCoords": [-1.5, 0],
           "labelPos": "W",
           "labelAngle": 0
         },
@@ -1391,7 +1402,7 @@
         },
         {
           "coords": [100, 0],
-          "name": "Leanrning Systematically black",
+          "name": "Learning Systematically black",
           "labelPos": "N",
           "stationSymbol": false
         },
@@ -1427,24 +1438,28 @@
         {
           "coords": [180, 10],
           "name": "Why board red",
-          "labelPos": "NE",
-          "labelBold": true,
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0],
+          "labelBold": false,
           "stationSymbol":"single"
         },
         {
           "coords": [180, 0],
           "name": "Contribute to a more sustainable future red",
-          "labelPos": "NE"
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [180, -10],
           "name": "A transdiciplinary approach red",
-          "labelPos": "NE"
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [180, -20],
           "name": "Strengthen STEM with STEAM red",
-          "labelPos": "NE"
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [180, -30]
@@ -1453,7 +1468,7 @@
           "coords": [160, -50],
           "name": "Innovation lab red",
           "labelPos": "E",
-          "labelShiftCoords": [1, 0],
+          "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single"
         },
         {
@@ -1489,7 +1504,8 @@
         {
           "coords": [120, -25],
           "name": "Become a teacher red",
-          "labelPos": "S",
+          "labelPos": "E",
+          "labelShiftCoords": [10.5, 0],
           "stationSymbol": false
         },
         {
@@ -1507,7 +1523,7 @@
       "name": "STUDENT",
       "label": "STUDENT CO-CREATOR",
       "lineLabel": true,
-      "color": "#FF0000",
+      "color": "#C42A31",
       "dashed": true,
       "shiftCoords": [0, 0],
       "nodes": [
@@ -1623,7 +1639,7 @@
         },
         {
           "coords": [100, -2],
-          "name": "Leanrning Systematically red dash",
+          "name": "Learning Systematically red dash",
           "labelPos": "N",
           "stationSymbol": false
         },
