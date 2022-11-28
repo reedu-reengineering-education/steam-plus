@@ -1,31 +1,49 @@
 import { Spacer } from '@/components/Elements/Spacer'
-import Tabs, { lines } from '@/components/Tabs'
+import Tabs, { Tab } from '@/components/Tabs'
 import { TubeMap } from '@/components/TubeMap'
-import { getDirectusClient, Ilip } from '@/lib/directus'
-import Link from 'next/link'
+import { getDirectusClient, Line } from '@/lib/directus'
+import { GetStaticProps } from 'next'
 import { RefObject, useEffect, useRef, useState } from 'react'
+import markdownToHtml from '@/lib/markdownToHtml'
 
-export async function getServerSideProps() {
+type TrailPageProps = {
+  lines: Line[]
+}
+
+export const getStaticProps: GetStaticProps = async context => {
+  // Query endpint to generate tabs
   const directus = await getDirectusClient()
-  const { data } = await directus.items('ilip').readByQuery()
+  const lines = await directus.items('lines').readByQuery()
+
+  var arr = lines.data || []
+
+  // transform lines and convert markdown to html
+  const transformedLines: Line[] = await Promise.all(
+    arr.map(async (item): Promise<Line> => {
+      const markdown = await markdownToHtml(item?.description || '')
+      return {
+        id: item?.id || 0,
+        name: item?.name || '',
+        description: item?.description || '',
+        markdown,
+      }
+    }),
+  )
 
   return {
     props: {
-      data: data,
+      lines: transformedLines,
     }, // will be passed to the page component as props
+    revalidate: 30,
   }
 }
 
-type IlipPageProps = {
-  data: Ilip[]
-}
-
-const Ilip = ({ data }: IlipPageProps) => {
+const Trail = ({ lines }: TrailPageProps) => {
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [height, setHeight] = useState(0)
   const [width, setWidth] = useState(0)
 
-  const [selectedLine, setSelectedLine] = useState<string>()
+  const [selectedLine, setSelectedLine] = useState<Line>()
 
   useEffect(() => {
     if (ref.current != null) {
@@ -35,8 +53,8 @@ const Ilip = ({ data }: IlipPageProps) => {
   }, [])
 
   const tabChanged = (index: number) => {
-    console.log('Tab changed to: ', index)
-    setSelectedLine(Object.keys(lines)[index])
+    const line = lines.find(line => line.id === index + 1)
+    setSelectedLine(line)
   }
 
   return (
@@ -50,7 +68,7 @@ const Ilip = ({ data }: IlipPageProps) => {
           Add some description here how to use the TRAIL map.
         </p>
         <Spacer />
-        <Tabs onChange={tabChanged} />
+        <Tabs tabs={lines as Tab[]} onChange={tabChanged} />
       </div>
       <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
         <div ref={ref} className="h-192 min-h-full w-full">
@@ -61,4 +79,4 @@ const Ilip = ({ data }: IlipPageProps) => {
   )
 }
 
-export default Ilip
+export default Trail

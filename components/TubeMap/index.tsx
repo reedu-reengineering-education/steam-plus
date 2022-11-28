@@ -6,6 +6,8 @@ import ilipMapData from './ilip-map.json'
 import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
+import { Line as TrailLine } from '../../lib/directus'
+
 function transformData(data: any) {
   return {
     raw: data.lines,
@@ -21,7 +23,7 @@ const lineWidthMultiplier = 0.7
 const lineWidthTickRatio = 1
 
 type TubeMapProps = {
-  selectedLine?: string
+  selectedLine?: TrailLine
   height: number
   width: number
 }
@@ -118,7 +120,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     if (selectedLine && selectedLine !== '') {
       // Filter lines and stations of selected line
       const lines = data.lines.lines.filter(line =>
-        line.name.startsWith(selectedLine.toUpperCase()),
+        line.name.startsWith(selectedLine.name.toUpperCase()),
       )
       console.log('Selected line: ', lines)
       const [stations] = lines.map(line => line.nodes.filter(node => node.name))
@@ -126,7 +128,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
 
       // Reset all lines and stations to default
       // if user selects All
-      if (selectedLine.toLocaleLowerCase() === 'all') {
+      if (selectedLine.name.toLocaleLowerCase() === 'all') {
         d3.selectAll('.line').each(function (this, d: Line) {
           if (!d.hidden) {
             d3.select(this).attr('highlighted', 'false').attr('stroke', d.color)
@@ -148,7 +150,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       } else {
         // Highlight selected line or better fade out not selected lines
         d3.selectAll('.line').each(function (this, d: Line) {
-          if (d.name.toLowerCase() !== selectedLine.toLocaleLowerCase()) {
+          if (d.name.toLowerCase() !== selectedLine.name.toLocaleLowerCase()) {
             d3.select(this)
               .attr('highlighted', 'true')
               .attr('stroke', '#C2C5CC')

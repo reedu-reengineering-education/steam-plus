@@ -9,6 +9,13 @@ export type Ilip = {
   content: string
 }
 
+export type Line = {
+  id: ID
+  name: string
+  description: string
+  markdown?: string
+}
+
 export type Mpi = {
   id: ID
   category: string
@@ -26,6 +33,7 @@ export type Glossary = {
 // Map your collections to its respective types. The SDK will
 // infer its types based on usage later.
 type DirectusCollection = {
+  lines: Line
   ilip: Ilip
   mpi: Mpi
   glossary: Glossary
