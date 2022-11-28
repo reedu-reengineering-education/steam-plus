@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'ILIP', href: '/ilip' },
+  { name: 'TRAIL', href: '/trail' },
   { name: 'MPI', href: '/mpi' },
   { name: 'Glossary', href: '/glossary' },
   {

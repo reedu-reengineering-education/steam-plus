@@ -39,7 +39,7 @@ module.exports = {
         'steam-white': {
           DEFAULT: '#F6F5F5',
         },
-        train: {
+        trail: {
           teacher: {
             DEFAULT: '#2F2F8F',
             50: '#9898DD',

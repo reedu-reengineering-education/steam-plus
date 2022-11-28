@@ -74,16 +74,16 @@ export default function Tabs({ onChange }: TabsProps) {
                   'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-white',
                   'ring-opacity-60 ring-offset-2 focus:outline-none focus:ring',
                   line === 'Teacher'
-                    ? 'bg-train-teacher hover:bg-train-teacher-400'
+                    ? 'bg-trail-teacher hover:bg-trail-teacher-400'
                     : '',
                   line === 'Educational'
-                    ? 'bg-train-educational ring-train-educational-500 hover:bg-train-educational-400'
+                    ? 'bg-trail-educational ring-trail-educational-500 hover:bg-trail-educational-400'
                     : '',
                   line === 'Policy'
-                    ? 'bg-train-policy ring-train-policy-500 hover:bg-train-policy-400'
+                    ? 'bg-trail-policy ring-trail-policy-500 hover:bg-trail-policy-400'
                     : '',
                   line === 'Student'
-                    ? 'bg-train-student ring-train-student-500 hover:bg-train-student-400'
+                    ? 'bg-trail-student ring-trail-student-500 hover:bg-trail-student-400'
                     : '',
                 )
               }
