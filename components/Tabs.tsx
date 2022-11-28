@@ -66,20 +66,32 @@ export default function Tabs({ onChange }: TabsProps) {
     <div className="w-full max-w-md px-2 py-16 sm:px-0">
       <Tab.Group onChange={onChange}>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
-          {Object.keys(lines).map(category => (
+          {Object.keys(lines).map(line => (
             <Tab
-              key={category}
+              key={line}
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-steam-green-text',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-steam-green focus:outline-none focus:ring-2',
-                  selected
-                    ? 'bg-white shadow'
-                    : 'text-blue-100 hover:bg-white/[0.12] hover:text-white',
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-white',
+                  'ring-opacity-60 ring-offset-2 focus:outline-none focus:ring',
+                  line === 'Teacher'
+                    ? 'bg-train-teacher hover:bg-train-teacher-400'
+                    : '',
+                  line === 'Educational'
+                    ? 'bg-train-educational ring-train-educational-500 hover:bg-train-educational-400'
+                    : '',
+                  line === 'Policy'
+                    ? 'bg-train-policy ring-train-policy-500 hover:bg-train-policy-400'
+                    : '',
+                  line === 'Student'
+                    ? 'bg-train-student ring-train-student-500 hover:bg-train-student-400'
+                    : '',
+                  // selected
+                  //   ? 'text-white'
+                  //   : 'text-blue-10 text-white',
                 )
               }
             >
-              {category}
+              {line}
             </Tab>
           ))}
         </Tab.List>
