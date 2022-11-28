@@ -903,7 +903,6 @@
           "lineLabel": true,
           "stationFillColor": "#2D803E",
           "lineLabelPos": "W",
-          "lineLabelShiftX": -2.2,
           "stationSymbol": false
         },
         {
@@ -1243,7 +1242,7 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [0, 55],
+          "coords": [0, 65],
           "name": "Line label black",
           "labelPos": "N",
           "labelBold": true,
@@ -1424,7 +1423,7 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [180, 20],
+          "coords": [180, 30],
           "name": "Line label red",
           "labelPos": "W",
           "labelBold": true,
@@ -1432,7 +1431,6 @@
           "lineLabel": true,
           "stationFillColor": "#C42A31",
           "lineLabelPos": "W",
-          "lineLabelShiftX": -2.2,
           "stationSymbol": false
         },
         {

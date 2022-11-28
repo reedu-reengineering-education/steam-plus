@@ -139,6 +139,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         d3.selectAll('.label').each(function (this, d: Station) {
           d3.select(this).attr('fill', '#000000')
         })
+        d3.selectAll('.line-labels .label').each(function (this, d: Station) {
+          d3.select(this).attr('fill', '#FFFFFF')
+        })
         d3.selectAll('.linelabel').each(function (this, d: Station) {
           d3.select(this).attr('fill', d.stationFillColor)
         })
@@ -193,6 +196,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           } else {
             d3.select(this).attr('fill', '#000000')
           }
+        })
+
+        d3.selectAll('.line-labels .label').each(function (this, d: Station) {
+          d3.select(this).attr('fill', '#FFFFFF')
         })
 
         // Highlight or fade out line labels of non selected line labels
@@ -304,6 +311,37 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           .text(lines[lineNum])
       }
     })
+  }
+
+  function textBBox(text, baseline) {
+    const lines = text.split(/\n/)
+
+    const textElement = d3.text()
+    const y = textElement.attr('y')
+    const x = textElement.attr('x')
+    const dy = parseFloat(textElement.attr('dy'))
+
+    textElement
+      .text(null)
+      .append('tspan')
+      .attr('x', x)
+      .attr('y', y)
+      .attr('dy', dy + 'em')
+      .attr('dominant-baseline', baseline)
+      .text(lines[0])
+
+    for (var lineNum = 1; lineNum < lines.length; lineNum++) {
+      text
+        .append('tspan')
+        .attr('x', x)
+        .attr('y', y)
+        .attr('dy', lineNum * 1.1 + dy + 'em')
+        .attr('dominant-baseline', baseline)
+        .text(lines[lineNum])
+    }
+
+    // console.log("Textsize: ", lines, text.node().getBBox())
+    return textElement.node().getBBox()
   }
 
   function toggleHighlight(d: Station, lineWidth) {
@@ -627,10 +665,44 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .select('g')
       .append('g')
+      .attr('class', 'line-labels')
+      .selectAll('text')
+      .data(data.stations.lineLabelStations())
+      .enter()
+      .append('text')
+      .classed('label', true)
+      .text(function (d) {
+        return d.label.toUpperCase()
+      })
+      .attr('dy', 0)
+      .attr('x', function (d) {
+        return (
+          xScale(d.x + d.lineLabelShiftX) +
+          lineLabelPos(d, lineWidth).pos[0] +
+          10
+        )
+      })
+      .attr('y', function (d) {
+        return (
+          yScale(d.y + d.lineLabelShiftY) -
+          lineLabelPos(d, lineWidth).pos[1] +
+          10
+        )
+      })
+      .attr('fill', 'white')
+      .call(wrap, function (d) {
+        return textPos(d).alignmentBaseline
+      })
+
+    d3.select(ref.current)
+      .select('svg')
+      .select('g')
+      .select('.line-labels')
       .selectAll('path')
       .data(data.stations.lineLabelStations())
       .enter()
       .append('rect')
+      .lower()
       .attr('id', function (d) {
         return d.name
       })
@@ -644,40 +716,13 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         const y = yScale(d.y + lineWidth / unitLength) + (d.y < 0 ? 1 : -1)
         return 'translate(' + x + ',' + y + ')'
       })
-      .attr('width', lineWidth * 5.2)
-      .attr('height', lineWidth * 5.2)
+      .attr('width', function (this, d) {
+        return 130.55555725097656
+      })
+      .attr('height', 34.266666412353516 * 1.15)
       .attr('fill', function (d) {
         return d.stationFillColor
       })
-    // .append('text')
-    // .classed('label', true)
-    // .text(function (d) {
-    //   return d.label
-    // })
-    // .attr('dy', 0)
-    // .attr('fill', function (d) {
-    //   return 'black'
-    // })
-    // .attr('x', function (d) {
-    //   return xScale(d.x + d.lineLabelShiftX) + textPos(d, lineWidth).pos[0]
-    // })
-    // .attr('y', function (d) {
-    //   return yScale(d.y + d.lineLabelShiftY) - textPos(d, lineWidth).pos[1]
-    // })
-    // .attr('transform', function (d) {
-    //   var _x = xScale(d.x + d.labelShiftX) + lineLabelPos(d, lineWidth).pos[0]
-    //   var _y = yScale(d.y + d.labelShiftY) - lineLabelPos(d, lineWidth).pos[1]
-    //   return 'rotate(' + d.labelAngle + ',' + _x + ',' + _y + ')'
-    // })
-    // .attr('x', function(d) {
-    //   return xScale(d.x + d.lineLabelShiftX) + lineLabelPos(d).pos[0];
-    // })
-    // .attr('y', function(d) {
-    //   return yScale(d.y + d.lineLabelShiftY) - lineLabelPos(d).pos[1];
-    // })
-    // .call(wrap, function (d) {
-    //   return textPos(d).alignmentBaseline
-    // })
   }
 
   function textPos(data, lineWidth: number) {
