@@ -1,9 +1,9 @@
-import PostBody from '@/components/Post/Body'
+import MenuEntry from '@/components/Menu/Entry'
 import markdownToHtml from '@/lib/markdownToHtml'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
-import { getDirectusClient, Mpi } from '../../../lib/directus'
+import { getDirectusClient } from '../../../lib/directus'
 
 interface IParams extends ParsedUrlQuery {
   id: string
@@ -51,12 +51,15 @@ export const getStaticProps: GetStaticProps = async context => {
     fields: ['*', 'author.first_name', 'author.last_name'],
   })
   let markdown = ''
+  let title = ''
   if (content.data) {
+    title = content.data[0].title || ''
     markdown = await markdownToHtml(content.data[0]?.markdown || '')
   }
 
   return {
     props: {
+      title,
       markdown: markdown,
     },
     // Next.js will attempt to re-generate the page:
@@ -67,10 +70,14 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 type MpiStartersPageProps = {
+  title: string
   markdown: string
 }
 
-export default function MpiStartersPage({ markdown }: MpiStartersPageProps) {
+export default function MpiStartersPage({
+  title,
+  markdown,
+}: MpiStartersPageProps) {
   const router = useRouter()
 
   // If the page is not yet generated, this will be displayed
@@ -79,9 +86,5 @@ export default function MpiStartersPage({ markdown }: MpiStartersPageProps) {
     return <div>Loading...</div>
   }
 
-  return (
-    <div className="current-article">
-      <PostBody content={markdown} />
-    </div>
-  )
+  return <MenuEntry iconSrc="starters" title={title} markdown={markdown} />
 }

@@ -58,7 +58,10 @@ const MpiStarters = ({ data }: MpiStarterPageProps) => {
           <ul className="p-2 text-left text-sm font-light">
             {data.map(starter => {
               return (
-                <li className="m-2" key={starter.id}>
+                <li
+                  className="m-2 cursor-pointer hover:underline"
+                  key={starter.id}
+                >
                   <Link href={`/mpi/starters/${starter.slug}`}>
                     <a>{starter.title}</a>
                   </Link>
