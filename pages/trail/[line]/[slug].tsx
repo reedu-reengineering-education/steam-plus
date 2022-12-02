@@ -39,11 +39,18 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     )[] = []
     visibleLines.map(line => {
-      line.stations.map(station => {
+      line.stations.map(slug => {
+        const station = transformedMapData.stations.stations[slug]
+
+        // Skip line label stations
+        if (station.lineLabel) {
+          return
+        }
+
         paths.push({
           params: {
             line: line.name.toLowerCase(),
-            slug: station.toString(),
+            slug: station.name,
           },
         })
       })
