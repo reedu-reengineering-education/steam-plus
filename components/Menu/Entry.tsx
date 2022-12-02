@@ -1,14 +1,14 @@
 import PostBody from '@/components/Post/Body'
-import Image from 'next/image'
+import MenuIcon from './Icon'
 
 type MenuEntryProps = {
-  iconSrc: string
+  category: string
   title: string
   markdown: string
 }
 
 export default function MenuEntry({
-  iconSrc,
+  category,
   title,
   markdown,
 }: MenuEntryProps) {
@@ -16,10 +16,7 @@ export default function MenuEntry({
     <div className="mx-auto flex flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-4 drop-shadow-lg">
       <div className="flex flex-col p-2 text-center">
         <div className="">
-          <Image
-            src={require(`@/assets/logos/${iconSrc}.svg`)}
-            alt="Starters Icon"
-          />
+          <MenuIcon category={category} />
           <h2 className="text-steam-green-text-50">{title}</h2>
         </div>
         <hr className="my-4 h-px border-0 bg-steam-green-100" />

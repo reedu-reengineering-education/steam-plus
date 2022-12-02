@@ -70,10 +70,10 @@ const Mpi = ({ data }: MpiPageProps) => {
         <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-3">
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
             <div className="flex flex-col p-2 text-center">
-              <Link href={`mpi/starters`}>
+              <Link href={`mpi/starter`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
-                    src={require('@/assets/logos/starters.svg')}
+                    src={require('@/assets/logos/starter.svg')}
                     alt="Starters Icon"
                   />
                   <h2 className="text-steam-green-text-50">Starters</h2>
@@ -86,7 +86,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                   .map(starter => {
                     return (
                       <li className="m-2 hover:underline" key={starter.id}>
-                        <Link href={`mpi/starters/${starter.slug}`}>
+                        <Link href={`mpi/starter/${starter.slug}`}>
                           <a>{starter.title}</a>
                         </Link>
                       </li>
@@ -100,7 +100,7 @@ const Mpi = ({ data }: MpiPageProps) => {
               <Link href={`mpi/main`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
-                    src={require('@/assets/logos/main-meals.svg')}
+                    src={require('@/assets/logos/main-meal.svg')}
                     alt="Main meals Icon"
                   />
                   <h2 className="text-steam-green-text-50">Main meals</h2>
@@ -125,10 +125,10 @@ const Mpi = ({ data }: MpiPageProps) => {
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
             <div className="flex flex-col p-2 text-center">
-              <Link href={`mpi/desserts`}>
+              <Link href={`mpi/dessert`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
-                    src={require('@/assets/logos/desserts.svg')}
+                    src={require('@/assets/logos/dessert.svg')}
                     alt="Desserts Icon"
                   />
                   <h2 className="text-steam-green-text-50">Desserts</h2>
@@ -141,7 +141,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                   .map(starter => {
                     return (
                       <li className="m-2 hover:underline" key={starter.id}>
-                        <Link href={`mpi/desserts/${starter.slug}`}>
+                        <Link href={`mpi/dessert/${starter.slug}`}>
                           <a>{starter.title}</a>
                         </Link>
                       </li>
@@ -154,10 +154,10 @@ const Mpi = ({ data }: MpiPageProps) => {
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-1 lg:row-start-3">
             <div className="flex flex-col p-2 text-center lg:flex-row">
               <div className="flex flex-col p-2 text-center">
-                <Link href={`mpi/beverages`}>
+                <Link href={`mpi/beverage`}>
                   <div className="cursor-pointer hover:underline">
                     <Image
-                      src={require('@/assets/logos/beverages.svg')}
+                      src={require('@/assets/logos/beverage.svg')}
                       alt="Beverages Icon"
                     />
                     <h2 className="text-steam-green-text-50">Beverages</h2>
@@ -172,7 +172,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     .map(starter => {
                       return (
                         <li className="m-2 hover:underline" key={starter.id}>
-                          <Link href={`mpi/beverages/${starter.slug}`}>
+                          <Link href={`mpi/beverage/${starter.slug}`}>
                             <a>{starter.title}</a>
                           </Link>
                         </li>
@@ -189,7 +189,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 <Link href={`mpi/takeaway`}>
                   <div className="cursor-pointer hover:underline">
                     <Image
-                      src={require('@/assets/logos/beverages.svg')}
+                      src={require('@/assets/logos/beverage.svg')}
                       alt="Beverages Icon"
                     />
                     <h2 className="text-steam-green-text-50">

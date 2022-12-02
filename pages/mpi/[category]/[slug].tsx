@@ -6,18 +6,14 @@ import { ParsedUrlQuery } from 'querystring'
 import { getDirectusClient } from '../../../lib/directus'
 
 interface IParams extends ParsedUrlQuery {
-  id: string
+  category: string
   slug: string
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const directus = await getDirectusClient()
   const { data } = await directus.items('mpi').readByQuery({
-    filter: {
-      category: 'main',
-    },
-    fields: 'slug',
-    limit: -1,
+    fields: ['category', 'slug'],
   })
 
   if (data) {
@@ -25,6 +21,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       paths: data.map(entry => {
         return {
           params: {
+            category: entry.category.toString(),
             slug: entry.slug.toString(),
           },
         }
@@ -40,7 +37,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
-  const { slug } = context.params! as IParams
+  const { category, slug } = context.params! as IParams
 
   const directus = await getDirectusClient()
 
@@ -54,12 +51,13 @@ export const getStaticProps: GetStaticProps = async context => {
   let title = ''
   if (content.data) {
     title = content.data[0].title || ''
-    markdown = await markdownToHtml(content.data[0]?.markdown || '')
+    markdown = await markdownToHtml(content.data[0].markdown || '')
   }
 
   return {
     props: {
-      title,
+      category,
+      title: title,
       markdown: markdown,
     },
     // Next.js will attempt to re-generate the page:
@@ -70,11 +68,13 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 type MpiStartersPageProps = {
+  category: string
   title: string
   markdown: string
 }
 
 export default function MpiStartersPage({
+  category,
   title,
   markdown,
 }: MpiStartersPageProps) {
@@ -86,5 +86,5 @@ export default function MpiStartersPage({
     return <div>Loading...</div>
   }
 
-  return <MenuEntry iconSrc="main-meals" title={title} markdown={markdown} />
+  return <MenuEntry category={category} title={title} markdown={markdown} />
 }
