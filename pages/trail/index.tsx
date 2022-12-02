@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async context => {
       return {
         id: item?.id || 0,
         name: item?.name || '',
+        label: item?.label || item?.name || '',
         description: item?.description || '',
         markdown,
       }
@@ -61,7 +62,7 @@ const Trail = ({ lines }: TrailPageProps) => {
     <div className="flex w-full flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">
-          TRAnsdiciplinary Innovation Lab (TRAIL)
+          TRAIL Map (TRAnsdiciplinary Innovation Lab)
         </h1>
         <Spacer />
         <p className="pt-4 text-base font-light">

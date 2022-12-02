@@ -8,6 +8,7 @@ function classNames(...classes: any) {
 export type Tab = {
   id: number
   name: string
+  label: string
   description: string
   markdown: string
 }
@@ -44,7 +45,7 @@ export default function Tabs({ tabs, onChange }: TabsProps) {
                 )
               }
             >
-              {tab.name}
+              {tab.label}
             </Tab>
           ))}
         </Tab.List>

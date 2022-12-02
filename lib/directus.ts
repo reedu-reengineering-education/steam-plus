@@ -12,6 +12,7 @@ export type Ilip = {
 export type Line = {
   id: ID
   name: string
+  label: string
   description: string
   markdown?: string
 }
