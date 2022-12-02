@@ -59,7 +59,7 @@
       "id": 3894910680,
       "name": "Innovation lab red",
       "label": "Innovation lab",
-      "link": "/trail/innovation-lab-student",
+      "link": "/trail/student/innovation-lab-student",
       "position": {
         "lat": 52.5742433,
         "lon": 13.348511
@@ -69,7 +69,7 @@
       "id": 29190897,
       "name": "Strengthen STEM with STEAM red",
       "label": "Strengthen STEM\nwith STEAM",
-      "link": "/trail/strengthen-stem-student",
+      "link": "/trail/student/strengthen-stem-student",
       "position": {
         "lat": 52.5754161,
         "lon": 13.3384251
@@ -77,9 +77,9 @@
     },
     "A transdiciplinary approach red": {
       "id": 5219721338,
-      "name": "A transdiciplinary approach red",
+      "name": "approach-student",
       "label": "A transdisciplinary\napproach",
-      "link": "/trail/approach-student",
+      "link": "/trail/student/approach-student",
       "position": {
         "lat": 52.5786231,
         "lon": 13.3335031
@@ -87,9 +87,9 @@
     },
     "Contribute to a more sustainable future red": {
       "id": 107606908,
-      "name": "Contribute to a more sustainable future red",
+      "name": "contribute-student",
       "label": "Contribute to a more\nsustainable future",
-      "link": "/trail/contribute-student",
+      "link": "/trail/student/contribute-student",
       "position": {
         "lat": 52.5883733,
         "lon": 13.3259254
@@ -99,7 +99,7 @@
       "id": 5219721339,
       "name": "Why board red",
       "label": " Why board",
-      "link": "/trail/why-board-student",
+      "link": "/trail/student/why-board-student",
       "position": {
         "lat": 52.5956412,
         "lon": 13.3347115
@@ -154,7 +154,7 @@
       "id": 3901824902,
       "name": "Innovation lab gold",
       "label": "Innovation lab",
-      "link": "/trail/innovation-lab-policy",
+      "link": "/trail/policy/innovation-lab-policy",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -209,7 +209,7 @@
       "id": 5134716875,
       "name": "Strengthen STEM with STEAM gold",
       "label": "Strengthen STEM\nwith STEAM",
-      "link": "/trail/strengthen-stem-policy",
+      "link": "/trail/policy/strengthen-stem-policy",
       "position": {
         "lat": 52.4961755,
         "lon": 13.3431855
@@ -307,9 +307,9 @@
     },
     "A transdiciplinary approach gold": {
       "id": 29833469,
-      "name": "A transdiciplinary approach gold",
+      "name": "approach-policy",
       "label": "A transdiciplinary\napproach",
-      "link": "/trail/approach-policy",
+      "link": "/trail/policy/approach-policy",
       "position": {
         "lat": 52.4885755,
         "lon": 13.3405436
@@ -317,9 +317,9 @@
     },
     "A transdisciplinary approach green": {
       "id": 29123764,
-      "name": "A transdisciplinary approach green",
+      "name": "approach-educational",
       "label": "A transdisciplinary\napproach",
-      "link": "/trail/approach-educational",
+      "link": "/trail/educational/approach-educational",
       "position": {
         "lat": 52.5118853,
         "lon": 13.3221613
@@ -329,7 +329,7 @@
       "id": 5220114121,
       "name": "Strengthen STEM with STEAM green",
       "label": "Strengthen STEM\n with STEAM+",
-      "link": "/trail/strengthen-stem-educational",
+      "link": "/trail/educational/strengthen-stem-educational",
       "position": {
         "lat": 52.5387183,
         "lon": 13.2330942
@@ -339,7 +339,7 @@
       "id": 5183375788,
       "name": "Innovation lab black",
       "label": "Innovation lab",
-      "link": "/trail/innovation-lab-teacher",
+      "link": "/trail/teacher/innovation-lab-teacher",
       "position": {
         "lat": 52.5379819,
         "lon": 13.2478176
@@ -349,7 +349,7 @@
       "id": 5183375787,
       "name": "Innovation lab green",
       "label": "Innovation lab",
-      "link": "/trail/innovation-lab-educational",
+      "link": "/trail/educational/innovation-lab-educational",
       "position": {
         "lat": 52.5379819,
         "lon": 13.2478176
@@ -359,7 +359,7 @@
       "id": 5220114129,
       "name": "Strengthen STEM with STEAM black",
       "label": "Strengthen STEM\n with STEAM+",
-      "link": "/trail/strengthen-stem-teacher",
+      "link": "/trail/teacher/strengthen-stem-teacher",
       "position": {
         "lat": 52.5387183,
         "lon": 13.2330942
@@ -367,9 +367,9 @@
     },
     "A transdiciplinary approach black": {
       "id": 5183374155,
-      "name": "A transdiciplinary approach black",
+      "name": "approach-teacher",
       "label": "A transdiciplinary\napproach",
-      "link": "/trail/approach-teacher",
+      "link": "/trail/teacher/approach-teacher",
       "position": {
         "lat": 52.537652,
         "lon": 13.2175358
@@ -377,9 +377,9 @@
     },
     "Contribute to a sustainability-oriented new generation": {
       "id": 5726082246,
-      "name": "Contribute to a sustainability-oriented new generation",
+      "name": "contribute-teacher",
       "label": "Contribute to a sustainability-\noriented new generation",
-      "link": "/trail/contribute-teacher",
+      "link": "/trail/teacher/contribute-teacher",
       "position": {
         "lat": 52.5388381,
         "lon": 13.2062573
@@ -389,7 +389,7 @@
       "id": 4989868817,
       "name": "Why board black",
       "label": "Why board",
-      "link": "/trail/why-board-teacher",
+      "link": "/trail/teacher/why-board-teacher",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -442,7 +442,7 @@
     },
     "A challenge black": {
       "id": 3862767512,
-      "name": "A challenge black",
+      "name": "challenge-teacher",
       "label": "",
       "position": {
         "lat": 52.5166047,
@@ -451,7 +451,7 @@
     },
     "A challenge red dash": {
       "id": 3862767512,
-      "name": "A challenge red dash",
+      "name": "challenge-student",
       "label": "",
       "position": {
         "lat": 52.5166047,
@@ -543,7 +543,7 @@
       "id": 5134482957,
       "name": "Future-oriented eductaion gold",
       "label": "Future oriented\neducation",
-      "link": "/trail/future-oriented-policy",
+      "link": "/trail/policy/future-oriented-policy",
       "position": {
         "lat": 52.4831773,
         "lon": 13.341972
@@ -553,7 +553,7 @@
       "id": 29497638,
       "name": "Why board gold",
       "label": "Why board",
-      "link": "/trail/why-board-policy",
+      "link": "/trail/policy/why-board-policy",
       "position": {
         "lat": 52.478987,
         "lon": 13.3436736
@@ -563,7 +563,7 @@
       "id": 27586255,
       "name": "Why board green",
       "label": "Why board",
-      "link": "/trail/why-board-educational",
+      "link": "/trail/educational/why-board-educational",
       "position": {
         "lat": 52.5256744,
         "lon": 13.2414191
@@ -573,13 +573,22 @@
       "id": 29123763,
       "name": "Future oriented education green",
       "label": "Future oriented\neducation",
-      "link": "/trail/future-oriented-educational",
+      "link": "/trail/educational/future-oriented-educational",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
     "Embedding the Lab main green": {
+      "id": 29123762,
+      "name": "Embedding the Lab main green",
+      "label": "",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Embedding the Lab main gold": {
       "id": 29123762,
       "name": "Embedding the Lab main green",
       "label": "",
@@ -653,7 +662,7 @@
     },
     "Assess Quality black": {
       "id": 29123762,
-      "name": "Assess Quality black",
+      "name": "assess-quality-teacher",
       "label": "",
       "position": {
         "lat": 52.511837,
@@ -662,7 +671,7 @@
     },
     "Assess Quality red dash": {
       "id": 29123762,
-      "name": "Assess Quality red dash",
+      "name": "assess-quality-student",
       "label": "",
       "position": {
         "lat": 52.511837,
@@ -844,7 +853,7 @@
       "id": 29123762,
       "name": "Become a teacher main",
       "label": "Become\na teacher",
-      "link": "/trail/become-a-teacher-student",
+      "link": "/trail/teacher/become-a-teacher-student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -852,7 +861,7 @@
     },
     "Become a teacher red": {
       "id": 29123762,
-      "name": "Become a teacher red",
+      "name": "become-a-teacher",
       "label": "",
       "position": {
         "lat": 52.511837,
@@ -1000,13 +1009,13 @@
           "coords": [80, -52]
         },
         {
-          "coords": [90, -52],
+          "coords": [89, -52],
           "name": "Grand Station green",
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [90, 0],
+          "coords": [89, 0],
           "name": "Embedding the Lab main green",
           "labelPos": "N",
           "stationSymbol": false
@@ -1020,7 +1029,13 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [90, -54],
+          "coords": [91, 0],
+          "name": "Embedding the Lab main gold",
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [91, -54],
           "name": "Grand Station gold",
           "labelPos": "S",
           "stationSymbol": false

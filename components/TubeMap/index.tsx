@@ -846,6 +846,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         toggleHighlight(d, lineWidth)
       })
       .on('click', function (this, d) {
+        console.log(d.target)
         const newWindow = window.open(
           d.target.__data__.link,
           '_blank',
