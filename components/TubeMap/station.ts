@@ -25,6 +25,7 @@ export type Station = {
   link: string
   name: string
   label: string
+  nodeName: string
   position: Position
   x: number
   y: number
@@ -72,7 +73,7 @@ class Stations {
     for (const name in this.stations) {
       if (this.stations.hasOwnProperty(name)) {
         const station = this.stations[name]
-        station.name = name
+        station.nodeName = name
         stations.push(station)
       }
     }
@@ -120,7 +121,13 @@ const extractStations = (data: TubeMap) => {
       if (!data.stations.hasOwnProperty(d.name))
         throw new Error('Cannot find station with key: ' + d.name)
 
+      // What the hell is going on here
       var station: Station = data.stations[d.name]
+      // if (station.name === 'innovation-lab-policy') {
+      //   console.log("ALARM")
+      //   console.log(station)
+      // }
+      // break;
 
       station.x = d.coords[0]
       station.y = d.coords[1]

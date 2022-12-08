@@ -8,11 +8,10 @@ import extractStations, { Station } from '@/components/TubeMap/station'
 import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
-import { getStationNeighbours } from '@/components/TubeMap/utils'
 import Link from 'next/link'
 
 interface IParams extends ParsedUrlQuery {
-  category: string
+  line: string
   slug: string
 }
 
@@ -70,6 +69,45 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async context => {
   const { line, slug } = context.params! as IParams
 
+  const transformedMapData = transformData(mapData)
+  const visibleLines = transformedMapData.lines.lines.filter(
+    line => !line.hidden,
+  )
+  const stations = transformedMapData.stations.toArray()
+
+  const currentLine = visibleLines.filter(
+    elem => elem.name.toLowerCase() === line,
+  )
+  const currentStation = stations.filter(elem => elem.name == slug)
+
+  const indexOfStation = currentLine[0].stations.indexOf(
+    currentStation[0].nodeName,
+  )
+
+  let previousStation: Station | null = null
+  let nextStation: Station | null = null
+
+  if (
+    indexOfStation != 1 &&
+    indexOfStation != currentLine[0].stations.length - 1
+  ) {
+    const previous = currentLine[0].stations[indexOfStation - 1]
+    previousStation = transformedMapData.stations
+      .toArray()
+      .filter(elem => elem.nodeName === previous)[0]
+    const next = currentLine[0].stations[indexOfStation + 1]
+    nextStation = transformedMapData.stations
+      .toArray()
+      .filter(elem => elem.nodeName === next)[0]
+  } else if (indexOfStation == 1) {
+    previousStation = null
+    const next = currentLine[0].stations[indexOfStation + 1]
+    nextStation = transformedMapData.stations
+      .toArray()
+      .filter(elem => elem.nodeName === next)[0]
+  } else {
+  }
+
   const directus = await getDirectusClient()
   const content = await directus.items('ilip').readByQuery({
     filter: {
@@ -82,15 +120,14 @@ export const getStaticProps: GetStaticProps = async context => {
     markdown = await markdownToHtml(content.data[0].content || '')
   }
 
-  const neighbours = getStationNeighbours()
-
   return {
     props: {
       line,
       slug,
+      station: currentStation[0],
       neighbours: {
-        p: 'test',
-        n: 'test',
+        previous: previousStation,
+        next: nextStation,
       },
       markdown,
     },
@@ -104,17 +141,24 @@ export const getStaticProps: GetStaticProps = async context => {
 type StationPageProps = {
   line: string
   slug: string
-  neighbours: any
+  station: Station
+  neighbours: {
+    previous: Station
+    next: Station
+  }
   markdown: string
 }
 
 export default function StationPage({
   line,
   slug,
+  station,
   neighbours,
   markdown,
 }: StationPageProps) {
   const router = useRouter()
+
+  const colorClass = `border-trail-${line}`
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
@@ -123,16 +167,28 @@ export default function StationPage({
   }
 
   return (
-    <div>
-      <Link href={`/trail/${line}/${neighbours.p}`} passHref>
-        <a>Previous</a>
-      </Link>
-      <div>
-        {line} - {slug}
+    <div className="flex w-full flex-col">
+      <div className="flex items-center justify-between">
+        {neighbours.previous && (
+          <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
+            <a className="p-4 text-center text-sm">
+              {neighbours.previous.label}
+            </a>
+          </Link>
+        )}
+        <div
+          className={`w-1/2 border-2 ${colorClass} border-trail-policy`}
+        ></div>
+        <div className="m-0 p-4 text-center text-lg font-bold">
+          {station.label}
+        </div>
+        <div className={`w-1/2 border-2 ${colorClass}`}></div>
+        {neighbours.next && (
+          <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
+            <a className="p-4 text-center text-sm">{neighbours.next.name}</a>
+          </Link>
+        )}
       </div>
-      <Link href={`/trail/${line}/${neighbours.p}`} passHref>
-        <a>Next</a>
-      </Link>
       <div className="current-article">
         <PostBody content={markdown} />
       </div>
