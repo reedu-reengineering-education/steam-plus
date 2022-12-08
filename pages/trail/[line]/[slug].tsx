@@ -12,6 +12,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 import { Connector } from '@/components/Elements/Connector'
+import { BorderY } from '@/components/Elements/BorderY'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -217,9 +218,11 @@ export default function StationPage({
         <div className="flex flex-col justify-between">
           {neighbours.previous && (
             <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
-              <a className="border-r-2 border-trail-teacher p-4 text-center text-xs">
-                {neighbours.previous.label}
-              </a>
+              <BorderY variant={line} side="right" className="cursor-pointer">
+                <a className="p-4 text-center text-xs">
+                  {neighbours.previous.label}
+                </a>
+              </BorderY>
             </Link>
           )}
           {interchangeableStation &&
@@ -231,24 +234,28 @@ export default function StationPage({
                   }`}
                   passHref
                 >
-                  <a className="p-4 text-center text-xs">
-                    {interchangeableStation.label}
-                  </a>
+                  <BorderY variant={line}>
+                    <a className="p-4 text-center text-xs">
+                      {interchangeableStation.label}
+                    </a>
+                  </BorderY>
                 </Link>
               </>
             )}
         </div>
         <Connector className="w-1/2" variant={line}></Connector>
-        <div className="m-0 p-4 text-center text-lg font-bold">
+        <div className="m-0 p-4 text-center font-bold md:text-base lg:text-lg">
           {station.label}
         </div>
         <Connector className="w-1/2" variant={line}></Connector>
         <div className="flex flex-col justify-between">
           {neighbours.next && (
             <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-              <a className="border-l-2 p-4 text-center text-xs">
-                {neighbours.next.label}
-              </a>
+              <BorderY variant={line} side="left" className="cursor-pointer">
+                <a className="p-4 text-center text-xs">
+                  {neighbours.next.label}
+                </a>
+              </BorderY>
             </Link>
           )}
           {interchangeableStation && interchangeableStationOrder === 'next' && (
@@ -259,9 +266,15 @@ export default function StationPage({
                 }`}
                 passHref
               >
-                <a className="border-l-2 p-4 text-center text-xs">
-                  {interchangeableStation.label}
-                </a>
+                <BorderY
+                  variant={line}
+                  side="left"
+                  className="cursor-pointer border-dashed"
+                >
+                  <a className="p-4 text-center text-xs">
+                    {interchangeableStation.label}
+                  </a>
+                </BorderY>
               </Link>
             </>
           )}
