@@ -39,7 +39,6 @@ export type Station = {
   stationFillColor: string
   lineLabel: boolean
   lineLabelPos: LabelPosition
-  lineLabelPath: string
   lineLabelShiftX: number
   lineLabelShiftY: number
   labelPos: LabelPosition
@@ -50,6 +49,7 @@ export type Station = {
   shiftX: number
   shiftY: number
   coords: number[]
+  changeToLineStation: string[]
 }
 
 type TubeMap = {
@@ -149,11 +149,13 @@ const extractStations = (data: TubeMap) => {
         ? d.stationFillColor
         : '#ffffff'
       station.drawLabel = d.hasOwnProperty('drawLabel') ? d.drawLabel : true
+      station.changeToLineStation = d.hasOwnProperty('changeToLineStation')
+        ? d.changeToLineStation
+        : []
 
       if (d.lineLabel === true) {
         station.lineLabel = true
         station.lineLabelPos = d.lineLabelPos
-        station.lineLabelPath = d.lineLabelPath
         station.lineLabelShiftX = d.lineLabelShiftX || 0
         station.lineLabelShiftY = d.lineLabelShiftY || 0
       } else {

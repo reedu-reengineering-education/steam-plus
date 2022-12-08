@@ -1221,6 +1221,10 @@
           "labelShiftCoords": [
             1.5,
             0
+          ],
+          "changeToLineStation": [
+            "POLICY-MAKER",
+            "Fertile ground main gold"
           ]
         },
         {
@@ -1258,7 +1262,7 @@
       ]
     },
     {
-      "name": "POLICY",
+      "name": "POLICY-MAKER",
       "label": "POLICY MAKER CO-CREATOR",
       "color": "#D4AF37",
       "dashed": true,
@@ -1962,7 +1966,11 @@
             1.5,
             0
           ],
-          "stationSymbol": "single"
+          "stationSymbol": "single",
+          "changeToLineStation": [
+            "STUDENT-COCREATOR",
+            "Fertile ground main red"
+          ]
         },
         {
           "coords": [
@@ -2049,7 +2057,7 @@
       ]
     },
     {
-      "name": "STUDENT",
+      "name": "STUDENT-COCREATOR",
       "label": "STUDENT CO-CREATOR",
       "lineLabel": true,
       "color": "#C42A31",

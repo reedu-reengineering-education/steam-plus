@@ -10,6 +10,7 @@ import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { useEffect, useState } from 'react'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -74,6 +75,7 @@ export const getStaticProps: GetStaticProps = async context => {
   const visibleLines = transformedMapData.lines.lines.filter(
     line => !line.hidden,
   )
+
   const stations = transformedMapData.stations.toArray()
 
   const currentLine = visibleLines.filter(
@@ -87,32 +89,35 @@ export const getStaticProps: GetStaticProps = async context => {
 
   let previousStation: Station | null = null
   let nextStation: Station | null = null
-  if (currentLine[0].name !== 'STUDENT') {
-    if (
-      indexOfStation != 1 &&
-      indexOfStation != currentLine[0].stations.length - 1
-    ) {
-      const previous = currentLine[0].stations[indexOfStation - 1]
-      previousStation = transformedMapData.stations
+
+  if (
+    indexOfStation != 1 &&
+    indexOfStation != currentLine[0].stations.length - 1
+  ) {
+    const previous = currentLine[0].stations[indexOfStation - 1]
+    previousStation =
+      transformedMapData.stations
         .toArray()
-        .filter(elem => elem.nodeName === previous)[0]
-      const next = currentLine[0].stations[indexOfStation + 1]
-      nextStation = transformedMapData.stations
+        .filter(elem => elem.nodeName === previous)[0] || null
+    const next = currentLine[0].stations[indexOfStation + 1]
+    nextStation =
+      transformedMapData.stations
         .toArray()
-        .filter(elem => elem.nodeName === next)[0]
-    } else if (indexOfStation == 1) {
-      previousStation = null
-      const next = currentLine[0].stations[indexOfStation + 1]
-      nextStation = transformedMapData.stations
+        .filter(elem => elem.nodeName === next)[0] || null
+  } else if (indexOfStation == 1) {
+    previousStation = null
+    const next = currentLine[0].stations[indexOfStation + 1]
+    nextStation =
+      transformedMapData.stations
         .toArray()
-        .filter(elem => elem.nodeName === next)[0]
-    } else {
-      const previous = currentLine[0].stations[indexOfStation - 1]
-      previousStation = transformedMapData.stations
+        .filter(elem => elem.nodeName === next)[0] || null
+  } else {
+    const previous = currentLine[0].stations[indexOfStation - 1]
+    previousStation =
+      transformedMapData.stations
         .toArray()
-        .filter(elem => elem.nodeName === previous)[0]
-      nextStation = null
-    }
+        .filter(elem => elem.nodeName === previous)[0] || null
+    nextStation = null
   }
 
   const directus = await getDirectusClient()
@@ -164,8 +169,34 @@ export default function StationPage({
   markdown,
 }: StationPageProps) {
   const router = useRouter()
+  const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
+  const [interchangeableStation, setInterchangableStation] =
+    useState<Station | null>()
 
   const colorClass = `border-trail-${line}`
+
+  useEffect(() => {
+    // If changeLine is bigger than 0 there
+    // is the possibility to change to a different line
+    if (station.changeToLineStation.length > 0) {
+      const [interchangeLine, interchangeStation] = station.changeToLineStation
+      const transformedMapData = transformData(mapData)
+      const changeToLine = transformedMapData.lines.lines.filter(
+        elem => elem.name === interchangeLine,
+      )
+      const changeToStation = transformedMapData.stations
+        .toArray()
+        .filter(elem => elem.nodeName === interchangeStation)
+
+      setInterchangableLine(changeToLine[0])
+      setInterchangableStation(changeToStation[0])
+    }
+
+    return () => {
+      setInterchangableLine(null)
+      setInterchangableStation(null)
+    }
+  }, [station])
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
@@ -192,6 +223,18 @@ export default function StationPage({
         {neighbours.next && (
           <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
             <a className="p-4 text-center text-sm">{neighbours.next.label}</a>
+          </Link>
+        )}
+        {interchangeableStation && (
+          <Link
+            href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
+              interchangeableStation.name
+            }`}
+            passHref
+          >
+            <a className="p-4 text-center text-sm">
+              {interchangeableStation.label}
+            </a>
           </Link>
         )}
       </div>
