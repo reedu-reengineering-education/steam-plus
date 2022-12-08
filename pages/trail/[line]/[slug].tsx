@@ -234,7 +234,11 @@ export default function StationPage({
                   }`}
                   passHref
                 >
-                  <BorderY variant={line}>
+                  <BorderY
+                    variant={line}
+                    side="right"
+                    className="cursor-pointer"
+                  >
                     <a className="p-4 text-center text-xs">
                       {interchangeableStation.label}
                     </a>
