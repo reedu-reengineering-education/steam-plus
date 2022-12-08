@@ -172,6 +172,8 @@ export default function StationPage({
   const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
   const [interchangeableStation, setInterchangableStation] =
     useState<Station | null>()
+  const [interchangeableStationOrder, setInterchangeableStationOrder] =
+    useState<string>('next')
 
   const colorClass = `border-trail-${line}`
 
@@ -193,10 +195,9 @@ export default function StationPage({
             elem.nodeName.toLowerCase() === interchangeStation.toLowerCase(),
         )
 
-      console.log(changeToLine)
-      console.log(changeToStation)
       setInterchangableLine(changeToLine[0])
       setInterchangableStation(changeToStation[0])
+      setInterchangeableStationOrder(station.changeToLineOrder)
     }
 
     return () => {
@@ -214,36 +215,57 @@ export default function StationPage({
   return (
     <div className="flex w-full flex-col">
       <div className="flex items-center justify-between">
-        {neighbours.previous && (
-          <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
-            <a className="p-4 text-center text-sm">
-              {neighbours.previous.label}
-            </a>
-          </Link>
-        )}
+        <div className="flex flex-col justify-between border-r-2">
+          {neighbours.previous && (
+            <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
+              <a className="p-4 text-center text-xs">
+                {neighbours.previous.label}
+              </a>
+            </Link>
+          )}
+          {interchangeableStation &&
+            interchangeableStationOrder === 'previous' && (
+              <>
+                <Link
+                  href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
+                    interchangeableStation.name
+                  }`}
+                  passHref
+                >
+                  <a className="p-4 text-center text-xs">
+                    {interchangeableStation.label}
+                  </a>
+                </Link>
+              </>
+            )}
+        </div>
         <div className={`w-1/2 border-2 ${colorClass}`}></div>
         <div className="m-0 p-4 text-center text-lg font-bold">
           {station.label}
         </div>
         {/* <div className={`w-1/2 border-2 ${colorClass}`}></div> */}
         <div className={clsx('w-1/2', 'border-2', colorClass)}></div>
-        {neighbours.next && (
-          <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-            <a className="p-4 text-center text-sm">{neighbours.next.label}</a>
-          </Link>
-        )}
-        {interchangeableStation && (
-          <Link
-            href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
-              interchangeableStation.name
-            }`}
-            passHref
-          >
-            <a className="p-4 text-center text-sm">
-              {interchangeableStation.label}
-            </a>
-          </Link>
-        )}
+        <div className="flex flex-col justify-between border-l-2">
+          {neighbours.next && (
+            <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
+              <a className="p-4 text-center text-xs">{neighbours.next.label}</a>
+            </Link>
+          )}
+          {interchangeableStation && interchangeableStationOrder === 'next' && (
+            <>
+              <Link
+                href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
+                  interchangeableStation.name
+                }`}
+                passHref
+              >
+                <a className="p-4 text-center text-xs">
+                  {interchangeableStation.label}
+                </a>
+              </Link>
+            </>
+          )}
+        </div>
       </div>
       <div className="current-article">
         <PostBody content={markdown} />

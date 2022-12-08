@@ -50,6 +50,7 @@ export type Station = {
   shiftY: number
   coords: number[]
   changeToLineStation: string[]
+  changeToLineOrder: string
 }
 
 type TubeMap = {
@@ -152,6 +153,9 @@ const extractStations = (data: TubeMap) => {
       station.changeToLineStation = d.hasOwnProperty('changeToLineStation')
         ? d.changeToLineStation
         : []
+      station.changeToLineOrder = d.hasOwnProperty('changeToLineOrder')
+        ? d.changeToLineOrder
+        : 'next'
 
       if (d.lineLabel === true) {
         station.lineLabel = true

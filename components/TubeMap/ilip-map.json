@@ -1307,7 +1307,8 @@
           "changeToLineStation": [
             "POLICY",
             "Innovation lab gold"
-          ]
+          ],
+          "changeToLineOrder": "previous"
         },
         {
           "coords": [
@@ -2105,7 +2106,8 @@
           "changeToLineStation": [
             "STUDENT",
             "Innovation lab red"
-          ]
+          ],
+          "changeToLineOrder": "previous"
         },
         {
           "coords": [
