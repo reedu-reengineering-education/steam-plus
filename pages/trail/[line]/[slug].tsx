@@ -86,26 +86,29 @@ export const getStaticProps: GetStaticProps = async context => {
 
   let previousStation: Station | null = null
   let nextStation: Station | null = null
-
-  if (
-    indexOfStation != 1 &&
-    indexOfStation != currentLine[0].stations.length - 1
-  ) {
-    const previous = currentLine[0].stations[indexOfStation - 1]
-    previousStation = transformedMapData.stations
-      .toArray()
-      .filter(elem => elem.nodeName === previous)[0]
-    const next = currentLine[0].stations[indexOfStation + 1]
-    nextStation = transformedMapData.stations
-      .toArray()
-      .filter(elem => elem.nodeName === next)[0]
-  } else if (indexOfStation == 1) {
-    previousStation = null
-    const next = currentLine[0].stations[indexOfStation + 1]
-    nextStation = transformedMapData.stations
-      .toArray()
-      .filter(elem => elem.nodeName === next)[0]
-  } else {
+  if (currentLine[0].name !== 'STUDENT' && currentLine[0].name !== 'POLICY') {
+    if (
+      indexOfStation != 1 &&
+      indexOfStation != currentLine[0].stations.length - 1
+    ) {
+      const previous = currentLine[0].stations[indexOfStation - 1]
+      previousStation = transformedMapData.stations
+        .toArray()
+        .filter(elem => elem.nodeName === previous)[0]
+      const next = currentLine[0].stations[indexOfStation + 1]
+      nextStation = transformedMapData.stations
+        .toArray()
+        .filter(elem => elem.nodeName === next)[0]
+    } else if (indexOfStation == 1) {
+      previousStation = null
+      const next = currentLine[0].stations[indexOfStation + 1]
+      nextStation = transformedMapData.stations
+        .toArray()
+        .filter(elem => elem.nodeName === next)[0]
+    } else {
+      previousStation = null
+      nextStation = null
+    }
   }
 
   const directus = await getDirectusClient()
