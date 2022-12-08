@@ -180,14 +180,21 @@ export default function StationPage({
     // is the possibility to change to a different line
     if (station.changeToLineStation.length > 0) {
       const [interchangeLine, interchangeStation] = station.changeToLineStation
+      console.log(interchangeLine, interchangeStation)
       const transformedMapData = transformData(mapData)
       const changeToLine = transformedMapData.lines.lines.filter(
         elem => elem.name === interchangeLine,
       )
+
       const changeToStation = transformedMapData.stations
         .toArray()
-        .filter(elem => elem.nodeName === interchangeStation)
+        .filter(
+          elem =>
+            elem.nodeName.toLowerCase() === interchangeStation.toLowerCase(),
+        )
 
+      console.log(changeToLine)
+      console.log(changeToStation)
       setInterchangableLine(changeToLine[0])
       setInterchangableStation(changeToStation[0])
     }

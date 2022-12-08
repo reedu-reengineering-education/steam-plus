@@ -1303,7 +1303,11 @@
           "name": "Fertile ground main gold",
           "drawLabel": false,
           "labelPos": "N",
-          "stationSymbol": false
+          "stationSymbol": false,
+          "changeToLineStation": [
+            "POLICY",
+            "Innovation lab gold"
+          ]
         },
         {
           "coords": [
@@ -1333,7 +1337,11 @@
           "name": "External network main gold",
           "drawLabel": false,
           "labelPos": "SW",
-          "stationSymbol": false
+          "stationSymbol": false,
+          "changeToLineStation": [
+            "POLICY",
+            "Grand station gold"
+          ]
         },
         {
           "coords": [
@@ -2093,7 +2101,11 @@
           "name": "Fertile ground main red",
           "drawLabel": false,
           "labelPos": "SW",
-          "stationSymbol": false
+          "stationSymbol": false,
+          "changeToLineStation": [
+            "STUDENT",
+            "Innovation lab red"
+          ]
         },
         {
           "coords": [
