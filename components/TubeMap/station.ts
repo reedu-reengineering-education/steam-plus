@@ -25,6 +25,8 @@ export type Station = {
   link: string
   name: string
   label: string
+  drawLabel: boolean
+  nodeName: string
   position: Position
   x: number
   y: number
@@ -37,7 +39,6 @@ export type Station = {
   stationFillColor: string
   lineLabel: boolean
   lineLabelPos: LabelPosition
-  lineLabelPath: string
   lineLabelShiftX: number
   lineLabelShiftY: number
   labelPos: LabelPosition
@@ -48,6 +49,8 @@ export type Station = {
   shiftX: number
   shiftY: number
   coords: number[]
+  changeToLineStation: string[]
+  changeToLineOrder: string
 }
 
 type TubeMap = {
@@ -72,7 +75,7 @@ class Stations {
     for (const name in this.stations) {
       if (this.stations.hasOwnProperty(name)) {
         const station = this.stations[name]
-        station.name = name
+        station.nodeName = name
         stations.push(station)
       }
     }
@@ -84,7 +87,7 @@ class Stations {
     console.log('labeledStations - toArray: ', doubles)
 
     return doubles.filter(function (station) {
-      return station.lineLabel === false
+      return station.lineLabel === false && station.drawLabel
     })
   }
   lineLabelStations() {
@@ -120,7 +123,13 @@ const extractStations = (data: TubeMap) => {
       if (!data.stations.hasOwnProperty(d.name))
         throw new Error('Cannot find station with key: ' + d.name)
 
+      // What the hell is going on here
       var station: Station = data.stations[d.name]
+      // if (station.name === 'innovation-lab-policy') {
+      //   console.log("ALARM")
+      //   console.log(station)
+      // }
+      // break;
 
       station.x = d.coords[0]
       station.y = d.coords[1]
@@ -140,11 +149,17 @@ const extractStations = (data: TubeMap) => {
       station.stationFillColor = d.hasOwnProperty('stationFillColor')
         ? d.stationFillColor
         : '#ffffff'
+      station.drawLabel = d.hasOwnProperty('drawLabel') ? d.drawLabel : true
+      station.changeToLineStation = d.hasOwnProperty('changeToLineStation')
+        ? d.changeToLineStation
+        : []
+      station.changeToLineOrder = d.hasOwnProperty('changeToLineOrder')
+        ? d.changeToLineOrder
+        : 'next'
 
       if (d.lineLabel === true) {
         station.lineLabel = true
         station.lineLabelPos = d.lineLabelPos
-        station.lineLabelPath = d.lineLabelPath
         station.lineLabelShiftX = d.lineLabelShiftX || 0
         station.lineLabelShiftY = d.lineLabelShiftY || 0
       } else {

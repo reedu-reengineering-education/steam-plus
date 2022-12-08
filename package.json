@@ -17,7 +17,7 @@
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^2.0.13",
     "axios": "^0.27.2",
-    "clsx": "^1.2.0",
+    "clsx": "^1.2.1",
     "d3": "^7.6.1",
     "mapbox-gl": "npm:empty-npm-package@1.0.0",
     "maplibre-gl": "^2.1.9",
@@ -25,9 +25,13 @@
     "prettier-plugin-tailwindcss": "^0.1.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "rehype-stringify": "^9.0.3",
+    "rehype-video": "^1.2.2",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "remark-oembed": "^1.2.2",
+    "remark-rehype": "^10.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
