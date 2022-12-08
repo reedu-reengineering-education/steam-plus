@@ -179,9 +179,7 @@ export default function StationPage({
             </a>
           </Link>
         )}
-        <div
-          className={`w-1/2 border-2 ${colorClass} border-trail-policy`}
-        ></div>
+        <div className={`w-1/2 border-2 ${colorClass}`}></div>
         <div className="m-0 p-4 text-center text-lg font-bold">
           {station.label}
         </div>
