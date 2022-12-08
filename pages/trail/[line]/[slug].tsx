@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticPathsResult, GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
 import { getDirectusClient } from '../../../lib/directus'
@@ -11,6 +11,7 @@ import PostBody from '@/components/Post/Body'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { useEffect, useState } from 'react'
+import { Connector } from '@/components/Elements/Connector'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -151,7 +152,7 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 type StationPageProps = {
-  line: string
+  line: 'teacher' | 'student' | 'policy' | 'educational'
   slug: string
   station: Station
   neighbours: {
@@ -174,8 +175,6 @@ export default function StationPage({
     useState<Station | null>()
   const [interchangeableStationOrder, setInterchangeableStationOrder] =
     useState<string>('next')
-
-  const colorClass = `border-trail-${line}`
 
   useEffect(() => {
     // If changeLine is bigger than 0 there
@@ -215,10 +214,10 @@ export default function StationPage({
   return (
     <div className="flex w-full flex-col">
       <div className="flex items-center justify-between">
-        <div className="flex flex-col justify-between border-r-2">
+        <div className="flex flex-col justify-between">
           {neighbours.previous && (
             <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
-              <a className="p-4 text-center text-xs">
+              <a className="border-r-2 border-trail-teacher p-4 text-center text-xs">
                 {neighbours.previous.label}
               </a>
             </Link>
@@ -239,16 +238,17 @@ export default function StationPage({
               </>
             )}
         </div>
-        <div className={`w-1/2 border-2 ${colorClass}`}></div>
+        <Connector className="w-1/2" variant={line}></Connector>
         <div className="m-0 p-4 text-center text-lg font-bold">
           {station.label}
         </div>
-        {/* <div className={`w-1/2 border-2 ${colorClass}`}></div> */}
-        <div className={clsx('w-1/2', 'border-2', colorClass)}></div>
-        <div className="flex flex-col justify-between border-l-2">
+        <Connector className="w-1/2" variant={line}></Connector>
+        <div className="flex flex-col justify-between">
           {neighbours.next && (
             <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-              <a className="p-4 text-center text-xs">{neighbours.next.label}</a>
+              <a className="border-l-2 p-4 text-center text-xs">
+                {neighbours.next.label}
+              </a>
             </Link>
           )}
           {interchangeableStation && interchangeableStationOrder === 'next' && (
@@ -259,7 +259,7 @@ export default function StationPage({
                 }`}
                 passHref
               >
-                <a className="p-4 text-center text-xs">
+                <a className="border-l-2 p-4 text-center text-xs">
                   {interchangeableStation.label}
                 </a>
               </Link>
