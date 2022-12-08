@@ -9,6 +9,7 @@ import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
 import Link from 'next/link'
+import clsx from 'clsx'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -86,7 +87,7 @@ export const getStaticProps: GetStaticProps = async context => {
 
   let previousStation: Station | null = null
   let nextStation: Station | null = null
-  if (currentLine[0].name !== 'STUDENT' && currentLine[0].name !== 'POLICY') {
+  if (currentLine[0].name !== 'STUDENT') {
     if (
       indexOfStation != 1 &&
       indexOfStation != currentLine[0].stations.length - 1
@@ -106,7 +107,10 @@ export const getStaticProps: GetStaticProps = async context => {
         .toArray()
         .filter(elem => elem.nodeName === next)[0]
     } else {
-      previousStation = null
+      const previous = currentLine[0].stations[indexOfStation - 1]
+      previousStation = transformedMapData.stations
+        .toArray()
+        .filter(elem => elem.nodeName === previous)[0]
       nextStation = null
     }
   }
@@ -183,10 +187,11 @@ export default function StationPage({
         <div className="m-0 p-4 text-center text-lg font-bold">
           {station.label}
         </div>
-        <div className={`w-1/2 border-2 ${colorClass}`}></div>
+        {/* <div className={`w-1/2 border-2 ${colorClass}`}></div> */}
+        <div className={clsx('w-1/2', 'border-2', colorClass)}></div>
         {neighbours.next && (
           <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-            <a className="p-4 text-center text-sm">{neighbours.next.name}</a>
+            <a className="p-4 text-center text-sm">{neighbours.next.label}</a>
           </Link>
         )}
       </div>

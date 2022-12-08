@@ -25,6 +25,7 @@ export type Station = {
   link: string
   name: string
   label: string
+  drawLabel: boolean
   nodeName: string
   position: Position
   x: number
@@ -85,7 +86,7 @@ class Stations {
     console.log('labeledStations - toArray: ', doubles)
 
     return doubles.filter(function (station) {
-      return station.lineLabel === false
+      return station.lineLabel === false && station.drawLabel
     })
   }
   lineLabelStations() {
@@ -147,6 +148,7 @@ const extractStations = (data: TubeMap) => {
       station.stationFillColor = d.hasOwnProperty('stationFillColor')
         ? d.stationFillColor
         : '#ffffff'
+      station.drawLabel = d.hasOwnProperty('drawLabel') ? d.drawLabel : true
 
       if (d.lineLabel === true) {
         station.lineLabel = true

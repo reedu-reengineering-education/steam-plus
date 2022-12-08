@@ -17,7 +17,7 @@
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^2.0.13",
     "axios": "^0.27.2",
-    "clsx": "^1.2.0",
+    "clsx": "^1.2.1",
     "d3": "^7.6.1",
     "mapbox-gl": "npm:empty-npm-package@1.0.0",
     "maplibre-gl": "^2.1.9",
