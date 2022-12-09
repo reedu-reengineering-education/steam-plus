@@ -1115,7 +1115,7 @@
         },
         {
           "coords": [
-            89,
+            88.5,
             -52
           ],
           "name": "Grand Station green",
@@ -1125,7 +1125,7 @@
         },
         {
           "coords": [
-            89,
+            88.5,
             0
           ],
           "name": "Embedding the Lab main green",
@@ -1241,7 +1241,7 @@
         },
         {
           "coords": [
-            91,
+            91.5,
             -54
           ],
           "name": "Grand Station gold",
@@ -1251,7 +1251,7 @@
         },
         {
           "coords": [
-            91,
+            91.5,
             0
           ],
           "name": "Embedding the Lab main gold",
@@ -1477,7 +1477,9 @@
             0,
             1
           ],
-          "stationSymbol": "triple"
+          "stationAngle": -45,
+          "stationSymbol": "triple",
+          "shiftCoords": [-1.5, -2]
         },
         {
           "coords": [
@@ -2278,7 +2280,7 @@
         },
         {
           "coords": [
-            92,
+            93,
             -2
           ],
           "name": "Embedding the Lab main red dash",
@@ -2288,7 +2290,7 @@
         },
         {
           "coords": [
-            92,
+            93,
             -50
           ]
         }
