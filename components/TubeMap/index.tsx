@@ -972,7 +972,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .attr('ry', lineWidth)
       .attr('width', function (d) {
         if (d.stationSymbol === 'grand') {
-          return lineWidth * 6.4
+          return lineWidth * 10.4
         }
         return lineWidth * 4.4
       })

@@ -1379,6 +1379,7 @@
             1.5,
             -9
           ],
+          "shiftCoords": [-2, 0],
           "labelBold": true,
           "stationSymbol": "grand"
         },
