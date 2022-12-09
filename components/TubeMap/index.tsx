@@ -123,7 +123,14 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         line.name.startsWith(selectedLine.name.toUpperCase()),
       )
       console.log('Selected line: ', lines)
-      const [stations] = lines.map(line => line.nodes.filter(node => node.name))
+      let stations: Station[] = []
+
+      for (let index = 0; index < lines.length; index++) {
+        const line = lines[index]
+        const nodes = line.nodes.filter(node => node.name)
+        stations.push(nodes)
+      }
+      stations = stations.flat()
       console.log('Stations: ', stations)
 
       // Reset all lines and stations to default
@@ -148,9 +155,13 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
           d3.select(this).attr('fill', d.stationFillColor)
         })
       } else {
-        // Highlight selected line or better fade out not selected lines
+        // Highlight selected line and hide selected lines
         d3.selectAll('.line').each(function (this, d: Line) {
-          if (d.name.toLowerCase() !== selectedLine.name.toLocaleLowerCase()) {
+          if (
+            !d.name
+              .toLowerCase()
+              .startsWith(selectedLine.name.toLocaleLowerCase())
+          ) {
             d3.select(this)
               .attr('highlighted', 'true')
               .attr('stroke', '#C2C5CC')
@@ -165,7 +176,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
 
         // Reset all stations to default size
         d3.selectAll('.station').each(function (this, d: Station) {
-          if (stations.findIndex(station => station.name === d.name) === -1) {
+          if (
+            stations.findIndex(station => station.name === d.nodeName) === -1
+          ) {
             if (d.name.includes('main')) {
               const [name] = d.name.split('main')
 
@@ -181,15 +194,20 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
             }
 
             d3.select(this).attr('stroke', '#C2C5CC')
+            d3.select(this).attr('d', trainStop(lineWidth))
           } else {
             d3.select(this).attr('stroke', '#000000')
+            const highlightedTrainStop = trainStop(lineWidth, true)
+
+            d3.select(this).attr('d', highlightedTrainStop)
           }
-          d3.select(this).attr('d', trainStop(lineWidth))
         })
 
         // Highlight or fade out labels of non selected lines
         d3.selectAll('.label').each(function (this, d: Station) {
-          if (stations.findIndex(station => station.name === d.name) === -1) {
+          if (
+            stations.findIndex(station => station.name === d.nodeName) === -1
+          ) {
             if (d.name.includes('main')) {
               return
             }
@@ -207,24 +225,13 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         // Highlight or fade out line labels of non selected line labels
         d3.selectAll('.linelabel').each(function (this, d: Station) {
           d3.select(this).attr('fill', '#C2C5CC')
-          if (stations.findIndex(station => station.name === d.name) === -1) {
+          if (
+            stations.findIndex(station => station.name === d.nodeName) === -1
+          ) {
             d3.select(this).attr('fill', '#C2C5CC')
           } else {
             d3.select(this).attr('fill', d.stationFillColor)
           }
-        })
-
-        // Highlight stations of selected lines
-        lines.forEach(line => {
-          line.nodes.forEach(node => {
-            if (node.name) {
-              const highlightedTrainStop = trainStop(lineWidth, true)
-              d3.select(`.station.${classFromName(node.name)}`).attr(
-                'd',
-                highlightedTrainStop,
-              )
-            }
-          })
         })
       }
     }
@@ -846,7 +853,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         toggleHighlight(d, lineWidth)
       })
       .on('click', function (this, d) {
-        console.log(d.target)
         const newWindow = window.open(
           d.target.__data__.link,
           '_blank',
