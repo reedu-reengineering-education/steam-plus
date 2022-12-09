@@ -226,7 +226,7 @@
         "lon": 13.3314365
       }
     },
-    "Within HEI network black": {
+    "Within HEI network main black": {
       "id": 29046970,
       "name": "hei-network-teacher",
       "label": "Within\nHEI network",
@@ -1708,8 +1708,8 @@
             50,
             -20
           ],
-          "name": "Within HEI network black",
-          "drawlabel": false,
+          "name": "Within HEI network main black",
+          "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
