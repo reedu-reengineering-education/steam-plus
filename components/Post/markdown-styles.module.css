@@ -25,6 +25,10 @@
   @apply list-inside list-disc;
 }
 
+.markdown li {
+  @apply list-decimal;
+}
+
 .markdown table {
   @apply border-2 border-steam-green;
 }
@@ -36,4 +40,8 @@
 /* Hide table head */
 .markdown thead {
   @apply hidden;
+}
+
+.markdown iframe {
+  @apply w-full h-80 mb-2;
 }
