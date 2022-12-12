@@ -76,11 +76,13 @@ const Mpi = ({ data }: MpiPageProps) => {
                     src={require('@/assets/logos/starter.svg')}
                     alt="Starters Icon"
                   />
-                  <h2 className="text-steam-green-text-50">Starters</h2>
+                  <h2 className="text-lg font-bold text-steam-green-text-50">
+                    Starters
+                  </h2>
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-sm font-light">
+              <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'starter')
                   .map(starter => {
@@ -103,11 +105,13 @@ const Mpi = ({ data }: MpiPageProps) => {
                     src={require('@/assets/logos/main-meal.svg')}
                     alt="Main meals Icon"
                   />
-                  <h2 className="text-steam-green-text-50">Main meals</h2>
+                  <h2 className="text-lg font-bold text-steam-green-text-50">
+                    Main meals
+                  </h2>
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-sm font-light">
+              <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'main')
                   .map(starter => {
@@ -131,11 +135,13 @@ const Mpi = ({ data }: MpiPageProps) => {
                     src={require('@/assets/logos/dessert.svg')}
                     alt="Desserts Icon"
                   />
-                  <h2 className="text-steam-green-text-50">Desserts</h2>
+                  <h2 className="text-lg font-bold text-steam-green-text-50">
+                    Desserts
+                  </h2>
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-sm font-light">
+              <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'dessert')
                   .map(starter => {
@@ -160,13 +166,15 @@ const Mpi = ({ data }: MpiPageProps) => {
                       src={require('@/assets/logos/beverage.svg')}
                       alt="Beverages Icon"
                     />
-                    <h2 className="text-steam-green-text-50">Beverages</h2>
+                    <h2 className="text-lg font-bold text-steam-green-text-50">
+                      Beverages
+                    </h2>
                   </div>
                 </Link>
                 <hr className="my-4 h-px border-0 bg-steam-green-100" />
               </div>
               <div>
-                <ul className="p-2 text-left text-sm font-light">
+                <ul className="p-2 text-left text-base font-light">
                   {data
                     .filter(entry => entry.category === 'beverage')
                     .map(starter => {
@@ -189,10 +197,12 @@ const Mpi = ({ data }: MpiPageProps) => {
                 <Link href={`mpi/takeaway`}>
                   <div className="cursor-pointer hover:underline">
                     <Image
-                      src={require('@/assets/logos/beverage.svg')}
+                      src={require('@/assets/logos/takeaway.svg')}
+                      width={88}
+                      height={79}
                       alt="Beverages Icon"
                     />
-                    <h2 className="text-steam-green-text-50">
+                    <h2 className="text-lg font-bold text-steam-green-text-50">
                       On the way home
                     </h2>
                   </div>
@@ -200,7 +210,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 <hr className="my-4 h-px border-0 bg-steam-green-100" />
               </div>
               <div>
-                <ul className="p-2 text-left text-sm font-light">
+                <ul className="p-2 text-left text-base font-light">
                   {data
                     .filter(entry => entry.category === 'takeaway')
                     .map(starter => {

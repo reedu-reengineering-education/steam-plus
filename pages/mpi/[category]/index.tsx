@@ -80,10 +80,12 @@ const MenuCategoryPage = ({ category, entries }: MenuCategoryPageProps) => {
         <div className="flex flex-col p-2 text-center">
           <div className="cursor-pointer hover:underline">
             <MenuIcon category={category} />
-            <h2 className="capitalize text-steam-green-text-50">{category}</h2>
+            <h2 className="text-lg font-bold capitalize text-steam-green-text-50">
+              {category}
+            </h2>
           </div>
           <hr className="my-4 h-px border-0 bg-steam-green-100" />
-          <ul className="p-2 text-left text-sm font-light">
+          <ul className="p-2 text-left text-base font-light">
             {entries &&
               entries.map(entry => {
                 return (

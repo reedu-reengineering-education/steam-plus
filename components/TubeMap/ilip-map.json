@@ -340,7 +340,7 @@
     "Innovation lab black": {
       "id": 5183375788,
       "name": "innovation-lab-teacher",
-      "label": "Innovation lab",
+      "label": "What is a transdisciplinary\ninnovation lab?",
       "link": "/trail/teacher/innovation-lab-teacher",
       "position": {
         "lat": 52.5379819,
@@ -370,7 +370,7 @@
     "A transdiciplinary approach black": {
       "id": 5183374155,
       "name": "approach-teacher",
-      "label": "A transdiciplinary\napproach",
+      "label": "How does change\nhappen",
       "link": "/trail/teacher/approach-teacher",
       "position": {
         "lat": 52.537652,
@@ -380,7 +380,7 @@
     "Contribute to a sustainability-oriented new generation": {
       "id": 5726082246,
       "name": "contribute-teacher",
-      "label": "Contribute to a sustainability-\noriented new generation",
+      "label": "Why is change\nneeded",
       "link": "/trail/teacher/contribute-teacher",
       "position": {
         "lat": 52.5388381,
