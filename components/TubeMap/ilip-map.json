@@ -866,16 +866,6 @@
         "lon": 13.3105328
       }
     },
-    "Become a teacher main": {
-      "id": 29123762,
-      "name": "Become a teacher main",
-      "label": "Become\na teacher",
-      "link": "/trail/teacher/become-a-teacher-student",
-      "position": {
-        "lat": 52.511837,
-        "lon": 13.3105328
-      }
-    },
     "Become a teacher red": {
       "id": 29123762,
       "name": "become-a-teacher-student",
@@ -1552,7 +1542,7 @@
             120,
             -25
           ],
-          "name": "Become a teacher main",
+          "name": "Become a teacher red",
           "labelPos": "E",
           "labelShiftCoords": [
             1.5,
@@ -2042,13 +2032,11 @@
             -25
           ],
           "name": "Become a teacher red",
-          "drawLabel": false,
           "labelPos": "E",
           "labelShiftCoords": [
             10.5,
             0
-          ],
-          "stationSymbol": false
+          ]
         },
         {
           "coords": [
