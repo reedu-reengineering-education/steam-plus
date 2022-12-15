@@ -146,7 +146,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         })
         d3.selectAll('.station').each(function (this, d: Station) {
           const stop = trainStop(lineWidth, false)
-          d3.select(this).attr('d', stop).attr('stroke', '#000000')
+          d3.select(this)
+            .attr('d', stop)
+            .attr('stroke', '#000000')
+            .on('click', null)
         })
         d3.selectAll('.label').each(function (this, d: Station) {
           d3.select(this).attr('fill', '#000000')
@@ -197,12 +200,21 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
             }
 
             d3.select(this).attr('stroke', '#C2C5CC')
-            d3.select(this).attr('d', trainStop(lineWidth))
+            d3.select(this).attr('d', trainStop(lineWidth)).on('click', null)
           } else {
             d3.select(this).attr('stroke', '#000000')
             const highlightedTrainStop = trainStop(lineWidth, true)
 
-            d3.select(this).attr('d', highlightedTrainStop)
+            d3.select(this)
+              .attr('d', highlightedTrainStop)
+              .on('click', function (d) {
+                const newWindow = window.open(
+                  d.target.__data__.link,
+                  '_blank',
+                  'noopener,noreferrer',
+                )
+                if (newWindow) newWindow.opener = null
+              })
           }
         })
 
@@ -934,14 +946,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       })
       .attr('data-link', function (d) {
         return d.link
-      })
-      .on('click', function (d) {
-        const newWindow = window.open(
-          d.target.__data__.link,
-          '_blank',
-          'noopener,noreferrer',
-        )
-        if (newWindow) newWindow.opener = null
       })
       .append('path')
       .attr('d', trainStop(lineWidth))
