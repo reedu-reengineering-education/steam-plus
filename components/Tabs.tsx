@@ -22,7 +22,7 @@ type TabsProps = {
 
 export default function Tabs({ tabs, selectedTab, onChange }: TabsProps) {
   return (
-    <div className="w-full max-w-md px-2 py-16 sm:px-0">
+    <div className="w-full max-w-md px-2 py-2 sm:px-0">
       <Tab.Group onChange={onChange} selectedIndex={selectedTab}>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
           {tabs.map(tab => (
@@ -60,7 +60,7 @@ export default function Tabs({ tabs, selectedTab, onChange }: TabsProps) {
                 'ring-white ring-opacity-60',
               )}
             >
-              <div className="current-article">
+              <div className="current-article text-2xl">
                 <PostBody content={tab.markdown} />
               </div>
             </Tab.Panel>

@@ -90,9 +90,10 @@ const Trail = ({ lines }: TrailPageProps) => {
         </h1>
         <Spacer />
         <p className="pt-4 text-base font-light">
-          Add some description here how to use the TRAIL map.
+          Start by selecting a line of the TRAIL Map by clicking on one of the
+          tabs or the starting line station.
         </p>
-        <Spacer />
+        <Spacer size="xs" />
         <Tabs
           tabs={lines as Tab[]}
           onChange={tabChanged}
