@@ -82,7 +82,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
+              <ul className="p-2 text-center text-base font-light">
                 {data
                   .filter(entry => entry.category === 'starter')
                   .map(starter => {
@@ -111,7 +111,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
+              <ul className="p-2 text-center text-base font-light">
                 {data
                   .filter(entry => entry.category === 'main')
                   .map(starter => {
@@ -141,7 +141,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-px border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
+              <ul className="divide-y-2 p-2 text-center text-base font-light">
                 {data
                   .filter(entry => entry.category === 'dessert')
                   .map(starter => {
@@ -150,6 +150,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                         <Link href={`mpi/dessert/${starter.slug}`}>
                           <a>{starter.title}</a>
                         </Link>
+                        <hr className="my-4 mx-auto h-px w-1/2 border-0 bg-steam-green-100" />
                       </li>
                     )
                   })}
