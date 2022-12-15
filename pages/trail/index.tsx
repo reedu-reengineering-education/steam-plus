@@ -60,7 +60,10 @@ const Trail = ({ lines }: TrailPageProps) => {
   useEffect(() => {
     console.log('Effect router.query', router.query)
     const line = lines.find(line => line.name === router.query.line)
-    const tabIndex = lines.indexOf(line)
+    let tabIndex = 0
+    if (line) {
+      tabIndex = lines.indexOf(line)
+    }
     console.log('indexOf', tabIndex)
     setSelectedLine(line)
     setSelectedTab(tabIndex)
