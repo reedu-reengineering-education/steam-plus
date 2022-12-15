@@ -897,7 +897,7 @@
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
-          "labelBold": true,
+          "labelBold": false,
           "labelShiftCoords": [
             1,
             2
@@ -912,7 +912,7 @@
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
-          "labelBold": true,
+          "labelBold": false,
           "labelShiftCoords": [
             1,
             2
@@ -927,7 +927,7 @@
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
-          "labelBold": true,
+          "labelBold": false,
           "labelShiftCoords": [
             1,
             2
@@ -942,7 +942,7 @@
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
-          "labelBold": true,
+          "labelBold": false,
           "labelShiftCoords": [
             1,
             2
