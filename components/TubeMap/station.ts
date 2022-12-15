@@ -27,6 +27,7 @@ export type Station = {
   label: string
   drawLabel: boolean
   nodeName: string
+  lineName: string
   position: Position
   x: number
   y: number
@@ -125,11 +126,6 @@ const extractStations = (data: TubeMap) => {
 
       // What the hell is going on here
       var station: Station = data.stations[d.name]
-      // if (station.name === 'innovation-lab-policy') {
-      //   console.log("ALARM")
-      //   console.log(station)
-      // }
-      // break;
 
       station.x = d.coords[0]
       station.y = d.coords[1]
@@ -162,6 +158,7 @@ const extractStations = (data: TubeMap) => {
         station.lineLabelPos = d.lineLabelPos
         station.lineLabelShiftX = d.lineLabelShiftX || 0
         station.lineLabelShiftY = d.lineLabelShiftY || 0
+        station.lineName = line.name
       } else {
         station.lineLabel = false
       }

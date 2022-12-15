@@ -1,4 +1,5 @@
 import { Tab } from '@headlessui/react'
+import { useState } from 'react'
 import PostBody from './Post/Body'
 
 function classNames(...classes: any) {
@@ -15,13 +16,14 @@ export type Tab = {
 
 type TabsProps = {
   tabs: Tab[]
+  selectedTab: number
   onChange: (index: number) => void
 }
 
-export default function Tabs({ tabs, onChange }: TabsProps) {
+export default function Tabs({ tabs, selectedTab, onChange }: TabsProps) {
   return (
     <div className="w-full max-w-md px-2 py-16 sm:px-0">
-      <Tab.Group onChange={onChange}>
+      <Tab.Group onChange={onChange} selectedIndex={selectedTab}>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
           {tabs.map(tab => (
             <Tab

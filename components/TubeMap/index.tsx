@@ -7,6 +7,7 @@ import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
 import { Line as TrailLine } from '../../lib/directus'
+import { useRouter } from 'next/router'
 
 function transformData(data: any) {
   return {
@@ -29,6 +30,8 @@ type TubeMapProps = {
 }
 
 export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
+  const router = useRouter()
+
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [data] = useState(transformData(ilipMapData))
   const [lineWidth, setLineWidth] = useState<number>(0)
@@ -655,6 +658,9 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .attr('class', function (d) {
         return 'label ' + classFromName(d.name)
       })
+      .attr('data-lineName', function (d) {
+        return d.lineName.toLowerCase()
+      })
       .style('font-size', 4 * lineWidth + 'px')
       .style('font-weight', function (d) {
         return d.labelBold ? '700' : '400'
@@ -669,6 +675,15 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         return (
           yScale(d.y - d.lineLabelShiftY) - lineLabelPos(d, lineWidth).pos[1]
         )
+      })
+      .style('cursor', 'pointer')
+      .on('click', function (this, d) {
+        router.replace({
+          pathname: router.pathname,
+          query: {
+            line: d3.select(this).attr('data-lineName'),
+          },
+        })
       })
       .attr('fill', 'white')
       .call(wrap, function (d) {

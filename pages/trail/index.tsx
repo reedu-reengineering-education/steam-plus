@@ -5,6 +5,7 @@ import { getDirectusClient, Line } from '@/lib/directus'
 import { GetStaticProps } from 'next'
 import { RefObject, useEffect, useRef, useState } from 'react'
 import markdownToHtml from '@/lib/markdownToHtml'
+import { useRouter } from 'next/router'
 
 type TrailPageProps = {
   lines: Line[]
@@ -40,11 +41,14 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 const Trail = ({ lines }: TrailPageProps) => {
+  const router = useRouter()
+
   const ref: RefObject<HTMLDivElement> = useRef(null)
   const [height, setHeight] = useState(0)
   const [width, setWidth] = useState(0)
 
   const [selectedLine, setSelectedLine] = useState<Line>()
+  const [selectedTab, setSelectedTab] = useState<number>(0)
 
   useEffect(() => {
     if (ref.current != null) {
@@ -53,9 +57,27 @@ const Trail = ({ lines }: TrailPageProps) => {
     }
   }, [])
 
+  useEffect(() => {
+    console.log('Effect router.query', router.query)
+    const line = lines.find(line => line.name === router.query.line)
+    const tabIndex = lines.indexOf(line)
+    console.log('indexOf', tabIndex)
+    setSelectedLine(line)
+    setSelectedTab(tabIndex)
+
+    return () => {}
+  }, [router.query])
+
   const tabChanged = (index: number) => {
     const line = lines.find(line => line.id === index + 1)
     setSelectedLine(line)
+
+    router.replace({
+      pathname: router.pathname,
+      query: {
+        line: line?.name,
+      },
+    })
   }
 
   return (
@@ -69,7 +91,11 @@ const Trail = ({ lines }: TrailPageProps) => {
           Add some description here how to use the TRAIL map.
         </p>
         <Spacer />
-        <Tabs tabs={lines as Tab[]} onChange={tabChanged} />
+        <Tabs
+          tabs={lines as Tab[]}
+          onChange={tabChanged}
+          selectedTab={selectedTab}
+        />
       </div>
       <div className="flex w-full flex-col rounded-md border-2 p-4 drop-shadow-lg lg:w-2/3">
         <div ref={ref} className="h-192 min-h-full w-full">
