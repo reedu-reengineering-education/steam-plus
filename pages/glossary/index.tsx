@@ -1,6 +1,6 @@
-import { Spacer } from '@/components/Elements/Spacer'
 import SlideOver from '@/components/SlideOver'
 import { getDirectusClient, Glossary } from '@/lib/directus'
+import { TrashIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from 'react'
 
 interface Dictionary<T> {
@@ -88,12 +88,12 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
 
   return (
     <div className="flex flex-col gap-12 md:flex-row">
-      <div className="flex w-full flex-col rounded-md border-2 border-ocean-green-500 bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex w-full flex-col rounded-md border-4 border-ocean-green-500 bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
         <h1 className="text-center text-2xl font-bold uppercase text-ocean-green-500">
           Glossary
         </h1>
-        <div className="flex flex-col divide-y-2">
-          <div className="p-4">
+        <div className="flex flex-col divide-y-2 pt-10">
+          <div className="flex items-center">
             <input
               className="w-full rounded-md p-2 text-ocean-green-300 focus:outline-none focus:ring-2 focus:ring-ocean-green-300"
               type="text"
@@ -103,6 +103,22 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
               onChange={e => setSearchTerm(e.target.value)}
               placeholder="Search glossary"
             />
+            {searchTerm.length > 0 ? (
+              <div className="absolute right-6">
+                <button
+                  type="button"
+                  className="rounded-md p-1 text-ocean-green hover:bg-ocean-green-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                  onClick={() => setSearchTerm('')}
+                >
+                  <span className="sr-only">Delete search term</span>
+                  <TrashIcon
+                    className="h-5 w-5"
+                    strokeWidth={2}
+                    aria-hidden="true"
+                  />
+                </button>
+              </div>
+            ) : null}
           </div>
         </div>
         <div className="flex flex-wrap justify-start gap-10 p-4">
