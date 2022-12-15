@@ -262,8 +262,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.6
-    const initialTranslate = [-(width / 3), -(height / 4)]
+    const initialScale = 0.9
+    const initialTranslate = [-(width / 8), -(height / 12)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
     zoomBehavior.translateTo(
