@@ -30,7 +30,7 @@ export default function Tabs({ tabs, selectedTab, onChange }: TabsProps) {
               key={tab.id}
               className={() =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-white',
+                  'w-full rounded-lg p-2.5 text-sm font-medium leading-5 text-white',
                   'capitalize ring-opacity-60 ring-offset-2 focus:outline-none focus:ring',
                   tab.name.toLowerCase() === 'teacher'
                     ? 'bg-trail-teacher hover:bg-trail-teacher-400'
