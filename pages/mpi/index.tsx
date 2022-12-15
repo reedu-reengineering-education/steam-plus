@@ -59,7 +59,7 @@ const Mpi = ({ data }: MpiPageProps) => {
           Enjoy our starters, mains, desserts and beverages!
         </p>
       </div>
-      <div className="flex w-full flex-col rounded-md border border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
         <div className="mx-auto text-center text-steam-green-text">
           <h1 className="text-4xl font-black">STEAM+</h1>
           <h3 className="text-xl font-light">MENU FOR POLICY INSPIRATION</h3>
