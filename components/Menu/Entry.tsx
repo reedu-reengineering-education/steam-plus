@@ -19,7 +19,7 @@ export default function MenuEntry({
           <MenuIcon category={category} />
           <h2 className="text-steam-green-text-50">{title}</h2>
         </div>
-        <hr className="my-4 h-px border-0 bg-steam-green-100" />
+        <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
         <ul className="p-2 text-left text-sm font-light">
           <PostBody content={markdown} />
         </ul>
