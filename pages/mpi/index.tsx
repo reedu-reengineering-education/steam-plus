@@ -81,7 +81,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                   </h2>
                 </div>
               </Link>
-              <hr className="my-4 h-px border-0 bg-steam-green-100" />
+              <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'starter')
@@ -110,7 +110,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                   </h2>
                 </div>
               </Link>
-              <hr className="my-4 h-px border-0 bg-steam-green-100" />
+              <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'main')
@@ -140,7 +140,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                   </h2>
                 </div>
               </Link>
-              <hr className="my-4 h-px border-0 bg-steam-green-100" />
+              <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               <ul className="p-2 text-left text-base font-light">
                 {data
                   .filter(entry => entry.category === 'dessert')
@@ -171,7 +171,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     </h2>
                   </div>
                 </Link>
-                <hr className="my-4 h-px border-0 bg-steam-green-100" />
+                <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               </div>
               <div>
                 <ul className="p-2 text-left text-base font-light">
@@ -207,7 +207,7 @@ const Mpi = ({ data }: MpiPageProps) => {
                     </h2>
                   </div>
                 </Link>
-                <hr className="my-4 h-px border-0 bg-steam-green-100" />
+                <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               </div>
               <div>
                 <ul className="p-2 text-left text-base font-light">
