@@ -37,6 +37,14 @@
   @apply p-2 border-2 border-steam-green;
 }
 
+.markdown blockquote {
+  @apply border-l-4
+}
+
+.markdown blockquote > p {
+  @apply pl-4
+}
+
 /* Hide table head */
 .markdown thead {
   @apply hidden;

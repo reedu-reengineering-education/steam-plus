@@ -60,7 +60,7 @@
     "Innovation lab red": {
       "id": 3894910680,
       "name": "innovation-lab-student",
-      "label": "Innovation lab",
+      "label": "What is a transdisciplinary\n innovation lab?",
       "link": "/trail/student/innovation-lab-student",
       "position": {
         "lat": 52.5742433,
@@ -70,7 +70,7 @@
     "Strengthen STEM with STEAM red": {
       "id": 29190897,
       "name": "strengthen-stem-student",
-      "label": "Strengthen STEM\nwith STEAM",
+      "label": "Strengthen STEM\nwith STEAM+",
       "link": "/trail/student/strengthen-stem-student",
       "position": {
         "lat": 52.5754161,
@@ -80,7 +80,7 @@
     "A transdiciplinary approach red": {
       "id": 5219721338,
       "name": "approach-student",
-      "label": "A transdisciplinary\napproach",
+      "label": "How does change\nhappen?",
       "link": "/trail/student/approach-student",
       "position": {
         "lat": 52.5786231,
@@ -90,7 +90,7 @@
     "Contribute to a more sustainable future red": {
       "id": 107606908,
       "name": "contribute-student",
-      "label": "Contribute to a more\nsustainable future",
+      "label": "Why is change\nneeded?",
       "link": "/trail/student/contribute-student",
       "position": {
         "lat": 52.5883733,
@@ -100,7 +100,7 @@
     "Why board red": {
       "id": 5219721339,
       "name": "why-board-student",
-      "label": " Why board",
+      "label": " Why would\nyou board?",
       "link": "/trail/student/why-board-student",
       "position": {
         "lat": 52.5956412,
