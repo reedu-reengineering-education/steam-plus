@@ -1115,15 +1115,15 @@
           "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [64, -55],
+          "coords": [59, -54]
+        },
+        {
+          "coords": [64, -54],
           "name": "Crossroads",
           "labelPos": "SE",
           "stationSymbol": "single",
           "labelShiftCoords": [0, 0],
           "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
-        },
-        {
-          "coords": [70, -54]
         },
         {
           "coords": [91.5, -54],
@@ -1149,19 +1149,19 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [63.5, -55]
+          "coords": [64, -54]
         },
         {
-          "coords": [23.5, -15]
+          "coords": [24, -14]
         },
         {
-          "coords": [28.5, -10]
+          "coords": [30, -9]
         },
         {
-          "coords": [31.75, -7]
+          "coords": [32.25, -7.5]
         },
         {
-          "coords": [35.25, -10.5],
+          "coords": [35.55, -10.5],
           "name": "Fertile ground main gold",
           "drawLabel": false,
           "labelPos": "N",
@@ -1195,7 +1195,7 @@
           "coords": [75.25, -50.5]
         },
         {
-          "coords": [78.75, -53.5]
+          "coords": [78, -53.5]
         }
       ]
     },
