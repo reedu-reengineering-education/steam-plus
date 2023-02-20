@@ -13,6 +13,10 @@ import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 import { Connector } from '@/components/Elements/Connector'
 import { BorderY } from '@/components/Elements/BorderY'
+import {
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from '@heroicons/react/24/outline'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -214,7 +218,7 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col">
-      <div className="flex items-center justify-between">
+      {/* <div className="flex items-center justify-between">
         <div className="flex flex-col justify-between">
           {neighbours.previous && (
             <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
@@ -283,8 +287,40 @@ export default function StationPage({
             </>
           )}
         </div>
-      </div>
-      <div className="current-article">
+      </div> */}
+      <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
+        <div className="m-2 flex justify-between p-4 text-steam-green-text">
+          <div className="flex hover:cursor-pointer">
+            {neighbours.previous ? (
+              <Link
+                href={`/trail/${line}/${neighbours.previous?.name}`}
+                passHref
+              >
+                <div className="flex gap-2">
+                  <ArrowLeftCircleIcon className="h-8 w-8 stroke-2" />
+                  <span className="w-32 text-sm line-clamp-3">
+                    {neighbours.previous.label}
+                  </span>
+                </div>
+              </Link>
+            ) : null}
+          </div>
+          <h1 className="w-64 text-center text-4xl font-bold">
+            {station.label}
+          </h1>
+          <div className="flex hover:cursor-pointer">
+            {neighbours.next ? (
+              <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
+                <div className="flex gap-2">
+                  <span className="w-32 text-right text-sm line-clamp-3">
+                    {neighbours.next.label}
+                  </span>
+                  <ArrowRightCircleIcon className="h-8 w-8 stroke-2" />
+                </div>
+              </Link>
+            ) : null}
+          </div>
+        </div>
         <PostBody content={markdown} />
       </div>
     </div>
