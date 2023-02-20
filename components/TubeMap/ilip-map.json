@@ -6,7 +6,7 @@
       "name": "Learning main",
       "label": "Learning",
       "position": {
-        "lat": 52.5170,
+        "lat": 52.517,
         "lon": 13.3889
       }
     },
@@ -16,7 +16,7 @@
       "link": "/trail/student/learning-teacher",
       "label": "Learning",
       "position": {
-        "lat": 52.5170,
+        "lat": 52.517,
         "lon": 13.3889
       }
     },
@@ -26,7 +26,7 @@
       "link": "/trail/student/learning-student",
       "label": "Learning",
       "position": {
-        "lat": 52.5170,
+        "lat": 52.517,
         "lon": 13.3889
       }
     },
@@ -60,7 +60,7 @@
     "Innovation lab red": {
       "id": 3894910680,
       "name": "innovation-lab-student",
-      "label": "What is a transdisciplinary\n innovation lab?",
+      "label": "Transdisciplinary\nInnovation Lab?",
       "link": "/trail/student/innovation-lab-student",
       "position": {
         "lat": 52.5742433,
@@ -80,7 +80,7 @@
     "A transdiciplinary approach red": {
       "id": 5219721338,
       "name": "approach-student",
-      "label": "How does change\nhappen?",
+      "label": "Transdisciplinary\nco-creation",
       "link": "/trail/student/approach-student",
       "position": {
         "lat": 52.5786231,
@@ -90,7 +90,7 @@
     "Contribute to a more sustainable future red": {
       "id": 107606908,
       "name": "contribute-student",
-      "label": "Why is change\nneeded?",
+      "label": "Meet Complexity",
       "link": "/trail/student/contribute-student",
       "position": {
         "lat": 52.5883733,
@@ -100,7 +100,7 @@
     "Why board red": {
       "id": 5219721339,
       "name": "why-board-student",
-      "label": " Why would\nyou board?",
+      "label": " Harness Future\nSkills",
       "link": "/trail/student/why-board-student",
       "position": {
         "lat": 52.5956412,
@@ -155,7 +155,7 @@
     "Innovation lab gold": {
       "id": 3901824902,
       "name": "innovation-lab-policy",
-      "label": "Innovation lab",
+      "label": "Crossroads",
       "link": "/trail/policy/innovation-lab-policy",
       "position": {
         "lat": 52.4995972,
@@ -310,7 +310,7 @@
     "A transdiciplinary approach gold": {
       "id": 29833469,
       "name": "approach-policy",
-      "label": "A transdiciplinary\napproach",
+      "label": "Transdisciplinary\nInnovation Lab",
       "link": "/trail/policy/approach-policy",
       "position": {
         "lat": 52.4885755,
@@ -320,7 +320,7 @@
     "A transdisciplinary approach green": {
       "id": 29123764,
       "name": "approach-educational",
-      "label": "A transdisciplinary\napproach",
+      "label": "Implementing\nTransdisciplinary",
       "link": "/trail/educational/approach-educational",
       "position": {
         "lat": 52.5118853,
@@ -340,7 +340,7 @@
     "Innovation lab black": {
       "id": 5183375788,
       "name": "innovation-lab-teacher",
-      "label": "What is a transdisciplinary\ninnovation lab?",
+      "label": "Transdisciplinary\nInnovation Lab?",
       "link": "/trail/teacher/innovation-lab-teacher",
       "position": {
         "lat": 52.5379819,
@@ -350,7 +350,7 @@
     "Innovation lab green": {
       "id": 5183375787,
       "name": "innovation-lab-educational",
-      "label": "Innovation lab",
+      "label": "Transdisciplinary\nInnovation lab",
       "link": "/trail/educational/innovation-lab-educational",
       "position": {
         "lat": 52.5379819,
@@ -360,7 +360,7 @@
     "Strengthen STEM with STEAM black": {
       "id": 5220114129,
       "name": "strengthen-stem-teacher",
-      "label": "Strengthen STEM\n with STEAM+",
+      "label": "Strengthening STEM\n with STEAM+",
       "link": "/trail/teacher/strengthen-stem-teacher",
       "position": {
         "lat": 52.5387183,
@@ -370,7 +370,7 @@
     "A transdiciplinary approach black": {
       "id": 5183374155,
       "name": "approach-teacher",
-      "label": "How does change\nhappen",
+      "label": "Transdisciplinary\nco-creation",
       "link": "/trail/teacher/approach-teacher",
       "position": {
         "lat": 52.537652,
@@ -390,7 +390,7 @@
     "Why board black": {
       "id": 4989868817,
       "name": "why-board-teacher",
-      "label": "Why board",
+      "label": "Teach for the\nFututre?",
       "link": "/trail/teacher/why-board-teacher",
       "position": {
         "lat": 52.5351709,
@@ -544,7 +544,7 @@
     "Future-oriented eductaion gold": {
       "id": 5134482957,
       "name": "future-oriented-policy",
-      "label": "Future oriented\neducation",
+      "label": "Transdisciplinary\nco-creation",
       "link": "/trail/policy/future-oriented-policy",
       "position": {
         "lat": 52.4831773,
@@ -554,7 +554,7 @@
     "Why board gold": {
       "id": 29497638,
       "name": "why-board-policy",
-      "label": "Why board",
+      "label": "Empower future\ngenerations",
       "link": "/trail/policy/why-board-policy",
       "position": {
         "lat": 52.478987,
@@ -564,7 +564,7 @@
     "Why board green": {
       "id": 27586255,
       "name": "why-board-educational",
-      "label": "Why board",
+      "label": "Higher Education\nfor the Future",
       "link": "/trail/educational/why-board-educational",
       "position": {
         "lat": 52.5256744,
@@ -574,7 +574,7 @@
     "Future oriented education green": {
       "id": 29123763,
       "name": "future-oriented-educational",
-      "label": "Future oriented\neducation",
+      "label": "The Progress of\nSociety",
       "link": "/trail/educational/future-oriented-educational",
       "position": {
         "lat": 52.511837,
@@ -882,71 +882,44 @@
       "name": "CO-CREATION LINE",
       "label": "CO-CREATION LINE",
       "color": "#A020F0",
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "hidden": true,
       "nodes": [
         {
-          "coords": [
-            40,
-            -6
-          ],
+          "coords": [40, -6],
           "name": "Fertile ground main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": false,
-          "labelShiftCoords": [
-            1,
-            2
-          ]
+          "labelShiftCoords": [1, 2]
         },
         {
-          "coords": [
-            50,
-            -16
-          ],
+          "coords": [50, -16],
           "name": "Within HEI network main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": false,
-          "labelShiftCoords": [
-            1,
-            2
-          ]
+          "labelShiftCoords": [1, 2]
         },
         {
-          "coords": [
-            60,
-            -26
-          ],
+          "coords": [60, -26],
           "name": "External inspiration main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": false,
-          "labelShiftCoords": [
-            1,
-            2
-          ]
+          "labelShiftCoords": [1, 2]
         },
         {
-          "coords": [
-            70,
-            -36
-          ],
+          "coords": [70, -36],
           "name": "External network main purple",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": false,
-          "labelShiftCoords": [
-            1,
-            2
-          ]
+          "labelShiftCoords": [1, 2]
         }
       ]
     },
@@ -954,16 +927,10 @@
       "name": "EDUCATIONAL",
       "label": "EDUCATIONAL BOARD",
       "color": "#2D803E",
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            0,
-            -50
-          ],
+          "coords": [0, -60],
           "name": "Line label green",
           "labelPos": "W",
           "labelBold": true,
@@ -976,76 +943,43 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            0,
-            -40
-          ],
+          "coords": [0, -50],
           "name": "Why board green",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
-          "coords": [
-            0,
-            -30
-          ],
+          "coords": [0, -40],
           "name": "Future oriented education green",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
-          "coords": [
-            0,
-            -15
-          ],
+          "coords": [0, -25],
           "name": "A transdisciplinary approach green",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
-          "coords": [
-            5,
-            -10
-          ],
+          "coords": [5, -15],
           "name": "Strengthen STEM with STEAM green",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            1
-          ]
+          "labelShiftCoords": [-1.5, 1]
         },
         {
-          "coords": [
-            10,
-            -5
-          ],
+          "coords": [10, -5]
+        },
+        {
+          "coords": [10, -5],
           "name": "Innovation lab green",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ]
+          "labelShiftCoords": [-1.5, 0]
         },
         {
-          "coords": [
-            32,
-            -5
-          ]
+          "coords": [32, -5]
         },
         {
-          "coords": [
-            40,
-            -12
-          ],
+          "coords": [40, -12],
           "name": "Fertile ground main green",
           "drawLabel": false,
           "labelPos": "SW",
@@ -1056,10 +990,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            50,
-            -22
-          ],
+          "coords": [50, -22],
           "name": "Within HEI network main green",
           "drawLabel": false,
           "labelPos": "SW",
@@ -1068,10 +999,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            60,
-            -32
-          ],
+          "coords": [60, -32],
           "name": "External inspiration main green",
           "drawLabel": false,
           "labelPos": "SW",
@@ -1080,10 +1008,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            70,
-            -42
-          ],
+          "coords": [70, -42],
           "name": "External network main green",
           "drawLabel": false,
           "labelPos": "SW",
@@ -1092,32 +1017,20 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            75,
-            -47
-          ]
+          "coords": [75, -47]
         },
         {
-          "coords": [
-            80,
-            -52
-          ]
+          "coords": [80, -52]
         },
         {
-          "coords": [
-            88.5,
-            -52
-          ],
+          "coords": [88.5, -52],
           "name": "Grand Station green",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            88.5,
-            0
-          ],
+          "coords": [88.5, 0],
           "name": "Embedding the Lab main green",
           "drawLabel": false,
           "labelPos": "N",
@@ -1129,16 +1042,10 @@
       "name": "POLICY",
       "label": "POLICY CENTER",
       "color": "#D6B133",
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            19,
-            -110
-          ],
+          "coords": [19, -110],
           "name": "Line label gold",
           "stationSymbol": false,
           "lineLabel": true,
@@ -1150,100 +1057,55 @@
           "lineLabelShiftX": 2
         },
         {
-          "coords": [
-            19,
-            -100
-          ],
+          "coords": [19, -100],
           "name": "Why board gold",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ],
+          "labelShiftCoords": [1.5, 0],
           "labelBold": false,
           "lineLabel": false
         },
         {
-          "coords": [
-            29,
-            -90
-          ],
+          "coords": [29, -90],
           "name": "Future-oriented eductaion gold",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            39,
-            -80
-          ],
-          "name": "A transdiciplinary approach gold",
+          "coords": [39, -80],
+          "name": "Strengthen STEM with STEAM gold",
           "labelPos": "NE",
           "labelBold": false,
-          "labelShiftCoords": [
-            1.5,
-            -2
-          ]
+          "labelShiftCoords": [1.5, -2]
         },
         {
-          "coords": [
-            49,
-            -70
-          ],
-          "name": "Strengthen STEM with STEAM gold",
+          "coords": [49, -70],
+          "name": "A transdiciplinary approach gold",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            59,
-            -60
-          ],
+          "coords": [59, -60],
           "name": "Innovation lab gold",
           "labelPos": "E",
           "stationSymbol": "single",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ],
-          "changeToLineStation": [
-            "POLICY-MAKER",
-            "Fertile ground main gold"
-          ]
+          "labelShiftCoords": [1.5, 0],
+          "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
         },
         {
-          "coords": [
-            65,
-            -54
-          ]
+          "coords": [65, -54]
         },
         {
-          "coords": [
-            70,
-            -54
-          ]
+          "coords": [70, -54]
         },
         {
-          "coords": [
-            91.5,
-            -54
-          ],
+          "coords": [91.5, -54],
           "name": "Grand Station gold",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            91.5,
-            0
-          ],
+          "coords": [91.5, 0],
           "name": "Embedding the Lab main gold",
           "drawLabel": false,
           "labelPos": "S",
@@ -1256,95 +1118,56 @@
       "label": "POLICY MAKER CO-CREATOR",
       "color": "#D4AF37",
       "dashed": true,
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            63.5,
-            -55
-          ]
+          "coords": [63.5, -55]
         },
         {
-          "coords": [
-            23.5,
-            -15
-          ]
+          "coords": [23.5, -15]
         },
         {
-          "coords": [
-            28.5,
-            -10
-          ]
+          "coords": [28.5, -10]
         },
         {
-          "coords": [
-            31.75,
-            -7
-          ]
+          "coords": [31.75, -7]
         },
         {
-          "coords": [
-            35.25,
-            -10.5
-          ],
+          "coords": [35.25, -10.5],
           "name": "Fertile ground main gold",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false,
-          "changeToLineStation": [
-            "POLICY",
-            "Innovation lab gold"
-          ],
+          "changeToLineStation": ["POLICY", "Innovation lab gold"],
           "changeToLineOrder": "previous"
         },
         {
-          "coords": [
-            45.25,
-            -20.5
-          ],
+          "coords": [45.25, -20.5],
           "name": "Within HEI network main gold",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            55.25,
-            -30.5
-          ],
+          "coords": [55.25, -30.5],
           "name": "External inspiration main gold",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            65.25,
-            -40.5
-          ],
+          "coords": [65.25, -40.5],
           "name": "External network main gold",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false,
-          "changeToLineStation": [
-            "POLICY",
-            "Grand station gold"
-          ]
+          "changeToLineStation": ["POLICY", "Grand station gold"]
         },
         {
-          "coords": [
-            75.25,
-            -50.5
-          ]
+          "coords": [75.25, -50.5]
         },
         {
-          "coords": [
-            78.75,
-            -53.5
-          ]
+          "coords": [78.75, -53.5]
         }
       ]
     },
@@ -1353,95 +1176,56 @@
       "label": "C. ORGANISING INNOVATION LAB",
       "color": "#993301",
       "hidden": true,
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            89,
-            -46
-          ],
+          "coords": [89, -46],
           "name": "Grand Station main",
           "labelPos": "S",
-          "labelShiftCoords": [
-            1.5,
-            -9
-          ],
+          "labelShiftCoords": [1.5, -9],
           "shiftCoords": [-2, 0],
           "labelBold": true,
           "stationSymbol": "grand"
         },
         {
-          "coords": [
-            100,
-            -46
-          ],
+          "coords": [100, -46],
           "name": "Format main",
           "labelPos": "S",
           "labelAngle": 0,
-          "labelShiftCoords": [
-            0,
-            -8.5
-          ],
+          "labelShiftCoords": [0, -8.5],
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            110,
-            -46
-          ],
+          "coords": [110, -46],
           "name": "A challenge main",
           "labelPos": "S",
-          "labelShiftCoords": [
-            0,
-            -8.5
-          ],
+          "labelShiftCoords": [0, -8.5],
           "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            120,
-            -46
-          ],
+          "coords": [120, -46],
           "name": "Learning main",
           "labelBold": false,
           "labelPos": "S",
-          "labelShiftCoords": [
-            0,
-            -8.5
-          ],
+          "labelShiftCoords": [0, -8.5],
           "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            130,
-            -46
-          ],
+          "coords": [130, -46],
           "name": "Iterative process main",
           "labelBold": false,
           "labelPos": "S",
-          "labelShiftCoords": [
-            0,
-            -8.5
-          ],
+          "labelShiftCoords": [0, -8.5],
           "labelAngle": 0,
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            140,
-            -46
-          ],
+          "coords": [140, -46],
           "name": "Good practices main",
           "labelPos": "S",
-          "labelShiftCoords": [
-            0,
-            -8.5
-          ],
+          "labelShiftCoords": [0, -8.5],
           "labelAngle": 0,
           "stationSymbol": "triple"
         }
@@ -1452,57 +1236,33 @@
       "label": "RUNNING INOVATION LAB",
       "color": "#0000FF",
       "hidden": true,
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            89,
-            2
-          ],
+          "coords": [89, 2],
           "name": "Embedding the Lab main",
           "labelPos": "N",
-          "labelShiftCoords": [
-            0,
-            1
-          ],
+          "labelShiftCoords": [0, 1],
           "stationAngle": -45,
           "stationSymbol": "triple",
           "shiftCoords": [-1.5, -2]
         },
         {
-          "coords": [
-            115,
-            2
-          ],
+          "coords": [115, 2],
           "name": "Learning Systematically main",
-          "labelShiftCoords": [
-            0,
-            1
-          ],
+          "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            135,
-            2
-          ],
+          "coords": [135, 2],
           "name": "Assess Quality main",
-          "labelShiftCoords": [
-            0,
-            1
-          ],
+          "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            151.5,
-            2
-          ],
+          "coords": [151.5, 2],
           "name": "Results main",
           "labelBold": false,
           "labelPos": "N",
@@ -1510,56 +1270,32 @@
           "stationAngle": 45
         },
         {
-          "coords": [
-            154,
-            -15
-          ],
+          "coords": [154, -15],
           "name": "Teacher Role main",
           "stationAngle": 90,
           "labelPos": "W",
-          "labelShiftCoords": [
-            -8,
-            0
-          ],
+          "labelShiftCoords": [-8, 0],
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            154,
-            -35
-          ],
+          "coords": [154, -35],
           "name": "Student role main",
           "stationAngle": 90,
           "labelPos": "W",
-          "labelShiftCoords": [
-            -8,
-            0
-          ],
+          "labelShiftCoords": [-8, 0],
           "stationSymbol": "triple"
         },
         {
-          "coords": [
-            120,
-            -25
-          ],
+          "coords": [120, -25],
           "name": "Become a teacher red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            147,
-            -47.5
-          ],
+          "coords": [147, -47.5],
           "name": "Recruitment main",
           "labelPos": "S",
-          "labelShiftCoords": [
-            7,
-            -5
-          ],
+          "labelShiftCoords": [7, -5],
           "stationSymbol": "triple",
           "stationAngle": -45
         }
@@ -1569,16 +1305,10 @@
       "name": "TEACHER",
       "label": "TEACHERS LOUNGE",
       "color": "#2F2F8F",
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            0,
-            65
-          ],
+          "coords": [0, 65],
           "name": "Line label black",
           "labelPos": "N",
           "labelBold": true,
@@ -1591,105 +1321,54 @@
           "lineLabelShiftY": 2.5
         },
         {
-          "coords": [
-            0,
-            45
-          ],
+          "coords": [0, 45],
           "name": "Why board black",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ],
+          "labelShiftCoords": [-1.5, 0],
           "lineLabel": false
         },
         {
-          "coords": [
-            0,
-            35
-          ],
+          "coords": [0, 35],
           "name": "Contribute to a sustainability-oriented new generation",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ],
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
         },
         {
-          "coords": [
-            0,
-            25
-          ],
+          "coords": [0, 25],
           "name": "A transdiciplinary approach black",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ],
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
         },
         {
-          "coords": [
-            0,
-            20
-          ]
+          "coords": [0, 20]
         },
         {
-          "coords": [
-            10,
-            10
-          ]
+          "coords": [12, 12]
         },
         {
-          "coords": [
-            10,
-            10
-          ],
+          "coords": [12, 12],
           "name": "Strengthen STEM with STEAM black",
           "labelPos": "W",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ],
+          "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
         },
         {
-          "coords": [
-            15,
-            5
-          ]
-        },
-        {
-          "coords": [
-            20,
-            0
-          ],
+          "coords": [23, 4.5],
           "name": "Innovation lab black",
-          "labelShiftCoords": [
-            -1.5,
-            0
-          ],
+          "labelShiftCoords": [-1.5, 0],
           "labelPos": "W",
           "labelAngle": 0
         },
         {
-          "coords": [
-            30,
-            0
-          ]
+          "coords": [30, 0]
         },
         {
-          "coords": [
-            30,
-            0
-          ]
+          "coords": [30, 0]
         },
         {
-          "coords": [
-            40,
-            -10
-          ],
+          "coords": [40, -10],
           "name": "Fertile ground main black",
           "drawLabel": false,
           "labelPos": "SW",
@@ -1697,182 +1376,125 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            50,
-            -20
-          ],
+          "coords": [50, -20],
           "name": "Within HEI network main black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            60,
-            -30
-          ],
+          "coords": [60, -30],
           "name": "External inspiration main black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            70,
-            -40
-          ],
+          "coords": [70, -40],
           "name": "External network main black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            75,
-            -45
-          ]
+          "coords": [75, -45]
         },
         {
-          "coords": [
-            80,
-            -50
-          ]
+          "coords": [80, -50]
         },
         {
-          "coords": [
-            90,
-            -50
-          ],
+          "coords": [90, -50],
           "name": "Grand Station black",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            100,
-            -50
-          ],
+          "coords": [100, -50],
           "name": "Format black",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            110,
-            -50
-          ],
+          "coords": [110, -50],
           "name": "A challenge black",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            120,
-            -50
-          ],
+          "coords": [120, -50],
           "name": "Learning black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            130,
-            -50
-          ],
+          "coords": [130, -50],
           "name": "Iterative process black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            140,
-            -50
-          ],
+          "coords": [140, -50],
           "name": "Good practices black",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            150,
-            -50
-          ],
+          "coords": [150, -50],
           "name": "Recruitment black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            150,
-            -32
-          ],
+          "coords": [150, -32],
           "name": "Student role black",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            150,
-            -22
-          ],
+          "coords": [150, -22],
           "name": "Teacher Role black",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            150,
-            0
-          ],
+          "coords": [150, 0],
           "name": "Results black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            115,
-            0
-          ],
+          "coords": [115, 0],
           "name": "Assess Quality black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            100,
-            0
-          ],
+          "coords": [100, 0],
           "name": "Learning Systematically black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            90,
-            0
-          ],
+          "coords": [90, 0],
           "name": "Embedding the Lab main black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            90,
-            -50
-          ]
+          "coords": [90, -50]
         }
       ]
     },
@@ -1880,16 +1502,10 @@
       "name": "STUDENT",
       "label": "STUDENT",
       "color": "#C42A31",
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            180,
-            30
-          ],
+          "coords": [180, 30],
           "name": "Line label red",
           "labelPos": "W",
           "labelBold": true,
@@ -1902,72 +1518,39 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            180,
-            10
-          ],
+          "coords": [180, 10],
           "name": "Why board red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ],
+          "labelShiftCoords": [1.5, 0],
           "labelBold": false,
           "stationSymbol": "single"
         },
         {
-          "coords": [
-            180,
-            0
-          ],
+          "coords": [180, 0],
           "name": "Contribute to a more sustainable future red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            180,
-            -10
-          ],
+          "coords": [180, -10],
           "name": "A transdiciplinary approach red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            180,
-            -20
-          ],
+          "coords": [180, -20],
           "name": "Strengthen STEM with STEAM red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ]
+          "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [
-            180,
-            -30
-          ]
+          "coords": [180, -30]
         },
         {
-          "coords": [
-            160,
-            -50
-          ],
+          "coords": [160, -50],
           "name": "Innovation lab red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            1.5,
-            0
-          ],
+          "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single",
           "changeToLineStation": [
             "STUDENT-COCREATOR",
@@ -1975,80 +1558,50 @@
           ]
         },
         {
-          "coords": [
-            152,
-            -50
-          ],
+          "coords": [152, -50],
           "name": "Recruitment red",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            152,
-            -35
-          ],
+          "coords": [152, -35],
           "name": "Student role red",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            152,
-            -25
-          ],
+          "coords": [152, -25],
           "name": "Teacher Role red",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            152,
-            0
-          ],
+          "coords": [152, 0],
           "name": "Results red",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            150,
-            0
-          ]
+          "coords": [150, 0]
         },
         {
-          "coords": [
-            120,
-            -25
-          ]
+          "coords": [120, -25]
         },
         {
-          "coords": [
-            120,
-            -25
-          ],
+          "coords": [120, -25],
           "name": "Become a teacher red",
           "labelPos": "E",
-          "labelShiftCoords": [
-            10.5,
-            0
-          ]
+          "labelShiftCoords": [10.5, 0]
         },
         {
-          "coords": [
-            90,
-            -50
-          ]
+          "coords": [90, -50]
         },
         {
-          "coords": [
-            90,
-            -50
-          ],
+          "coords": [90, -50],
           "name": "Grand Station red",
           "drawLabel": false,
           "labelPos": "S",
@@ -2062,49 +1615,28 @@
       "lineLabel": true,
       "color": "#C42A31",
       "dashed": true,
-      "shiftCoords": [
-        0,
-        0
-      ],
+      "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [
-            160,
-            -50
-          ]
+          "coords": [160, -50]
         },
         {
-          "coords": [
-            160,
-            10
-          ]
+          "coords": [160, 10]
         },
         {
-          "coords": [
-            40,
-            10
-          ]
+          "coords": [40, 10]
         },
         {
-          "coords": [
-            40,
-            -8
-          ],
+          "coords": [40, -8],
           "name": "Fertile ground main red",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false,
-          "changeToLineStation": [
-            "STUDENT",
-            "Innovation lab red"
-          ],
+          "changeToLineStation": ["STUDENT", "Innovation lab red"],
           "changeToLineOrder": "previous"
         },
         {
-          "coords": [
-            50,
-            -18
-          ],
+          "coords": [50, -18],
           "name": "Within HEI network main red",
           "drawLabel": false,
           "labelPos": "SW",
@@ -2113,10 +1645,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            60,
-            -28
-          ],
+          "coords": [60, -28],
           "name": "External inspiration main red",
           "drawLabel": false,
           "labelPos": "SW",
@@ -2125,10 +1654,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            70,
-            -38
-          ],
+          "coords": [70, -38],
           "name": "External network main red",
           "drawLabel": false,
           "labelPos": "SW",
@@ -2137,46 +1663,31 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            80,
-            -48
-          ]
+          "coords": [80, -48]
         },
         {
-          "coords": [
-            90,
-            -48
-          ],
+          "coords": [90, -48],
           "name": "Grand Station red dash",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            100,
-            -48
-          ],
+          "coords": [100, -48],
           "name": "Format red dash",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            110,
-            -48
-          ],
+          "coords": [110, -48],
           "name": "A challenge red dash",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [
-            120,
-            -48
-          ],
+          "coords": [120, -48],
           "name": "Learning red dash",
           "drawLabel": false,
           "labelPos": "S",
@@ -2184,104 +1695,71 @@
           "stationSymbol": false
         },
         {
-          "coords": [
-            130,
-            -48
-          ],
+          "coords": [130, -48],
           "name": "Iterative process red dash",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            140,
-            -48
-          ],
+          "coords": [140, -48],
           "name": "Good practices red dash",
           "drawLabel": false,
           "labelPos": "S",
-          "labelShiftCoords": [
-            0,
-            0.5
-          ],
+          "labelShiftCoords": [0, 0.5],
           "stationSymbol": false
         },
         {
-          "coords": [
-            148,
-            -48
-          ],
+          "coords": [148, -48],
           "name": "Recruitment red dash",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [
-            148,
-            -32
-          ],
+          "coords": [148, -32],
           "name": "Student role red dash",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            148,
-            -22
-          ],
+          "coords": [148, -22],
           "name": "Teacher Role red dash",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [
-            148,
-            -2
-          ],
+          "coords": [148, -2],
           "name": "Results red dash",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            148,
-            -2
-          ],
+          "coords": [148, -2],
           "name": "Assess Quality red dash",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            100,
-            -2
-          ],
+          "coords": [100, -2],
           "name": "Learning Systematically red dash",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            93,
-            -2
-          ],
+          "coords": [93, -2],
           "name": "Embedding the Lab main red dash",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [
-            93,
-            -50
-          ]
+          "coords": [93, -50]
         }
       ]
     }

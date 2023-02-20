@@ -840,7 +840,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .attr('fill', function (d) {
         return d.inactive ? 'grey' : 'black'
       })
-      .style('font-size', 3 * lineWidth + 'px')
+      .style('font-size', 4 * lineWidth + 'px')
       .style('font-weight', function (d) {
         return d.labelBold ? '700' : '400'
       })
