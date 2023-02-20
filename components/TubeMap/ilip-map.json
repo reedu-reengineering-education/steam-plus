@@ -57,51 +57,51 @@
         "lon": 13.398203
       }
     },
-    "Innovation lab red": {
+    "Transdisciplinary Innovation Lab Student": {
       "id": 3894910680,
-      "name": "innovation-lab-student",
+      "name": "transdisciplinary-innovation-lab-student",
       "label": "Transdisciplinary\nInnovation Lab?",
-      "link": "/trail/student/innovation-lab-student",
+      "link": "/trail/student/transdisciplinary-innovation-lab-student",
       "position": {
         "lat": 52.5742433,
         "lon": 13.348511
       }
     },
-    "Strengthen STEM with STEAM red": {
+    "Strengthening STEM with STEAM+ Student": {
       "id": 29190897,
-      "name": "strengthen-stem-student",
-      "label": "Strengthen STEM\nwith STEAM+",
-      "link": "/trail/student/strengthen-stem-student",
+      "name": "strengthening-steam-with-steam-plus-student",
+      "label": "Strengthening STEM\nwith STEAM+",
+      "link": "/trail/student/strengthening-steam-with-steam-plus-student",
       "position": {
         "lat": 52.5754161,
         "lon": 13.3384251
       }
     },
-    "A transdiciplinary approach red": {
+    "Transdisciplinary co-creation Student": {
       "id": 5219721338,
-      "name": "approach-student",
+      "name": "transdisciplinary-co-creation-student",
       "label": "Transdisciplinary\nco-creation",
-      "link": "/trail/student/approach-student",
+      "link": "/trail/student/transdisciplinary-co-creation-student",
       "position": {
         "lat": 52.5786231,
         "lon": 13.3335031
       }
     },
-    "Contribute to a more sustainable future red": {
+    "Meet Complexity": {
       "id": 107606908,
-      "name": "contribute-student",
+      "name": "meet-complexity",
       "label": "Meet Complexity",
-      "link": "/trail/student/contribute-student",
+      "link": "/trail/student/meet-complexity",
       "position": {
         "lat": 52.5883733,
         "lon": 13.3259254
       }
     },
-    "Why board red": {
+    "Harness Future Skills": {
       "id": 5219721339,
-      "name": "why-board-student",
+      "name": "harness-future-skills",
       "label": " Harness Future\nSkills",
-      "link": "/trail/student/why-board-student",
+      "link": "/trail/student/harness-future-skills",
       "position": {
         "lat": 52.5956412,
         "lon": 13.3347115
@@ -1519,7 +1519,7 @@
         },
         {
           "coords": [180, 10],
-          "name": "Why board red",
+          "name": "Harness Future Skills",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "labelBold": false,
@@ -1527,19 +1527,19 @@
         },
         {
           "coords": [180, 0],
-          "name": "Contribute to a more sustainable future red",
+          "name": "Meet Complexity",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [180, -10],
-          "name": "A transdiciplinary approach red",
+          "name": "Transdisciplinary co-creation Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [180, -20],
-          "name": "Strengthen STEM with STEAM red",
+          "name": "Strengthening STEM with STEAM+ Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
@@ -1548,7 +1548,7 @@
         },
         {
           "coords": [160, -50],
-          "name": "Innovation lab red",
+          "name": "Transdisciplinary Innovation Lab Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single",
