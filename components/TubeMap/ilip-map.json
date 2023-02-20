@@ -220,7 +220,7 @@
     "Within HEI network main purple": {
       "id": 29046970,
       "name": "Within HEI network main purple",
-      "label": "Within\nHEI network",
+      "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
@@ -337,11 +337,11 @@
         "lon": 13.2330942
       }
     },
-    "Innovation lab black": {
+    "Transdisciplinary Innovation Lab": {
       "id": 5183375788,
-      "name": "innovation-lab-teacher",
+      "name": "transdisciplinary-innovation-lab",
       "label": "Transdisciplinary\nInnovation Lab?",
-      "link": "/trail/teacher/innovation-lab-teacher",
+      "link": "/trail/teacher/transdisciplinary-innovation-lab",
       "position": {
         "lat": 52.5379819,
         "lon": 13.2478176
@@ -357,41 +357,41 @@
         "lon": 13.2478176
       }
     },
-    "Strengthen STEM with STEAM black": {
+    "Strengthening STEM with STEAM+": {
       "id": 5220114129,
-      "name": "strengthen-stem-teacher",
+      "name": "strengthening-steam-with-steam-plus",
       "label": "Strengthening STEM\n with STEAM+",
-      "link": "/trail/teacher/strengthen-stem-teacher",
+      "link": "/trail/teacher/strengthening-steam-with-steam-plus",
       "position": {
         "lat": 52.5387183,
         "lon": 13.2330942
       }
     },
-    "A transdiciplinary approach black": {
+    "Transdisciplinary co-creation": {
       "id": 5183374155,
-      "name": "approach-teacher",
+      "name": "transdisciplinary-co-creation",
       "label": "Transdisciplinary\nco-creation",
-      "link": "/trail/teacher/approach-teacher",
+      "link": "/trail/teacher/transdisciplinary-co-creation",
       "position": {
         "lat": 52.537652,
         "lon": 13.2175358
       }
     },
-    "Contribute to a sustainability-oriented new generation": {
+    "Why is change needed": {
       "id": 5726082246,
-      "name": "contribute-teacher",
+      "name": "why-is-change-needed",
       "label": "Why is change\nneeded",
-      "link": "/trail/teacher/contribute-teacher",
+      "link": "/trail/teacher/why-is-change-needed",
       "position": {
         "lat": 52.5388381,
         "lon": 13.2062573
       }
     },
-    "Why board black": {
+    "Teach for the Future": {
       "id": 4989868817,
-      "name": "why-board-teacher",
+      "name": "teach-for-the-future",
       "label": "Teach for the\nFututre?",
-      "link": "/trail/teacher/why-board-teacher",
+      "link": "/trail/teacher/teach-for-the-future",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -1322,21 +1322,21 @@
         },
         {
           "coords": [0, 45],
-          "name": "Why board black",
+          "name": "Teach for the Future",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0],
           "lineLabel": false
         },
         {
           "coords": [0, 35],
-          "name": "Contribute to a sustainability-oriented new generation",
+          "name": "Why is change needed",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
         },
         {
           "coords": [0, 25],
-          "name": "A transdiciplinary approach black",
+          "name": "Transdisciplinary co-creation",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
@@ -1349,14 +1349,14 @@
         },
         {
           "coords": [12, 12],
-          "name": "Strengthen STEM with STEAM black",
+          "name": "Strengthening STEM with STEAM+",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": 0
         },
         {
           "coords": [23, 4.5],
-          "name": "Innovation lab black",
+          "name": "Transdisciplinary Innovation Lab",
           "labelShiftCoords": [-1.5, 0],
           "labelPos": "W",
           "labelAngle": 0
