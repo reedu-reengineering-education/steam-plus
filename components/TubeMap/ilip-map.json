@@ -317,21 +317,21 @@
         "lon": 13.3405436
       }
     },
-    "A transdisciplinary approach green": {
+    "Implementing Transdisciplinary": {
       "id": 29123764,
-      "name": "approach-educational",
+      "name": "implementing-transdisciplinary",
       "label": "Implementing\nTransdisciplinary",
-      "link": "/trail/educational/approach-educational",
+      "link": "/trail/educational/implementing-transdisciplinary",
       "position": {
         "lat": 52.5118853,
         "lon": 13.3221613
       }
     },
-    "Strengthen STEM with STEAM green": {
+    "Strengthen STEM with STEAM+": {
       "id": 5220114121,
-      "name": "strengthen-stem-educational",
+      "name": "strengthen-stem-with-steam-plus",
       "label": "Strengthen STEM\n with STEAM+",
-      "link": "/trail/educational/strengthen-stem-educational",
+      "link": "/trail/educational/strengthen-stem-with-steam-plus",
       "position": {
         "lat": 52.5387183,
         "lon": 13.2330942
@@ -347,11 +347,11 @@
         "lon": 13.2478176
       }
     },
-    "Innovation lab green": {
+    "Transdisciplinary Innovation Lab Educational": {
       "id": 5183375787,
-      "name": "innovation-lab-educational",
+      "name": "transdisciplinary-innovation-lab-educational",
       "label": "Transdisciplinary\nInnovation lab",
-      "link": "/trail/educational/innovation-lab-educational",
+      "link": "/trail/educational/transdisciplinary-innovation-lab-educational",
       "position": {
         "lat": 52.5379819,
         "lon": 13.2478176
@@ -561,21 +561,21 @@
         "lon": 13.3436736
       }
     },
-    "Why board green": {
+    "Higher Education for the Future": {
       "id": 27586255,
-      "name": "why-board-educational",
+      "name": "higher-education-for-the-future",
       "label": "Higher Education\nfor the Future",
-      "link": "/trail/educational/why-board-educational",
+      "link": "/trail/educational/higher-education-for-the-future",
       "position": {
         "lat": 52.5256744,
         "lon": 13.2414191
       }
     },
-    "Future oriented education green": {
+    "The Progress of Society": {
       "id": 29123763,
-      "name": "future-oriented-educational",
+      "name": "the-progress-of-society",
       "label": "The Progress of\nSociety",
-      "link": "/trail/educational/future-oriented-educational",
+      "link": "/trail/educational/the-progress-of-society",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -944,25 +944,25 @@
         },
         {
           "coords": [0, -50],
-          "name": "Why board green",
+          "name": "Higher Education for the Future",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [0, -40],
-          "name": "Future oriented education green",
+          "name": "The Progress of Society",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [0, -25],
-          "name": "A transdisciplinary approach green",
+          "name": "Implementing Transdisciplinary",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0]
         },
         {
           "coords": [5, -15],
-          "name": "Strengthen STEM with STEAM green",
+          "name": "Strengthen STEM with STEAM+",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 1]
         },
@@ -971,7 +971,7 @@
         },
         {
           "coords": [10, -5],
-          "name": "Innovation lab green",
+          "name": "Transdisciplinary Innovation Lab Educational",
           "labelPos": "W",
           "labelShiftCoords": [-1.5, 0]
         },
