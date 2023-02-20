@@ -152,11 +152,11 @@
         "lon": 13.3537297
       }
     },
-    "Innovation lab gold": {
+    "Crossroads": {
       "id": 3901824902,
-      "name": "innovation-lab-policy",
+      "name": "crossroads",
       "label": "Crossroads",
-      "link": "/trail/policy/innovation-lab-policy",
+      "link": "/trail/policy/crossroads",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -207,11 +207,11 @@
         "lon": 13.3430005
       }
     },
-    "Strengthen STEM with STEAM gold": {
+    "Strengthening STEM with STEAM+ Policy": {
       "id": 5134716875,
-      "name": "strengthen-stem-policy",
-      "label": "Strengthen STEM\nwith STEAM",
-      "link": "/trail/policy/strengthen-stem-policy",
+      "name": "strengthening-steam-with-steam-plus-policy",
+      "label": "Strengthening STEM\nwith STEAM+",
+      "link": "/trail/policy/strengthening-steam-with-steam-plus-policy",
       "position": {
         "lat": 52.4961755,
         "lon": 13.3431855
@@ -307,11 +307,11 @@
         "lon": 13.3266968
       }
     },
-    "A transdiciplinary approach gold": {
+    "Transdisciplinary Innovation Lab Policy": {
       "id": 29833469,
-      "name": "approach-policy",
+      "name": "transdisciplinary-innovation-lab-policy",
       "label": "Transdisciplinary\nInnovation Lab",
-      "link": "/trail/policy/approach-policy",
+      "link": "/trail/policy/transdisciplinary-innovation-lab-policy",
       "position": {
         "lat": 52.4885755,
         "lon": 13.3405436
@@ -541,21 +541,21 @@
         "lon": 13.3701242
       }
     },
-    "Future-oriented eductaion gold": {
+    "Transdisciplinary co-creation Policy": {
       "id": 5134482957,
-      "name": "future-oriented-policy",
+      "name": "transdisciplinary-co-creation-policy",
       "label": "Transdisciplinary\nco-creation",
-      "link": "/trail/policy/future-oriented-policy",
+      "link": "/trail/policy/transdisciplinary-co-creation-policy",
       "position": {
         "lat": 52.4831773,
         "lon": 13.341972
       }
     },
-    "Why board gold": {
+    "Empower future generations": {
       "id": 29497638,
-      "name": "why-board-policy",
+      "name": "empower-future-generations",
       "label": "Empower future\ngenerations",
-      "link": "/trail/policy/why-board-policy",
+      "link": "/trail/policy/empower-future-generations",
       "position": {
         "lat": 52.478987,
         "lon": 13.3436736
@@ -1058,7 +1058,7 @@
         },
         {
           "coords": [19, -100],
-          "name": "Why board gold",
+          "name": "Empower future generations",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "labelBold": false,
@@ -1066,26 +1066,26 @@
         },
         {
           "coords": [29, -90],
-          "name": "Future-oriented eductaion gold",
+          "name": "Transdisciplinary co-creation Policy",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [39, -80],
-          "name": "Strengthen STEM with STEAM gold",
+          "name": "Strengthening STEM with STEAM+ Policy",
           "labelPos": "NE",
           "labelBold": false,
           "labelShiftCoords": [1.5, -2]
         },
         {
           "coords": [49, -70],
-          "name": "A transdiciplinary approach gold",
+          "name": "Transdisciplinary Innovation Lab Policy",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
           "coords": [59, -60],
-          "name": "Innovation lab gold",
+          "name": "Crossroads",
           "labelPos": "E",
           "stationSymbol": "single",
           "labelShiftCoords": [1.5, 0],
