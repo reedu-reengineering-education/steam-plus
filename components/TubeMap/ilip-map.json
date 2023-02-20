@@ -1119,7 +1119,7 @@
           "name": "Crossroads",
           "labelPos": "SE",
           "stationSymbol": "single",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [0, 0],
           "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
         },
         {
