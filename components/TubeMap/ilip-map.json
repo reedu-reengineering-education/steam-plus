@@ -162,6 +162,16 @@
         "lon": 13.3537297
       }
     },
+    "Crossroads Student": {
+      "id": 3901824902,
+      "name": "crossroads-student",
+      "label": "Crossroads",
+      "link": "/trail/student/crossroads-student",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
     "External inspiration main purple": {
       "id": 3957757604,
       "name": "External inspiration main purple",
@@ -556,6 +566,16 @@
       "name": "empower-future-generations",
       "label": "Empower future\ngenerations",
       "link": "/trail/policy/empower-future-generations",
+      "position": {
+        "lat": 52.478987,
+        "lon": 13.3436736
+      }
+    },
+    "Skills to match Complexity": {
+      "id": 29497638,
+      "name": "skills-to-match-complexity",
+      "label": "Skills to match\nComplexity",
+      "link": "/trail/policy/skills-to-match-complexity",
       "position": {
         "lat": 52.478987,
         "lon": 13.3436736
@@ -1045,7 +1065,7 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [19, -110],
+          "coords": [19, -115],
           "name": "Line label gold",
           "stationSymbol": false,
           "lineLabel": true,
@@ -1057,7 +1077,7 @@
           "lineLabelShiftX": 2
         },
         {
-          "coords": [19, -100],
+          "coords": [19, -105],
           "name": "Empower future generations",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
@@ -1065,34 +1085,42 @@
           "lineLabel": false
         },
         {
-          "coords": [29, -90],
+          "coords": [19, -100]
+        },
+        {
+          "coords": [24, -95],
+          "name": "Skills to match Complexity",
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0],
+          "labelBold": false,
+          "lineLabel": false
+        },
+        {
+          "coords": [34, -85],
           "name": "Transdisciplinary co-creation Policy",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [39, -80],
+          "coords": [44, -75],
           "name": "Strengthening STEM with STEAM+ Policy",
           "labelPos": "NE",
           "labelBold": false,
           "labelShiftCoords": [1.5, -2]
         },
         {
-          "coords": [49, -70],
+          "coords": [54, -65],
           "name": "Transdisciplinary Innovation Lab Policy",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [59, -60],
+          "coords": [64, -55],
           "name": "Crossroads",
-          "labelPos": "E",
+          "labelPos": "SE",
           "stationSymbol": "single",
           "labelShiftCoords": [1.5, 0],
           "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
-        },
-        {
-          "coords": [65, -54]
         },
         {
           "coords": [70, -54]
@@ -1547,8 +1575,15 @@
           "coords": [180, -30]
         },
         {
-          "coords": [160, -50],
+          "coords": [170, -40],
           "name": "Transdisciplinary Innovation Lab Student",
+          "labelPos": "E",
+          "labelShiftCoords": [1.5, 0],
+          "stationSymbol": "single"
+        },
+        {
+          "coords": [160, -50],
+          "name": "Crossroads Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single",
