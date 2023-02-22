@@ -4,7 +4,7 @@
       "id": null,
       "link": "google.com",
       "name": "Learning main",
-      "label": "Learning",
+      "label": "Focussing\non learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
@@ -446,7 +446,7 @@
     "A challenge main": {
       "id": 3862767512,
       "name": "A challenge main",
-      "label": "Challenge",
+      "label": "Defining (a)\nchallenge",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
@@ -473,7 +473,7 @@
     "Format main": {
       "id": 4213705914,
       "name": "Format main",
-      "label": "Format",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
@@ -604,7 +604,7 @@
     "Embedding the Lab main green": {
       "id": 29123762,
       "name": "embedding-educational",
-      "label": "Embedding\nthe Lab",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -631,7 +631,7 @@
     "Embedding the Lab main": {
       "id": 29123762,
       "name": "Embedding the Lab main",
-      "label": "Embedding\nthe Lab",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -679,7 +679,7 @@
     "Assess Quality main": {
       "id": 29123762,
       "name": "Assess Quality main",
-      "label": "Assess\nQuality",
+      "label": "How to assess quality\nof an innovation lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -706,7 +706,7 @@
     "Results main": {
       "id": 29123762,
       "name": "Results main",
-      "label": "Results",
+      "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -745,7 +745,7 @@
     "Teacher Role main": {
       "id": 29123762,
       "name": "Teacher Role main",
-      "label": "Teacher\nRole",
+      "label": "Coaches",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -784,7 +784,7 @@
     "Student role main": {
       "id": 29123762,
       "name": "Student role main",
-      "label": "Student\nrole",
+      "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -862,7 +862,7 @@
     "Iterative process main": {
       "id": 29123764,
       "name": "Iterative process main",
-      "label": "Iterative\nprocess",
+      "label": "The Iterative\nProcess",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -890,7 +890,7 @@
       "id": 29123762,
       "name": "become-a-teacher-student",
       "link": "/trail/student/become-a-teacher",
-      "label": "Become\na teacher",
+      "label": "Become\na coach",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -1043,14 +1043,14 @@
           "coords": [80, -52]
         },
         {
-          "coords": [88.5, -52],
+          "coords": [86.5, -52],
           "name": "Grand Station green",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [88.5, 0],
+          "coords": [86.5, 0],
           "name": "Embedding the Lab main green",
           "drawLabel": false,
           "labelPos": "N",
@@ -1126,14 +1126,14 @@
           "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
         },
         {
-          "coords": [91.5, -54],
+          "coords": [89.5, -54],
           "name": "Grand Station gold",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [91.5, 0],
+          "coords": [89.5, 0],
           "name": "Embedding the Lab main gold",
           "drawLabel": false,
           "labelPos": "S",
@@ -1207,7 +1207,7 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [89, -46],
+          "coords": [87, -46],
           "name": "Grand Station main",
           "labelPos": "S",
           "labelShiftCoords": [1.5, -9],
@@ -1216,45 +1216,45 @@
           "stationSymbol": "grand"
         },
         {
-          "coords": [100, -46],
+          "coords": [102, -46],
           "name": "Format main",
           "labelPos": "S",
-          "labelAngle": 0,
-          "labelShiftCoords": [0, -8.5],
+          "labelShiftCoords": [-3, -10],
+          "labelAngle": -45,
           "stationSymbol": "triple"
         },
         {
-          "coords": [110, -46],
+          "coords": [116, -46],
           "name": "A challenge main",
           "labelPos": "S",
-          "labelShiftCoords": [0, -8.5],
-          "labelAngle": 0,
+          "labelShiftCoords": [-3, -10],
+          "labelAngle": -45,
           "stationSymbol": "triple"
         },
         {
-          "coords": [120, -46],
+          "coords": [126, -46],
           "name": "Learning main",
           "labelBold": false,
           "labelPos": "S",
-          "labelShiftCoords": [0, -8.5],
-          "labelAngle": 0,
+          "labelShiftCoords": [-3, -10],
+          "labelAngle": -45,
           "stationSymbol": "triple"
         },
         {
-          "coords": [130, -46],
+          "coords": [136, -46],
           "name": "Iterative process main",
           "labelBold": false,
           "labelPos": "S",
-          "labelShiftCoords": [0, -8.5],
-          "labelAngle": 0,
+          "labelShiftCoords": [-3, -10],
+          "labelAngle": -45,
           "stationSymbol": "triple"
         },
         {
-          "coords": [140, -46],
+          "coords": [146, -46],
           "name": "Good practices main",
           "labelPos": "S",
-          "labelShiftCoords": [0, -8.5],
-          "labelAngle": 0,
+          "labelShiftCoords": [-3, -8],
+          "labelAngle": -45,
           "stationSymbol": "triple"
         }
       ]
@@ -1267,38 +1267,39 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [89, 2],
+          "coords": [87, 2],
           "name": "Embedding the Lab main",
-          "labelPos": "N",
-          "labelShiftCoords": [0, 1],
+          "labelPos": "NW",
+          "labelShiftCoords": [0, 5],
           "stationAngle": -45,
           "stationSymbol": "triple",
           "shiftCoords": [-1.5, -2]
         },
         {
-          "coords": [115, 2],
+          "coords": [105, 2],
           "name": "Learning Systematically main",
           "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
-          "coords": [135, 2],
+          "coords": [130, 2],
           "name": "Assess Quality main",
           "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
         },
         {
-          "coords": [151.5, 2],
+          "coords": [161.5, 2],
           "name": "Results main",
           "labelBold": false,
+          "labelShiftCoords": [-3, 1],
           "labelPos": "N",
           "stationSymbol": "triple",
           "stationAngle": 45
         },
         {
-          "coords": [154, -15],
+          "coords": [164, -15],
           "name": "Teacher Role main",
           "stationAngle": 90,
           "labelPos": "W",
@@ -1306,7 +1307,7 @@
           "stationSymbol": "triple"
         },
         {
-          "coords": [154, -35],
+          "coords": [164, -35],
           "name": "Student role main",
           "stationAngle": 90,
           "labelPos": "W",
@@ -1314,13 +1315,13 @@
           "stationSymbol": "triple"
         },
         {
-          "coords": [120, -25],
+          "coords": [120, -10],
           "name": "Become a teacher red",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
         {
-          "coords": [147, -47.5],
+          "coords": [157, -47.5],
           "name": "Recruitment main",
           "labelPos": "S",
           "labelShiftCoords": [7, -5],
@@ -1431,7 +1432,7 @@
           "coords": [80, -50]
         },
         {
-          "coords": [90, -50],
+          "coords": [88, -50],
           "name": "Grand Station black",
           "drawLabel": false,
           "labelPos": "S",
@@ -1466,35 +1467,35 @@
           "stationSymbol": false
         },
         {
-          "coords": [140, -50],
+          "coords": [150, -50],
           "name": "Good practices black",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
-          "coords": [150, -50],
+          "coords": [160, -50],
           "name": "Recruitment black",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [150, -32],
+          "coords": [160, -32],
           "name": "Student role black",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [150, -22],
+          "coords": [160, -22],
           "name": "Teacher Role black",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [150, 0],
+          "coords": [160, 0],
           "name": "Results black",
           "drawLabel": false,
           "labelPos": "N",
@@ -1515,14 +1516,14 @@
           "stationSymbol": false
         },
         {
-          "coords": [90, 0],
+          "coords": [88, 0],
           "name": "Embedding the Lab main black",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [90, -50]
+          "coords": [88, -50]
         }
       ]
     },
@@ -1575,14 +1576,14 @@
           "coords": [180, -30]
         },
         {
-          "coords": [170, -40],
+          "coords": [180, -40],
           "name": "Transdisciplinary Innovation Lab Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single"
         },
         {
-          "coords": [160, -50],
+          "coords": [170, -50],
           "name": "Crossroads Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
@@ -1593,50 +1594,50 @@
           ]
         },
         {
-          "coords": [152, -50],
+          "coords": [162, -50],
           "name": "Recruitment red",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [152, -35],
+          "coords": [162, -35],
           "name": "Student role red",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [152, -25],
+          "coords": [162, -25],
           "name": "Teacher Role red",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [152, 0],
+          "coords": [162, 0],
           "name": "Results red",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [150, 0]
+          "coords": [162, 0]
         },
         {
-          "coords": [120, -25]
+          "coords": [124.25, -25]
         },
         {
-          "coords": [120, -25],
+          "coords": [125, -25],
           "name": "Become a teacher red",
           "labelPos": "E",
           "labelShiftCoords": [10.5, 0]
         },
         {
-          "coords": [90, -50]
+          "coords": [88, -50]
         },
         {
-          "coords": [90, -50],
+          "coords": [88, -50],
           "name": "Grand Station red",
           "drawLabel": false,
           "labelPos": "S",
@@ -1653,13 +1654,13 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [160, -50]
+          "coords": [170, -50]
         },
         {
-          "coords": [160, 10]
+          "coords": [170, 20]
         },
         {
-          "coords": [40, 10]
+          "coords": [40, 20]
         },
         {
           "coords": [40, -8],
@@ -1737,7 +1738,7 @@
           "stationSymbol": false
         },
         {
-          "coords": [140, -48],
+          "coords": [148, -48],
           "name": "Good practices red dash",
           "drawLabel": false,
           "labelPos": "S",
@@ -1745,28 +1746,28 @@
           "stationSymbol": false
         },
         {
-          "coords": [148, -48],
+          "coords": [158, -48],
           "name": "Recruitment red dash",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
-          "coords": [148, -32],
+          "coords": [158, -32],
           "name": "Student role red dash",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [148, -22],
+          "coords": [158, -22],
           "name": "Teacher Role red dash",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
-          "coords": [148, -2],
+          "coords": [158, -2],
           "name": "Results red dash",
           "drawLabel": false,
           "labelPos": "N",
@@ -1787,14 +1788,14 @@
           "stationSymbol": false
         },
         {
-          "coords": [93, -2],
+          "coords": [91, -2],
           "name": "Embedding the Lab main red dash",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
-          "coords": [93, -50]
+          "coords": [91, -50]
         }
       ]
     }
