@@ -13,7 +13,7 @@
       "id": null,
       "name": "focussing-on-learning-teacher",
       "link": "/trail/teacher/focussing-on-learning-teacher",
-      "label": "Learning",
+      "label": "Focussing\non learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
@@ -23,7 +23,7 @@
       "id": null,
       "name": "focussing-on-learning-student",
       "link": "/trail/student/focussing-on-learning-student",
-      "label": "Learning",
+      "label": "Focussing\non learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
@@ -42,7 +42,7 @@
       "id": null,
       "name": "good-practices-teacher",
       "link": "/trail/teacher/good-practices-teacher",
-      "label": "Good\npractices Teacher",
+      "label": "Good\npractices",
       "position": {
         "lat": 52.517403,
         "lon": 13.398203
@@ -120,6 +120,7 @@
     "External network Policy": {
       "id": 3901824902,
       "name": "external-network-policy",
+      "link": "/trail/policy/external-network-policy",
       "label": "External\nnetwork Policy",
       "position": {
         "lat": 52.4995972,
@@ -129,6 +130,7 @@
     "External network Educational": {
       "id": 3901824902,
       "name": "external-network-educational",
+      "link": "/trail/educational/external-network-educational",
       "label": "External\nnetwork Educational",
       "position": {
         "lat": 52.4995972,
@@ -138,6 +140,7 @@
     "External network Student": {
       "id": 3901824902,
       "name": "external-network-student",
+      "link": "/trail/policy/external-network-student",
       "label": "External\nnetwork Student",
       "position": {
         "lat": 52.4995972,
@@ -147,6 +150,7 @@
     "External network Teacher": {
       "id": 3901824902,
       "name": "external-network-teacher",
+      "link": "/trail/teacher/external-network-teacher",
       "label": "External\nnetwork Teacher",
       "position": {
         "lat": 52.4995972,
@@ -185,6 +189,7 @@
     "External inspiration Educational": {
       "id": 3957757604,
       "name": "external-inspiration-educational",
+      "link": "/trail/educational/external-inspiration-educational",
       "label": "External\ninspiration Ecucational",
       "position": {
         "lat": 52.5017976,
@@ -194,6 +199,7 @@
     "External inspiration Student": {
       "id": 3957757604,
       "name": "external-inspiration-student",
+      "link": "/trail/student/external-inspiration-student",
       "label": "External\ninspiration Student",
       "position": {
         "lat": 52.5017976,
@@ -203,6 +209,7 @@
     "External inspiration Teacher": {
       "id": 3957757604,
       "name": "external-inspiration-teacher",
+      "link": "/trail/teacher/external-inspiration-teacher",
       "label": "External\ninspiration Teacher",
       "position": {
         "lat": 52.5017976,
@@ -212,6 +219,7 @@
     "External inspiration Policy": {
       "id": 3957757604,
       "name": "external-inspiration-policy",
+      "link": "/trail/policy/external-inspiration-policy",
       "label": "External\ninspiration Policy",
       "position": {
         "lat": 52.5017976,
@@ -240,6 +248,7 @@
     "Common Vision Teacher": {
       "id": 29046970,
       "name": "common-vision-teacher",
+      "link": "/trail/teacher/common-vision-teacher",
       "label": "Common\nVision Teacher",
       "position": {
         "lat": 52.5038223,
@@ -249,6 +258,7 @@
     "Common Vision Policy": {
       "id": 29046970,
       "name": "common-vision-policy",
+      "link": "/trail/policy/common-vision-policy",
       "label": "Common\nVision Policy",
       "position": {
         "lat": 52.5038223,
@@ -258,6 +268,7 @@
     "Common Vision Student": {
       "id": 29046970,
       "name": "common-vision-student",
+      "link": "/trail/student/common-vision-student",
       "label": "Common\nVision Student",
       "position": {
         "lat": 52.5038223,
@@ -276,6 +287,7 @@
     "Common Vision Educational": {
       "id": 29046970,
       "name": "common-vision-educational",
+      "link": "/trail/educational/common-vision-educational",
       "label": "Common\nVision Educational",
       "position": {
         "lat": 52.5038223,
@@ -285,6 +297,7 @@
     "Fertile ground Educational": {
       "id": 3957757603,
       "name": "fertile-ground-educational",
+      "link": "/trail/educational/fertile-ground-educational",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
@@ -295,6 +308,7 @@
       "id": 3957757603,
       "name": "fertile-ground-student",
       "label": "Fertile\nground",
+      "link": "/trail/student/fertile-ground-student",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
@@ -303,6 +317,7 @@
     "Fertile ground Policy": {
       "id": 3957757603,
       "name": "fertile-ground-policy",
+      "link": "/trail/policy/fertile-ground-policy",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
@@ -312,6 +327,7 @@
     "Fertile ground Teacher": {
       "id": 3957757603,
       "name": "fertile-ground-teacher",
+      "link": "/trail/teacher/fertile-ground-teacher",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
@@ -456,7 +472,8 @@
     "Defining a challenge Teacher": {
       "id": 3862767512,
       "name": "defining-a-challenge-teacher",
-      "label": "Defining (a)\nchallenge Teacher",
+      "link": "/trail/teacher/defining-a-challenge-teacher",
+      "label": "Defining (a)\nchallenge",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
@@ -465,7 +482,8 @@
     "Defining a challenge Student Cocreator": {
       "id": 3862767512,
       "name": "defining-a-challenge-student",
-      "label": "Defining (a)\nchallenge Student",
+      "link": "/trail/student/defining-a-challenge-student",
+      "label": "Defining (a)\nchallenge",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
@@ -483,7 +501,8 @@
     "Format of the transdisciplinary innovation lab Teacher": {
       "id": 4213705914,
       "name": "format-of-the-transdisciplinary-innovation-lab-teacher",
-      "label": "Format of the\ntransdisciplinary\ninnovation lab Teacher",
+      "link": "/trail/teacher/format-of-the-transdisciplinary-innovation-lab-teacher",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
@@ -492,7 +511,8 @@
     "Format of the transdisciplinary innovation lab Student Cocreator": {
       "id": 4213705914,
       "name": "format-of-the-transdisciplinary-innovation-lab-student",
-      "label": "Format of the\ntransdisciplinary\ninnovation lab Student Cocreator",
+      "link": "/trail/teacher/format-of-the-transdisciplinary-innovation-lab-student",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
@@ -510,7 +530,8 @@
     "Grand Station Teacher": {
       "id": 3856100108,
       "name": "grand-station-teacher",
-      "label": "Grand\nStation Teacher",
+      "link": "/trail/teacher/grand-station-teacher",
+      "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
@@ -519,7 +540,8 @@
     "Grand Station Student": {
       "id": 3856100108,
       "name": "grand-station-student",
-      "label": "Grand\nStation Student",
+      "link": "/trail/student/grand-station-student",
+      "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
@@ -528,7 +550,8 @@
     "Grand Station Educational": {
       "id": 3856100108,
       "name": "grand-station-educational",
-      "label": "Grand\nStation Educational",
+      "link": "/trail/educational/grand-station-educational",
+      "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
@@ -537,6 +560,7 @@
     "Grand Station Student Cocreator": {
       "id": 3856100108,
       "name": "grand-station-student",
+      "link": "/trail/student/grand-station-student-cocreator",
       "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
@@ -546,6 +570,7 @@
     "Grand Station Policy": {
       "id": 3856100108,
       "name": "grand-station-policy",
+      "link": "/trail/policy/grand-station-policy",
       "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
@@ -605,7 +630,7 @@
     "Strengthen Embedding of the lab within your institute Educational": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-educational",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute Educational",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "link": "/trail/educational/strengthen-embedding-of-the-lab-within-your-institute-educational",
       "position": {
         "lat": 52.511837,
@@ -615,7 +640,7 @@
     "Strengthen Embedding of the lab within your institute Policy": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-policy",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute Policy",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "link": "/trail/policy/strengthen-embedding-of-the-lab-within-your-institute-policy",
       "position": {
         "lat": 52.511837,
@@ -625,7 +650,7 @@
     "Strengthen Embedding of the lab within your institute Student Cocreator": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-student-cocreator",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute Student Cocreator",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
       "position": {
         "lat": 52.511837,
@@ -644,7 +669,7 @@
     "Strengthen Embedding of the lab within your institute Teacher": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-teacher",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute Teacher",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "link": "/trail/teacher/strengthen-embedding-of-the-lab-within-your-institute-teacher",
       "position": {
         "lat": 52.511837,
@@ -693,7 +718,7 @@
       "id": 29123762,
       "name": "how-to-assess-quality-of-an-innovation-lab-teacher",
       "link": "/trail/teacher/how-to-assess-quality-of-an-innovation-lab-teacher",
-      "label": "How to assess quality\nof an innovation lab Teacher",
+      "label": "How to assess quality\nof an innovation lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -703,7 +728,7 @@
       "id": 29123762,
       "name": "how-to-assess-quality-of-an-innovation-lab-student",
       "link": "/trail/student/how-to-assess-quality-of-an-innovation-lab-student",
-      "label": "How to assess quality\nof an innovation lab Student",
+      "label": "How to assess quality\nof an innovation lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -722,7 +747,7 @@
       "id": 29123762,
       "name": "what-outcomes-can-you-expect-teacher",
       "link": "/trail/teacher/what-outcomes-can-you-expect-teacher",
-      "label": "What outcomes \ncan you expect? Teacher",
+      "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -732,7 +757,7 @@
       "id": 29123762,
       "name": "what-outcomes-can-you-expect-student-cocreator",
       "link": "/trail/student/what-outcomes-can-you-expect-student-cocreator",
-      "label": "What outcomes \ncan you expect? Student Cocreator",
+      "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -742,7 +767,7 @@
       "id": 29123762,
       "name": "what-outcomes-can-you-expect-student",
       "link": "/trail/student/what-outcomes-can-you-expect-student",
-      "label": "What outcomes \ncan you expect? Student",
+      "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -761,7 +786,7 @@
       "id": 29123762,
       "name": "coaches-teacher",
       "link": "/trail/teacher/coaches-teacher",
-      "label": "Coaches Teacher",
+      "label": "Coaches",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -771,7 +796,7 @@
       "id": 29123762,
       "name": "coaches-student",
       "link": "/trail/student/coaches-student",
-      "label": "Coaches Student",
+      "label": "Coaches",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -781,7 +806,7 @@
       "id": 29123762,
       "name": "coaches-student-cocreator",
       "link": "/trail/student/coaches-student-cocreator",
-      "label": "Coaches Student Cocreator",
+      "label": "Coaches",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -800,7 +825,7 @@
       "id": 29123762,
       "name": "team-members-student",
       "link": "/trail/student/team-members-student",
-      "label": "Student\nrole",
+      "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -810,7 +835,7 @@
       "id": 29123762,
       "name": "team-members-student-cocreator",
       "link": "/trail/student/team-members-student-cocreator",
-      "label": "Student\nrole",
+      "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -819,8 +844,8 @@
     "Team members Teacher": {
       "id": 29123762,
       "name": "team-members-teacher",
-      "link": "/trail/student/team-members-teacher",
-      "label": "Student\nrole",
+      "link": "/trail/teacher/team-members-teacher",
+      "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -878,7 +903,7 @@
       "id": 29123762,
       "name": "the-iterative-process-teacher",
       "link": "/trail/teacher/the-iterative-process-teacher",
-      "label": "Iterative\nprocess Teacher",
+      "label": "Iterative\nprocess",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -888,7 +913,7 @@
       "id": 29123762,
       "name": "the-iterative-process-student",
       "link": "/trail/teacher/the-iterative-process-student",
-      "label": "Iterative\nprocess Student",
+      "label": "Iterative\nprocess",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -1672,9 +1697,7 @@
           "name": "Fertile ground Student",
           "drawLabel": false,
           "labelPos": "SW",
-          "stationSymbol": false,
-          "changeToLineStation": ["STUDENT", "Innovation lab red"],
-          "changeToLineOrder": "previous"
+          "stationSymbol": false
         },
         {
           "coords": [50, -18],

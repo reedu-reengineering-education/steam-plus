@@ -9,10 +9,7 @@ import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
 import Link from 'next/link'
-import clsx from 'clsx'
 import { useEffect, useState } from 'react'
-import { Connector } from '@/components/Elements/Connector'
-import { BorderY } from '@/components/Elements/BorderY'
 import {
   ArrowLeftCircleIcon,
   ArrowRightCircleIcon,
@@ -88,6 +85,7 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
+  console.log(currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
@@ -174,6 +172,7 @@ export default function StationPage({
   neighbours,
   markdown,
 }: StationPageProps) {
+  console.log('StationPage: ', station)
   const router = useRouter()
   const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
   const [interchangeableStation, setInterchangableStation] =

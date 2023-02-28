@@ -17,6 +17,10 @@ function transformData(data: any) {
   }
 }
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 const margin = { top: 0, right: 0, bottom: 0, left: 0 }
 const xScale = d3.scaleLinear()
 const yScale = d3.scaleLinear()
@@ -208,12 +212,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
             d3.select(this)
               .attr('d', highlightedTrainStop)
               .on('click', function (d) {
-                const newWindow = window.open(
-                  d.target.__data__.link,
-                  '_blank',
-                  'noopener,noreferrer',
-                )
-                if (newWindow) newWindow.opener = null
+                openStationLink(d.target.baseURI, d.target.__data__)
               })
           }
         })
@@ -259,6 +258,27 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .select('g')
       .attr('transform', event.transform.toString())
+  }
+
+  function openStationLink(baseURI: string, d3Data: any) {
+    let link
+    if (d3Data.name.includes('main')) {
+      const url = new URL(baseURI)
+      const params = new URLSearchParams(url.search)
+
+      const mainStationName = d3Data.name.split('main')[0].trim()
+      const realStationName = `${mainStationName} ${capitalizeFirstLetter(
+        params.get('line'),
+      )}`
+
+      const realStation = data.stations.stations[realStationName]
+      link = realStation.link
+    } else {
+      link = d3Data.link
+    }
+
+    const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
   }
 
   const init = () => {
@@ -690,6 +710,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       })
       .style('cursor', 'pointer')
       .on('click', function (this, d) {
+        // Line labels
         router.replace({
           pathname: router.pathname,
           query: {
@@ -880,12 +901,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         toggleHighlight(d, lineWidth)
       })
       .on('click', function (this, d) {
-        const newWindow = window.open(
-          d.target.__data__.link,
-          '_blank',
-          'noopener,noreferrer',
-        )
-        if (newWindow) newWindow.opener = null
+        openStationLink(d.target.baseURI, d.target.__data__) // Label click
       })
       .style('cursor', 'pointer')
       .call(wrap, function (d) {
@@ -1033,9 +1049,10 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .attr('fill', function (d) {
         return d.stationFillColor
       })
-      // .on("click", function (d) {
-      //   listeners.call("click", this, d);
-      // })
+      .on('click', function (d) {
+        console.log('Click long station: ', d)
+        openStationLink(d.target.baseURI, d.target.__data__)
+      })
       .on('mouseover', function (_, d) {
         toggleHighlight(d, lineWidth)
       })
