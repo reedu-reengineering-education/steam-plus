@@ -107,46 +107,46 @@
         "lon": 13.3347115
       }
     },
-    "External network main purple": {
+    "External network main": {
       "id": 3901824902,
-      "name": "External network main purple",
+      "name": "External network main",
       "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network main gold": {
+    "External network Policy": {
       "id": 3901824902,
       "name": "external-network-policy",
-      "label": "External\nnetwork",
+      "label": "External\nnetwork Policy",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network main green": {
+    "External network Educational": {
       "id": 3901824902,
       "name": "external-network-educational",
-      "label": "External\nnetwork",
+      "label": "External\nnetwork Educational",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network main red": {
+    "External network Student": {
       "id": 3901824902,
       "name": "external-network-student",
-      "label": "External\nnetwork",
+      "label": "External\nnetwork Student",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
       }
     },
-    "External network main black": {
+    "External network Teacher": {
       "id": 3901824902,
       "name": "external-network-teacher",
-      "label": "External\nnetwork",
+      "label": "External\nnetwork Teacher",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -172,46 +172,46 @@
         "lon": 13.3537297
       }
     },
-    "External inspiration main purple": {
+    "External inspiration main": {
       "id": 3957757604,
-      "name": "External inspiration main purple",
+      "name": "External inspiration main",
       "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration main green": {
+    "External inspiration Educational": {
       "id": 3957757604,
       "name": "external-inspiration-educational",
-      "label": "External\ninspiration",
+      "label": "External\ninspiration Ecucational",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration main red": {
+    "External inspiration Student": {
       "id": 3957757604,
       "name": "external-inspiration-student",
-      "label": "External\ninspiration",
+      "label": "External\ninspiration Student",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration main black": {
+    "External inspiration Teacher": {
       "id": 3957757604,
       "name": "external-inspiration-teacher",
-      "label": "External\ninspiration",
+      "label": "External\ninspiration Teacher",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
       }
     },
-    "External inspiration main gold": {
+    "External inspiration Policy": {
       "id": 3957757604,
       "name": "external-inspiration-policy",
-      "label": "External\ninspiration",
+      "label": "External\ninspiration Policy",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -227,61 +227,61 @@
         "lon": 13.3431855
       }
     },
-    "Within HEI network main purple": {
+    "Common Vision main": {
       "id": 29046970,
-      "name": "Within HEI network main purple",
+      "name": "Common Vision main",
       "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network main black": {
+    "Common Vision Teacher": {
       "id": 29046970,
-      "name": "hei-network-teacher",
-      "label": "Within\nHEI network",
+      "name": "common-vision-teacher",
+      "label": "Common\nVision Teacher",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network main gold": {
+    "Common Vision Policy": {
       "id": 29046970,
-      "name": "hei-network-policy",
-      "label": "Within\nHEI network",
+      "name": "common-vision-policy",
+      "label": "Common\nVision Policy",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Within HEI network main red": {
+    "Common Vision Student": {
       "id": 29046970,
-      "name": "hei-network-student",
-      "label": "Within\nHEI network",
+      "name": "common-vision-student",
+      "label": "Common\nVision Student",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Fertile ground main purple": {
+    "Fertile ground main": {
       "id": 3957757603,
-      "name": "Fertile ground main purple",
+      "name": "Fertile ground main",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
       }
     },
-    "Within HEI network main green": {
+    "Common Vision Educational": {
       "id": 29046970,
-      "name": "hei-network-educational",
-      "label": "Within\nHEI network",
+      "name": "common-vision-educational",
+      "label": "Common\nVision Educational",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
       }
     },
-    "Fertile ground main green": {
+    "Fertile ground Educational": {
       "id": 3957757603,
       "name": "fertile-ground-educational",
       "label": "Fertile\nground",
@@ -290,7 +290,7 @@
         "lon": 13.3266968
       }
     },
-    "Fertile ground main red": {
+    "Fertile ground Student": {
       "id": 3957757603,
       "name": "fertile-ground-student",
       "label": "Fertile\nground",
@@ -299,7 +299,7 @@
         "lon": 13.3266968
       }
     },
-    "Fertile ground main gold": {
+    "Fertile ground Policy": {
       "id": 3957757603,
       "name": "fertile-ground-policy",
       "label": "Fertile\nground",
@@ -308,7 +308,7 @@
         "lon": 13.3266968
       }
     },
-    "Fertile ground main black": {
+    "Fertile ground Teacher": {
       "id": 3957757603,
       "name": "fertile-ground-teacher",
       "label": "Fertile\nground",
@@ -907,7 +907,7 @@
       "nodes": [
         {
           "coords": [40, -6],
-          "name": "Fertile ground main purple",
+          "name": "Fertile ground main",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -916,7 +916,7 @@
         },
         {
           "coords": [50, -16],
-          "name": "Within HEI network main purple",
+          "name": "Common Vision main",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -925,7 +925,7 @@
         },
         {
           "coords": [60, -26],
-          "name": "External inspiration main purple",
+          "name": "External inspiration main",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -934,7 +934,7 @@
         },
         {
           "coords": [70, -36],
-          "name": "External network main purple",
+          "name": "External network main",
           "stationAngle": 45,
           "stationSymbol": "triple",
           "labelPos": "E",
@@ -1000,7 +1000,7 @@
         },
         {
           "coords": [40, -12],
-          "name": "Fertile ground main green",
+          "name": "Fertile ground Educational",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1011,7 +1011,7 @@
         },
         {
           "coords": [50, -22],
-          "name": "Within HEI network main green",
+          "name": "Common Vision Educational",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1020,7 +1020,7 @@
         },
         {
           "coords": [60, -32],
-          "name": "External inspiration main green",
+          "name": "External inspiration Educational",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1029,7 +1029,7 @@
         },
         {
           "coords": [70, -42],
-          "name": "External network main green",
+          "name": "External network Educational",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1123,7 +1123,7 @@
           "labelPos": "SE",
           "stationSymbol": "single",
           "labelShiftCoords": [0, 0],
-          "changeToLineStation": ["POLICY-MAKER", "Fertile ground main gold"]
+          "changeToLineStation": ["POLICY-MAKER", "Fertile ground Policy"]
         },
         {
           "coords": [89.5, -54],
@@ -1162,7 +1162,7 @@
         },
         {
           "coords": [35.55, -10.5],
-          "name": "Fertile ground main gold",
+          "name": "Fertile ground Policy",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false,
@@ -1171,21 +1171,21 @@
         },
         {
           "coords": [45.25, -20.5],
-          "name": "Within HEI network main gold",
+          "name": "Common Vision Policy",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [55.25, -30.5],
-          "name": "External inspiration main gold",
+          "name": "External inspiration Policy",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [65.25, -40.5],
-          "name": "External network main gold",
+          "name": "External network Policy",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false,
@@ -1398,7 +1398,7 @@
         },
         {
           "coords": [40, -10],
-          "name": "Fertile ground main black",
+          "name": "Fertile ground Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": false,
@@ -1406,21 +1406,21 @@
         },
         {
           "coords": [50, -20],
-          "name": "Within HEI network main black",
+          "name": "Common Vision Teacher",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [60, -30],
-          "name": "External inspiration main black",
+          "name": "External inspiration Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [70, -40],
-          "name": "External network main black",
+          "name": "External network Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
@@ -1588,10 +1588,7 @@
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0],
           "stationSymbol": "single",
-          "changeToLineStation": [
-            "STUDENT-COCREATOR",
-            "Fertile ground main red"
-          ]
+          "changeToLineStation": ["STUDENT-COCREATOR", "Fertile ground Student"]
         },
         {
           "coords": [162, -50],
@@ -1664,7 +1661,7 @@
         },
         {
           "coords": [40, -8],
-          "name": "Fertile ground main red",
+          "name": "Fertile ground Student",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false,
@@ -1673,7 +1670,7 @@
         },
         {
           "coords": [50, -18],
-          "name": "Within HEI network main red",
+          "name": "Common Vision Student",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1682,7 +1679,7 @@
         },
         {
           "coords": [60, -28],
-          "name": "External inspiration main red",
+          "name": "External inspiration Student",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
@@ -1691,7 +1688,7 @@
         },
         {
           "coords": [70, -38],
-          "name": "External network main red",
+          "name": "External network Student",
           "drawLabel": false,
           "labelPos": "SW",
           "labelBold": true,
