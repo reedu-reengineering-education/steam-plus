@@ -1,29 +1,28 @@
 {
   "stations": {
-    "Learning main": {
+    "Focussing on learning main": {
       "id": null,
-      "link": "google.com",
-      "name": "Learning main",
+      "name": "Focussing on learning main",
       "label": "Focussing\non learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
       }
     },
-    "Learning black": {
+    "Focussing on learning Teacher": {
       "id": null,
-      "name": "learning-teacher",
-      "link": "/trail/student/learning-teacher",
+      "name": "focussing-on-learning-teacher",
+      "link": "/trail/teacher/focussing-on-learning-teacher",
       "label": "Learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
       }
     },
-    "Learning red dash": {
+    "Focussing on learning Student Cocreator": {
       "id": null,
-      "name": "learning-student",
-      "link": "/trail/student/learning-student",
+      "name": "focussing-on-learning-student",
+      "link": "/trail/student/focussing-on-learning-student",
       "label": "Learning",
       "position": {
         "lat": 52.517,
@@ -39,18 +38,20 @@
         "lon": 13.398203
       }
     },
-    "Good practices black": {
+    "Good practices Teacher": {
       "id": null,
       "name": "good-practices-teacher",
-      "label": "Good\npractices",
+      "link": "/trail/teacher/good-practices-teacher",
+      "label": "Good\npractices Teacher",
       "position": {
         "lat": 52.517403,
         "lon": 13.398203
       }
     },
-    "Good practices red dash": {
+    "Good practices Student Cocreator": {
       "id": null,
       "name": "good-practices-student",
+      "link": "/trail/student/good-practices-student",
       "label": "Good\npractices",
       "position": {
         "lat": 52.517403,
@@ -443,55 +444,55 @@
         "lon": 13.1997742
       }
     },
-    "A challenge main": {
+    "Defining a challenge main": {
       "id": 3862767512,
-      "name": "A challenge main",
+      "name": "Defining a challenge main",
       "label": "Defining (a)\nchallenge",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
       }
     },
-    "A challenge black": {
+    "Defining a challenge Teacher": {
       "id": 3862767512,
-      "name": "challenge-teacher",
-      "label": "Challenge",
+      "name": "defining-a-challenge-teacher",
+      "label": "Defining (a)\nchallenge Teacher",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
       }
     },
-    "A challenge red dash": {
+    "Defining a challenge Student Cocreator": {
       "id": 3862767512,
-      "name": "challenge-student",
-      "label": "Challenge",
+      "name": "defining-a-challenge-student",
+      "label": "Defining (a)\nchallenge Student",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
       }
     },
-    "Format main": {
+    "Format of the transdisciplinary innovation lab main": {
       "id": 4213705914,
-      "name": "Format main",
+      "name": "Format of the transdisciplinary innovation lab main",
       "label": "Format of the\ntransdisciplinary\ninnovation lab",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
       }
     },
-    "Format black": {
+    "Format of the transdisciplinary innovation lab Teacher": {
       "id": 4213705914,
-      "name": "format-teacher",
-      "label": "Format",
+      "name": "format-of-the-transdisciplinary-innovation-lab-teacher",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab Teacher",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
       }
     },
-    "Format red dash": {
+    "Format of the transdisciplinary innovation lab Student Cocreator": {
       "id": 4213705914,
-      "name": "format-student",
-      "label": "Format",
+      "name": "format-of-the-transdisciplinary-innovation-lab-student",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab Student Cocreator",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
@@ -506,34 +507,34 @@
         "lon": 13.3701242
       }
     },
-    "Grand Station black": {
+    "Grand Station Teacher": {
       "id": 3856100108,
       "name": "grand-station-teacher",
-      "label": "Grand\nStation",
+      "label": "Grand\nStation Teacher",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
       }
     },
-    "Grand Station red": {
+    "Grand Station Student": {
       "id": 3856100108,
       "name": "grand-station-student",
-      "label": "Grand\nStation",
+      "label": "Grand\nStation Student",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
       }
     },
-    "Grand Station green": {
+    "Grand Station Educational": {
       "id": 3856100108,
       "name": "grand-station-educational",
-      "label": "Grand\nStation",
+      "label": "Grand\nStation Educational",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
       }
     },
-    "Grand Station red dash": {
+    "Grand Station Student Cocreator": {
       "id": 3856100108,
       "name": "grand-station-student",
       "label": "Grand\nStation",
@@ -542,7 +543,7 @@
         "lon": 13.3701242
       }
     },
-    "Grand Station gold": {
+    "Grand Station Policy": {
       "id": 3856100108,
       "name": "grand-station-policy",
       "label": "Grand\nStation",
@@ -703,117 +704,117 @@
         "lon": 13.3105328
       }
     },
-    "Results main": {
+    "What outcomes can you expect main": {
       "id": 29123762,
-      "name": "Results main",
+      "name": "What outcomes can you expect main",
       "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Results black": {
+    "What outcomes can you expect Teacher": {
       "id": 29123762,
-      "name": "results-teacher",
-      "link": "/trail/teacher/results-teacher",
-      "label": "Results",
+      "name": "what-outcomes-can-you-expect-teacher",
+      "link": "/trail/teacher/what-outcomes-can-you-expect-teacher",
+      "label": "What outcomes \ncan you expect? Teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Results red dash": {
+    "What outcomes can you expect Student Cocreator": {
       "id": 29123762,
-      "name": "results-student",
-      "link": "/trail/student/results-student",
-      "label": "Results",
+      "name": "what-outcomes-can-you-expect-student-cocreator",
+      "link": "/trail/student/what-outcomes-can-you-expect-student-cocreator",
+      "label": "What outcomes \ncan you expect? Student Cocreator",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Results red": {
+    "What outcomes can you expect Student": {
       "id": 29123762,
-      "name": "results-student",
-      "link": "/trail/student/results-student",
-      "label": "Results",
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student/what-outcomes-can-you-expect-student",
+      "label": "What outcomes \ncan you expect? Student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Teacher Role main": {
+    "Coaches main": {
       "id": 29123762,
-      "name": "Teacher Role main",
+      "name": "Coaches main",
       "label": "Coaches",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Teacher Role black": {
+    "Coaches Teacher": {
       "id": 29123762,
-      "name": "teacher-role-teacher",
-      "link": "/trail/teacher/teacher-role-teacher",
-      "label": "Teacher\nRole",
+      "name": "coaches-teacher",
+      "link": "/trail/teacher/coaches-teacher",
+      "label": "Coaches Teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Teacher Role red": {
+    "Coaches Student": {
       "id": 29123762,
-      "name": "teacher-role-student",
-      "link": "/trail/student/teacher-role-student",
-      "label": "Teacher\nRole",
+      "name": "coaches-student",
+      "link": "/trail/student/coaches-student",
+      "label": "Coaches Student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Teacher Role red dash": {
+    "Coaches Student Cocreator": {
       "id": 29123762,
-      "name": "teacher-role-student",
-      "link": "/trail/teacher/teacher-role-student",
-      "label": "Teacher\nRole",
+      "name": "coaches-student-cocreator",
+      "link": "/trail/student/coaches-student-cocreator",
+      "label": "Coaches Student Cocreator",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Student role main": {
+    "Team members main": {
       "id": 29123762,
-      "name": "Student role main",
+      "name": "Team members main",
       "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Student role red": {
+    "Team members Student": {
       "id": 29123762,
-      "name": "student-role-student",
-      "link": "/trail/student/student-role-student",
+      "name": "team-members-student",
+      "link": "/trail/student/team-members-student",
       "label": "Student\nrole",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Student role red dash": {
+    "Team members Student Cocreator": {
       "id": 29123762,
-      "name": "student-role-student",
-      "link": "/trail/student/student-role-student",
+      "name": "team-members-student-cocreator",
+      "link": "/trail/student/team-members-student-cocreator",
       "label": "Student\nrole",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Student role black": {
+    "Team members Teacher": {
       "id": 29123762,
-      "name": "student-role-teacher",
-      "link": "/trail/student/student-role-teacher",
+      "name": "team-members-teacher",
+      "link": "/trail/student/team-members-teacher",
       "label": "Student\nrole",
       "position": {
         "lat": 52.511837,
@@ -829,64 +830,66 @@
         "lon": 13.3105328
       }
     },
-    "Recruitment red": {
+    "Recruitment Student": {
       "id": 29123763,
       "name": "recruitment-student",
       "link": "/trail/student/recruitment-student",
-      "label": "Recruitment",
+      "label": "Recruitment Student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Recruitment black": {
+    "Recruitment Teacher": {
       "id": 29123763,
       "name": "recruitment-teacher",
       "link": "/trail/teacher/recruitment-teacher",
-      "label": "Recruitment",
+      "label": "Recruitment Teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Recruitment red dash": {
+    "Recruitment Student Cocreator": {
       "id": 29123763,
-      "name": "recruitment-student",
-      "link": "/trail/student/recruitment-student",
+      "name": "recruitment-student-cocreator",
+      "link": "/trail/student/recruitment-student-cocreator",
       "label": "Recruitment",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Iterative process main": {
+    "The Iterative process main": {
       "id": 29123764,
-      "name": "Iterative process main",
+      "name": "The Iterative process main",
       "label": "The Iterative\nProcess",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Iterative process black": {
+    "The Iterative process Teacher": {
       "id": 29123762,
-      "name": "iterative-process-teacher",
-      "label": "Iterative\nprocess",
+      "name": "the-iterative-process-teacher",
+      "link": "/trail/teacher/the-iterative-process-teacher",
+      "label": "Iterative\nprocess Teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Iterative process red dash": {
+    "The Iterative process Student Cocreator": {
       "id": 29123762,
-      "name": "iterative-process-teacher",
-      "label": "Iterative\nprocess",
+      "name": "the-iterative-process-student",
+      "link": "/trail/teacher/the-iterative-process-student",
+      "label": "Iterative\nprocess Student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Become a teacher red": {
+    "Become a teacher Student": {
       "id": 29123762,
       "name": "become-a-teacher-student",
       "link": "/trail/student/become-a-teacher",
@@ -1044,7 +1047,7 @@
         },
         {
           "coords": [86.5, -52],
-          "name": "Grand Station green",
+          "name": "Grand Station Educational",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
@@ -1127,7 +1130,7 @@
         },
         {
           "coords": [89.5, -54],
-          "name": "Grand Station gold",
+          "name": "Grand Station Policy",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
@@ -1189,7 +1192,7 @@
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false,
-          "changeToLineStation": ["POLICY", "Grand station gold"]
+          "changeToLineStation": ["POLICY", "Grand station Policy"]
         },
         {
           "coords": [75.25, -50.5]
@@ -1217,7 +1220,7 @@
         },
         {
           "coords": [102, -46],
-          "name": "Format main",
+          "name": "Format of the transdisciplinary innovation lab main",
           "labelPos": "S",
           "labelShiftCoords": [-3, -10],
           "labelAngle": -45,
@@ -1225,7 +1228,7 @@
         },
         {
           "coords": [116, -46],
-          "name": "A challenge main",
+          "name": "Defining a challenge main",
           "labelPos": "S",
           "labelShiftCoords": [-3, -10],
           "labelAngle": -45,
@@ -1233,7 +1236,7 @@
         },
         {
           "coords": [126, -46],
-          "name": "Learning main",
+          "name": "Focussing on learning main",
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-3, -10],
@@ -1242,7 +1245,7 @@
         },
         {
           "coords": [136, -46],
-          "name": "Iterative process main",
+          "name": "The Iterative process main",
           "labelBold": false,
           "labelPos": "S",
           "labelShiftCoords": [-3, -10],
@@ -1291,7 +1294,7 @@
         },
         {
           "coords": [161.5, 2],
-          "name": "Results main",
+          "name": "What outcomes can you expect main",
           "labelBold": false,
           "labelShiftCoords": [-3, 1],
           "labelPos": "N",
@@ -1300,7 +1303,7 @@
         },
         {
           "coords": [164, -15],
-          "name": "Teacher Role main",
+          "name": "Coaches main",
           "stationAngle": 90,
           "labelPos": "W",
           "labelShiftCoords": [-8, 0],
@@ -1308,7 +1311,7 @@
         },
         {
           "coords": [164, -35],
-          "name": "Student role main",
+          "name": "Team members main",
           "stationAngle": 90,
           "labelPos": "W",
           "labelShiftCoords": [-8, 0],
@@ -1316,7 +1319,7 @@
         },
         {
           "coords": [120, -10],
-          "name": "Become a teacher red",
+          "name": "Become a teacher Student",
           "labelPos": "E",
           "labelShiftCoords": [1.5, 0]
         },
@@ -1433,70 +1436,70 @@
         },
         {
           "coords": [88, -50],
-          "name": "Grand Station black",
+          "name": "Grand Station Teacher",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [100, -50],
-          "name": "Format black",
+          "name": "Format of the transdisciplinary innovation lab Teacher",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [110, -50],
-          "name": "A challenge black",
+          "name": "Defining a challenge Teacher",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [120, -50],
-          "name": "Learning black",
+          "name": "Focussing on learning Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [130, -50],
-          "name": "Iterative process black",
+          "name": "The Iterative process Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [150, -50],
-          "name": "Good practices black",
+          "name": "Good practices Teacher",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [160, -50],
-          "name": "Recruitment black",
+          "name": "Recruitment Teacher",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [160, -32],
-          "name": "Student role black",
+          "name": "Team members Teacher",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [160, -22],
-          "name": "Teacher Role black",
+          "name": "Coaches Teacher",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [160, 0],
-          "name": "Results black",
+          "name": "What outcomes can you expect Teacher",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
@@ -1592,28 +1595,28 @@
         },
         {
           "coords": [162, -50],
-          "name": "Recruitment red",
+          "name": "Recruitment Student",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [162, -35],
-          "name": "Student role red",
+          "name": "Team members Student",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [162, -25],
-          "name": "Teacher Role red",
+          "name": "Coaches Student",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [162, 0],
-          "name": "Results red",
+          "name": "What outcomes can you expect Student",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
@@ -1626,7 +1629,7 @@
         },
         {
           "coords": [125, -25],
-          "name": "Become a teacher red",
+          "name": "Become a teacher Student",
           "labelPos": "E",
           "labelShiftCoords": [10.5, 0]
         },
@@ -1635,7 +1638,7 @@
         },
         {
           "coords": [88, -50],
-          "name": "Grand Station red",
+          "name": "Grand Station Student",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
@@ -1700,28 +1703,28 @@
         },
         {
           "coords": [90, -48],
-          "name": "Grand Station red dash",
+          "name": "Grand Station Student Cocreator",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [100, -48],
-          "name": "Format red dash",
+          "name": "Format of the transdisciplinary innovation lab Student Cocreator",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [110, -48],
-          "name": "A challenge red dash",
+          "name": "Defining a challenge Student Cocreator",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [120, -48],
-          "name": "Learning red dash",
+          "name": "Focussing on learning Student Cocreator",
           "drawLabel": false,
           "labelPos": "S",
           "labelBold": false,
@@ -1729,14 +1732,14 @@
         },
         {
           "coords": [130, -48],
-          "name": "Iterative process red dash",
+          "name": "The Iterative process Student Cocreator",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [148, -48],
-          "name": "Good practices red dash",
+          "name": "Good practices Student Cocreator",
           "drawLabel": false,
           "labelPos": "S",
           "labelShiftCoords": [0, 0.5],
@@ -1744,28 +1747,28 @@
         },
         {
           "coords": [158, -48],
-          "name": "Recruitment red dash",
+          "name": "Recruitment Student Cocreator",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [158, -32],
-          "name": "Student role red dash",
+          "name": "Team members Student Cocreator",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [158, -22],
-          "name": "Teacher Role red dash",
+          "name": "Coaches Student Cocreator",
           "drawLabel": false,
           "labelPos": "E",
           "stationSymbol": false
         },
         {
           "coords": [158, -2],
-          "name": "Results red dash",
+          "name": "What outcomes can you expect Student Cocreator",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
