@@ -602,47 +602,50 @@
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab main green": {
+    "Strengthen Embedding of the lab within your institute Educational": {
       "id": 29123762,
-      "name": "embedding-educational",
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-educational",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute Educational",
+      "link": "/trail/educational/strengthen-embedding-of-the-lab-within-your-institute-educational",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Policy": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-policy",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute Policy",
+      "link": "/trail/policy/strengthen-embedding-of-the-lab-within-your-institute-policy",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Student Cocreator": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-student-cocreator",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute Student Cocreator",
+      "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute main": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute",
       "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Embedding the Lab main gold": {
+    "Strengthen Embedding of the lab within your institute Teacher": {
       "id": 29123762,
-      "name": "embedding-policy",
-      "label": "Embedding\nthe Lab",
-      "position": {
-        "lat": 52.511837,
-        "lon": 13.3105328
-      }
-    },
-    "Embedding the Lab main red dash": {
-      "id": 29123762,
-      "name": "embedding-student",
-      "label": "Embedding\nthe Lab",
-      "position": {
-        "lat": 52.511837,
-        "lon": 13.3105328
-      }
-    },
-    "Embedding the Lab main": {
-      "id": 29123762,
-      "name": "Embedding the Lab main",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
-      "position": {
-        "lat": 52.511837,
-        "lon": 13.3105328
-      }
-    },
-    "Embedding the Lab main black": {
-      "id": 29123762,
-      "name": "embedding-teacher",
-      "link": "/trail/teacher/embedding-teacher",
-      "label": "Embedding\nthe Lab",
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-teacher",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute Teacher",
+      "link": "/trail/teacher/strengthen-embedding-of-the-lab-within-your-institute-teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -657,7 +660,7 @@
         "lon": 13.3105328
       }
     },
-    "Learning Systematically black": {
+    "Learning Systematically Teacher": {
       "id": 29123762,
       "name": "learning-systematically-teacher",
       "link": "/trail/teacher/learning-systematically-teacher",
@@ -667,7 +670,7 @@
         "lon": 13.3105328
       }
     },
-    "Learning Systematically red dash": {
+    "Learning Systematically Student Cocreator": {
       "id": 29123762,
       "name": "learning-systematically-student",
       "link": "/trail/student/learning-systematically-student",
@@ -677,28 +680,30 @@
         "lon": 13.3105328
       }
     },
-    "Assess Quality main": {
+    "How to asses quality of an innovation lab main": {
       "id": 29123762,
-      "name": "Assess Quality main",
+      "name": "How to asses quality of an innovation lab main",
       "label": "How to assess quality\nof an innovation lab",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Assess Quality black": {
+    "How to asses quality of an innovation lab Teacher": {
       "id": 29123762,
-      "name": "assess-quality-teacher",
-      "label": "Assess\nQuality",
+      "name": "how-to-assess-quality-of-an-innovation-lab-teacher",
+      "link": "/trail/teacher/how-to-assess-quality-of-an-innovation-lab-teacher",
+      "label": "How to assess quality\nof an innovation lab Teacher",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
       }
     },
-    "Assess Quality red dash": {
+    "How to asses quality of an innovation lab Student Cocreator": {
       "id": 29123762,
-      "name": "assess-quality-student",
-      "label": "Assess\nQuality",
+      "name": "how-to-assess-quality-of-an-innovation-lab-student",
+      "link": "/trail/student/how-to-assess-quality-of-an-innovation-lab-student",
+      "label": "How to assess quality\nof an innovation lab Student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -1054,7 +1059,7 @@
         },
         {
           "coords": [86.5, 0],
-          "name": "Embedding the Lab main green",
+          "name": "Strengthen Embedding of the lab within your institute Educational",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
@@ -1137,7 +1142,7 @@
         },
         {
           "coords": [89.5, 0],
-          "name": "Embedding the Lab main gold",
+          "name": "Strengthen Embedding of the lab within your institute Policy",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
@@ -1271,7 +1276,7 @@
       "nodes": [
         {
           "coords": [87, 2],
-          "name": "Embedding the Lab main",
+          "name": "Strengthen Embedding of the lab within your institute main",
           "labelPos": "NW",
           "labelShiftCoords": [0, 5],
           "stationAngle": -45,
@@ -1287,7 +1292,7 @@
         },
         {
           "coords": [130, 2],
-          "name": "Assess Quality main",
+          "name": "How to asses quality of an innovation lab main",
           "labelShiftCoords": [0, 1],
           "labelPos": "N",
           "stationSymbol": "triple"
@@ -1506,21 +1511,21 @@
         },
         {
           "coords": [115, 0],
-          "name": "Assess Quality black",
+          "name": "How to asses quality of an innovation lab Teacher",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [100, 0],
-          "name": "Learning Systematically black",
+          "name": "Learning Systematically Teacher",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [88, 0],
-          "name": "Embedding the Lab main black",
+          "name": "Strengthen Embedding of the lab within your institute Teacher",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
@@ -1775,21 +1780,21 @@
         },
         {
           "coords": [148, -2],
-          "name": "Assess Quality red dash",
+          "name": "How to asses quality of an innovation lab Student Cocreator",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [100, -2],
-          "name": "Learning Systematically red dash",
+          "name": "Learning Systematically Student Cocreator",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [91, -2],
-          "name": "Embedding the Lab main red dash",
+          "name": "Strengthen Embedding of the lab within your institute Student Cocreator",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
