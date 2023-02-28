@@ -647,9 +647,9 @@
         "lon": 13.3105328
       }
     },
-    "Strengthen Embedding of the lab within your institute Student Cocreator": {
+    "Strengthen Embedding of the lab within your institute Student": {
       "id": 29123762,
-      "name": "strengthen-embedding-of-the-lab-within-your-institute-student-cocreator",
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-student",
       "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
       "position": {
@@ -659,7 +659,7 @@
     },
     "Strengthen Embedding of the lab within your institute main": {
       "id": 29123762,
-      "name": "strengthen-embedding-of-the-lab-within-your-institute",
+      "name": "Strengthen Embedding of the lab within your institute main",
       "label": "Strengthen/embedding \nof the lab\nwithin your institute",
       "position": {
         "lat": 52.511837,
@@ -695,7 +695,7 @@
         "lon": 13.3105328
       }
     },
-    "Learning Systematically Student Cocreator": {
+    "Learning Systematically Student": {
       "id": 29123762,
       "name": "learning-systematically-student",
       "link": "/trail/student/learning-systematically-student",
@@ -724,7 +724,7 @@
         "lon": 13.3105328
       }
     },
-    "How to asses quality of an innovation lab Student Cocreator": {
+    "How to asses quality of an innovation lab Student": {
       "id": 29123762,
       "name": "how-to-assess-quality-of-an-innovation-lab-student",
       "link": "/trail/student/how-to-assess-quality-of-an-innovation-lab-student",
@@ -1797,21 +1797,21 @@
         },
         {
           "coords": [148, -2],
-          "name": "How to asses quality of an innovation lab Student Cocreator",
+          "name": "How to asses quality of an innovation lab Student",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [100, -2],
-          "name": "Learning Systematically Student Cocreator",
+          "name": "Learning Systematically Student",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
         },
         {
           "coords": [91, -2],
-          "name": "Strengthen Embedding of the lab within your institute Student Cocreator",
+          "name": "Strengthen Embedding of the lab within your institute Student",
           "drawLabel": false,
           "labelPos": "N",
           "stationSymbol": false
