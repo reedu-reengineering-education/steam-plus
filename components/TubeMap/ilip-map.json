@@ -19,7 +19,7 @@
         "lon": 13.3889
       }
     },
-    "Focussing on learning Student Cocreator": {
+    "Focussing on learning Student": {
       "id": null,
       "name": "focussing-on-learning-student",
       "link": "/trail/student/focussing-on-learning-student",
@@ -48,7 +48,7 @@
         "lon": 13.398203
       }
     },
-    "Good practices Student Cocreator": {
+    "Good practices Student": {
       "id": null,
       "name": "good-practices-student",
       "link": "/trail/student/good-practices-student",
@@ -121,7 +121,7 @@
       "id": 3901824902,
       "name": "external-network-policy",
       "link": "/trail/policy/external-network-policy",
-      "label": "External\nnetwork Policy",
+      "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -131,7 +131,7 @@
       "id": 3901824902,
       "name": "external-network-educational",
       "link": "/trail/educational/external-network-educational",
-      "label": "External\nnetwork Educational",
+      "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -141,7 +141,7 @@
       "id": 3901824902,
       "name": "external-network-student",
       "link": "/trail/policy/external-network-student",
-      "label": "External\nnetwork Student",
+      "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -151,7 +151,7 @@
       "id": 3901824902,
       "name": "external-network-teacher",
       "link": "/trail/teacher/external-network-teacher",
-      "label": "External\nnetwork Teacher",
+      "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -190,7 +190,7 @@
       "id": 3957757604,
       "name": "external-inspiration-educational",
       "link": "/trail/educational/external-inspiration-educational",
-      "label": "External\ninspiration Ecucational",
+      "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -200,7 +200,7 @@
       "id": 3957757604,
       "name": "external-inspiration-student",
       "link": "/trail/student/external-inspiration-student",
-      "label": "External\ninspiration Student",
+      "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -210,7 +210,7 @@
       "id": 3957757604,
       "name": "external-inspiration-teacher",
       "link": "/trail/teacher/external-inspiration-teacher",
-      "label": "External\ninspiration Teacher",
+      "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -220,7 +220,7 @@
       "id": 3957757604,
       "name": "external-inspiration-policy",
       "link": "/trail/policy/external-inspiration-policy",
-      "label": "External\ninspiration Policy",
+      "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -249,7 +249,7 @@
       "id": 29046970,
       "name": "common-vision-teacher",
       "link": "/trail/teacher/common-vision-teacher",
-      "label": "Common\nVision Teacher",
+      "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
@@ -259,7 +259,7 @@
       "id": 29046970,
       "name": "common-vision-policy",
       "link": "/trail/policy/common-vision-policy",
-      "label": "Common\nVision Policy",
+      "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
@@ -269,7 +269,7 @@
       "id": 29046970,
       "name": "common-vision-student",
       "link": "/trail/student/common-vision-student",
-      "label": "Common\nVision Student",
+      "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
         "lon": 13.3314365
@@ -479,7 +479,7 @@
         "lon": 13.3809897
       }
     },
-    "Defining a challenge Student Cocreator": {
+    "Defining a challenge Student": {
       "id": 3862767512,
       "name": "defining-a-challenge-student",
       "link": "/trail/student/defining-a-challenge-student",
@@ -909,7 +909,7 @@
         "lon": 13.3105328
       }
     },
-    "The Iterative process Student Cocreator": {
+    "The Iterative process Student": {
       "id": 29123762,
       "name": "the-iterative-process-student",
       "link": "/trail/teacher/the-iterative-process-student",
@@ -1745,14 +1745,14 @@
         },
         {
           "coords": [110, -48],
-          "name": "Defining a challenge Student Cocreator",
+          "name": "Defining a challenge Student",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false
         },
         {
           "coords": [120, -48],
-          "name": "Focussing on learning Student Cocreator",
+          "name": "Focussing on learning Student",
           "drawLabel": false,
           "labelPos": "S",
           "labelBold": false,
@@ -1760,14 +1760,14 @@
         },
         {
           "coords": [130, -48],
-          "name": "The Iterative process Student Cocreator",
+          "name": "The Iterative process Student",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false
         },
         {
           "coords": [148, -48],
-          "name": "Good practices Student Cocreator",
+          "name": "Good practices Student",
           "drawLabel": false,
           "labelPos": "S",
           "labelShiftCoords": [0, 0.5],
@@ -1775,7 +1775,7 @@
         },
         {
           "coords": [158, -48],
-          "name": "Recruitment Student Cocreator",
+          "name": "Recruitment Student",
           "drawLabel": false,
           "labelPos": "SW",
           "stationSymbol": false

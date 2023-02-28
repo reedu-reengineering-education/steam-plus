@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
-  console.log(currentStation)
+  console.log('Current station: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
@@ -181,6 +181,10 @@ export default function StationPage({
     useState<string>('next')
 
   useEffect(() => {
+    if (!station) {
+      return
+    }
+
     // If changeLine is bigger than 0 there
     // is the possibility to change to a different line
     if (station.changeToLineStation.length > 0) {

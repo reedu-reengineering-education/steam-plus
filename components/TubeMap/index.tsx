@@ -1050,7 +1050,6 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         return d.stationFillColor
       })
       .on('click', function (d) {
-        console.log('Click long station: ', d)
         openStationLink(d.target.baseURI, d.target.__data__)
       })
       .on('mouseover', function (_, d) {
