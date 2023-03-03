@@ -560,7 +560,7 @@
     "Grand Station Student Cocreator": {
       "id": 3856100108,
       "name": "grand-station-student",
-      "link": "/trail/student/grand-station-student-cocreator",
+      "link": "/trail/student/grand-station-student",
       "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
@@ -755,8 +755,8 @@
     },
     "What outcomes can you expect Student Cocreator": {
       "id": 29123762,
-      "name": "what-outcomes-can-you-expect-student-cocreator",
-      "link": "/trail/student/what-outcomes-can-you-expect-student-cocreator",
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student/what-outcomes-can-you-expect-student",
       "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
@@ -804,8 +804,8 @@
     },
     "Coaches Student Cocreator": {
       "id": 29123762,
-      "name": "coaches-student-cocreator",
-      "link": "/trail/student/coaches-student-cocreator",
+      "name": "coaches-student",
+      "link": "/trail/student/coaches-student",
       "label": "Coaches",
       "position": {
         "lat": 52.511837,
@@ -833,8 +833,8 @@
     },
     "Team members Student Cocreator": {
       "id": 29123762,
-      "name": "team-members-student-cocreator",
-      "link": "/trail/student/team-members-student-cocreator",
+      "name": "team-members-student",
+      "link": "/trail/student/team-members-student",
       "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
@@ -883,7 +883,7 @@
     "Recruitment Student Cocreator": {
       "id": 29123763,
       "name": "recruitment-student-cocreator",
-      "link": "/trail/student/recruitment-student-cocreator",
+      "link": "/trail/student/recruitment-student",
       "label": "Recruitment",
       "position": {
         "lat": 52.511837,
