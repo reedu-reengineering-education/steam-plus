@@ -173,7 +173,6 @@ export default function StationPage({
   neighbours,
   markdown,
 }: StationPageProps) {
-  console.log('StationPage: ', line, station)
   const router = useRouter()
   const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
   const [interchangeableStation, setInterchangableStation] =
