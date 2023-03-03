@@ -109,6 +109,7 @@ const Trail = ({ lines }: TrailPageProps) => {
             width={width}
             selectedLine={selectedLine}
             mapData={ilipMapData}
+            zoomEnabled={true}
           />
         </div>
       </div>

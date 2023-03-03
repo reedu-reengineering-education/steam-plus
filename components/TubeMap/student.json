@@ -998,33 +998,27 @@
         {
           "coords": [20, 25],
           "name": "Recruitment Student",
-          "drawLabel": false,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [30, 25],
           "name": "Team members Student",
-          "drawLabel": false,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [40, 25],
           "name": "Coaches Student",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [50, 25],
           "name": "What outcomes can you expect Student",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
@@ -1037,9 +1031,8 @@
         {
           "coords": [70, 25],
           "name": "Grand Station Student",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         }
       ]

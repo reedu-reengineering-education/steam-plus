@@ -8,7 +8,7 @@ import extractStations, { Station } from '@/components/TubeMap/station'
 import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
-import { useEffect, useState } from 'react'
+import { RefObject, useEffect, useRef, useState } from 'react'
 import StationNavbar from '@/components/StationNavbar'
 import { TubeMap } from '@/components/TubeMap'
 
@@ -87,7 +87,6 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
-  console.log('Current station: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
@@ -202,9 +201,16 @@ export default function StationPage({
       break
   }
 
+  const ref: RefObject<HTMLDivElement> = useRef(null)
   const [height, setHeight] = useState(0)
   const [width, setWidth] = useState(0)
-  const [selectedLine, setSelectedLine] = useState<Line>()
+
+  useEffect(() => {
+    if (ref.current != null) {
+      setHeight(ref.current.offsetHeight)
+      setWidth(ref.current.offsetWidth)
+    }
+  }, [])
 
   useEffect(() => {
     if (!station) {
@@ -247,7 +253,14 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col">
-      <TubeMap height={128} width={128} mapData={mapData} />
+      <div ref={ref} className="h-24 min-h-full w-full">
+        <TubeMap
+          height={height}
+          width={width}
+          mapData={mapData}
+          zoomEnabled={false}
+        />
+      </div>
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
         <div className="m-2 flex flex-col justify-between p-4 text-steam-green-text">
           <StationNavbar

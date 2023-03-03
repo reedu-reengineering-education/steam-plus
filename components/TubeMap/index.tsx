@@ -2,8 +2,6 @@
 
 import React, { RefObject, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import ilipMapData from './ilip-map.json'
-import teacherJson from './teacher.json'
 import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
@@ -33,6 +31,7 @@ type TubeMapProps = {
   height: number
   width: number
   mapData: any
+  zoomEnabled?: boolean
 }
 
 export const TubeMap = ({
@@ -40,6 +39,7 @@ export const TubeMap = ({
   height,
   width,
   mapData,
+  zoomEnabled = false,
 }: TubeMapProps) => {
   const router = useRouter()
 
@@ -292,7 +292,7 @@ export const TubeMap = ({
     d3.select(ref.current)
       .select('g')
       .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
-      .datum(ilipMapData)
+      .datum(mapData)
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
@@ -313,6 +313,8 @@ export const TubeMap = ({
       initialTranslate[0],
       initialTranslate[1],
     )
+
+    // TODO: checkout how to disable zoom but translateTo in the beginning
   }
 
   function trainStop(lineWidth: number, highlighted) {

@@ -1000,17 +1000,15 @@
         {
           "coords": [20, 25],
           "name": "Grand Station Policy",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [30, 25],
           "name": "Strengthen Embedding of the lab within your institute Policy",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         }
       ]

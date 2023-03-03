@@ -987,55 +987,46 @@
         {
           "coords": [30, 25],
           "name": "Fertile ground Educational",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
           "labelBold": true,
-          "shiftX": 50,
-          "shiftY": 50,
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [40, 25],
           "name": "Common Vision Educational",
-          "drawLabel": false,
           "labelPos": "S",
           "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [50, 25],
           "name": "External inspiration Educational",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
           "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [60, 25],
           "name": "External network Educational",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
           "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [70, 25],
           "name": "Grand Station Educational",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         },
         {
           "coords": [80, 25],
           "name": "Strengthen Embedding of the lab within your institute Educational",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false,
           "labelAngle": -45
         }
       ]

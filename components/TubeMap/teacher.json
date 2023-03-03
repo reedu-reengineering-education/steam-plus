@@ -938,7 +938,7 @@
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [-80, 25],
+          "coords": [-100, 25],
           "name": "Line label black",
           "labelPos": "S",
           "labelBold": true,
@@ -950,7 +950,7 @@
           "lineLabelShiftX": 2
         },
         {
-          "coords": [-40, 25],
+          "coords": [-80, 25],
           "name": "Teach for the Future",
           "labelPos": "S",
           "labelShiftCoords": [-1.5, 0],
@@ -958,152 +958,152 @@
           "labelAngle": -45
         },
         {
-          "coords": [-30, 25],
+          "coords": [-70, 25],
           "name": "Why is change needed",
           "labelPos": "S",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": -45
         },
         {
-          "coords": [-20, 25],
+          "coords": [-60, 25],
           "name": "Transdisciplinary co-creation",
           "labelPos": "S",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": -45
         },
         {
-          "coords": [-10, 25],
+          "coords": [-50, 25],
           "name": "Strengthening STEM with STEAM+",
           "labelPos": "S",
           "labelShiftCoords": [-1.5, 0],
           "labelAngle": -45
         },
         {
-          "coords": [0, 25],
+          "coords": [-40, 25],
           "name": "Transdisciplinary Innovation Lab",
           "labelShiftCoords": [-1.5, 0],
           "labelPos": "S",
           "labelAngle": -45
         },
         {
-          "coords": [10, 25],
+          "coords": [-30, 25],
           "name": "Fertile ground Teacher",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
           "labelBold": false,
-          "stationSymbol": false
+          "labelAngle": -45
+        },
+        {
+          "coords": [-20, 25],
+          "name": "Common Vision Teacher",
+          "drawLabel": true,
+          "labelPos": "S",
+          "labelAngle": -45
+        },
+        {
+          "coords": [-10, 25],
+          "name": "External inspiration Teacher",
+          "drawLabel": true,
+          "labelPos": "S",
+          "labelAngle": -45
+        },
+        {
+          "coords": [0, 25],
+          "name": "External network Teacher",
+          "drawLabel": true,
+          "labelPos": "S",
+          "labelAngle": -45
+        },
+        {
+          "coords": [10, 25],
+          "name": "Grand Station Teacher",
+          "drawLabel": true,
+          "labelPos": "S",
+          "labelAngle": -45
         },
         {
           "coords": [20, 25],
-          "name": "Common Vision Teacher",
-          "drawLabel": false,
+          "name": "Format of the transdisciplinary innovation lab Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [30, 25],
-          "name": "External inspiration Teacher",
-          "drawLabel": false,
+          "name": "Defining a challenge Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [40, 25],
-          "name": "External network Teacher",
-          "drawLabel": false,
+          "name": "Focussing on learning Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [50, 25],
-          "name": "Grand Station Teacher",
-          "drawLabel": false,
+          "name": "The Iterative process Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [60, 25],
-          "name": "Format of the transdisciplinary innovation lab Teacher",
-          "drawLabel": false,
+          "name": "Good practices Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [70, 25],
-          "name": "Defining a challenge Teacher",
-          "drawLabel": false,
+          "name": "Recruitment Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [80, 25],
-          "name": "Focussing on learning Teacher",
-          "drawLabel": false,
+          "name": "Team members Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [90, 25],
-          "name": "The Iterative process Teacher",
-          "drawLabel": false,
+          "name": "Coaches Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [100, 25],
-          "name": "Good practices Teacher",
-          "drawLabel": false,
+          "name": "What outcomes can you expect Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [110, 25],
-          "name": "Recruitment Teacher",
-          "drawLabel": false,
+          "name": "How to asses quality of an innovation lab Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [120, 25],
-          "name": "Team members Teacher",
-          "drawLabel": false,
+          "name": "Learning Systematically Teacher",
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         },
         {
           "coords": [130, 25],
-          "name": "Coaches Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [140, 25],
-          "name": "What outcomes can you expect Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [150, 25],
-          "name": "How to asses quality of an innovation lab Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [160, 25],
-          "name": "Learning Systematically Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [170, 25],
           "name": "Strengthen Embedding of the lab within your institute Teacher",
-          "drawLabel": false,
+          "drawLabel": true,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelAngle": -45
         }
       ]
     }
