@@ -1,0 +1,1111 @@
+{
+  "stations": {
+    "Focussing on learning main": {
+      "id": null,
+      "name": "Focussing on learning main",
+      "label": "Focussing\non learning",
+      "position": {
+        "lat": 52.517,
+        "lon": 13.3889
+      }
+    },
+    "Focussing on learning Teacher": {
+      "id": null,
+      "name": "focussing-on-learning-teacher",
+      "link": "/trail/teacher/focussing-on-learning-teacher",
+      "label": "Focussing\non learning",
+      "position": {
+        "lat": 52.517,
+        "lon": 13.3889
+      }
+    },
+    "Focussing on learning Student": {
+      "id": null,
+      "name": "focussing-on-learning-student",
+      "link": "/trail/student/focussing-on-learning-student",
+      "label": "Focussing\non learning",
+      "position": {
+        "lat": 52.517,
+        "lon": 13.3889
+      }
+    },
+    "Good practices main": {
+      "id": null,
+      "name": "Good practices main",
+      "label": "Good\npractices",
+      "position": {
+        "lat": 52.517403,
+        "lon": 13.398203
+      }
+    },
+    "Good practices Teacher": {
+      "id": null,
+      "name": "good-practices-teacher",
+      "link": "/trail/teacher/good-practices-teacher",
+      "label": "Good\npractices",
+      "position": {
+        "lat": 52.517403,
+        "lon": 13.398203
+      }
+    },
+    "Good practices Student": {
+      "id": null,
+      "name": "good-practices-student",
+      "link": "/trail/student/good-practices-student",
+      "label": "Good\npractices",
+      "position": {
+        "lat": 52.517403,
+        "lon": 13.398203
+      }
+    },
+    "Transdisciplinary Innovation Lab Student": {
+      "id": 3894910680,
+      "name": "transdisciplinary-innovation-lab-student",
+      "label": "Transdisciplinary\nInnovation Lab?",
+      "link": "/trail/student/transdisciplinary-innovation-lab-student",
+      "position": {
+        "lat": 52.5742433,
+        "lon": 13.348511
+      }
+    },
+    "Strengthening STEM with STEAM+ Student": {
+      "id": 29190897,
+      "name": "strengthening-steam-with-steam-plus-student",
+      "label": "Strengthening STEM\nwith STEAM+",
+      "link": "/trail/student/strengthening-steam-with-steam-plus-student",
+      "position": {
+        "lat": 52.5754161,
+        "lon": 13.3384251
+      }
+    },
+    "Transdisciplinary co-creation Student": {
+      "id": 5219721338,
+      "name": "transdisciplinary-co-creation-student",
+      "label": "Transdisciplinary\nco-creation",
+      "link": "/trail/student/transdisciplinary-co-creation-student",
+      "position": {
+        "lat": 52.5786231,
+        "lon": 13.3335031
+      }
+    },
+    "Meet Complexity": {
+      "id": 107606908,
+      "name": "meet-complexity",
+      "label": "Meet Complexity",
+      "link": "/trail/student/meet-complexity",
+      "position": {
+        "lat": 52.5883733,
+        "lon": 13.3259254
+      }
+    },
+    "Harness Future Skills": {
+      "id": 5219721339,
+      "name": "harness-future-skills",
+      "label": " Harness Future\nSkills",
+      "link": "/trail/student/harness-future-skills",
+      "position": {
+        "lat": 52.5956412,
+        "lon": 13.3347115
+      }
+    },
+    "External network main": {
+      "id": 3901824902,
+      "name": "External network main",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External network Policy": {
+      "id": 3901824902,
+      "name": "external-network-policy",
+      "link": "/trail/policy/external-network-policy",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External network Educational": {
+      "id": 3901824902,
+      "name": "external-network-educational",
+      "link": "/trail/educational/external-network-educational",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External network Student": {
+      "id": 3901824902,
+      "name": "external-network-student",
+      "link": "/trail/policy/external-network-student",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External network Teacher": {
+      "id": 3901824902,
+      "name": "external-network-teacher",
+      "link": "/trail/teacher/external-network-teacher",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "Crossroads": {
+      "id": 3901824902,
+      "name": "crossroads",
+      "label": "Crossroads",
+      "link": "/trail/policy/crossroads",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "Crossroads Student": {
+      "id": 3901824902,
+      "name": "crossroads-student",
+      "label": "Crossroads",
+      "link": "/trail/student/crossroads-student",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External inspiration main": {
+      "id": 3957757604,
+      "name": "External inspiration main",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "External inspiration Educational": {
+      "id": 3957757604,
+      "name": "external-inspiration-educational",
+      "link": "/trail/educational/external-inspiration-educational",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "External inspiration Student": {
+      "id": 3957757604,
+      "name": "external-inspiration-student",
+      "link": "/trail/student/external-inspiration-student",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "External inspiration Teacher": {
+      "id": 3957757604,
+      "name": "external-inspiration-teacher",
+      "link": "/trail/teacher/external-inspiration-teacher",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "External inspiration Policy": {
+      "id": 3957757604,
+      "name": "external-inspiration-policy",
+      "link": "/trail/policy/external-inspiration-policy",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "Strengthening STEM with STEAM+ Policy": {
+      "id": 5134716875,
+      "name": "strengthening-steam-with-steam-plus-policy",
+      "label": "Strengthening STEM\nwith STEAM+",
+      "link": "/trail/policy/strengthening-steam-with-steam-plus-policy",
+      "position": {
+        "lat": 52.4961755,
+        "lon": 13.3431855
+      }
+    },
+    "Common Vision main": {
+      "id": 29046970,
+      "name": "Common Vision main",
+      "label": "Common\nVision",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Common Vision Teacher": {
+      "id": 29046970,
+      "name": "common-vision-teacher",
+      "link": "/trail/teacher/common-vision-teacher",
+      "label": "Common\nVision",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Common Vision Policy": {
+      "id": 29046970,
+      "name": "common-vision-policy",
+      "link": "/trail/policy/common-vision-policy",
+      "label": "Common\nVision",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Common Vision Student": {
+      "id": 29046970,
+      "name": "common-vision-student",
+      "link": "/trail/student/common-vision-student",
+      "label": "Common\nVision",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Fertile ground main": {
+      "id": 3957757603,
+      "name": "Fertile ground main",
+      "label": "Fertile\nground",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Common Vision Educational": {
+      "id": 29046970,
+      "name": "common-vision-educational",
+      "link": "/trail/educational/common-vision-educational",
+      "label": "Common\nVision Educational",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Fertile ground Educational": {
+      "id": 3957757603,
+      "name": "fertile-ground-educational",
+      "link": "/trail/educational/fertile-ground-educational",
+      "label": "Fertile\nground",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Fertile ground Student": {
+      "id": 3957757603,
+      "name": "fertile-ground-student",
+      "label": "Fertile\nground",
+      "link": "/trail/student/fertile-ground-student",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Fertile ground Policy": {
+      "id": 3957757603,
+      "name": "fertile-ground-policy",
+      "link": "/trail/policy/fertile-ground-policy",
+      "label": "Fertile\nground",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Fertile ground Teacher": {
+      "id": 3957757603,
+      "name": "fertile-ground-teacher",
+      "link": "/trail/teacher/fertile-ground-teacher",
+      "label": "Fertile\nground",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Transdisciplinary Innovation Lab Policy": {
+      "id": 29833469,
+      "name": "transdisciplinary-innovation-lab-policy",
+      "label": "Transdisciplinary\nInnovation Lab",
+      "link": "/trail/policy/transdisciplinary-innovation-lab-policy",
+      "position": {
+        "lat": 52.4885755,
+        "lon": 13.3405436
+      }
+    },
+    "Implementing Transdisciplinary": {
+      "id": 29123764,
+      "name": "implementing-transdisciplinary",
+      "label": "Implementing\nTransdisciplinary",
+      "link": "/trail/educational/implementing-transdisciplinary",
+      "position": {
+        "lat": 52.5118853,
+        "lon": 13.3221613
+      }
+    },
+    "Strengthen STEM with STEAM+": {
+      "id": 5220114121,
+      "name": "strengthen-stem-with-steam-plus",
+      "label": "Strengthen STEM\n with STEAM+",
+      "link": "/trail/educational/strengthen-stem-with-steam-plus",
+      "position": {
+        "lat": 52.5387183,
+        "lon": 13.2330942
+      }
+    },
+    "Transdisciplinary Innovation Lab": {
+      "id": 5183375788,
+      "name": "transdisciplinary-innovation-lab",
+      "label": "Transdisciplinary\nInnovation Lab?",
+      "link": "/trail/teacher/transdisciplinary-innovation-lab",
+      "position": {
+        "lat": 52.5379819,
+        "lon": 13.2478176
+      }
+    },
+    "Transdisciplinary Innovation Lab Educational": {
+      "id": 5183375787,
+      "name": "transdisciplinary-innovation-lab-educational",
+      "label": "Transdisciplinary\nInnovation lab",
+      "link": "/trail/educational/transdisciplinary-innovation-lab-educational",
+      "position": {
+        "lat": 52.5379819,
+        "lon": 13.2478176
+      }
+    },
+    "Strengthening STEM with STEAM+": {
+      "id": 5220114129,
+      "name": "strengthening-steam-with-steam-plus",
+      "label": "Strengthening STEM\n with STEAM+",
+      "link": "/trail/teacher/strengthening-steam-with-steam-plus",
+      "position": {
+        "lat": 52.5387183,
+        "lon": 13.2330942
+      }
+    },
+    "Transdisciplinary co-creation": {
+      "id": 5183374155,
+      "name": "transdisciplinary-co-creation",
+      "label": "Transdisciplinary\nco-creation",
+      "link": "/trail/teacher/transdisciplinary-co-creation",
+      "position": {
+        "lat": 52.537652,
+        "lon": 13.2175358
+      }
+    },
+    "Why is change needed": {
+      "id": 5726082246,
+      "name": "why-is-change-needed",
+      "label": "Why is change\nneeded",
+      "link": "/trail/teacher/why-is-change-needed",
+      "position": {
+        "lat": 52.5388381,
+        "lon": 13.2062573
+      }
+    },
+    "Teach for the Future": {
+      "id": 4989868817,
+      "name": "teach-for-the-future",
+      "label": "Teach for the\nFututre?",
+      "link": "/trail/teacher/teach-for-the-future",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label black": {
+      "id": 4989868818,
+      "name": "Line label black",
+      "label": "The Teacher`s\nLounge",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label green": {
+      "id": 4989868818,
+      "name": "Line label green",
+      "label": "Educational\nboard",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label gold": {
+      "id": 4989868818,
+      "name": "Line label gold",
+      "label": "Policy center",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Line label red": {
+      "id": 4989868818,
+      "name": "Line label red",
+      "label": "Student area",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Defining a challenge main": {
+      "id": 3862767512,
+      "name": "Defining a challenge main",
+      "label": "Defining (a)\nchallenge",
+      "position": {
+        "lat": 52.5166047,
+        "lon": 13.3809897
+      }
+    },
+    "Defining a challenge Teacher": {
+      "id": 3862767512,
+      "name": "defining-a-challenge-teacher",
+      "link": "/trail/teacher/defining-a-challenge-teacher",
+      "label": "Defining (a)\nchallenge",
+      "position": {
+        "lat": 52.5166047,
+        "lon": 13.3809897
+      }
+    },
+    "Defining a challenge Student": {
+      "id": 3862767512,
+      "name": "defining-a-challenge-student",
+      "link": "/trail/student/defining-a-challenge-student",
+      "label": "Defining (a)\nchallenge",
+      "position": {
+        "lat": 52.5166047,
+        "lon": 13.3809897
+      }
+    },
+    "Format of the transdisciplinary innovation lab main": {
+      "id": 4213705914,
+      "name": "Format of the transdisciplinary innovation lab main",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
+      "position": {
+        "lat": 52.5201123,
+        "lon": 13.3729545
+      }
+    },
+    "Format of the transdisciplinary innovation lab Teacher": {
+      "id": 4213705914,
+      "name": "format-of-the-transdisciplinary-innovation-lab-teacher",
+      "link": "/trail/teacher/format-of-the-transdisciplinary-innovation-lab-teacher",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
+      "position": {
+        "lat": 52.5201123,
+        "lon": 13.3729545
+      }
+    },
+    "Format of the transdisciplinary innovation lab Student": {
+      "id": 4213705914,
+      "name": "format-of-the-transdisciplinary-innovation-lab-student",
+      "link": "/trail/teacher/format-of-the-transdisciplinary-innovation-lab-student",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
+      "position": {
+        "lat": 52.5201123,
+        "lon": 13.3729545
+      }
+    },
+    "Grand Station main": {
+      "id": 3856100108,
+      "name": "Grand Station main",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Grand Station Teacher": {
+      "id": 3856100108,
+      "name": "grand-station-teacher",
+      "link": "/trail/teacher/grand-station-teacher",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Grand Station Student": {
+      "id": 3856100108,
+      "name": "grand-station-student",
+      "link": "/trail/student/grand-station-student",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Grand Station Educational": {
+      "id": 3856100108,
+      "name": "grand-station-educational",
+      "link": "/trail/educational/grand-station-educational",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Grand Station Student Cocreator": {
+      "id": 3856100108,
+      "name": "grand-station-student",
+      "link": "/trail/student/grand-station-student",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Grand Station Policy": {
+      "id": 3856100108,
+      "name": "grand-station-policy",
+      "link": "/trail/policy/grand-station-policy",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Transdisciplinary co-creation Policy": {
+      "id": 5134482957,
+      "name": "transdisciplinary-co-creation-policy",
+      "label": "Transdisciplinary\nco-creation",
+      "link": "/trail/policy/transdisciplinary-co-creation-policy",
+      "position": {
+        "lat": 52.4831773,
+        "lon": 13.341972
+      }
+    },
+    "Empower future generations": {
+      "id": 29497638,
+      "name": "empower-future-generations",
+      "label": "Empower future\ngenerations",
+      "link": "/trail/policy/empower-future-generations",
+      "position": {
+        "lat": 52.478987,
+        "lon": 13.3436736
+      }
+    },
+    "Skills to match Complexity": {
+      "id": 29497638,
+      "name": "skills-to-match-complexity",
+      "label": "Skills to match\nComplexity",
+      "link": "/trail/policy/skills-to-match-complexity",
+      "position": {
+        "lat": 52.478987,
+        "lon": 13.3436736
+      }
+    },
+    "Higher Education for the Future": {
+      "id": 27586255,
+      "name": "higher-education-for-the-future",
+      "label": "Higher Education\nfor the Future",
+      "link": "/trail/educational/higher-education-for-the-future",
+      "position": {
+        "lat": 52.5256744,
+        "lon": 13.2414191
+      }
+    },
+    "The Progress of Society": {
+      "id": 29123763,
+      "name": "the-progress-of-society",
+      "label": "The Progress of\nSociety",
+      "link": "/trail/educational/the-progress-of-society",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Educational": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-educational",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "link": "/trail/educational/strengthen-embedding-of-the-lab-within-your-institute-educational",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Policy": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-policy",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "link": "/trail/policy/strengthen-embedding-of-the-lab-within-your-institute-policy",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Student": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-student",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute main": {
+      "id": 29123762,
+      "name": "Strengthen Embedding of the lab within your institute main",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Teacher": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-teacher",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "link": "/trail/teacher/strengthen-embedding-of-the-lab-within-your-institute-teacher",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Learning Systematically main": {
+      "id": 29123762,
+      "name": "Learning Systematically main",
+      "label": "Learning\nSystematically",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Learning Systematically Teacher": {
+      "id": 29123762,
+      "name": "learning-systematically-teacher",
+      "link": "/trail/teacher/learning-systematically-teacher",
+      "label": "Learning\nSystematically",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Learning Systematically Student": {
+      "id": 29123762,
+      "name": "learning-systematically-student",
+      "link": "/trail/student/learning-systematically-student",
+      "label": "Learning\nSystematically",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "How to asses quality of an innovation lab main": {
+      "id": 29123762,
+      "name": "How to asses quality of an innovation lab main",
+      "label": "How to assess quality\nof an innovation lab",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "How to asses quality of an innovation lab Teacher": {
+      "id": 29123762,
+      "name": "how-to-assess-quality-of-an-innovation-lab-teacher",
+      "link": "/trail/teacher/how-to-assess-quality-of-an-innovation-lab-teacher",
+      "label": "How to assess quality\nof an innovation lab",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "How to asses quality of an innovation lab Student": {
+      "id": 29123762,
+      "name": "how-to-assess-quality-of-an-innovation-lab-student",
+      "link": "/trail/student/how-to-assess-quality-of-an-innovation-lab-student",
+      "label": "How to assess quality\nof an innovation lab",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "What outcomes can you expect main": {
+      "id": 29123762,
+      "name": "What outcomes can you expect main",
+      "label": "What outcomes \ncan you expect?",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "What outcomes can you expect Teacher": {
+      "id": 29123762,
+      "name": "what-outcomes-can-you-expect-teacher",
+      "link": "/trail/teacher/what-outcomes-can-you-expect-teacher",
+      "label": "What outcomes \ncan you expect?",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "What outcomes can you expect Student Cocreator": {
+      "id": 29123762,
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student/what-outcomes-can-you-expect-student",
+      "label": "What outcomes \ncan you expect?",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "What outcomes can you expect Student": {
+      "id": 29123762,
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student/what-outcomes-can-you-expect-student",
+      "label": "What outcomes \ncan you expect?",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Coaches main": {
+      "id": 29123762,
+      "name": "Coaches main",
+      "label": "Coaches",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Coaches Teacher": {
+      "id": 29123762,
+      "name": "coaches-teacher",
+      "link": "/trail/teacher/coaches-teacher",
+      "label": "Coaches",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Coaches Student": {
+      "id": 29123762,
+      "name": "coaches-student",
+      "link": "/trail/student/coaches-student",
+      "label": "Coaches",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Coaches Student Cocreator": {
+      "id": 29123762,
+      "name": "coaches-student",
+      "link": "/trail/student/coaches-student",
+      "label": "Coaches",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Team members main": {
+      "id": 29123762,
+      "name": "Team members main",
+      "label": "Team\nmembers",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Team members Student": {
+      "id": 29123762,
+      "name": "team-members-student",
+      "link": "/trail/student/team-members-student",
+      "label": "Team\nmembers",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Team members Student Cocreator": {
+      "id": 29123762,
+      "name": "team-members-student",
+      "link": "/trail/student/team-members-student",
+      "label": "Team\nmembers",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Team members Teacher": {
+      "id": 29123762,
+      "name": "team-members-teacher",
+      "link": "/trail/teacher/team-members-teacher",
+      "label": "Team\nmembers",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Recruitment main": {
+      "id": 29123763,
+      "name": "Recruitment main",
+      "label": "Recruitment",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Recruitment Student": {
+      "id": 29123763,
+      "name": "recruitment-student",
+      "link": "/trail/student/recruitment-student",
+      "label": "Recruitment Student",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Recruitment Teacher": {
+      "id": 29123763,
+      "name": "recruitment-teacher",
+      "link": "/trail/teacher/recruitment-teacher",
+      "label": "Recruitment Teacher",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Recruitment Student Cocreator": {
+      "id": 29123763,
+      "name": "recruitment-student-cocreator",
+      "link": "/trail/student/recruitment-student",
+      "label": "Recruitment",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "The Iterative process main": {
+      "id": 29123764,
+      "name": "The Iterative process main",
+      "label": "The Iterative\nProcess",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "The Iterative process Teacher": {
+      "id": 29123762,
+      "name": "the-iterative-process-teacher",
+      "link": "/trail/teacher/the-iterative-process-teacher",
+      "label": "Iterative\nprocess",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "The Iterative process Student": {
+      "id": 29123762,
+      "name": "the-iterative-process-student",
+      "link": "/trail/teacher/the-iterative-process-student",
+      "label": "Iterative\nprocess",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Become a coach Student": {
+      "id": 29123762,
+      "name": "become-a-coach",
+      "link": "/trail/student/become-a-coach",
+      "label": "Become\na coach",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    }
+  },
+  "lines": [
+    {
+      "name": "TEACHER",
+      "label": "TEACHERS LOUNGE",
+      "color": "#2F2F8F",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [-80, 25],
+          "name": "Line label black",
+          "labelPos": "S",
+          "labelBold": true,
+          "labelAngle": 0,
+          "lineLabel": true,
+          "stationSymbol": false,
+          "stationFillColor": "#2F2F8F",
+          "lineLabelPos": "S",
+          "lineLabelShiftX": 2
+        },
+        {
+          "coords": [-40, 25],
+          "name": "Teach for the Future",
+          "labelPos": "S",
+          "labelShiftCoords": [-1.5, 0],
+          "lineLabel": false,
+          "labelAngle": -45
+        },
+        {
+          "coords": [-30, 25],
+          "name": "Why is change needed",
+          "labelPos": "S",
+          "labelShiftCoords": [-1.5, 0],
+          "labelAngle": -45
+        },
+        {
+          "coords": [-20, 25],
+          "name": "Transdisciplinary co-creation",
+          "labelPos": "S",
+          "labelShiftCoords": [-1.5, 0],
+          "labelAngle": -45
+        },
+        {
+          "coords": [-10, 25],
+          "name": "Strengthening STEM with STEAM+",
+          "labelPos": "S",
+          "labelShiftCoords": [-1.5, 0],
+          "labelAngle": -45
+        },
+        {
+          "coords": [0, 25],
+          "name": "Transdisciplinary Innovation Lab",
+          "labelShiftCoords": [-1.5, 0],
+          "labelPos": "S",
+          "labelAngle": -45
+        },
+        {
+          "coords": [10, 25],
+          "name": "Fertile ground Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "labelBold": false,
+          "stationSymbol": false
+        },
+        {
+          "coords": [20, 25],
+          "name": "Common Vision Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [30, 25],
+          "name": "External inspiration Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [40, 25],
+          "name": "External network Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [50, 25],
+          "name": "Grand Station Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [60, 25],
+          "name": "Format of the transdisciplinary innovation lab Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [70, 25],
+          "name": "Defining a challenge Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [80, 25],
+          "name": "Focussing on learning Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [90, 25],
+          "name": "The Iterative process Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [100, 25],
+          "name": "Good practices Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [110, 25],
+          "name": "Recruitment Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [120, 25],
+          "name": "Team members Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [130, 25],
+          "name": "Coaches Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [140, 25],
+          "name": "What outcomes can you expect Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [150, 25],
+          "name": "How to asses quality of an innovation lab Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [160, 25],
+          "name": "Learning Systematically Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        },
+        {
+          "coords": [170, 25],
+          "name": "Strengthen Embedding of the lab within your institute Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
+        }
+      ]
+    }
+  ]
+}

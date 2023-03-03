@@ -10,6 +10,12 @@ import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
 import { useEffect, useState } from 'react'
 import StationNavbar from '@/components/StationNavbar'
+import { TubeMap } from '@/components/TubeMap'
+
+import teacherJson from '@/components/TubeMap/teacher.json'
+import educationalJson from '@/components/TubeMap/educational.json'
+import policyJson from '@/components/TubeMap/policy.json'
+import studentJson from '@/components/TubeMap/student.json'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -176,6 +182,30 @@ export default function StationPage({
   const [interchangeableStationOrder, setInterchangeableStationOrder] =
     useState<string>('next')
 
+  let mapData: any
+
+  switch (line) {
+    case 'teacher':
+      mapData = teacherJson
+      break
+    case 'policy':
+      mapData = policyJson
+      break
+    case 'educational':
+      mapData = educationalJson
+      break
+    case 'student':
+      mapData = studentJson
+      break
+    default:
+      console.info(`I don´t know a line called ${line}.`)
+      break
+  }
+
+  const [height, setHeight] = useState(0)
+  const [width, setWidth] = useState(0)
+  const [selectedLine, setSelectedLine] = useState<Line>()
+
   useEffect(() => {
     if (!station) {
       return
@@ -217,6 +247,7 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col">
+      <TubeMap height={128} width={128} mapData={mapData} />
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
         <div className="m-2 flex flex-col justify-between p-4 text-steam-green-text">
           <StationNavbar

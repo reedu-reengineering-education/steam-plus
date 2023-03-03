@@ -7,6 +7,8 @@ import { RefObject, useEffect, useRef, useState } from 'react'
 import markdownToHtml from '@/lib/markdownToHtml'
 import { useRouter } from 'next/router'
 
+import ilipMapData from '@/components/TubeMap/ilip-map.json'
+
 type TrailPageProps = {
   lines: Line[]
 }
@@ -102,7 +104,12 @@ const Trail = ({ lines }: TrailPageProps) => {
       </div>
       <div className="flex w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
         <div ref={ref} className="h-192 min-h-full w-full">
-          <TubeMap height={height} width={width} selectedLine={selectedLine} />
+          <TubeMap
+            height={height}
+            width={width}
+            selectedLine={selectedLine}
+            mapData={ilipMapData}
+          />
         </div>
       </div>
     </div>

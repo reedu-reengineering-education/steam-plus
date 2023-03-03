@@ -3,6 +3,7 @@
 import React, { RefObject, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import ilipMapData from './ilip-map.json'
+import teacherJson from './teacher.json'
 import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
@@ -31,13 +32,19 @@ type TubeMapProps = {
   selectedLine?: TrailLine
   height: number
   width: number
+  mapData: any
 }
 
-export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
+export const TubeMap = ({
+  selectedLine,
+  height,
+  width,
+  mapData,
+}: TubeMapProps) => {
   const router = useRouter()
 
   const ref: RefObject<HTMLDivElement> = useRef(null)
-  const [data] = useState(transformData(ilipMapData))
+  const [data] = useState(transformData(mapData))
   const [lineWidth, setLineWidth] = useState<number>(0)
 
   useEffect(() => {
