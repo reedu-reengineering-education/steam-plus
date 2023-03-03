@@ -8,12 +8,8 @@ import extractStations, { Station } from '@/components/TubeMap/station'
 import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import {
-  ArrowLeftCircleIcon,
-  ArrowRightCircleIcon,
-} from '@heroicons/react/24/outline'
+import StationNavbar from '@/components/StationNavbar'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -172,7 +168,7 @@ export default function StationPage({
   neighbours,
   markdown,
 }: StationPageProps) {
-  console.log('StationPage: ', station)
+  console.log('StationPage: ', line, station)
   const router = useRouter()
   const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
   const [interchangeableStation, setInterchangableStation] =
@@ -221,107 +217,19 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col">
-      {/* <div className="flex items-center justify-between">
-        <div className="flex flex-col justify-between">
-          {neighbours.previous && (
-            <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
-              <BorderY variant={line} side="right" className="cursor-pointer">
-                <a className="p-4 text-center text-xs">
-                  {neighbours.previous.label}
-                </a>
-              </BorderY>
-            </Link>
-          )}
-          {interchangeableStation &&
-            interchangeableStationOrder === 'previous' && (
-              <>
-                <Link
-                  href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
-                    interchangeableStation.name
-                  }`}
-                  passHref
-                >
-                  <BorderY
-                    variant={line}
-                    side="right"
-                    className="cursor-pointer"
-                  >
-                    <a className="p-4 text-center text-xs">
-                      {interchangeableStation.label}
-                    </a>
-                  </BorderY>
-                </Link>
-              </>
-            )}
-        </div>
-        <Connector className="w-1/2" variant={line}></Connector>
-        <div className="m-0 p-4 text-center font-bold md:text-base lg:text-lg">
-          {station.label}
-        </div>
-        <Connector className="w-1/2" variant={line}></Connector>
-        <div className="flex flex-col justify-between">
-          {neighbours.next && (
-            <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-              <BorderY variant={line} side="left" className="cursor-pointer">
-                <a className="p-4 text-center text-xs">
-                  {neighbours.next.label}
-                </a>
-              </BorderY>
-            </Link>
-          )}
-          {interchangeableStation && interchangeableStationOrder === 'next' && (
-            <>
-              <Link
-                href={`/trail/${interchangeableLine?.name.toLowerCase()}/${
-                  interchangeableStation.name
-                }`}
-                passHref
-              >
-                <BorderY
-                  variant={line}
-                  side="left"
-                  className="cursor-pointer border-dashed"
-                >
-                  <a className="p-4 text-center text-xs">
-                    {interchangeableStation.label}
-                  </a>
-                </BorderY>
-              </Link>
-            </>
-          )}
-        </div>
-      </div> */}
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
-        <div className="m-2 flex justify-between p-4 text-steam-green-text">
-          <div className="flex hover:cursor-pointer">
-            {neighbours.previous ? (
-              <Link
-                href={`/trail/${line}/${neighbours.previous?.name}`}
-                passHref
-              >
-                <div className="flex gap-2">
-                  <ArrowLeftCircleIcon className="h-8 w-8 stroke-2" />
-                  <span className="w-32 text-sm line-clamp-3">
-                    {neighbours.previous.label}
-                  </span>
-                </div>
-              </Link>
-            ) : null}
-          </div>
-          <h1 className="w-64 text-center text-4xl font-bold">
-            {station.label}
-          </h1>
-          <div className="flex hover:cursor-pointer">
-            {neighbours.next ? (
-              <Link href={`/trail/${line}/${neighbours.next?.name}`} passHref>
-                <div className="flex gap-2">
-                  <span className="w-32 text-right text-sm line-clamp-3">
-                    {neighbours.next.label}
-                  </span>
-                  <ArrowRightCircleIcon className="h-8 w-8 stroke-2" />
-                </div>
-              </Link>
-            ) : null}
+        <div className="m-2 flex flex-col justify-between p-4 text-steam-green-text">
+          <StationNavbar
+            line={line}
+            neighbours={neighbours}
+            interchangeableLine={interchangeableLine}
+            interchangeableStation={interchangeableStation}
+            interchangeableStationOrder={interchangeableStationOrder}
+          />
+          <div className="flex justify-center">
+            <h1 className="w-64 text-center text-4xl font-bold">
+              {station.label}
+            </h1>
           </div>
         </div>
         <PostBody content={markdown} />
