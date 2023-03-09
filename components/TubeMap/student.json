@@ -275,16 +275,13 @@
           "lineLabel": true,
           "stationFillColor": "#C42A31",
           "lineLabelPos": "S",
-          "lineLabelShiftX": 2,
-          "stationSymbol": false
+          "lineLabelShiftX": 2
         },
         {
           "coords": [-40, 25],
           "name": "Harness Future Skills",
           "labelPos": "S",
           "labelShiftCoords": [-10, -10],
-          "labelBold": false,
-          "stationSymbol": "single",
           "labelAngle": -45
         },
         {
@@ -360,11 +357,92 @@
           "labelAngle": -45
         },
         {
-          "coords": [70, 25],
+          "coords": [130, 25],
           "name": "Grand Station Student",
-          "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
+          "labelPos": "S"
+        }
+      ]
+    },
+    {
+      "name": "STUDENT-COCREATOR",
+      "label": "STUDENT CO-CREATOR",
+      "lineLabel": true,
+      "color": "#C42A31",
+      "dashed": true,
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [10, 25]
+        },
+        {
+          "coords": [10, 35],
+          "name": "Fertile ground Student",
+          "labelPos": "N"
+        },
+        {
+          "coords": [50, 35],
+          "name": "Common Vision Student",
+          "labelPos": "N",
           "labelAngle": -45
+        },
+        {
+          "coords": [90, 35],
+          "name": "External inspiration Student",
+          "labelPos": "N",
+          "labelAngle": -45
+        },
+        {
+          "coords": [130, 35],
+          "name": "External network Student",
+          "labelPos": "N",
+          "labelAngle": -45
+        },
+        {
+          "coords": [130, 25]
+        },
+        {
+          "coords": [130, 15],
+          "name": "Format of the transdisciplinary innovation lab Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [120, 15],
+          "name": "Defining a challenge Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [110, 15],
+          "name": "Focussing on learning Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [100, 15],
+          "name": "The Iterative process Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [90, 15],
+          "name": "Good practices Student",
+          "labelPos": "S",
+          "labelShiftCoords": [0, 0.5]
+        },
+        {
+          "coords": [80, 15],
+          "name": "How to asses quality of an innovation lab Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [70, 15],
+          "name": "Learning Systematically Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [20, 15],
+          "name": "Strengthen Embedding of the lab within your institute Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [20, 25]
         }
       ]
     }
