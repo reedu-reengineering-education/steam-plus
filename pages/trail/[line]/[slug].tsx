@@ -33,7 +33,7 @@ function transformData(data: any) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const transformedMapData = transformData(mapData)
   const visibleLines = transformedMapData.lines.lines.filter(
-    line => !line.hidden,
+    line => !line.hidden && !line.name.includes('-'),
   )
 
   if (visibleLines) {
