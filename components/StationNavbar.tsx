@@ -47,12 +47,7 @@ const StationNavbar = ({
           </Link>
         ) : null}
         {interchangeableStation && interchangeableStationOrder === 'previous' && (
-          <Link
-            href={`/trail/${interchangeableLine?.name.toLocaleLowerCase()}/${
-              interchangeableStation.name
-            }`}
-            passHref
-          >
+          <Link href={`${interchangeableStation.link}`} passHref>
             <div
               className={`flex items-center justify-around gap-2 rounded-l-lg border-2 px-2 ${lineVariants[line]}`}
             >
@@ -78,12 +73,7 @@ const StationNavbar = ({
           </Link>
         ) : null}
         {interchangeableStation && interchangeableStationOrder === 'next' ? (
-          <Link
-            href={`/trail/${interchangeableLine?.name.toLocaleLowerCase()}/${
-              interchangeableStation.name
-            }`}
-            passHref
-          >
+          <Link href={`${interchangeableStation.link}`} passHref>
             <div
               className={`flex items-center justify-around gap-2 rounded-r-lg border-2 border-dashed px-2 ${lineVariants[line]}`}
             >

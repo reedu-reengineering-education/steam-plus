@@ -992,18 +992,56 @@
           "labelAngle": -45
         },
         {
-          "coords": [20, 25],
+          "coords": [80, 25],
           "name": "Grand Station Policy",
           "labelPos": "S",
           "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
-          "coords": [30, 25],
+          "coords": [100, 25],
           "name": "Strengthen Embedding of the lab within your institute Policy",
           "labelPos": "S",
           "labelShiftCoords": [-10, -10],
           "labelAngle": -45
+        }
+      ]
+    },
+    {
+      "name": "POLICY-MAKER",
+      "label": "POLICY MAKER CO-CREATOR",
+      "color": "#D4AF37",
+      "dashed": true,
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [10, 25]
+        },
+        {
+          "coords": [10, 35],
+          "name": "Fertile ground Policy",
+          "labelPos": "N",
+          "changeToLineStation": ["POLICY", "Innovation lab gold"],
+          "changeToLineOrder": "previous"
+        },
+        {
+          "coords": [40, 35],
+          "name": "Common Vision Policy",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [60, 35],
+          "name": "External inspiration Policy",
+          "labelPos": "SW"
+        },
+        {
+          "coords": [80, 35],
+          "name": "External network Policy",
+          "labelPos": "SW",
+          "changeToLineStation": ["POLICY", "Grand station Policy"]
+        },
+        {
+          "coords": [80, 25]
         }
       ]
     }
