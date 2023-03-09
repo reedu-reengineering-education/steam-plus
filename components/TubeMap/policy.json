@@ -953,62 +953,56 @@
           "coords": [-40, 25],
           "name": "Empower future generations",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
-          "labelBold": false,
-          "lineLabel": false,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-30, 25],
           "name": "Skills to match Complexity",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
-          "labelBold": false,
-          "lineLabel": false,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-20, 25],
           "name": "Transdisciplinary co-creation Policy",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-10, 25],
           "name": "Strengthening STEM with STEAM+ Policy",
           "labelPos": "S",
-          "labelBold": false,
-          "labelShiftCoords": [1.5, -2],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [0, 25],
           "name": "Transdisciplinary Innovation Lab Policy",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [10, 25],
           "name": "Crossroads",
           "labelPos": "S",
-          "stationSymbol": "single",
-          "labelShiftCoords": [0, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [20, 25],
           "name": "Grand Station Policy",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [30, 25],
           "name": "Strengthen Embedding of the lab within your institute Policy",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         }
       ]

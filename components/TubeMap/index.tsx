@@ -32,6 +32,7 @@ type TubeMapProps = {
   width: number
   mapData: any
   zoomEnabled?: boolean
+  initialZoom?: number
 }
 
 export const TubeMap = ({
@@ -40,6 +41,7 @@ export const TubeMap = ({
   width,
   mapData,
   zoomEnabled = false,
+  initialZoom = 0.9,
 }: TubeMapProps) => {
   const router = useRouter()
 
@@ -289,14 +291,16 @@ export const TubeMap = ({
   }
 
   const init = () => {
-    d3.select(ref.current)
+    const container = d3
+      .select(ref.current)
       .select('g')
-      .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+      .attr('class', 'd3Container')
+      // .attr('transform', 'translate(' + width / 10 + ',' + 0 + ')')
       .datum(mapData)
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.6, 10])
+      .scaleExtent([initialZoom, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -304,7 +308,7 @@ export const TubeMap = ({
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.9
+    const initialScale = initialZoom
     const initialTranslate = [-(width / 8), -(height / 12)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
@@ -314,7 +318,10 @@ export const TubeMap = ({
       initialTranslate[1],
     )
 
-    // TODO: checkout how to disable zoom but translateTo in the beginning
+    // If zoom disabled remove event listener
+    if (!zoomEnabled) {
+      zoomBehavior.on('zoom', null)
+    }
   }
 
   function trainStop(lineWidth: number, highlighted) {

@@ -252,12 +252,13 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col">
-      <div ref={ref} className="h-24 min-h-full w-full">
+      <div ref={ref} className="h-32 min-h-full w-full">
         <TubeMap
           height={height}
           width={width}
           mapData={mapData}
           zoomEnabled={false}
+          initialZoom={0.5}
         />
       </div>
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">

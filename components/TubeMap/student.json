@@ -14,7 +14,7 @@
       "id": null,
       "name": "good-practices-student",
       "link": "/trail/student/good-practices-student",
-      "label": "Good\npractices",
+      "label": "Good practices",
       "position": {
         "lat": 52.517403,
         "lon": 13.398203
@@ -63,7 +63,7 @@
     "Harness Future Skills": {
       "id": 5219721339,
       "name": "harness-future-skills",
-      "label": " Harness Future\nSkills",
+      "label": " Harness Future Skills",
       "link": "/trail/student/harness-future-skills",
       "position": {
         "lat": 52.5956412,
@@ -162,7 +162,7 @@
       "id": 3856100108,
       "name": "grand-station-student",
       "link": "/trail/student/grand-station-student",
-      "label": "Grand\nStation",
+      "label": "Grand Station",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
@@ -222,7 +222,7 @@
       "id": 29123762,
       "name": "team-members-student",
       "link": "/trail/student/team-members-student",
-      "label": "Team\nmembers",
+      "label": "Team members",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -252,7 +252,7 @@
       "id": 29123762,
       "name": "become-a-coach",
       "link": "/trail/student/become-a-coach",
-      "label": "Become\na coach",
+      "label": "Become a coach",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -282,7 +282,7 @@
           "coords": [-40, 25],
           "name": "Harness Future Skills",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelBold": false,
           "stationSymbol": "single",
           "labelAngle": -45
@@ -291,7 +291,7 @@
           "coords": [-30, 25],
           "name": "Meet Complexity",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
@@ -299,20 +299,20 @@
           "name": "Transdisciplinary co-creation Student",
           "labelPos": "S",
           "labelAngle": -45,
-          "labelShiftCoords": [1.5, 0]
+          "labelShiftCoords": [-10, -10]
         },
         {
           "coords": [-10, 25],
           "name": "Strengthening STEM with STEAM+ Student",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [0, 25],
           "name": "Transdisciplinary Innovation Lab Student",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "stationSymbol": "single",
           "labelAngle": -45
         },
@@ -320,7 +320,7 @@
           "coords": [10, 25],
           "name": "Crossroads Student",
           "labelPos": "S",
-          "labelShiftCoords": [1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "stationSymbol": "single",
           "labelAngle": -45
         },
@@ -328,40 +328,42 @@
           "coords": [20, 25],
           "name": "Recruitment Student",
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [30, 25],
           "name": "Team members Student",
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [40, 25],
           "name": "Coaches Student",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [50, 25],
           "name": "What outcomes can you expect Student",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [60, 25],
           "name": "Become a coach Student",
           "labelPos": "S",
-          "labelShiftCoords": [2.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [70, 25],
           "name": "Grand Station Student",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         }
       ]

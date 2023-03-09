@@ -953,80 +953,77 @@
           "coords": [-40, 25],
           "name": "Higher Education for the Future",
           "labelPos": "S",
-          "labelShiftCoords": [-1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-30, 25],
           "name": "The Progress of Society",
           "labelPos": "S",
-          "labelShiftCoords": [-1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-20, 25],
           "name": "Implementing Transdisciplinary",
           "labelPos": "S",
-          "labelShiftCoords": [-1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [-10, 25],
           "name": "Strengthen STEM with STEAM+",
           "labelPos": "S",
-          "labelShiftCoords": [-1.5, 1],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [10, 25],
           "name": "Transdisciplinary Innovation Lab Educational",
           "labelPos": "S",
-          "labelShiftCoords": [-1.5, 0],
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [30, 25],
           "name": "Fertile ground Educational",
-          "drawLabel": true,
           "labelPos": "S",
-          "labelBold": true,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [40, 25],
           "name": "Common Vision Educational",
           "labelPos": "S",
-          "labelBold": true,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [50, 25],
           "name": "External inspiration Educational",
-          "drawLabel": true,
           "labelPos": "S",
-          "labelBold": true,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [60, 25],
           "name": "External network Educational",
-          "drawLabel": true,
           "labelPos": "S",
-          "labelBold": true,
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [70, 25],
           "name": "Grand Station Educational",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         },
         {
           "coords": [80, 25],
           "name": "Strengthen Embedding of the lab within your institute Educational",
-          "drawLabel": true,
           "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
           "labelAngle": -45
         }
       ]
