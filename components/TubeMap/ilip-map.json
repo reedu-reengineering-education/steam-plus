@@ -1161,6 +1161,8 @@
         {
           "coords": [89.5, -54],
           "name": "Grand Station Policy",
+          "changeToLineStation": ["POLICY-MAKER", "External network Policy"],
+          "changeToLineOrder": "previous",
           "drawLabel": false,
           "labelPos": "S",
           "stationSymbol": false

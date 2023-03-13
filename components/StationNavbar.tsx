@@ -31,9 +31,11 @@ const StationNavbar = ({
   interchangeableStation,
   interchangeableStationOrder,
 }: StationNavbarProps) => {
+  console.log('Station Navbar: ', line, neighbours)
+
   return (
     <div className="flex justify-between">
-      <div className="flex hover:cursor-pointer">
+      <div className="flex flex-col gap-2 hover:cursor-pointer">
         {neighbours.previous ? (
           <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
             <div
@@ -49,12 +51,12 @@ const StationNavbar = ({
         {interchangeableStation && interchangeableStationOrder === 'previous' && (
           <Link href={`${interchangeableStation.link}`} passHref>
             <div
-              className={`flex items-center justify-around gap-2 rounded-l-lg border-2 px-2 ${lineVariants[line]}`}
+              className={`flex items-center justify-around gap-2 rounded-l-lg border-2 border-dashed px-2 ${lineVariants[line]}`}
             >
-              <span className="w-32 text-center text-sm line-clamp-3">
+              <ArrowLeftCircleIcon className="h-8 w-8 stroke-2" />
+              <span className="w-32 text-sm line-clamp-3">
                 {interchangeableStation.label}
               </span>
-              <ArrowRightCircleIcon className="h-8 w-8 stroke-2" />
             </div>
           </Link>
         )}

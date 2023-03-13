@@ -45,7 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     )[] = []
     visibleLines.map(line => {
-      console.log('GetStaticPaths - Visible line: ', line)
+      // console.log('GetStaticPaths - Visible line: ', line)
       line.stations.map(slug => {
         const station = transformedMapData.stations.stations[slug]
 
