@@ -28,6 +28,7 @@ const lineWidthTickRatio = 1
 
 type TubeMapProps = {
   selectedLine?: TrailLine
+  selectedStation?: Station
   height: number
   width: number
   mapData: any
@@ -37,6 +38,7 @@ type TubeMapProps = {
 
 export const TubeMap = ({
   selectedLine,
+  selectedStation,
   height,
   width,
   mapData,
@@ -127,6 +129,8 @@ export const TubeMap = ({
     drawStations(lineWidth)
     drawLongStations(lineWidth)
     drawLabels(lineWidth)
+    highlightSelectedStation()
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [height, width])
 
@@ -261,6 +265,54 @@ export const TubeMap = ({
 
     return () => {}
   }, [selectedLine])
+
+  useEffect(() => {
+    if (selectedStation && selectedStation !== '') {
+      console.log('highlight selected Station: ', selectedStation)
+      d3.selectAll('.station').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .attr('fill', '#000000')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+        }
+        // Reset not slected stations
+        d3.select(this)
+          .attr('fill', function (d: Station) {
+            return d.stationFillColor
+          })
+          .on('click', function (_, d) {})
+          .on('mouseover', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+          .on('mouseout', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+      })
+      d3.selectAll('.label').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .style('text-decoration', 'underline')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+        }
+        // Reset not selected stations
+        d3.select(this)
+          .style('text-decoration', 'none')
+          .on('click', function (_, d) {})
+          .on('mouseover', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+          .on('mouseout', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+      })
+    }
+
+    return () => {}
+  }, [selectedStation])
 
   function zoomed(event) {
     d3.select(ref.current)
@@ -1081,6 +1133,30 @@ export const TubeMap = ({
         return 'station ' + classFromName(d.name)
       })
       .style('cursor', 'pointer')
+  }
+
+  function highlightSelectedStation() {
+    if (selectedStation && selectedStation !== '') {
+      console.log('highlight selected Station: ', selectedStation)
+      d3.selectAll('.station').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .attr('fill', '#00000')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+        }
+      })
+      d3.selectAll('.label').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .style('text-decoration', 'underline')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+        }
+      })
+    }
   }
 
   return <div className="tube-map" ref={ref}></div>

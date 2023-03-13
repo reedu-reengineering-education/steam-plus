@@ -254,6 +254,7 @@ export default function StationPage({
     <div className="flex w-full flex-col">
       <div ref={ref} className="h-32 min-h-full w-full">
         <TubeMap
+          selectedStation={station}
           height={height}
           width={width}
           mapData={mapData}
