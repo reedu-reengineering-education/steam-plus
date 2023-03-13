@@ -120,7 +120,7 @@
     "External network Policy": {
       "id": 3901824902,
       "name": "external-network-policy",
-      "link": "/trail/policy/external-network-policy",
+      "link": "/trail/policy-maker/external-network-policy",
       "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
@@ -219,7 +219,7 @@
     "External inspiration Policy": {
       "id": 3957757604,
       "name": "external-inspiration-policy",
-      "link": "/trail/policy/external-inspiration-policy",
+      "link": "/trail/policy-maker/external-inspiration-policy",
       "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
@@ -258,7 +258,7 @@
     "Common Vision Policy": {
       "id": 29046970,
       "name": "common-vision-policy",
-      "link": "/trail/policy/common-vision-policy",
+      "link": "/trail/policy-maker/common-vision-policy",
       "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
@@ -317,7 +317,7 @@
     "Fertile ground Policy": {
       "id": 3957757603,
       "name": "fertile-ground-policy",
-      "link": "/trail/policy/fertile-ground-policy",
+      "link": "/trail/policy-maker/fertile-ground-policy",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,

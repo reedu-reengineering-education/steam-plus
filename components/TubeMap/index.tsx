@@ -367,6 +367,7 @@ export const TubeMap = ({
       .call(zoomBehavior)
 
     const initialScale = initialZoom
+    console.log('Init TubeMap width: ', width)
     const initialTranslate = [-(width / 8), -(height / 12)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)

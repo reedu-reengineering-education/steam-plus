@@ -91,10 +91,12 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
+  console.log('GetStaticProps - currentStation: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
   )
+  console.log('GetStaticProps - indexOfStation: ', indexOfStation)
 
   let previousStation: Station | null = null
   let nextStation: Station | null = null
@@ -114,7 +116,15 @@ export const getStaticProps: GetStaticProps = async context => {
         .toArray()
         .filter(elem => elem.nodeName === next)[0] || null
   } else if (indexOfStation == 1) {
-    previousStation = null
+    const previous = currentLine[0].stations[indexOfStation - 1]
+    if (previous.toLowerCase().startsWith('line label')) {
+      previousStation = null
+    } else {
+      previousStation =
+        transformedMapData.stations
+          .toArray()
+          .filter(elem => elem.nodeName === previous)[0] || null
+    }
     const next = currentLine[0].stations[indexOfStation + 1]
     nextStation =
       transformedMapData.stations
