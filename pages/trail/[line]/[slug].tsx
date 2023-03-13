@@ -33,7 +33,7 @@ function transformData(data: any) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const transformedMapData = transformData(mapData)
   const visibleLines = transformedMapData.lines.lines.filter(
-    line => !line.hidden && !line.name.includes('-'),
+    line => !line.hidden,
   )
 
   if (visibleLines) {
@@ -45,7 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     )[] = []
     visibleLines.map(line => {
-      // console.log('GetStaticPaths - Visible line: ', line)
+      console.log('GetStaticPaths - Visible line: ', line.name)
       line.stations.map(slug => {
         const station = transformedMapData.stations.stations[slug]
 
@@ -62,11 +62,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
         })
       })
     })
+    console.log('GetStaticPaths - visible lines: ', paths)
     return {
       paths: paths,
       fallback: true,
     }
   } else {
+    console.log('GetStaticPaths - not visible lines!')
     return {
       paths: [],
       fallback: false,
@@ -76,10 +78,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async context => {
   const { line, slug } = context.params! as IParams
+  console.log('GetStaticProps: ', line, slug)
 
   const transformedMapData = transformData(mapData)
   const visibleLines = transformedMapData.lines.lines.filter(
-    line => !line.hidden && !line.name.includes('-'),
+    line => !line.hidden,
   )
 
   const stations = transformedMapData.stations.toArray()
@@ -157,7 +160,13 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 type StationPageProps = {
-  line: 'teacher' | 'student' | 'policy' | 'educational'
+  line:
+    | 'teacher'
+    | 'student'
+    | 'student-cocreator'
+    | 'policy'
+    | 'policy-maker'
+    | 'educational'
   slug: string
   station: Station
   neighbours: {
@@ -188,12 +197,14 @@ export default function StationPage({
       mapData = teacherJson
       break
     case 'policy':
+    case 'policy-maker':
       mapData = policyJson
       break
     case 'educational':
       mapData = educationalJson
       break
     case 'student':
+    case 'student-cocreator':
       mapData = studentJson
       break
     default:
@@ -220,11 +231,13 @@ export default function StationPage({
     // If changeLine is bigger than 0 there
     // is the possibility to change to a different line
     if (station.changeToLineStation.length > 0) {
+      console.log('Station to change: ', station.changeToLineStation)
       const [interchangeLine, interchangeStation] = station.changeToLineStation
       const transformedMapData = transformData(mapData)
       const changeToLine = transformedMapData.lines.lines.filter(
         elem => elem.name === interchangeLine,
       )
+      console.log('Change to line: ', changeToLine)
 
       const changeToStation = transformedMapData.stations
         .toArray()

@@ -142,7 +142,7 @@ export const TubeMap = ({
       const lines = data.lines.lines.filter(line =>
         line.name.startsWith(selectedLine.name.toUpperCase()),
       )
-      console.log('Selected line: ', lines)
+      // console.log('Selected line: ', lines)
       let stations: Station[] = []
 
       for (let index = 0; index < lines.length; index++) {
@@ -151,7 +151,7 @@ export const TubeMap = ({
         stations.push(nodes)
       }
       stations = stations.flat()
-      console.log('Stations: ', stations)
+      // console.log('Stations: ', stations)
 
       // Reset all lines and stations to default
       // if user selects All
@@ -213,7 +213,7 @@ export const TubeMap = ({
                 return
               }
 
-              console.log(d.name, d.name.split('main'))
+              // console.log(d.name, d.name.split('main'))
             }
 
             d3.select(this).attr('stroke', '#C2C5CC')
@@ -268,7 +268,7 @@ export const TubeMap = ({
 
   useEffect(() => {
     if (selectedStation && selectedStation !== '') {
-      console.log('highlight selected Station: ', selectedStation)
+      // console.log('highlight selected Station: ', selectedStation)
       d3.selectAll('.station').each(function (this, d: Station) {
         if (d.name === selectedStation.name) {
           d3.select(this)
@@ -740,7 +740,7 @@ export const TubeMap = ({
   }
 
   const drawLineLabels = (lineWidth: number) => {
-    console.log('Draw Line Labels: ', data.stations.lineLabelStations())
+    // console.log('Draw Line Labels: ', data.stations.lineLabelStations())
 
     var unitLength = Math.abs(
       xScale(1) - xScale(0) !== 0
@@ -915,7 +915,7 @@ export const TubeMap = ({
   }
 
   function drawLabels(lineWidth: number) {
-    console.log('Draw Lables: ', data.stations.labeledStations())
+    // console.log('Draw Lables: ', data.stations.labeledStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -1143,7 +1143,7 @@ export const TubeMap = ({
 
   function highlightSelectedStation() {
     if (selectedStation && selectedStation !== '') {
-      console.log('highlight selected Station: ', selectedStation)
+      // console.log('highlight selected Station: ', selectedStation)
       d3.selectAll('.station').each(function (this, d: Station) {
         if (d.name === selectedStation.name) {
           d3.select(this)
