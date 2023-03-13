@@ -62,13 +62,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
         })
       })
     })
-    console.log('GetStaticPaths - visible lines: ', paths)
     return {
       paths: paths,
       fallback: true,
     }
   } else {
-    console.log('GetStaticPaths - not visible lines!')
     return {
       paths: [],
       fallback: false,
@@ -78,7 +76,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async context => {
   const { line, slug } = context.params! as IParams
-  console.log('GetStaticProps: ', line, slug)
 
   const transformedMapData = transformData(mapData)
   const visibleLines = transformedMapData.lines.lines.filter(
@@ -91,12 +88,10 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
-  console.log('GetStaticProps - currentStation: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
   )
-  console.log('GetStaticProps - indexOfStation: ', indexOfStation)
 
   let previousStation: Station | null = null
   let nextStation: Station | null = null
@@ -274,8 +269,8 @@ export default function StationPage({
   }
 
   return (
-    <div className="flex w-full flex-col">
-      <div ref={ref} className="h-32 min-h-full w-full">
+    <div className="flex w-full flex-col gap-4">
+      <div ref={ref} className="h-48 min-h-full w-full">
         <TubeMap
           selectedStation={station}
           height={height}

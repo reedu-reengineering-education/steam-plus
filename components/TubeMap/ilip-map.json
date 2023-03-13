@@ -1693,7 +1693,9 @@
           "name": "Fertile ground Student",
           "drawLabel": false,
           "labelPos": "SW",
-          "stationSymbol": false
+          "stationSymbol": false,
+          "changeToLineStation": ["STUDENT", "Crossroads Student"],
+          "changeToLineOrder": "previous"
         },
         {
           "coords": [50, -18],

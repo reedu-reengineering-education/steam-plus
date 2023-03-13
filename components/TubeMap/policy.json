@@ -1020,9 +1020,7 @@
         {
           "coords": [10, 35],
           "name": "Fertile ground Policy",
-          "labelPos": "N",
-          "changeToLineStation": ["POLICY", "Innovation lab gold"],
-          "changeToLineOrder": "previous"
+          "labelPos": "W"
         },
         {
           "coords": [40, 35],
@@ -1037,8 +1035,7 @@
         {
           "coords": [80, 35],
           "name": "External network Policy",
-          "labelPos": "SW",
-          "changeToLineStation": ["POLICY", "Grand station Policy"]
+          "labelPos": "SW"
         },
         {
           "coords": [80, 25]

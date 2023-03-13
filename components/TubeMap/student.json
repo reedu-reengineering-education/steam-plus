@@ -14,7 +14,7 @@
       "id": null,
       "name": "good-practices-student",
       "link": "/trail/student/good-practices-student",
-      "label": "Good practices",
+      "label": "Good\npractices",
       "position": {
         "lat": 52.517403,
         "lon": 13.398203
@@ -162,7 +162,7 @@
       "id": 3856100108,
       "name": "grand-station-student",
       "link": "/trail/student/grand-station-student",
-      "label": "Grand Station",
+      "label": "Grand\nStation",
       "position": {
         "lat": 52.5252819,
         "lon": 13.3701242
@@ -317,7 +317,7 @@
           "coords": [10, 25],
           "name": "Crossroads Student",
           "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
+          "labelShiftCoords": [-5, -5],
           "stationSymbol": "single",
           "labelAngle": -45
         },
@@ -325,41 +325,33 @@
           "coords": [20, 25],
           "name": "Recruitment Student",
           "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
+          "labelShiftCoords": [-12, -10],
           "labelAngle": -45
         },
         {
-          "coords": [30, 25],
+          "coords": [44, 25],
           "name": "Team members Student",
-          "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
-          "coords": [40, 25],
+          "coords": [66, 25],
           "name": "Coaches Student",
-          "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
-          "coords": [50, 25],
+          "coords": [88, 25],
           "name": "What outcomes can you expect Student",
-          "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
-          "coords": [60, 25],
+          "coords": [110, 25],
           "name": "Become a coach Student",
-          "labelPos": "S",
-          "labelShiftCoords": [-10, -10],
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
           "coords": [130, 25],
           "name": "Grand Station Student",
-          "labelPos": "S"
+          "labelPos": "E"
         }
       ]
     },
@@ -377,25 +369,22 @@
         {
           "coords": [10, 35],
           "name": "Fertile ground Student",
-          "labelPos": "N"
+          "labelPos": "W"
         },
         {
           "coords": [50, 35],
           "name": "Common Vision Student",
-          "labelPos": "N",
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
           "coords": [90, 35],
           "name": "External inspiration Student",
-          "labelPos": "N",
-          "labelAngle": -45
+          "labelPos": "S"
         },
         {
           "coords": [130, 35],
           "name": "External network Student",
-          "labelPos": "N",
-          "labelAngle": -45
+          "labelPos": "E"
         },
         {
           "coords": [130, 25]
@@ -403,43 +392,56 @@
         {
           "coords": [130, 15],
           "name": "Format of the transdisciplinary innovation lab Student",
-          "labelPos": "S"
+          "labelPos": "E"
         },
         {
-          "coords": [120, 15],
+          "coords": [115, 15],
           "name": "Defining a challenge Student",
-          "labelPos": "S"
-        },
-        {
-          "coords": [110, 15],
-          "name": "Focussing on learning Student",
-          "labelPos": "S"
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
         },
         {
           "coords": [100, 15],
-          "name": "The Iterative process Student",
-          "labelPos": "S"
-        },
-        {
-          "coords": [90, 15],
-          "name": "Good practices Student",
+          "name": "Focussing on learning Student",
           "labelPos": "S",
-          "labelShiftCoords": [0, 0.5]
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
         },
         {
-          "coords": [80, 15],
-          "name": "How to asses quality of an innovation lab Student",
-          "labelPos": "S"
+          "coords": [85, 15],
+          "name": "The Iterative process Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
         },
         {
           "coords": [70, 15],
+          "name": "Good practices Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [55, 15],
+          "name": "How to asses quality of an innovation lab Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-10, -10]
+        },
+        {
+          "coords": [40, 15],
           "name": "Learning Systematically Student",
-          "labelPos": "S"
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
         },
         {
           "coords": [20, 15],
           "name": "Strengthen Embedding of the lab within your institute Student",
-          "labelPos": "S"
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-10, -10]
         },
         {
           "coords": [20, 25]
