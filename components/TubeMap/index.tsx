@@ -276,13 +276,16 @@ export const TubeMap = ({
             .on('click', null)
             .on('mouseover', null)
             .on('mouseout', null)
+          return
         }
-        // Reset not slected stations
+        // Reset all stations
         d3.select(this)
           .attr('fill', function (d: Station) {
             return d.stationFillColor
           })
-          .on('click', function (_, d) {})
+          .on('click', function (this, d) {
+            openStationLink(d.target.baseURI, d.target.__data__)
+          })
           .on('mouseover', function (_, d) {
             toggleHighlight(d, lineWidth)
           })
@@ -297,11 +300,14 @@ export const TubeMap = ({
             .on('click', null)
             .on('mouseover', null)
             .on('mouseout', null)
+          return
         }
         // Reset not selected stations
         d3.select(this)
           .style('text-decoration', 'none')
-          .on('click', function (_, d) {})
+          .on('click', function (this, d) {
+            openStationLink(d.target.baseURI, d.target.__data__) // Label click
+          })
           .on('mouseover', function (_, d) {
             toggleHighlight(d, lineWidth)
           })
@@ -1145,7 +1151,12 @@ export const TubeMap = ({
             .on('click', null)
             .on('mouseover', null)
             .on('mouseout', null)
+          return
         }
+
+        d3.select(this).on('click', function (d) {
+          openStationLink(d.target.baseURI, d.target.__data__)
+        })
       })
       d3.selectAll('.label').each(function (this, d: Station) {
         if (d.name === selectedStation.name) {
@@ -1154,7 +1165,12 @@ export const TubeMap = ({
             .on('click', null)
             .on('mouseover', null)
             .on('mouseout', null)
+          return
         }
+
+        d3.select(this).on('click', function (d) {
+          openStationLink(d.target.baseURI, d.target.__data__)
+        })
       })
     }
   }
