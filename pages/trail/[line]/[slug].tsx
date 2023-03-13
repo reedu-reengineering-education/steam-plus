@@ -45,7 +45,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     )[] = []
     visibleLines.map(line => {
-      console.log('GetStaticPaths - Visible line: ', line.name)
       line.stations.map(slug => {
         const station = transformedMapData.stations.stations[slug]
 
@@ -236,13 +235,11 @@ export default function StationPage({
     // If changeLine is bigger than 0 there
     // is the possibility to change to a different line
     if (station.changeToLineStation.length > 0) {
-      console.log('Station to change: ', station.changeToLineStation)
       const [interchangeLine, interchangeStation] = station.changeToLineStation
       const transformedMapData = transformData(mapData)
       const changeToLine = transformedMapData.lines.lines.filter(
         elem => elem.name === interchangeLine,
       )
-      console.log('Change to line: ', changeToLine)
 
       const changeToStation = transformedMapData.stations
         .toArray()

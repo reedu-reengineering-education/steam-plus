@@ -40,7 +40,6 @@ const StationNavbar = ({
   interchangeableStation,
   interchangeableStationOrder,
 }: StationNavbarProps) => {
-  console.log('Station Navbar: ', interchangeableLine)
   return (
     <div className="flex justify-between">
       <div className="flex flex-col gap-2 hover:cursor-pointer">
