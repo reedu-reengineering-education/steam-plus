@@ -8,7 +8,9 @@ import { useRouter } from 'next/router'
 export async function getServerSideProps() {
   const directus = await getDirectusClient()
   const output = await directus.items('output').readOne('mpi')
-  const { data } = await directus.items('mpi').readByQuery()
+  const { data } = await directus.items('mpi').readByQuery({
+    sort: ['order'],
+  })
 
   let description = ''
   if (output) {

@@ -29,6 +29,7 @@ export type Mpi = {
   title: string
   slug: string
   markdown: string
+  order: number
 }
 
 export type Menu = {

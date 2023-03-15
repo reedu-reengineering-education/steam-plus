@@ -47,6 +47,7 @@ export const getStaticProps: GetStaticProps = async context => {
     filter: {
       category: category,
     },
+    sort: ['order'],
     fields: ['*', 'author.first_name', 'author.last_name'],
   })
 
