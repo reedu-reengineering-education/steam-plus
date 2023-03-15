@@ -3,7 +3,8 @@ import markdownToHtml from '@/lib/markdownToHtml'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
-import { getDirectusClient } from '../../../lib/directus'
+import { useEffect, useState } from 'react'
+import { getDirectusClient, SideDishCountry } from '../../../lib/directus'
 
 interface IParams extends ParsedUrlQuery {
   category: string
