@@ -10,23 +10,23 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply mt-12 mb-4 text-3xl leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply mt-8 mb-4 text-2xl leading-snug;
 }
 
 .markdown a {
-  @apply underline hover:underline-offset-1 hover:text-steam-green;
+  @apply underline hover:text-steam-green hover:underline-offset-1;
 }
 
-.markdown ul {
+.markdown ul > li {
   @apply list-inside list-disc;
 }
 
-.markdown li {
-  @apply list-decimal;
+.markdown ol > li {
+  @apply list-inside list-decimal;
 }
 
 .markdown table {
@@ -34,15 +34,15 @@
 }
 
 .markdown tbody > tr td {
-  @apply p-2 border-2 border-steam-green;
+  @apply border-2 border-steam-green p-2;
 }
 
 .markdown blockquote {
-  @apply border-l-4
+  @apply border-l-4;
 }
 
 .markdown blockquote > p {
-  @apply pl-4
+  @apply pl-4;
 }
 
 /* Hide table head */
@@ -51,5 +51,5 @@
 }
 
 .markdown iframe {
-  @apply w-full h-96 mb-2;
+  @apply mb-2 h-96 w-full;
 }

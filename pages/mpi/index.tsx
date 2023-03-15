@@ -47,7 +47,9 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
         <h1 className="text-xl font-bold text-zinc-600">
           {output.output.toUpperCase()} - {output.title}
         </h1>
-        <Markdown content={description} />
+        <div className="text-base font-light">
+          <Markdown content={description} />
+        </div>
       </div>
       <div className="flex w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
         <div className="mx-auto text-center text-steam-green-text">
