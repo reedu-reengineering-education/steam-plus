@@ -4,6 +4,12 @@ const directusUrl =
   process.env.NEXT_PUBLIC_DIRECTUS_URL || 'http://localhost:8055'
 
 // Define types for Dircetus collections
+export type Output = {
+  output: string
+  title?: string
+  description: string
+}
+
 export type Ilip = {
   slug: string
   content: string
@@ -40,6 +46,7 @@ export type Glossary = {
 // Map your collections to its respective types. The SDK will
 // infer its types based on usage later.
 type DirectusCollection = {
+  output: Output
   lines: Line
   ilip: Ilip
   mpi: Mpi
