@@ -6,7 +6,7 @@ type Props = {
 
 const Markdown = ({ content }: Props) => {
   return (
-    <p
+    <div
       className={markdownStyles['markdown']}
       dangerouslySetInnerHTML={{ __html: content }}
     />

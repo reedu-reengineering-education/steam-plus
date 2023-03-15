@@ -20,6 +20,7 @@
     "axios": "^0.27.2",
     "clsx": "^1.2.1",
     "d3": "^7.6.1",
+    "flag-icons": "^6.6.6",
     "mapbox-gl": "npm:empty-npm-package@1.0.0",
     "maplibre-gl": "^2.1.9",
     "next": "12.2.2",
