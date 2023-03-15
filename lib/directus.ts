@@ -38,6 +38,11 @@ export type Menu = {
   description: string
 }
 
+export type SideDishCountry = {
+  country: string
+  description: string
+}
+
 export type Glossary = {
   id: ID
   term: string
@@ -52,6 +57,7 @@ type DirectusCollection = {
   ilip: Ilip
   mpi: Mpi
   menu: Menu
+  side_dish_country: SideDishCountry
   glossary: Glossary
 }
 

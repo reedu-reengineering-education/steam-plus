@@ -30,7 +30,7 @@
 }
 
 .markdown table {
-  @apply border-2 border-steam-green;
+  @apply my-4 border-2 border-steam-green;
 }
 
 .markdown tbody > tr td {
