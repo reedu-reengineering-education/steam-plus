@@ -3,8 +3,7 @@ import remarkGfm from 'remark-gfm'
 import remarkParse from 'remark-parse'
 import remarkDirective from 'remark-directive'
 import remarkRehype from 'remark-rehype'
-import rehypeFormat from 'rehype-format'
-import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
+import rehypeSanitize from 'rehype-sanitize'
 import rehypeRaw from 'rehype-raw'
 import rehypeStringify from 'rehype-stringify'
 import { visit } from 'unist-util-visit'
@@ -16,9 +15,10 @@ export default async function markdownToHtml(markdown: string) {
     .use(remarkGfm)
     .use(remarkDirective)
     .use(remarkYoutube)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
-    .use(rehypeStringify)
+    .use(rehypeSanitize)
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown)
   return String(result)
 }
