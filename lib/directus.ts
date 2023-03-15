@@ -25,6 +25,12 @@ export type Mpi = {
   markdown: string
 }
 
+export type Menu = {
+  id: ID
+  category: string
+  description: string
+}
+
 export type Glossary = {
   id: ID
   term: string
@@ -37,6 +43,7 @@ type DirectusCollection = {
   lines: Line
   ilip: Ilip
   mpi: Mpi
+  menu: Menu
   glossary: Glossary
 }
 
