@@ -95,15 +95,16 @@ const MenuCategoryPage = ({
   }
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold capitalize text-zinc-600">
           {category}
         </h1>
-        <Spacer />
-        <Markdown content={description} />
+        <div className="text-base font-light">
+          <Markdown content={description} />
+        </div>
       </div>
-      <div className="flex w-full flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex w-full flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-12 drop-shadow-lg lg:w-2/3">
         <div className="flex flex-col p-2 text-center">
           <div className="cursor-pointer hover:underline">
             <MenuIcon category={category} />
