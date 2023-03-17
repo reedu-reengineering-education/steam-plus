@@ -44,14 +44,14 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
   return (
     <div className="flex flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
-        <h1 className="text-xl font-bold text-zinc-600">
+        <h1 className="text-3xl font-bold text-zinc-600">
           {output.output.toUpperCase()} - {output.title}
         </h1>
         <div className="text-base font-light">
           <Markdown content={description} />
         </div>
       </div>
-      <div className="flex w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex h-1/2 w-full flex-col rounded-md border border-steam-green bg-steam-white p-12 drop-shadow-lg lg:w-2/3">
         <div className="mx-auto text-center text-steam-green-text">
           <h1 className="text-4xl font-black">STEAM+</h1>
           <h3 className="text-xl font-light uppercase">{output.title}</h3>
@@ -59,9 +59,9 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
           <h6>Served based on local experiences</h6>
           <hr className="my-2 mx-auto h-1 bg-steam-green" />
         </div>
-        <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-3">
+        <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-2">
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/starter`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
@@ -74,7 +74,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
+              <ul className="p-2 text-center text-base font-light">
                 {data
                   .filter(entry => entry.category === 'starter')
                   .map(starter => {
@@ -90,37 +90,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
-            <div className="flex flex-col p-2 text-center">
-              <Link href={`mpi/main`}>
-                <div className="cursor-pointer hover:underline">
-                  <Image
-                    src={require('@/assets/logos/main-meal.svg')}
-                    alt="Main meals Icon"
-                  />
-                  <h2 className="text-lg font-bold text-steam-green-text-50">
-                    Main meals
-                  </h2>
-                </div>
-              </Link>
-              <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
-                {data
-                  .filter(entry => entry.category === 'main')
-                  .map(starter => {
-                    return (
-                      <li className="m-2 hover:underline" key={starter.id}>
-                        <Link href={`mpi/main/${starter.slug}`}>
-                          <a>{starter.title}</a>
-                        </Link>
-                      </li>
-                    )
-                  })}
-              </ul>
-            </div>
-            <div className="p-2 text-center"></div>
-          </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/dessert`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
@@ -133,7 +103,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
-              <ul className="p-2 text-left text-base font-light">
+              <ul className="p-2 text-center text-base font-light">
                 {data
                   .filter(entry => entry.category === 'dessert')
                   .map(starter => {
@@ -149,11 +119,43 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
             <div className="p-2 text-center"></div>
           </div>
+          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-3">
+            <div className="flex h-full flex-col p-2 text-center">
+              <Link href={`mpi/main`}>
+                <div className="cursor-pointer hover:underline">
+                  <Image
+                    src={require('@/assets/logos/main-meal.svg')}
+                    alt="Main meals Icon"
+                  />
+                  <h2 className="text-lg font-bold text-steam-green-text-50">
+                    Main meals
+                  </h2>
+                </div>
+              </Link>
+              <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
+              <ul className="p-2 text-center text-base font-light">
+                {data
+                  .filter(entry => entry.category === 'main')
+                  .map(starter => {
+                    return (
+                      <li
+                        className="m-2 hover:underline lg:py-6"
+                        key={starter.id}
+                      >
+                        <Link href={`mpi/main/${starter.slug}`}>
+                          <a>{starter.title}</a>
+                        </Link>
+                      </li>
+                    )
+                  })}
+              </ul>
+            </div>
+          </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-1 lg:row-start-3">
-            <div className="flex flex-col p-2 text-center lg:flex-row">
+            <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/beverage`}>
-                  <div className="cursor-pointer hover:underline">
+                  <div className="flex cursor-pointer items-center justify-evenly hover:underline">
                     <Image
                       src={require('@/assets/logos/beverage.svg')}
                       alt="Beverages Icon"
@@ -166,7 +168,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
                 <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               </div>
               <div>
-                <ul className="p-2 text-left text-base font-light">
+                <ul className="p-2 text-center text-base font-light">
                   {data
                     .filter(entry => entry.category === 'beverage')
                     .map(starter => {
@@ -183,11 +185,11 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
             <div className="p-2 text-center"></div>
           </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-2 lg:col-start-2 lg:row-start-3">
-            <div className="flex flex-col p-2 text-center lg:flex-row">
+          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-2 lg:row-start-3">
+            <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/takeaway`}>
-                  <div className="cursor-pointer hover:underline">
+                  <div className="flex cursor-pointer items-center justify-evenly hover:underline">
                     <Image
                       src={require('@/assets/logos/takeaway.svg')}
                       width={88}
@@ -202,7 +204,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
                 <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
               </div>
               <div>
-                <ul className="p-2 text-left text-base font-light">
+                <ul className="p-2 text-center text-base font-light">
                   {data
                     .filter(entry => entry.category === 'takeaway')
                     .map(starter => {

@@ -88,7 +88,7 @@ const Glossary = ({ dict }: GlossaryPageProps) => {
 
   return (
     <div className="flex flex-col gap-12 md:flex-row">
-      <div className="flex w-full flex-col rounded-md border-4 border-ocean-green-500 bg-steam-green-50 p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex w-full flex-col rounded-md border border-ocean-green-500 bg-steam-green-50 p-12 drop-shadow-lg lg:w-2/3">
         <h1 className="text-center text-2xl font-bold uppercase text-ocean-green-500">
           Glossary
         </h1>
