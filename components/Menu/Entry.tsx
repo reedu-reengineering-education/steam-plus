@@ -60,11 +60,13 @@ export default function MenuEntry({
   }
 
   return (
-    <div className="mx-auto flex flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-4 drop-shadow-lg">
+    <div className="mx-auto flex w-full flex-col rounded-b rounded-tr-3xl border border-steam-green bg-steam-green-50 p-12 drop-shadow-lg lg:w-2/3">
       <div className="flex flex-col p-2 text-center">
         <div className="">
           <MenuIcon category={category} />
-          <h2 className="text-steam-green-text-50">{title}</h2>
+          <h2 className="text-3xl font-bold text-steam-green-text-50">
+            {title}
+          </h2>
         </div>
         <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
         <ul className="p-2 text-left text-sm font-light">
