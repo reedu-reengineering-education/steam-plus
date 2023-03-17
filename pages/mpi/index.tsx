@@ -44,7 +44,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
   return (
     <div className="flex flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
-        <h1 className="text-xl font-bold text-zinc-600">
+        <h1 className="text-3xl font-bold text-zinc-600">
           {output.output.toUpperCase()} - {output.title}
         </h1>
         <div className="text-base font-light">

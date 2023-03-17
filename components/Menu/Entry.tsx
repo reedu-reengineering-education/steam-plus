@@ -3,7 +3,7 @@ import 'flag-icons/css/flag-icons.min.css'
 import MenuIcon from './Icon'
 import Markdown from '../Post/Markdown'
 import { useRouter } from 'next/router'
-import { getDirectusClient, SideDishCountry } from '@/lib/directus'
+import { getDirectusClient } from '@/lib/directus'
 import { useEffect, useState } from 'react'
 import markdownToHtml from '@/lib/markdownToHtml'
 
@@ -75,35 +75,35 @@ export default function MenuEntry({
             {category === 'main' && title.toLowerCase() === 'side dishes' ? (
               <div className="grid grid-cols-4 gap-3">
                 <button
-                  className="fib fi-at h-32 w-32"
+                  className="fib fi-at md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('at')}
                 ></button>
                 <button
-                  className="fib fi-nl h-32 w-32"
+                  className="fib fi-nl md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('nl')}
                 ></button>
                 <button
-                  className="fib fi-no h-32 w-32"
+                  className="fib fi-no md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('no')}
                 ></button>
                 <button
-                  className="fib fi-de h-32 w-32"
+                  className="fib fi-de md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('de')}
                 ></button>
                 <button
-                  className="fib fi-be h-32 w-32"
+                  className="fib fi-be md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('be')}
                 ></button>
                 <button
-                  className="fib fi-it h-32 w-32"
+                  className="fib fi-it md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('it')}
                 ></button>
                 <button
-                  className="fib fi-dk h-32 w-32"
+                  className="fib fi-dk md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('dk')}
                 ></button>
                 <button
-                  className="fib fi-ro h-32 w-32"
+                  className="fib fi-ro md:h-18 md:w-18 mx-auto h-12 w-12 lg:h-24 lg:w-24"
                   onClick={() => onClick('ro')}
                 ></button>
               </div>
