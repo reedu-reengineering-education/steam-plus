@@ -61,7 +61,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
         </div>
         <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-2">
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/starter`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
@@ -90,7 +90,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/dessert`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
@@ -120,7 +120,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             <div className="p-2 text-center"></div>
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-3">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/main`}>
                 <div className="cursor-pointer hover:underline">
                   <Image
@@ -133,26 +133,26 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
                 </div>
               </Link>
               <hr className="my-4 h-[2px] border-0 bg-steam-green-100" />
-              <div className="h-full min-h-full">
-                <ul className="p-2 text-center text-base font-light">
-                  {data
-                    .filter(entry => entry.category === 'main')
-                    .map(starter => {
-                      return (
-                        <li className="m-2 hover:underline" key={starter.id}>
-                          <Link href={`mpi/main/${starter.slug}`}>
-                            <a>{starter.title}</a>
-                          </Link>
-                        </li>
-                      )
-                    })}
-                </ul>
-              </div>
+              <ul className="p-2 text-center text-base font-light">
+                {data
+                  .filter(entry => entry.category === 'main')
+                  .map(starter => {
+                    return (
+                      <li
+                        className="m-2 hover:underline lg:py-6"
+                        key={starter.id}
+                      >
+                        <Link href={`mpi/main/${starter.slug}`}>
+                          <a>{starter.title}</a>
+                        </Link>
+                      </li>
+                    )
+                  })}
+              </ul>
             </div>
-            <div className="p-2 text-center"></div>
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-1 lg:row-start-3">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/beverage`}>
                   <div className="flex cursor-pointer items-center justify-evenly hover:underline">
@@ -186,7 +186,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             <div className="p-2 text-center"></div>
           </div>
           <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-2 lg:row-start-3">
-            <div className="flex flex-col p-2 text-center">
+            <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/takeaway`}>
                   <div className="flex cursor-pointer items-center justify-evenly hover:underline">
