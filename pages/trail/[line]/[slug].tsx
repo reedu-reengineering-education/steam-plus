@@ -267,7 +267,7 @@ export default function StationPage({
 
   return (
     <div className="flex w-full flex-col gap-4">
-      <div ref={ref} className="h-48 min-h-full w-full">
+      {/* <div ref={ref} className="h-48 min-h-full w-full">
         <TubeMap
           selectedStation={station}
           height={height}
@@ -276,7 +276,7 @@ export default function StationPage({
           zoomEnabled={false}
           initialZoom={0.5}
         />
-      </div>
+      </div> */}
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
         <div className="m-2 flex flex-col justify-between p-4 text-steam-green-text">
           <StationNavbar
