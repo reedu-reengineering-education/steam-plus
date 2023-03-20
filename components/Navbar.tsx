@@ -48,7 +48,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href={'/'} passHref>
+                  <Link href="https://www.steamtalent.eu/" passHref>
                     <a>
                       <div className="relative h-12 w-36">
                         <Image
