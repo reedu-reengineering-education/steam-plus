@@ -2,7 +2,6 @@
 
 import React, { RefObject, useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import ilipMapData from './ilip-map.json'
 import extractStations, { Station } from './station'
 import extractLines, { Line } from './line'
 
@@ -29,15 +28,27 @@ const lineWidthTickRatio = 1
 
 type TubeMapProps = {
   selectedLine?: TrailLine
+  selectedStation?: Station
   height: number
   width: number
+  mapData: any
+  zoomEnabled?: boolean
+  initialZoom?: number
 }
 
-export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
+export const TubeMap = ({
+  selectedLine,
+  selectedStation,
+  height,
+  width,
+  mapData,
+  zoomEnabled = false,
+  initialZoom = 0.9,
+}: TubeMapProps) => {
   const router = useRouter()
 
   const ref: RefObject<HTMLDivElement> = useRef(null)
-  const [data] = useState(transformData(ilipMapData))
+  const [data] = useState(transformData(mapData))
   const [lineWidth, setLineWidth] = useState<number>(0)
 
   useEffect(() => {
@@ -118,6 +129,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     drawStations(lineWidth)
     drawLongStations(lineWidth)
     drawLabels(lineWidth)
+    highlightSelectedStation()
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [height, width])
 
@@ -129,7 +142,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       const lines = data.lines.lines.filter(line =>
         line.name.startsWith(selectedLine.name.toUpperCase()),
       )
-      console.log('Selected line: ', lines)
+      // console.log('Selected line: ', lines)
       let stations: Station[] = []
 
       for (let index = 0; index < lines.length; index++) {
@@ -138,7 +151,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         stations.push(nodes)
       }
       stations = stations.flat()
-      console.log('Stations: ', stations)
+      // console.log('Stations: ', stations)
 
       // Reset all lines and stations to default
       // if user selects All
@@ -200,7 +213,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
                 return
               }
 
-              console.log(d.name, d.name.split('main'))
+              // console.log(d.name, d.name.split('main'))
             }
 
             d3.select(this).attr('stroke', '#C2C5CC')
@@ -253,6 +266,60 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
     return () => {}
   }, [selectedLine])
 
+  useEffect(() => {
+    if (selectedStation && selectedStation !== '') {
+      // console.log('highlight selected Station: ', selectedStation)
+      d3.selectAll('.station').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .attr('fill', '#000000')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+          return
+        }
+        // Reset all stations
+        d3.select(this)
+          .attr('fill', function (d: Station) {
+            return d.stationFillColor
+          })
+          .on('click', function (this, d) {
+            openStationLink(d.target.baseURI, d.target.__data__)
+          })
+          .on('mouseover', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+          .on('mouseout', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+      })
+      d3.selectAll('.label').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .style('text-decoration', 'underline')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+          return
+        }
+        // Reset not selected stations
+        d3.select(this)
+          .style('text-decoration', 'none')
+          .on('click', function (this, d) {
+            openStationLink(d.target.baseURI, d.target.__data__) // Label click
+          })
+          .on('mouseover', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+          .on('mouseout', function (_, d) {
+            toggleHighlight(d, lineWidth)
+          })
+      })
+    }
+
+    return () => {}
+  }, [selectedStation])
+
   function zoomed(event) {
     d3.select(ref.current)
       .select('svg')
@@ -282,14 +349,16 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   const init = () => {
-    d3.select(ref.current)
+    const container = d3
+      .select(ref.current)
       .select('g')
-      .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
-      .datum(ilipMapData)
+      .attr('class', 'd3Container')
+      // .attr('transform', 'translate(' + width / 10 + ',' + 0 + ')')
+      .datum(mapData)
 
     const zoomBehavior = d3
       .zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.6, 10])
+      .scaleExtent([initialZoom, 10])
       .on('zoom', zoomed)
 
     const zoomContainer = d3
@@ -297,7 +366,8 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       .select('svg')
       .call(zoomBehavior)
 
-    const initialScale = 0.9
+    const initialScale = initialZoom
+    console.log('Init TubeMap width: ', width)
     const initialTranslate = [-(width / 8), -(height / 12)]
 
     zoomBehavior.scaleTo(zoomContainer, initialScale)
@@ -306,6 +376,11 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
       initialTranslate[0],
       initialTranslate[1],
     )
+
+    // If zoom disabled remove event listener
+    if (!zoomEnabled) {
+      zoomBehavior.on('zoom', null)
+    }
   }
 
   function trainStop(lineWidth: number, highlighted) {
@@ -666,7 +741,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   const drawLineLabels = (lineWidth: number) => {
-    console.log('Draw Line Labels: ', data.stations.lineLabelStations())
+    // console.log('Draw Line Labels: ', data.stations.lineLabelStations())
 
     var unitLength = Math.abs(
       xScale(1) - xScale(0) !== 0
@@ -841,7 +916,7 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
   }
 
   function drawLabels(lineWidth: number) {
-    console.log('Draw Lables: ', data.stations.labeledStations())
+    // console.log('Draw Lables: ', data.stations.labeledStations())
     d3.select(ref.current)
       .select('svg')
       .select('g')
@@ -1065,6 +1140,40 @@ export const TubeMap = ({ selectedLine, height, width }: TubeMapProps) => {
         return 'station ' + classFromName(d.name)
       })
       .style('cursor', 'pointer')
+  }
+
+  function highlightSelectedStation() {
+    if (selectedStation && selectedStation !== '') {
+      // console.log('highlight selected Station: ', selectedStation)
+      d3.selectAll('.station').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .attr('fill', '#00000')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+          return
+        }
+
+        d3.select(this).on('click', function (d) {
+          openStationLink(d.target.baseURI, d.target.__data__)
+        })
+      })
+      d3.selectAll('.label').each(function (this, d: Station) {
+        if (d.name === selectedStation.name) {
+          d3.select(this)
+            .style('text-decoration', 'underline')
+            .on('click', null)
+            .on('mouseover', null)
+            .on('mouseout', null)
+          return
+        }
+
+        d3.select(this).on('click', function (d) {
+          openStationLink(d.target.baseURI, d.target.__data__)
+        })
+      })
+    }
   }
 
   return <div className="tube-map" ref={ref}></div>

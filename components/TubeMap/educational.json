@@ -120,7 +120,7 @@
     "External network Policy": {
       "id": 3901824902,
       "name": "external-network-policy",
-      "link": "/trail/policy-maker/external-network-policy",
+      "link": "/trail/policy/external-network-policy",
       "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
@@ -219,7 +219,7 @@
     "External inspiration Policy": {
       "id": 3957757604,
       "name": "external-inspiration-policy",
-      "link": "/trail/policy-maker/external-inspiration-policy",
+      "link": "/trail/policy/external-inspiration-policy",
       "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
@@ -258,7 +258,7 @@
     "Common Vision Policy": {
       "id": 29046970,
       "name": "common-vision-policy",
-      "link": "/trail/policy-maker/common-vision-policy",
+      "link": "/trail/policy/common-vision-policy",
       "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
@@ -317,7 +317,7 @@
     "Fertile ground Policy": {
       "id": 3957757603,
       "name": "fertile-ground-policy",
-      "link": "/trail/policy-maker/fertile-ground-policy",
+      "link": "/trail/policy/fertile-ground-policy",
       "label": "Fertile\nground",
       "position": {
         "lat": 52.5028118,
@@ -932,896 +932,99 @@
   },
   "lines": [
     {
-      "name": "CO-CREATION LINE",
-      "label": "CO-CREATION LINE",
-      "color": "#A020F0",
-      "shiftCoords": [0, 0],
-      "hidden": true,
-      "nodes": [
-        {
-          "coords": [40, -6],
-          "name": "Fertile ground main",
-          "stationAngle": 45,
-          "stationSymbol": "triple",
-          "labelPos": "E",
-          "labelBold": false,
-          "labelShiftCoords": [1, 2]
-        },
-        {
-          "coords": [50, -16],
-          "name": "Common Vision main",
-          "stationAngle": 45,
-          "stationSymbol": "triple",
-          "labelPos": "E",
-          "labelBold": false,
-          "labelShiftCoords": [1, 2]
-        },
-        {
-          "coords": [60, -26],
-          "name": "External inspiration main",
-          "stationAngle": 45,
-          "stationSymbol": "triple",
-          "labelPos": "E",
-          "labelBold": false,
-          "labelShiftCoords": [1, 2]
-        },
-        {
-          "coords": [70, -36],
-          "name": "External network main",
-          "stationAngle": 45,
-          "stationSymbol": "triple",
-          "labelPos": "E",
-          "labelBold": false,
-          "labelShiftCoords": [1, 2]
-        }
-      ]
-    },
-    {
       "name": "EDUCATIONAL",
       "label": "EDUCATIONAL BOARD",
       "color": "#2D803E",
       "shiftCoords": [0, 0],
       "nodes": [
         {
-          "coords": [0, -60],
+          "coords": [-80, 25],
           "name": "Line label green",
-          "labelPos": "W",
+          "labelPos": "S",
           "labelBold": true,
           "labelAngle": 0,
           "lineLabel": true,
           "stationFillColor": "#2D803E",
-          "lineLabelPos": "W",
+          "lineLabelPos": "S",
           "lineLabelShiftX": 2,
-          "lineLabelShiftY": 2.5,
           "stationSymbol": false
         },
         {
-          "coords": [0, -50],
+          "coords": [-40, 25],
           "name": "Higher Education for the Future",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0]
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [0, -40],
+          "coords": [-30, 25],
           "name": "The Progress of Society",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0]
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [0, -25],
+          "coords": [-20, 25],
           "name": "Implementing Transdisciplinary",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0]
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [5, -15],
+          "coords": [-10, 25],
           "name": "Strengthen STEM with STEAM+",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 1]
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [10, -5]
-        },
-        {
-          "coords": [10, -5],
+          "coords": [10, 25],
           "name": "Transdisciplinary Innovation Lab Educational",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0]
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [32, -5]
-        },
-        {
-          "coords": [40, -12],
+          "coords": [30, 25],
           "name": "Fertile ground Educational",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "shiftX": 50,
-          "shiftY": 50,
-          "stationSymbol": false
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [50, -22],
+          "coords": [40, 25],
           "name": "Common Vision Educational",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [60, -32],
+          "coords": [50, 25],
           "name": "External inspiration Educational",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [70, -42],
+          "coords": [60, 25],
           "name": "External network Educational",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [75, -47]
-        },
-        {
-          "coords": [80, -52]
-        },
-        {
-          "coords": [86.5, -52],
+          "coords": [70, 25],
           "name": "Grand Station Educational",
-          "drawLabel": false,
           "labelPos": "S",
-          "stationSymbol": false
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         },
         {
-          "coords": [86.5, 0],
+          "coords": [80, 25],
           "name": "Strengthen Embedding of the lab within your institute Educational",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        }
-      ]
-    },
-    {
-      "name": "POLICY",
-      "label": "POLICY CENTER",
-      "color": "#D6B133",
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [19, -115],
-          "name": "Line label gold",
-          "stationSymbol": false,
-          "lineLabel": true,
-          "labelBold": true,
-          "labelAngle": 0,
-          "stationFillColor": "#D6B133",
           "labelPos": "S",
-          "lineLabelPos": "W",
-          "lineLabelShiftX": 2
-        },
-        {
-          "coords": [19, -105],
-          "name": "Empower future generations",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0],
-          "labelBold": false,
-          "lineLabel": false
-        },
-        {
-          "coords": [19, -100]
-        },
-        {
-          "coords": [24, -95],
-          "name": "Skills to match Complexity",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0],
-          "labelBold": false,
-          "lineLabel": false
-        },
-        {
-          "coords": [34, -85],
-          "name": "Transdisciplinary co-creation Policy",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0]
-        },
-        {
-          "coords": [44, -75],
-          "name": "Strengthening STEM with STEAM+ Policy",
-          "labelPos": "NE",
-          "labelBold": false,
-          "labelShiftCoords": [1.5, -2]
-        },
-        {
-          "coords": [54, -65],
-          "name": "Transdisciplinary Innovation Lab Policy",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0]
-        },
-        {
-          "coords": [59, -54]
-        },
-        {
-          "coords": [64, -54],
-          "name": "Crossroads",
-          "labelPos": "SE",
-          "stationSymbol": "single",
-          "labelShiftCoords": [0, 0],
-          "changeToLineStation": ["POLICY-MAKER", "Fertile ground Policy"]
-        },
-        {
-          "coords": [89.5, -54],
-          "name": "Grand Station Policy",
-          "changeToLineStation": ["POLICY-MAKER", "External network Policy"],
-          "changeToLineOrder": "previous",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [89.5, 0],
-          "name": "Strengthen Embedding of the lab within your institute Policy",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        }
-      ]
-    },
-    {
-      "name": "POLICY-MAKER",
-      "label": "POLICY MAKER CO-CREATOR",
-      "color": "#D4AF37",
-      "dashed": true,
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [64, -54]
-        },
-        {
-          "coords": [24, -14]
-        },
-        {
-          "coords": [30, -9]
-        },
-        {
-          "coords": [32.25, -7.5]
-        },
-        {
-          "coords": [35.55, -10.5],
-          "name": "Fertile ground Policy",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false,
-          "changeToLineStation": ["POLICY", "Crossroads"],
-          "changeToLineOrder": "previous"
-        },
-        {
-          "coords": [45.25, -20.5],
-          "name": "Common Vision Policy",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [55.25, -30.5],
-          "name": "External inspiration Policy",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [65.25, -40.5],
-          "name": "External network Policy",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false,
-          "changeToLineStation": ["POLICY", "Grand station Policy"]
-        },
-        {
-          "coords": [75.25, -50.5]
-        },
-        {
-          "coords": [78, -53.5]
-        }
-      ]
-    },
-    {
-      "name": "ORGANISING INNOVATION LAB",
-      "label": "C. ORGANISING INNOVATION LAB",
-      "color": "#993301",
-      "hidden": true,
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [87, -46],
-          "name": "Grand Station main",
-          "labelPos": "S",
-          "labelShiftCoords": [1.5, -9],
-          "shiftCoords": [-2, 0],
-          "labelBold": true,
-          "stationSymbol": "grand"
-        },
-        {
-          "coords": [102, -46],
-          "name": "Format of the transdisciplinary innovation lab main",
-          "labelPos": "S",
-          "labelShiftCoords": [-3, -10],
-          "labelAngle": -45,
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [116, -46],
-          "name": "Defining a challenge main",
-          "labelPos": "S",
-          "labelShiftCoords": [-3, -10],
-          "labelAngle": -45,
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [126, -46],
-          "name": "Focussing on learning main",
-          "labelBold": false,
-          "labelPos": "S",
-          "labelShiftCoords": [-3, -10],
-          "labelAngle": -45,
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [136, -46],
-          "name": "The Iterative process main",
-          "labelBold": false,
-          "labelPos": "S",
-          "labelShiftCoords": [-3, -10],
-          "labelAngle": -45,
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [146, -46],
-          "name": "Good practices main",
-          "labelPos": "S",
-          "labelShiftCoords": [-3, -8],
-          "labelAngle": -45,
-          "stationSymbol": "triple"
-        }
-      ]
-    },
-    {
-      "name": "RUNNING INOVATION LAB",
-      "label": "RUNNING INOVATION LAB",
-      "color": "#0000FF",
-      "hidden": true,
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [87, 2],
-          "name": "Strengthen Embedding of the lab within your institute main",
-          "labelPos": "NW",
-          "labelShiftCoords": [0, 5],
-          "stationAngle": -45,
-          "stationSymbol": "triple",
-          "shiftCoords": [-1.5, -2]
-        },
-        {
-          "coords": [105, 2],
-          "name": "Learning Systematically main",
-          "labelShiftCoords": [0, 1],
-          "labelPos": "N",
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [130, 2],
-          "name": "How to asses quality of an innovation lab main",
-          "labelShiftCoords": [0, 1],
-          "labelPos": "N",
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [161.5, 2],
-          "name": "What outcomes can you expect main",
-          "labelBold": false,
-          "labelShiftCoords": [-3, 1],
-          "labelPos": "N",
-          "stationSymbol": "triple",
-          "stationAngle": 45
-        },
-        {
-          "coords": [164, -15],
-          "name": "Coaches main",
-          "stationAngle": 90,
-          "labelPos": "W",
-          "labelShiftCoords": [-8, 0],
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [164, -35],
-          "name": "Team members main",
-          "stationAngle": 90,
-          "labelPos": "W",
-          "labelShiftCoords": [-8, 0],
-          "stationSymbol": "triple"
-        },
-        {
-          "coords": [157, -47.5],
-          "name": "Recruitment main",
-          "labelPos": "S",
-          "labelShiftCoords": [7, -5],
-          "stationSymbol": "triple",
-          "stationAngle": -45
-        }
-      ]
-    },
-    {
-      "name": "TEACHER",
-      "label": "TEACHERS LOUNGE",
-      "color": "#2F2F8F",
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [0, 65],
-          "name": "Line label black",
-          "labelPos": "N",
-          "labelBold": true,
-          "labelAngle": 0,
-          "lineLabel": true,
-          "stationSymbol": false,
-          "stationFillColor": "#2F2F8F",
-          "lineLabelPos": "W",
-          "lineLabelShiftX": 2,
-          "lineLabelShiftY": 2.5
-        },
-        {
-          "coords": [0, 45],
-          "name": "Teach for the Future",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0],
-          "lineLabel": false
-        },
-        {
-          "coords": [0, 35],
-          "name": "Why is change needed",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0],
-          "labelAngle": 0
-        },
-        {
-          "coords": [0, 25],
-          "name": "Transdisciplinary co-creation",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0],
-          "labelAngle": 0
-        },
-        {
-          "coords": [0, 20]
-        },
-        {
-          "coords": [12, 12]
-        },
-        {
-          "coords": [12, 12],
-          "name": "Strengthening STEM with STEAM+",
-          "labelPos": "W",
-          "labelShiftCoords": [-1.5, 0],
-          "labelAngle": 0
-        },
-        {
-          "coords": [23, 4.5],
-          "name": "Transdisciplinary Innovation Lab",
-          "labelShiftCoords": [-1.5, 0],
-          "labelPos": "W",
-          "labelAngle": 0
-        },
-        {
-          "coords": [30, 0]
-        },
-        {
-          "coords": [30, 0]
-        },
-        {
-          "coords": [40, -10],
-          "name": "Fertile ground Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": false,
-          "stationSymbol": false
-        },
-        {
-          "coords": [50, -20],
-          "name": "Common Vision Teacher",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [60, -30],
-          "name": "External inspiration Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [70, -40],
-          "name": "External network Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [75, -45]
-        },
-        {
-          "coords": [80, -50]
-        },
-        {
-          "coords": [88, -50],
-          "name": "Grand Station Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [100, -50],
-          "name": "Format of the transdisciplinary innovation lab Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [110, -50],
-          "name": "Defining a challenge Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [120, -50],
-          "name": "Focussing on learning Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [130, -50],
-          "name": "The Iterative process Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [150, -50],
-          "name": "Good practices Teacher",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [160, -50],
-          "name": "Recruitment Teacher",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [160, -32],
-          "name": "Team members Teacher",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [160, -22],
-          "name": "Coaches Teacher",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [160, 0],
-          "name": "What outcomes can you expect Teacher",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [115, 0],
-          "name": "How to asses quality of an innovation lab Teacher",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [100, 0],
-          "name": "Learning Systematically Teacher",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [88, 0],
-          "name": "Strengthen Embedding of the lab within your institute Teacher",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [88, -50]
-        }
-      ]
-    },
-    {
-      "name": "STUDENT",
-      "label": "STUDENT",
-      "color": "#C42A31",
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [180, 30],
-          "name": "Line label red",
-          "labelPos": "W",
-          "labelBold": true,
-          "labelAngle": 0,
-          "lineLabel": true,
-          "stationFillColor": "#C42A31",
-          "lineLabelPos": "W",
-          "lineLabelShiftX": 2,
-          "lineLabelShiftY": 1.5,
-          "stationSymbol": false
-        },
-        {
-          "coords": [180, 10],
-          "name": "Harness Future Skills",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0],
-          "labelBold": false,
-          "stationSymbol": "single"
-        },
-        {
-          "coords": [180, 0],
-          "name": "Meet Complexity",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0]
-        },
-        {
-          "coords": [180, -10],
-          "name": "Transdisciplinary co-creation Student",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0]
-        },
-        {
-          "coords": [180, -20],
-          "name": "Strengthening STEM with STEAM+ Student",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0]
-        },
-        {
-          "coords": [180, -30]
-        },
-        {
-          "coords": [180, -40],
-          "name": "Transdisciplinary Innovation Lab Student",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0],
-          "stationSymbol": "single"
-        },
-        {
-          "coords": [170, -50],
-          "name": "Crossroads Student",
-          "labelPos": "E",
-          "labelShiftCoords": [1.5, 0],
-          "stationSymbol": "single",
-          "changeToLineStation": ["STUDENT-COCREATOR", "Fertile ground Student"]
-        },
-        {
-          "coords": [162, -50],
-          "name": "Recruitment Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [162, -35],
-          "name": "Team members Student",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [162, -25],
-          "name": "Coaches Student",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [162, 0],
-          "name": "What outcomes can you expect Student",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [162, 0]
-        },
-        {
-          "coords": [124.25, -25]
-        },
-        {
-          "coords": [125, -25],
-          "name": "Become a coach Student",
-          "labelPos": "E",
-          "labelShiftCoords": [2.5, 0]
-        },
-        {
-          "coords": [88, -50]
-        },
-        {
-          "coords": [88, -50],
-          "name": "Grand Station Student",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        }
-      ]
-    },
-    {
-      "name": "STUDENT-COCREATOR",
-      "label": "STUDENT CO-CREATOR",
-      "lineLabel": true,
-      "color": "#C42A31",
-      "dashed": true,
-      "shiftCoords": [0, 0],
-      "nodes": [
-        {
-          "coords": [170, -50]
-        },
-        {
-          "coords": [170, 20]
-        },
-        {
-          "coords": [40, 20]
-        },
-        {
-          "coords": [40, -8],
-          "name": "Fertile ground Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false,
-          "changeToLineStation": ["STUDENT", "Crossroads Student"],
-          "changeToLineOrder": "previous"
-        },
-        {
-          "coords": [50, -18],
-          "name": "Common Vision Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
-        },
-        {
-          "coords": [60, -28],
-          "name": "External inspiration Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
-        },
-        {
-          "coords": [70, -38],
-          "name": "External network Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "labelBold": true,
-          "labelAngle": -45,
-          "stationSymbol": false
-        },
-        {
-          "coords": [80, -48]
-        },
-        {
-          "coords": [90, -48],
-          "name": "Grand Station Student Cocreator",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [100, -48],
-          "name": "Format of the transdisciplinary innovation lab Student",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [110, -48],
-          "name": "Defining a challenge Student",
-          "drawLabel": false,
-          "labelPos": "S",
-          "stationSymbol": false
-        },
-        {
-          "coords": [120, -48],
-          "name": "Focussing on learning Student",
-          "drawLabel": false,
-          "labelPos": "S",
-          "labelBold": false,
-          "stationSymbol": false
-        },
-        {
-          "coords": [130, -48],
-          "name": "The Iterative process Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [148, -48],
-          "name": "Good practices Student",
-          "drawLabel": false,
-          "labelPos": "S",
-          "labelShiftCoords": [0, 0.5],
-          "stationSymbol": false
-        },
-        {
-          "coords": [158, -48],
-          "name": "Recruitment Student",
-          "drawLabel": false,
-          "labelPos": "SW",
-          "stationSymbol": false
-        },
-        {
-          "coords": [158, -32],
-          "name": "Team members Student Cocreator",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [158, -22],
-          "name": "Coaches Student Cocreator",
-          "drawLabel": false,
-          "labelPos": "E",
-          "stationSymbol": false
-        },
-        {
-          "coords": [158, -2],
-          "name": "What outcomes can you expect Student Cocreator",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [148, -2],
-          "name": "How to asses quality of an innovation lab Student",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [100, -2],
-          "name": "Learning Systematically Student",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [91, -2],
-          "name": "Strengthen Embedding of the lab within your institute Student",
-          "drawLabel": false,
-          "labelPos": "N",
-          "stationSymbol": false
-        },
-        {
-          "coords": [91, -50]
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
         }
       ]
     }

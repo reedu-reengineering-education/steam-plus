@@ -8,8 +8,14 @@ import extractStations, { Station } from '@/components/TubeMap/station'
 import extractLines, { Line } from '@/components/TubeMap/line'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostBody from '@/components/Post/Body'
-import { useEffect, useState } from 'react'
+import { RefObject, useEffect, useRef, useState } from 'react'
 import StationNavbar from '@/components/StationNavbar'
+import { TubeMap } from '@/components/TubeMap'
+
+import teacherJson from '@/components/TubeMap/teacher.json'
+import educationalJson from '@/components/TubeMap/educational.json'
+import policyJson from '@/components/TubeMap/policy.json'
+import studentJson from '@/components/TubeMap/student.json'
 
 interface IParams extends ParsedUrlQuery {
   line: string
@@ -81,7 +87,6 @@ export const getStaticProps: GetStaticProps = async context => {
     elem => elem.name.toLowerCase() === line,
   )
   const currentStation = stations.filter(elem => elem.name == slug)
-  console.log('Current station: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
@@ -105,7 +110,15 @@ export const getStaticProps: GetStaticProps = async context => {
         .toArray()
         .filter(elem => elem.nodeName === next)[0] || null
   } else if (indexOfStation == 1) {
-    previousStation = null
+    const previous = currentLine[0].stations[indexOfStation - 1]
+    if (previous.toLowerCase().startsWith('line label')) {
+      previousStation = null
+    } else {
+      previousStation =
+        transformedMapData.stations
+          .toArray()
+          .filter(elem => elem.nodeName === previous)[0] || null
+    }
     const next = currentLine[0].stations[indexOfStation + 1]
     nextStation =
       transformedMapData.stations
@@ -151,7 +164,13 @@ export const getStaticProps: GetStaticProps = async context => {
 }
 
 type StationPageProps = {
-  line: 'teacher' | 'student' | 'policy' | 'educational'
+  line:
+    | 'teacher'
+    | 'student'
+    | 'student-cocreator'
+    | 'policy'
+    | 'policy-maker'
+    | 'educational'
   slug: string
   station: Station
   neighbours: {
@@ -168,13 +187,45 @@ export default function StationPage({
   neighbours,
   markdown,
 }: StationPageProps) {
-  console.log('StationPage: ', line, station)
   const router = useRouter()
   const [interchangeableLine, setInterchangableLine] = useState<Line | null>()
   const [interchangeableStation, setInterchangableStation] =
     useState<Station | null>()
   const [interchangeableStationOrder, setInterchangeableStationOrder] =
     useState<string>('next')
+
+  let mapData: any
+
+  switch (line) {
+    case 'teacher':
+      mapData = teacherJson
+      break
+    case 'policy':
+    case 'policy-maker':
+      mapData = policyJson
+      break
+    case 'educational':
+      mapData = educationalJson
+      break
+    case 'student':
+    case 'student-cocreator':
+      mapData = studentJson
+      break
+    default:
+      console.info(`I don´t know a line called ${line}.`)
+      break
+  }
+
+  const ref: RefObject<HTMLDivElement> = useRef(null)
+  const [height, setHeight] = useState(0)
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    if (ref.current != null) {
+      setHeight(ref.current.offsetHeight)
+      setWidth(ref.current.offsetWidth)
+    }
+  }, [])
 
   useEffect(() => {
     if (!station) {
@@ -185,7 +236,6 @@ export default function StationPage({
     // is the possibility to change to a different line
     if (station.changeToLineStation.length > 0) {
       const [interchangeLine, interchangeStation] = station.changeToLineStation
-      console.log(interchangeLine, interchangeStation)
       const transformedMapData = transformData(mapData)
       const changeToLine = transformedMapData.lines.lines.filter(
         elem => elem.name === interchangeLine,
@@ -216,7 +266,17 @@ export default function StationPage({
   }
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full flex-col gap-4">
+      {/* <div ref={ref} className="h-48 min-h-full w-full">
+        <TubeMap
+          selectedStation={station}
+          height={height}
+          width={width}
+          mapData={mapData}
+          zoomEnabled={false}
+          initialZoom={0.5}
+        />
+      </div> */}
       <div className="current-article rounded-3xl border-2 border-steam-green bg-steam-white">
         <div className="m-2 flex flex-col justify-between p-4 text-steam-green-text">
           <StationNavbar

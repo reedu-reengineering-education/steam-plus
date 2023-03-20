@@ -1,0 +1,452 @@
+{
+  "stations": {
+    "Focussing on learning Student": {
+      "id": null,
+      "name": "focussing-on-learning-student",
+      "link": "/trail/student/focussing-on-learning-student",
+      "label": "Focussing\non learning",
+      "position": {
+        "lat": 52.517,
+        "lon": 13.3889
+      }
+    },
+    "Good practices Student": {
+      "id": null,
+      "name": "good-practices-student",
+      "link": "/trail/student/good-practices-student",
+      "label": "Good\npractices",
+      "position": {
+        "lat": 52.517403,
+        "lon": 13.398203
+      }
+    },
+    "Transdisciplinary Innovation Lab Student": {
+      "id": 3894910680,
+      "name": "transdisciplinary-innovation-lab-student",
+      "label": "Transdisciplinary\nInnovation Lab?",
+      "link": "/trail/student/transdisciplinary-innovation-lab-student",
+      "position": {
+        "lat": 52.5742433,
+        "lon": 13.348511
+      }
+    },
+    "Strengthening STEM with STEAM+ Student": {
+      "id": 29190897,
+      "name": "strengthening-steam-with-steam-plus-student",
+      "label": "Strengthening STEM\nwith STEAM+",
+      "link": "/trail/student/strengthening-steam-with-steam-plus-student",
+      "position": {
+        "lat": 52.5754161,
+        "lon": 13.3384251
+      }
+    },
+    "Transdisciplinary co-creation Student": {
+      "id": 5219721338,
+      "name": "transdisciplinary-co-creation-student",
+      "label": "Transdisciplinary\nco-creation",
+      "link": "/trail/student/transdisciplinary-co-creation-student",
+      "position": {
+        "lat": 52.5786231,
+        "lon": 13.3335031
+      }
+    },
+    "Meet Complexity": {
+      "id": 107606908,
+      "name": "meet-complexity",
+      "label": "Meet Complexity",
+      "link": "/trail/student/meet-complexity",
+      "position": {
+        "lat": 52.5883733,
+        "lon": 13.3259254
+      }
+    },
+    "Harness Future Skills": {
+      "id": 5219721339,
+      "name": "harness-future-skills",
+      "label": " Harness Future Skills",
+      "link": "/trail/student/harness-future-skills",
+      "position": {
+        "lat": 52.5956412,
+        "lon": 13.3347115
+      }
+    },
+    "External network main": {
+      "id": 3901824902,
+      "name": "External network main",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External network Student": {
+      "id": 3901824902,
+      "name": "external-network-student",
+      "link": "/trail/student/external-network-student",
+      "label": "External\nnetwork",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "Crossroads Student": {
+      "id": 3901824902,
+      "name": "crossroads-student",
+      "label": "Crossroads",
+      "link": "/trail/student/crossroads-student",
+      "position": {
+        "lat": 52.4995972,
+        "lon": 13.3537297
+      }
+    },
+    "External inspiration Student": {
+      "id": 3957757604,
+      "name": "external-inspiration-student",
+      "link": "/trail/student/external-inspiration-student",
+      "label": "External\ninspiration",
+      "position": {
+        "lat": 52.5017976,
+        "lon": 13.3430005
+      }
+    },
+    "Common Vision Student": {
+      "id": 29046970,
+      "name": "common-vision-student",
+      "link": "/trail/student/common-vision-student",
+      "label": "Common\nVision",
+      "position": {
+        "lat": 52.5038223,
+        "lon": 13.3314365
+      }
+    },
+    "Fertile ground Student": {
+      "id": 3957757603,
+      "name": "fertile-ground-student",
+      "label": "Fertile\nground",
+      "link": "/trail/student/fertile-ground-student",
+      "position": {
+        "lat": 52.5028118,
+        "lon": 13.3266968
+      }
+    },
+    "Line label red": {
+      "id": 4989868818,
+      "name": "Line label red",
+      "label": "Student area",
+      "position": {
+        "lat": 52.5351709,
+        "lon": 13.1997742
+      }
+    },
+    "Defining a challenge Student": {
+      "id": 3862767512,
+      "name": "defining-a-challenge-student",
+      "link": "/trail/student/defining-a-challenge-student",
+      "label": "Defining (a)\nchallenge",
+      "position": {
+        "lat": 52.5166047,
+        "lon": 13.3809897
+      }
+    },
+    "Format of the transdisciplinary innovation lab Student": {
+      "id": 4213705914,
+      "name": "format-of-the-transdisciplinary-innovation-lab-student",
+      "link": "/trail/student/format-of-the-transdisciplinary-innovation-lab-student",
+      "label": "Format of the\ntransdisciplinary\ninnovation lab",
+      "position": {
+        "lat": 52.5201123,
+        "lon": 13.3729545
+      }
+    },
+    "Grand Station Student": {
+      "id": 3856100108,
+      "name": "grand-station-student",
+      "link": "/trail/student/grand-station-student",
+      "label": "Grand\nStation",
+      "position": {
+        "lat": 52.5252819,
+        "lon": 13.3701242
+      }
+    },
+    "Strengthen Embedding of the lab within your institute Student": {
+      "id": 29123762,
+      "name": "strengthen-embedding-of-the-lab-within-your-institute-student",
+      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Learning Systematically Student": {
+      "id": 29123762,
+      "name": "learning-systematically-student",
+      "link": "/trail/student/learning-systematically-student",
+      "label": "Learning\nSystematically",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "How to asses quality of an innovation lab Student": {
+      "id": 29123762,
+      "name": "how-to-assess-quality-of-an-innovation-lab-student",
+      "link": "/trail/student/how-to-assess-quality-of-an-innovation-lab-student",
+      "label": "How to assess quality\nof an innovation lab",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "What outcomes can you expect Student": {
+      "id": 29123762,
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student/what-outcomes-can-you-expect-student",
+      "label": "What outcomes \ncan you expect?",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Coaches Student": {
+      "id": 29123762,
+      "name": "coaches-student",
+      "link": "/trail/student/coaches-student",
+      "label": "Coaches",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Team members Student": {
+      "id": 29123762,
+      "name": "team-members-student",
+      "link": "/trail/student/team-members-student",
+      "label": "Team members",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Recruitment Student": {
+      "id": 29123763,
+      "name": "recruitment-student",
+      "link": "/trail/student/recruitment-student",
+      "label": "Recruitment Student",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "The Iterative process Student": {
+      "id": 29123762,
+      "name": "the-iterative-process-student",
+      "link": "/trail/student/the-iterative-process-student",
+      "label": "Iterative\nprocess",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    },
+    "Become a coach Student": {
+      "id": 29123762,
+      "name": "become-a-coach",
+      "link": "/trail/student/become-a-coach",
+      "label": "Become a coach",
+      "position": {
+        "lat": 52.511837,
+        "lon": 13.3105328
+      }
+    }
+  },
+  "lines": [
+    {
+      "name": "STUDENT",
+      "label": "STUDENT",
+      "color": "#C42A31",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [-80, 25],
+          "name": "Line label red",
+          "labelPos": "S",
+          "labelBold": true,
+          "labelAngle": 0,
+          "lineLabel": true,
+          "stationFillColor": "#C42A31",
+          "lineLabelPos": "S",
+          "lineLabelShiftX": 2
+        },
+        {
+          "coords": [-40, 25],
+          "name": "Harness Future Skills",
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
+        },
+        {
+          "coords": [-30, 25],
+          "name": "Meet Complexity",
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
+        },
+        {
+          "coords": [-20, 25],
+          "name": "Transdisciplinary co-creation Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-10, -10]
+        },
+        {
+          "coords": [-10, 25],
+          "name": "Strengthening STEM with STEAM+ Student",
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "labelAngle": -45
+        },
+        {
+          "coords": [0, 25],
+          "name": "Transdisciplinary Innovation Lab Student",
+          "labelPos": "S",
+          "labelShiftCoords": [-10, -10],
+          "stationSymbol": "single",
+          "labelAngle": -45
+        },
+        {
+          "coords": [10, 25],
+          "name": "Crossroads Student",
+          "labelPos": "S",
+          "labelShiftCoords": [-5, -5],
+          "stationSymbol": "single",
+          "labelAngle": -45
+        },
+        {
+          "coords": [20, 25],
+          "name": "Recruitment Student",
+          "labelPos": "S",
+          "labelShiftCoords": [-12, -10],
+          "labelAngle": -45
+        },
+        {
+          "coords": [44, 25],
+          "name": "Team members Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [66, 25],
+          "name": "Coaches Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [88, 25],
+          "name": "What outcomes can you expect Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [110, 25],
+          "name": "Become a coach Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [130, 25],
+          "name": "Grand Station Student",
+          "labelPos": "E"
+        }
+      ]
+    },
+    {
+      "name": "STUDENT-COCREATOR",
+      "label": "STUDENT CO-CREATOR",
+      "lineLabel": true,
+      "color": "#C42A31",
+      "dashed": true,
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [10, 25]
+        },
+        {
+          "coords": [10, 35],
+          "name": "Fertile ground Student",
+          "labelPos": "W"
+        },
+        {
+          "coords": [50, 35],
+          "name": "Common Vision Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [90, 35],
+          "name": "External inspiration Student",
+          "labelPos": "S"
+        },
+        {
+          "coords": [130, 35],
+          "name": "External network Student",
+          "labelPos": "E"
+        },
+        {
+          "coords": [130, 25]
+        },
+        {
+          "coords": [130, 15],
+          "name": "Format of the transdisciplinary innovation lab Student",
+          "labelPos": "E"
+        },
+        {
+          "coords": [115, 15],
+          "name": "Defining a challenge Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [100, 15],
+          "name": "Focussing on learning Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [85, 15],
+          "name": "The Iterative process Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [70, 15],
+          "name": "Good practices Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [55, 15],
+          "name": "How to asses quality of an innovation lab Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-10, -10]
+        },
+        {
+          "coords": [40, 15],
+          "name": "Learning Systematically Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-5, -5]
+        },
+        {
+          "coords": [20, 15],
+          "name": "Strengthen Embedding of the lab within your institute Student",
+          "labelPos": "S",
+          "labelAngle": -45,
+          "labelShiftCoords": [-10, -10]
+        },
+        {
+          "coords": [20, 25]
+        }
+      ]
+    }
+  ]
+}

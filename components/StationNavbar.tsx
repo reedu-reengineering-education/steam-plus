@@ -9,12 +9,21 @@ import { Station } from './TubeMap/station'
 const lineVariants = {
   teacher: 'border-trail-teacher-500 text-trail-teacher-500',
   policy: 'border-trail-policy-500 text-trail-policy-500',
+  'policy-maker': 'border-trail-policy-500 text-trail-policy-500 border-dashed',
   educational: 'border-trail-educational-500 text-trail-educational-500',
   student: 'border-trail-student-500 text-trail-student-500',
+  'student-cocreator':
+    'border-trail-student-500 text-trail-student-500 border-dashed',
 }
 
 type StationNavbarProps = {
-  line: 'teacher' | 'student' | 'policy' | 'educational'
+  line:
+    | 'teacher'
+    | 'student'
+    | 'student-cocreator'
+    | 'policy'
+    | 'policy-maker'
+    | 'educational'
   neighbours: {
     previous: Station
     next: Station
@@ -33,7 +42,7 @@ const StationNavbar = ({
 }: StationNavbarProps) => {
   return (
     <div className="flex justify-between">
-      <div className="flex hover:cursor-pointer">
+      <div className="flex flex-col gap-2 hover:cursor-pointer">
         {neighbours.previous ? (
           <Link href={`/trail/${line}/${neighbours.previous?.name}`} passHref>
             <div
@@ -56,10 +65,10 @@ const StationNavbar = ({
             <div
               className={`flex items-center justify-around gap-2 rounded-l-lg border-2 px-2 ${lineVariants[line]}`}
             >
-              <span className="w-32 text-center text-sm line-clamp-3">
+              <ArrowLeftCircleIcon className="h-8 w-8 stroke-2" />
+              <span className="w-32 text-sm line-clamp-3">
                 {interchangeableStation.label}
               </span>
-              <ArrowRightCircleIcon className="h-8 w-8 stroke-2" />
             </div>
           </Link>
         )}
@@ -85,7 +94,7 @@ const StationNavbar = ({
             passHref
           >
             <div
-              className={`flex items-center justify-around gap-2 rounded-r-lg border-2 border-dashed px-2 ${lineVariants[line]}`}
+              className={`flex items-center justify-around gap-2 rounded-r-lg border-2 px-2 ${lineVariants[line]}`}
             >
               <span className="w-32 text-center text-sm line-clamp-3">
                 {interchangeableStation.label}

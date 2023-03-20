@@ -15,6 +15,7 @@
     "@agentofuser/remark-oembed": "^1.0.4",
     "@directus/sdk": "^10.1.4",
     "@fontsource/open-sans": "^4.5.10",
+    "@fontsource/roboto": "^4.5.8",
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^2.0.13",
     "axios": "^0.27.2",
