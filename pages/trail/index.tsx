@@ -102,7 +102,7 @@ const Trail = ({ lines }: TrailPageProps) => {
           selectedTab={selectedTab}
         />
       </div>
-      <div className="flex w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
+      <div className="flex h-1/2 w-full flex-col rounded-md border-4 border-steam-green bg-steam-white p-4 drop-shadow-lg lg:w-2/3">
         <div ref={ref} className="h-192 min-h-full w-full">
           <TubeMap
             height={height}
