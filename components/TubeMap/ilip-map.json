@@ -650,8 +650,8 @@
     "Strengthen Embedding of the lab within your institute Student": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-student",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
-      "link": "/trail/student/strengthen-embedding-of-the-lab-within-your-institute-student",
+      "label": "Strengthen / embedding \nof the lab\nwithin your institute",
+      "link": "/trail/student-cocreator/strengthen-embedding-of-the-lab-within-your-institute-student",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -669,7 +669,7 @@
     "Strengthen Embedding of the lab within your institute Teacher": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-teacher",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "label": "Strengthen / embedding \nof the lab\nwithin your institute",
       "link": "/trail/teacher/strengthen-embedding-of-the-lab-within-your-institute-teacher",
       "position": {
         "lat": 52.511837,
@@ -755,8 +755,8 @@
     },
     "What outcomes can you expect Student Cocreator": {
       "id": 29123762,
-      "name": "what-outcomes-can-you-expect-student-cocreator",
-      "link": "/trail/student/what-outcomes-can-you-expect-student",
+      "name": "what-outcomes-can-you-expect-student",
+      "link": "/trail/student-cocreator/what-outcomes-can-you-expect-student",
       "label": "What outcomes \ncan you expect?",
       "position": {
         "lat": 52.511837,
@@ -834,7 +834,7 @@
     "Team members Student Cocreator": {
       "id": 29123762,
       "name": "team-members-student",
-      "link": "/trail/student/team-members-student",
+      "link": "/trail/student-cocreator/team-members-student",
       "label": "Team\nmembers",
       "position": {
         "lat": 52.511837,
@@ -1553,6 +1553,13 @@
         },
         {
           "coords": [88, -50]
+        },
+        {
+          "coords": [88, -50],
+          "name": "Grand Station Teacher",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
         }
       ]
     },
@@ -1822,6 +1829,13 @@
         },
         {
           "coords": [91, -50]
+        },
+        {
+          "coords": [90, -48],
+          "name": "Grand Station Student Cocreator",
+          "drawLabel": false,
+          "labelPos": "S",
+          "stationSymbol": false
         }
       ]
     }
