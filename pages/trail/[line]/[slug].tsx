@@ -86,7 +86,10 @@ export const getStaticProps: GetStaticProps = async context => {
   const currentLine = visibleLines.filter(
     elem => elem.name.toLowerCase() === line,
   )
-  const currentStation = stations.filter(elem => elem.name == slug)
+  const currentStation = stations.filter(
+    elem =>
+      elem.name == slug && currentLine[0].stations.includes(elem.nodeName),
+  )
 
   const indexOfStation = currentLine[0].stations.indexOf(
     currentStation[0].nodeName,
