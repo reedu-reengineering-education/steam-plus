@@ -22,7 +22,7 @@
     "Focussing on learning Student": {
       "id": null,
       "name": "focussing-on-learning-student",
-      "link": "/trail/student/focussing-on-learning-student",
+      "link": "/trail/student-cocreator/focussing-on-learning-student",
       "label": "Focussing\non learning",
       "position": {
         "lat": 52.517,
@@ -51,7 +51,7 @@
     "Good practices Student": {
       "id": null,
       "name": "good-practices-student",
-      "link": "/trail/student/good-practices-student",
+      "link": "/trail/student-cocreator/good-practices-student",
       "label": "Good\npractices",
       "position": {
         "lat": 52.517403,
@@ -140,7 +140,7 @@
     "External network Student": {
       "id": 3901824902,
       "name": "external-network-student",
-      "link": "/trail/policy/external-network-student",
+      "link": "/trail/student-cocreator/external-network-student",
       "label": "External\nnetwork",
       "position": {
         "lat": 52.4995972,
@@ -199,7 +199,7 @@
     "External inspiration Student": {
       "id": 3957757604,
       "name": "external-inspiration-student",
-      "link": "/trail/student/external-inspiration-student",
+      "link": "/trail/student-cocreator/external-inspiration-student",
       "label": "External\ninspiration",
       "position": {
         "lat": 52.5017976,
@@ -268,7 +268,7 @@
     "Common Vision Student": {
       "id": 29046970,
       "name": "common-vision-student",
-      "link": "/trail/student/common-vision-student",
+      "link": "/trail/student-cocreator/common-vision-student",
       "label": "Common\nVision",
       "position": {
         "lat": 52.5038223,
@@ -308,7 +308,7 @@
       "id": 3957757603,
       "name": "fertile-ground-student",
       "label": "Fertile\nground",
-      "link": "/trail/student/fertile-ground-student",
+      "link": "/trail/student-cocreator/fertile-ground-student",
       "position": {
         "lat": 52.5028118,
         "lon": 13.3266968
@@ -482,7 +482,7 @@
     "Defining a challenge Student": {
       "id": 3862767512,
       "name": "defining-a-challenge-student",
-      "link": "/trail/student/defining-a-challenge-student",
+      "link": "/trail/student-cocreator/defining-a-challenge-student",
       "label": "Defining (a)\nchallenge",
       "position": {
         "lat": 52.5166047,
@@ -511,7 +511,7 @@
     "Format of the transdisciplinary innovation lab Student": {
       "id": 4213705914,
       "name": "format-of-the-transdisciplinary-innovation-lab-student",
-      "link": "/trail/teacher/format-of-the-transdisciplinary-innovation-lab-student",
+      "link": "/trail/student-cocreator/format-of-the-transdisciplinary-innovation-lab-student",
       "label": "Format of the\ntransdisciplinary\ninnovation lab",
       "position": {
         "lat": 52.5201123,
@@ -755,7 +755,7 @@
     },
     "What outcomes can you expect Student Cocreator": {
       "id": 29123762,
-      "name": "what-outcomes-can-you-expect-student",
+      "name": "what-outcomes-can-you-expect-student-cocreator",
       "link": "/trail/student/what-outcomes-can-you-expect-student",
       "label": "What outcomes \ncan you expect?",
       "position": {
@@ -912,7 +912,7 @@
     "The Iterative process Student": {
       "id": 29123762,
       "name": "the-iterative-process-student",
-      "link": "/trail/teacher/the-iterative-process-student",
+      "link": "/trail/student-cocreator/the-iterative-process-student",
       "label": "Iterative\nprocess",
       "position": {
         "lat": 52.511837,
