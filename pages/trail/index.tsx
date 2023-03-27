@@ -88,7 +88,7 @@ const Trail = ({ lines }: TrailPageProps) => {
     <div className="flex w-full flex-col gap-12 md:flex-row">
       <div className="w-full lg:w-1/3">
         <h1 className="text-3xl font-semibold text-zinc-600">
-          TRAIL Map (TRAnsdiciplinary Innovation Lab Map)
+          TRAIL Map (TRAnsdisciplinary Innovation Lab Map)
         </h1>
         <Spacer />
         <p className="pt-4 text-base font-light">
