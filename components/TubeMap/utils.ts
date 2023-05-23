@@ -7,12 +7,8 @@ export const getStationNeighbours = (
   stations: Station[],
   lines: Line[],
 ): { previous: Station; next: Station } => {
-  console.log('Neighbours: ', station, line)
-
   const currentLine = lines.filter(elem => elem.name.toLowerCase() === line)
   const currentStation = stations.filter(elem => elem.nodeName === station)
-  console.log('currentLine: ', currentLine)
-  console.log('currentStation: ', currentStation)
 
   const indexOfStation = currentLine[0].stations.indexOf(currentStation[0].name)
 

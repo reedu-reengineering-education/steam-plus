@@ -1,7 +1,6 @@
 import React, { RefObject, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import ilipMapData from '../TubeMap/ilip-map.json'
-console.log(ilipMapData)
 
 export const Circle = () => {
   const ref: RefObject<HTMLDivElement> = useRef(null)

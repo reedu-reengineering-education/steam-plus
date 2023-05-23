@@ -85,7 +85,6 @@ class Stations {
   }
   labeledStations() {
     const doubles = this.toArray()
-    console.log('labeledStations - toArray: ', doubles)
 
     return doubles.filter(function (station) {
       return station.lineLabel === false && station.drawLabel
