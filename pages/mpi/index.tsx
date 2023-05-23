@@ -60,7 +60,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
           <hr className="my-2 mx-auto h-1 bg-steam-green" />
         </div>
         <div className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-4 pt-8 lg:grid-cols-3 lg:grid-rows-2">
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
+          <div className="order-1 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:order-none lg:row-span-2">
             <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/starter`}>
                 <div className="cursor-pointer hover:underline">
@@ -89,7 +89,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
               </ul>
             </div>
           </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-2">
+          <div className="order-3 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:order-none lg:row-span-2">
             <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/dessert`}>
                 <div className="cursor-pointer hover:underline">
@@ -119,7 +119,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
             <div className="p-2 text-center"></div>
           </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:row-span-3">
+          <div className="order-2 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:order-none lg:row-span-3">
             <div className="flex h-full flex-col p-2 text-center">
               <Link href={`mpi/main`}>
                 <div className="cursor-pointer hover:underline">
@@ -151,7 +151,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
               </ul>
             </div>
           </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-1 lg:row-start-3">
+          <div className="order-4 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:order-none lg:col-span-1 lg:col-start-1 lg:row-start-3">
             <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/beverage`}>
@@ -185,7 +185,7 @@ const Mpi = ({ output, description, data }: MpiPageProps) => {
             </div>
             <div className="p-2 text-center"></div>
           </div>
-          <div className="rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:col-span-1 lg:col-start-2 lg:row-start-3">
+          <div className="order-5 rounded-b rounded-tr-2xl border border-steam-green bg-steam-green-50 drop-shadow-lg lg:order-none lg:col-span-1 lg:col-start-2 lg:row-start-3">
             <div className="flex h-full flex-col p-2 text-center">
               <div className="flex flex-col p-2 text-center">
                 <Link href={`mpi/takeaway`}>
