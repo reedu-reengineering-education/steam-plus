@@ -3,7 +3,7 @@
     "Focussing on learning main": {
       "id": null,
       "name": "Focussing on learning main",
-      "label": "Focussing\non learning",
+      "label": "Focus\non learning",
       "position": {
         "lat": 52.517,
         "lon": 13.3889
@@ -111,7 +111,7 @@
     "External network main": {
       "id": 3901824902,
       "name": "External network main",
-      "label": "External\nnetwork",
+      "label": "Networking",
       "position": {
         "lat": 52.4995972,
         "lon": 13.3537297
@@ -180,7 +180,7 @@
     "External inspiration main": {
       "id": 3957757604,
       "name": "External inspiration main",
-      "label": "External\ninspiration",
+      "label": "Finding\ninspiration",
       "position": {
         "lat": 52.5017976,
         "lon": 13.3430005
@@ -347,7 +347,7 @@
     "Implementing Transdisciplinary": {
       "id": 29123764,
       "name": "implementing-transdisciplinary",
-      "label": "Implementing\nTransdisciplinary",
+      "label": "Transdisciplinary\nco-creation",
       "link": "/trail/educational/implementing-transdisciplinary",
       "position": {
         "lat": 52.5118853,
@@ -407,7 +407,7 @@
     "Why is change needed": {
       "id": 5726082246,
       "name": "why-is-change-needed",
-      "label": "Why is change\nneeded",
+      "label": "Skill-full\neducation",
       "link": "/trail/teacher/why-is-change-needed",
       "position": {
         "lat": 52.5388381,
@@ -417,7 +417,7 @@
     "Teach for the Future": {
       "id": 4989868817,
       "name": "teach-for-the-future",
-      "label": "Teach for the\nFututre?",
+      "label": "Teach for the\nFuture?",
       "link": "/trail/teacher/teach-for-the-future",
       "position": {
         "lat": 52.5351709,
@@ -427,7 +427,7 @@
     "Line label black": {
       "id": 4989868818,
       "name": "Line label black",
-      "label": "The Teacher`s\nLounge",
+      "label": "Teacher Line",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -436,7 +436,7 @@
     "Line label green": {
       "id": 4989868818,
       "name": "Line label green",
-      "label": "Educational\nboard",
+      "label": "HEI Line",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -445,7 +445,7 @@
     "Line label gold": {
       "id": 4989868818,
       "name": "Line label gold",
-      "label": "Policy center",
+      "label": "Policy Maker Line",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -454,7 +454,7 @@
     "Line label red": {
       "id": 4989868818,
       "name": "Line label red",
-      "label": "Student area",
+      "label": "Student Line",
       "position": {
         "lat": 52.5351709,
         "lon": 13.1997742
@@ -463,7 +463,7 @@
     "Defining a challenge main": {
       "id": 3862767512,
       "name": "Defining a challenge main",
-      "label": "Defining (a)\nchallenge",
+      "label": "Topic",
       "position": {
         "lat": 52.5166047,
         "lon": 13.3809897
@@ -492,7 +492,7 @@
     "Format of the transdisciplinary innovation lab main": {
       "id": 4213705914,
       "name": "Format of the transdisciplinary innovation lab main",
-      "label": "Format of the\ntransdisciplinary\ninnovation lab",
+      "label": "Format",
       "position": {
         "lat": 52.5201123,
         "lon": 13.3729545
@@ -630,7 +630,7 @@
     "Strengthen Embedding of the lab within your institute Educational": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-educational",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "label": "Strengthen Support",
       "link": "/trail/educational/strengthen-embedding-of-the-lab-within-your-institute-educational",
       "position": {
         "lat": 52.511837,
@@ -640,7 +640,7 @@
     "Strengthen Embedding of the lab within your institute Policy": {
       "id": 29123762,
       "name": "strengthen-embedding-of-the-lab-within-your-institute-policy",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "label": "Strengthen Support",
       "link": "/trail/policy/strengthen-embedding-of-the-lab-within-your-institute-policy",
       "position": {
         "lat": 52.511837,
@@ -660,7 +660,7 @@
     "Strengthen Embedding of the lab within your institute main": {
       "id": 29123762,
       "name": "Strengthen Embedding of the lab within your institute main",
-      "label": "Strengthen/embedding \nof the lab\nwithin your institute",
+      "label": "Strengthen\nSupport",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -708,7 +708,7 @@
     "How to asses quality of an innovation lab main": {
       "id": 29123762,
       "name": "How to asses quality of an innovation lab main",
-      "label": "How to assess quality\nof an innovation lab",
+      "label": "Quality\nAssessment",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -737,7 +737,7 @@
     "What outcomes can you expect main": {
       "id": 29123762,
       "name": "What outcomes can you expect main",
-      "label": "What outcomes \ncan you expect?",
+      "label": "Outcomes",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -893,7 +893,7 @@
     "The Iterative process main": {
       "id": 29123764,
       "name": "The Iterative process main",
-      "label": "The Iterative\nProcess",
+      "label": "Iterative\nProcess",
       "position": {
         "lat": 52.511837,
         "lon": 13.3105328
@@ -972,13 +972,13 @@
           "stationSymbol": "triple",
           "labelPos": "E",
           "labelBold": false,
-          "labelShiftCoords": [1, 2]
+          "labelShiftCoords": [0, 0]
         }
       ]
     },
     {
       "name": "EDUCATIONAL",
-      "label": "EDUCATIONAL BOARD",
+      "label": "HEI Line",
       "color": "#2D803E",
       "shiftCoords": [0, 0],
       "nodes": [
@@ -1093,7 +1093,7 @@
     },
     {
       "name": "POLICY",
-      "label": "POLICY CENTER",
+      "label": "HEI Line",
       "color": "#D6B133",
       "shiftCoords": [0, 0],
       "nodes": [
@@ -1259,7 +1259,7 @@
           "stationSymbol": "triple"
         },
         {
-          "coords": [116, -46],
+          "coords": [112, -46],
           "name": "Defining a challenge main",
           "labelPos": "S",
           "labelShiftCoords": [-3, -10],
@@ -1267,7 +1267,7 @@
           "stationSymbol": "triple"
         },
         {
-          "coords": [126, -46],
+          "coords": [122, -46],
           "name": "Focussing on learning main",
           "labelBold": false,
           "labelPos": "S",
@@ -1276,7 +1276,7 @@
           "stationSymbol": "triple"
         },
         {
-          "coords": [136, -46],
+          "coords": [134, -46],
           "name": "The Iterative process main",
           "labelBold": false,
           "labelPos": "S",
@@ -1305,7 +1305,7 @@
           "coords": [87, 2],
           "name": "Strengthen Embedding of the lab within your institute main",
           "labelPos": "NW",
-          "labelShiftCoords": [0, 5],
+          "labelShiftCoords": [0, 3],
           "stationAngle": -45,
           "stationSymbol": "triple",
           "shiftCoords": [-1.5, -2]
