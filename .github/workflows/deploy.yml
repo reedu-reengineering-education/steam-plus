@@ -45,6 +45,7 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_DIRECTUS_URL: ${{ secrets.NEXT_PUBLIC_DIRECTUS_URL }}
+          DIRECTUS_URL: ${{ secrets.DIRECTUS_URL }}
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_PARTNER: ${{ secrets.KALTURA_PARTNER }}
           KALTURA_UI_CONF_ID: ${{ secrets.KALTURA_UI_CONF_ID }}
