@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const directus = await getDirectusClient()
   const output = await directus.items('output').readOne('mpi')
   const { data } = await directus.items('mpi').readByQuery({

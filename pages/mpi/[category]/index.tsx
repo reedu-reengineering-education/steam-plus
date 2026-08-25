@@ -28,7 +28,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
           },
         }
       }),
-      fallback: true,
+      fallback: false,
     }
   } else {
     return {
@@ -68,10 +68,6 @@ export const getStaticProps: GetStaticProps = async context => {
       description: description,
       entries: data,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 30, // In seconds
   }
 }
 

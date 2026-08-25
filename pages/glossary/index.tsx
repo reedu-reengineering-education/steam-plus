@@ -7,7 +7,7 @@ interface Dictionary<T> {
   [Key: string]: T
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const directus = await getDirectusClient()
   const { data } = await directus.items('glossary').readByQuery({
     sort: ['term'],
