@@ -38,7 +38,6 @@ export const getStaticProps: GetStaticProps = async context => {
     props: {
       lines: transformedLines,
     }, // will be passed to the page component as props
-    revalidate: 30,
   }
 }
 

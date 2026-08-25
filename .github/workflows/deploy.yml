@@ -42,21 +42,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # TEMPORARY — remove once the 400 from Directus is diagnosed.
-      - name: Debug Directus connectivity
-        env:
-          NEXT_PUBLIC_DIRECTUS_URL: ${{ secrets.NEXT_PUBLIC_DIRECTUS_URL }}
-        run: |
-          echo "value length: ${#NEXT_PUBLIC_DIRECTUS_URL} (expected 31 for https://coelho.opensensemap.org)"
-          echo "first/last char (octal): $(printf '%s' "$NEXT_PUBLIC_DIRECTUS_URL" | head -c1 | od -An -tx1) / $(printf '%s' "$NEXT_PUBLIC_DIRECTUS_URL" | tail -c1 | od -An -tx1)"
-          curl -s -D - -o /tmp/resp.json "$NEXT_PUBLIC_DIRECTUS_URL/items/mpi?fields=category,slug"
-          echo "---body---"
-          cat /tmp/resp.json
-
       - name: Build
         env:
           NEXT_PUBLIC_DIRECTUS_URL: ${{ secrets.NEXT_PUBLIC_DIRECTUS_URL }}
-          DIRECTUS_URL: ${{ secrets.DIRECTUS_URL }}
           KALTURA_PARTNER_ID: ${{ secrets.KALTURA_PARTNER_ID }}
           KALTURA_PARTNER: ${{ secrets.KALTURA_PARTNER }}
           KALTURA_UI_CONF_ID: ${{ secrets.KALTURA_UI_CONF_ID }}
